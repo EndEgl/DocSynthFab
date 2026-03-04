@@ -1,0 +1,57 @@
+# === Python caches ===
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+
+# === Virtual env ===
+.venv/
+venv/
+ENV/
+env/
+
+# === Build / packaging ===
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# === IDEs ===
+.vscode/
+.idea/
+*.iml
+
+# === OS files ===
+Thumbs.db
+Desktop.ini
+
+# === Logs / run outputs (repo içine düşerse) ===
+*.log
+logs/
+run.log
+failed_pages.log
+qc_summary.json
+
+# === Local temp / scratch ===
+_tmp/
+tmp/
+*.tmp
+
+# === Dataset outputs (repo içine yazılırsa) ===
+out/
+outputs/
+dataset/
+datasets/
+
+# === Local configs (kişisel override) ===
+configs/local*.yaml
+configs/*_local.yaml

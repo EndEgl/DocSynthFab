@@ -1,0 +1,218 @@
+# configs/default.yaml
+# Contract: ai1-ds-v1.3.2
+
+project:
+  version: "ai1-ds-v1.3.2"
+  code_root: "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\ai1_gen"
+
+io:
+  # ZORUNLU: çıktı D: üzerinde
+  out_root: "D:\\ai1_dataset_v1"
+  images_dir: "images"
+  masks_dir: "masks"
+  ann_dir: "ann"
+  splits_dir: "splits"
+  tmp_dir: "_tmp"
+  atomic_write: true
+  overwrite: false
+
+run:
+  pages: 3000
+  seed: 1337
+  workers: 6
+  fail_fast: false
+  max_fail_ratio: 0.02
+
+page:
+  size_name: "A4"
+  dpi_choices: [200, 300]
+  bg_color_rgb: [255, 255, 255]
+
+dist:
+  density_dist:
+    sparse: 0.15
+    normal: 0.55
+    dense: 0.20
+    mixed: 0.10
+
+  # Scale dağılımını hires_crop da üretsin diye güncelledim (0–5% kontrata uygun)
+  # Toplam 1.0 olacak şekilde normalize:
+  scale_dist:
+    dpi300: 0.67
+    dpi200: 0.20
+    lowres_capture: 0.10
+    hires_crop: 0.03
+
+  noise_level_dist:
+    clean: 0.30
+    medium: 0.50
+    heavy: 0.20
+
+content:
+  has_equation_prob: 0.35
+  has_table_prob: 0.20
+  has_figure_prob: 0.20
+  has_caption_prob: 0.25
+  hard_negative_page_prob: 0.30
+
+layout:
+  layout_type_dist:
+    single_col: 0.65
+    double_col: 0.30
+    mixed_cols: 0.05
+
+  targets:
+    sparse:
+      line_count_range: [5, 25]
+      block_count_range: [2, 8]
+    normal:
+      line_count_range: [25, 60]
+      block_count_range: [6, 14]
+    dense:
+      line_count_range: [60, 120]
+      block_count_range: [10, 24]
+    mixed:
+      line_count_range: [30, 90]
+      block_count_range: [6, 20]
+
+style:
+  font_size_pt_dist:
+    small: 0.25
+    normal: 0.60
+    large: 0.15
+
+  weight_dist:
+    regular: 0.80
+    bold: 0.20
+
+  contrast_class_dist:
+    low: 0.20
+    med: 0.60
+    high: 0.20
+
+  local_scale_mode_prob: 0.35
+
+density_thresholds:
+  ink_ratio_text_ranges:
+    sparse: [0.002, 0.020]
+    normal: [0.020, 0.080]
+    dense: [0.080, 0.180]
+    mixed: [0.015, 0.120]
+
+  mixed:
+    bands: 8
+    variance_thr: 0.00015
+
+render:
+  text:
+    enable: true
+    lang_mode: "utf8"
+
+    # Font dosyalarını buraya koy. Unicode için NotoSans / DejaVuSans çok iyi olur.
+    fonts_dir: "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\ai1_gen\\assets\\fonts"
+
+    # --- NEW (UTF-8 text synth ayarları) ---
+    # Anlamlı kelime olasılığı (TR/DE/RU/EL/AR dahil)
+    meaningful_prob: 0.55
+
+    # Anlamsız/gibberish token olasılığı (rastgele UTF-8 karakterler)
+    gibberish_prob: 0.35
+
+    # Script dağılımı (toplamı 1 olmak zorunda değil; kod normalize ediyor)
+    # "symbols" = ±×÷≤≥… gibi OCR’ı zorlayan karakterler
+    scripts_dist:
+      latin: 0.45
+      tr: 0.18
+      de: 0.07
+      ru: 0.10
+      el: 0.06
+      ar: 0.09
+      symbols: 0.05
+
+  latex:
+    enable: true
+    miktex_bin: null
+    compiler: "pdflatex"
+    timeout_s: 12
+    raster_dpi: 300
+
+  non_text:
+    enable: true
+    watermark_prob: 0.10
+    qr_like_prob: 0.05
+    table_line_prob: 0.30
+    figure_shape_prob: 0.25
+
+augment:
+  enable: true
+  min_area_px: 25
+
+
+
+  selection_policy:
+    clean:
+      p_photometric: 0.40
+      p_blur_noise: 0.25
+      p_capture: 0.15
+      p_geometry: 0.10
+    medium:
+      p_photometric: 0.70
+      p_blur_noise: 0.55
+      p_capture: 0.45
+      p_geometry: 0.25
+    heavy:
+      p_photometric: 0.85
+      p_blur_noise: 0.75
+      p_capture: 0.70
+      p_geometry: 0.45
+
+  photometric:
+    gamma: [0.75, 1.25]
+    brightness: [-20, 20]
+    contrast: [0.85, 1.20]
+    shadow_opacity: [0.10, 0.45]
+    vignette: [0.05, 0.25]
+
+  blur_noise:
+    gaussian_kernel_choices: [3, 5, 7]
+    motion_length: [7, 21]
+    motion_angle_deg: [0, 180]
+    gaussian_sigma: [3, 18]
+    speckle: [0.02, 0.10]
+
+  capture_sim:
+    downscale_factor: [0.50, 0.85]
+    jpeg_quality_clean_medium: [40, 90]
+    jpeg_quality_heavy: [25, 70]
+    enforce_size_invariant: true
+
+  geometry:
+    rotation_deg: [-6.0, 6.0]
+    perspective_jitter_ratio: [0.00, 0.03]
+    crop_ratio: [0.00, 0.03]
+    border_fill_rgb: [255, 255, 255]
+    mask_interp: "nearest"
+
+qc:
+  enable: true
+  mask_binary_required: true
+  overlap_text_over_math_max_ratio: 0.01
+  min_area_px: 25
+  bbox_clip: true
+  require_global_line_order_contiguous: true
+  dist_tolerance_abs: 0.03
+
+telemetry:
+  enable: true
+  mode: "single_line"
+  update_interval_s: 1.2
+  ascii_only: true  # progress satırı bozulmasın diye; sayfa içi metinle ilgisi yok
+  show_eta: true
+  show_rate: true
+  worker_stdout_forbidden: true
+
+  temperature:
+    require_temp_sensor: true
+    prefer_gpu: true
+    gpu_source: "nvidia_smi"
+    cpu_source: "auto"
