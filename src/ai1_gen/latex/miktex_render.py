@@ -21,6 +21,33 @@ class LatexRenderError(RuntimeError):
     pass
 
 
+def _crop_rgba_to_alpha_bbox(img: Image.Image, pad: int = 4) -> Image.Image:
+    """
+    Transparan kenarları kırpıp minik bir padding ile geri döndürür.
+    Bu sayede equation aynı hedef bbox içine daha büyük oturur.
+    """
+    if img.mode != "RGBA":
+        img = img.convert("RGBA")
+
+    alpha = img.getchannel("A")
+    bbox = alpha.getbbox()
+    if bbox is None:
+        raise LatexRenderError("render/latex-empty-alpha")
+
+    cropped = img.crop(bbox)
+
+    if pad <= 0:
+        return cropped
+
+    out = Image.new(
+        "RGBA",
+        (cropped.width + 2 * pad, cropped.height + 2 * pad),
+        (0, 0, 0, 0),
+    )
+    out.paste(cropped, (pad, pad), cropped)
+    return out
+
+
 def render_latex_to_rgba(
     latex_expr: str,
     *,
@@ -29,22 +56,24 @@ def render_latex_to_rgba(
     raster_dpi: int = 300,
 ) -> Image.Image:
     """
-    pdflatex ile tek sayfalık PDF üretir, PyMuPDF ile rasterize edip RGBA döndürür.
+    pdflatex ile tek sayfalık PDF üretir, PyMuPDF ile rasterize edip
+    kırpılmış RGBA döndürür.
     """
     try:
         import fitz  # PyMuPDF
     except Exception as e:
         raise LatexRenderError("render/latex-missing: PyMuPDF (fitz) import edilemedi") from e
 
-    # standalone yerine article kullanıyorum (daha stabil kurulumlarda çalışır)
+    # article daha stabil; \displaystyle ile daha büyük matematik görünümü
     tex = r"""
 \documentclass[12pt]{article}
 \usepackage[margin=1pt]{geometry}
 \usepackage{amsmath,amssymb}
 \pagestyle{empty}
+\setlength{\parindent}{0pt}
 \begin{document}
 \noindent
-$%s$
+$\displaystyle %s$
 \end{document}
 """ % latex_expr
 
@@ -53,7 +82,6 @@ $%s$
         tex_path = td_p / "eq.tex"
         tex_path.write_text(tex, encoding="utf-8")
 
-        # pdflatex
         try:
             subprocess.run(
                 [pdflatex_cmd, "-interaction=nonstopmode", "-halt-on-error", str(tex_path.name)],
@@ -74,14 +102,17 @@ $%s$
         if not pdf_path.exists():
             raise LatexRenderError("render/latex-failed")
 
-        # rasterize
         doc = fitz.open(str(pdf_path))
-        page = doc.load_page(0)
-        zoom = raster_dpi / 72.0
-        mat = fitz.Matrix(zoom, zoom)
-        pix = page.get_pixmap(matrix=mat, alpha=True)
-        img = Image.frombytes("RGBA", (pix.width, pix.height), pix.samples)
-        doc.close()
+        try:
+            page = doc.load_page(0)
+            zoom = raster_dpi / 72.0
+            mat = fitz.Matrix(zoom, zoom)
+            pix = page.get_pixmap(matrix=mat, alpha=True)
+            img = Image.frombytes("RGBA", (pix.width, pix.height), pix.samples)
+        finally:
+            doc.close()
+
+        img = _crop_rgba_to_alpha_bbox(img, pad=4)
         return img
 
 
@@ -98,7 +129,7 @@ class MathSample:
 
 
 _GREEK = ["alpha", "beta", "gamma", "delta", "theta", "lambda", "mu", "sigma", "phi", "omega"]
-_VARS  = ["x", "y", "z", "t", "n", "k", "i", "j", "a", "b", "c"]
+_VARS = ["x", "y", "z", "t", "n", "k", "i", "j", "a", "b", "c"]
 _FUNCS = ["\\sin", "\\cos", "\\tan", "\\log", "\\ln", "\\exp"]
 
 

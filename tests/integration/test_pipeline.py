@@ -1,8 +1,11 @@
 import random
 import json
+import pytest 
+
 from ai1_gen.layout.layout_sampler import sample_page_spec
 from ai1_gen.render.page_renderer import render_page_layers
 
+@pytest.mark.medium
 def test_full_page_generation_pipeline(mock_cfg):
     rng = random.Random(1337)
     

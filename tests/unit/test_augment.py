@@ -1,7 +1,9 @@
+import pytest
 import numpy as np
 import random
 from ai1_gen.augment.apply_augment import apply_augment
 
+@pytest.mark.fast
 def test_augment_bbox_transformation_integrity():
     # 100x100 beyaz görsel, ortasında 10x10 siyah bir blok (metin varsayalım)
     img = np.full((100, 100, 3), 255, dtype=np.uint8)

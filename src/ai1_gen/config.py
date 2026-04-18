@@ -99,7 +99,11 @@ class AppConfig:
         return out
 
     def thresholds(self) -> Dict[str, Any]:
-        return _get(self.raw, "density_thresholds", {})
+        out = _get(self.raw, "density_thresholds", None)
+        if isinstance(out, dict) and out:
+            return out
+        return _get(self.raw, "thresholds", {})
+
 
     def telemetry(self) -> Dict[str, Any]:
         return _get(self.raw, "telemetry", {})

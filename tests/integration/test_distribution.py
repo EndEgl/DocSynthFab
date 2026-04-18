@@ -3,6 +3,7 @@ from collections import Counter
 import random
 from ai1_gen.layout.layout_sampler import sample_page_spec
 
+@pytest.mark.medium
 def test_metadata_distribution_accuracy(mock_cfg):
     """
     Sözleşme Madde 11: 1000 örneklem üzerinden dağılım doğruluğunu RAM'de ölçer.

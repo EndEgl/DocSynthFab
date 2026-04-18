@@ -46,3 +46,8 @@ include = ["ai1_gen*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+markers = [
+    "fast: 1 saniyeden kısa süren hızlı testler",
+    "medium: 1-5 saniye arası süren orta seviye testler",
+    "slow: 5 saniyeden uzun süren ağır performans testleri"
+]

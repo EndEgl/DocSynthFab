@@ -2,6 +2,7 @@
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 # - Pillow>=10,<12
+# - numpy>=1.24,<3.0
 
 from __future__ import annotations
 
@@ -21,7 +22,7 @@ def ensure_dataset_dirs(out_root: Path) -> Dict[str, Path]:
         "masks": out_root / "masks",
         "ann": out_root / "ann",
         "splits": out_root / "splits",
-        "gt": out_root / "gt",          # <-- NEW
+        "gt": out_root / "gt",
         "tmp": out_root / "_tmp",
     }
     for p in dirs.values():
@@ -46,11 +47,33 @@ def _atomic_write_bytes(dst: Path, data: bytes, tmp_dir: Path) -> None:
             pass
 
 
-def save_png_u8(dst: Path, arr_u8: np.ndarray, tmp_dir: Path) -> None:
+def _to_pil_image(arr_u8: np.ndarray) -> Image.Image:
+    """
+    Pillow 10+ ile uyumlu, mode parametresi vermeden güvenli dönüşüm.
+    Desteklenen girişler:
+    - (H, W) uint8  -> grayscale
+    - (H, W, 3) uint8 -> RGB
+    """
+    if not isinstance(arr_u8, np.ndarray):
+        raise TypeError("arr_u8 must be a numpy.ndarray")
+
+    if arr_u8.dtype != np.uint8:
+        raise TypeError(f"arr_u8 dtype must be uint8, got {arr_u8.dtype}")
+
     if arr_u8.ndim == 2:
-        img = Image.fromarray(arr_u8, mode="L")
-    else:
-        img = Image.fromarray(arr_u8, mode="RGB")
+        return Image.fromarray(arr_u8)
+
+    if arr_u8.ndim == 3 and arr_u8.shape[2] == 3:
+        return Image.fromarray(arr_u8)
+
+    raise ValueError(
+        f"Unsupported array shape for PNG export: {arr_u8.shape}. "
+        "Expected (H, W) or (H, W, 3)."
+    )
+
+
+def save_png_u8(dst: Path, arr_u8: np.ndarray, tmp_dir: Path) -> None:
+    img = _to_pil_image(arr_u8)
     buf = tempfile.SpooledTemporaryFile(max_size=8_000_000)
     img.save(buf, format="PNG", optimize=False)
     buf.seek(0)

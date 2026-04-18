@@ -1,27 +1,43 @@
-# configs/default.yaml
-# Contract: ai1-ds-v1.3.2
+# configs/dense_finetune.yaml
+# Contract: ai1-ds-v1.3.2 (Hard Example Mining for Fine-Tuning)
 
 project:
-  version: "ai1-ds-v1.3.2"
+  version: "ai1-ds-v1.3.2-dense-finetune"
   code_root: "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\ai1_gen"
 
 io:
-  # ZORUNLU: çıktı D: üzerinde
-  out_root: "D:\\ai1_dataset_v1"
+  out_root: "D:\\ai1_dataset_finetune"  # Orijinal verilerle karışmasın diye yeni klasör
   images_dir: "images"
   masks_dir: "masks"
   ann_dir: "ann"
+  gt_dir: "gt"
   splits_dir: "splits"
   tmp_dir: "_tmp"
   atomic_write: true
   overwrite: false
 
 run:
-  pages: 3000
-  seed: 1337
+  pages: 1500  # Fine-tuning için 1500 sayfa gayet yeterli
+  seed: 9999   # Farklı bir seed
   workers: 6
+
   fail_fast: false
-  max_fail_ratio: 0.02
+  max_fail_ratio: 0.10 # Zorladığımız için daha çok QC fail alacağız, limiti artırdık
+
+  jsonl_flush_batch_size: 50
+  max_pending_mult: 2.0
+  max_pending_min: 8
+
+  splits:
+    train: 0.90  # Val/Test ayırmaya pek gerek yok ama adetten
+    val: 0.10
+    test: 0.00
+
+  worker:
+    max_tries: 8 # Zor bir konfigürasyon olduğu için tekrar deneme sayısını artırdık
+    disable_augment_on_try: 6
+    jitter_seed_step: 10000019
+    fallback_dpi: 300
 
 page:
   size_name: "A4"
@@ -30,104 +46,142 @@ page:
 
 dist:
   density_dist:
-    sparse: 0.15
-    normal: 0.55
-    dense: 0.20
-    mixed: 0.10
+    # BÜYÜK DEĞİŞİM: Sadece sıkışık sayfalar istiyoruz
+    sparse: 0.00
+    normal: 0.00
+    dense: 0.85
+    mixed: 0.15
 
-  # Scale dağılımını hires_crop da üretsin diye güncelledim (0–5% kontrata uygun)
-  # Toplam 1.0 olacak şekilde normalize:
   scale_dist:
-    dpi300: 0.67
-    dpi200: 0.20
-    lowres_capture: 0.10
-    hires_crop: 0.03
+    dpi300: 0.65
+    dpi200: 0.18
+    lowres_capture: 0.12
+    hires_crop: 0.05
 
   noise_level_dist:
-    clean: 0.30
-    medium: 0.50
-    heavy: 0.20
+    clean: 0.20
+    medium: 0.40
+    heavy: 0.40 # Ağır gürültüyü artırdık ki model zorlansın
 
 content:
-  has_equation_prob: 0.35
+  has_equation_prob: 0.40
   has_table_prob: 0.20
-  has_figure_prob: 0.20
-  has_caption_prob: 0.25
-  hard_negative_page_prob: 0.30
+  has_figure_prob: 0.05 # Figürler çok yer kaplar, satır aramak istiyoruz, figürü kıstık
+  has_caption_prob: 0.40
+  hard_negative_page_prob: 0.05
 
 layout:
   layout_type_dist:
-    single_col: 0.65
-    double_col: 0.30
-    mixed_cols: 0.05
+    single_col: 0.20
+    double_col: 0.60 # İki kolon olunca satırlar daha dar ve sıkışık olur
+    mixed_cols: 0.20
 
   targets:
     sparse:
-      line_count_range: [5, 25]
-      block_count_range: [2, 8]
+      line_count_range: [15, 35]
+      block_count_range: [2, 5]
     normal:
-      line_count_range: [25, 60]
-      block_count_range: [6, 14]
+      line_count_range: [40, 85]
+      block_count_range: [5, 12]
     dense:
-      line_count_range: [60, 120]
-      block_count_range: [10, 24]
+      # Satır sayılarını daha da zorladık
+      line_count_range: [110, 180] 
+      block_count_range: [8, 18]
     mixed:
-      line_count_range: [30, 90]
-      block_count_range: [6, 20]
+      line_count_range: [70, 120]
+      block_count_range: [6, 15]
 
 style:
   font_size_pt_dist:
-    small: 0.25
-    normal: 0.60
-    large: 0.15
+    # BÜYÜK DEĞİŞİM: Tamamen küçük fontlara odaklanıyoruz
+    small: 0.95
+    normal: 0.05
+    large: 0.00
 
   weight_dist:
-    regular: 0.80
-    bold: 0.20
+    regular: 0.85
+    bold: 0.15
 
   contrast_class_dist:
-    low: 0.20
+    low: 0.30 # Düşük kontrastı artırdık ki model sınırları bulmakta zorlansın
     med: 0.60
-    high: 0.20
+    high: 0.10
 
-  local_scale_mode_prob: 0.35
+  local_scale_mode_prob: 0.60
 
 density_thresholds:
   ink_ratio_text_ranges:
-    sparse: [0.002, 0.020]
-    normal: [0.020, 0.080]
-    dense: [0.080, 0.180]
-    mixed: [0.015, 0.120]
+    sparse: [0.001, 0.200]
+    normal: [0.150, 0.700]
+    dense: [0.300, 1.000] # Alt sınırı biraz esnettik ki QC hemen reddetmesin
+    mixed: [0.100, 0.900]
 
   mixed:
     bands: 8
-    variance_thr: 0.00015
+    variance_thr: 0.00010
 
 render:
   text:
     enable: true
     lang_mode: "utf8"
-
-    # Font dosyalarını buraya koy. Unicode için NotoSans / DejaVuSans çok iyi olur.
     fonts_dir: "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\ai1_gen\\assets\\fonts"
 
-    # --- NEW (UTF-8 text synth ayarları) ---
-    # Anlamlı kelime olasılığı (TR/DE/RU/EL/AR dahil)
-    meaningful_prob: 0.55
+    meaningful_prob: 0.68
+    gibberish_prob: 0.22
+    code_switch_prob: 0.10
 
-    # Anlamsız/gibberish token olasılığı (rastgele UTF-8 karakterler)
-    gibberish_prob: 0.35
+    space_profile_dist:
+      tight: 0.99 # Hep sıkı boşluk
+      normal: 0.01
+      loose: 0.00
 
-    # Script dağılımı (toplamı 1 olmak zorunda değil; kod normalize ediyor)
-    # "symbols" = ±×÷≤≥… gibi OCR’ı zorlayan karakterler
+    tab_prob: 0.005
+    very_short_line_prob: 0.01
+    very_full_line_prob: 0.25 # Satırları iyice doldur
+
     scripts_dist:
-      latin: 0.45
-      tr: 0.18
-      de: 0.07
-      ru: 0.10
-      el: 0.06
-      ar: 0.09
-      symbols: 0.05
+      latin: 0.50
+      tr: 0.15
+      de: 0.05
+      ru: 0.15
+      el: 0.05
+      ar: 0.10
+      symbols: 0.09
+
+    line_style_dist:
+      prose: 0.54
+      mixed: 0.18
+      code: 0.10
+      mathish: 0.07
+      bars: 0.03
+      noisy: 0.08
+
+    book_mode:
+      enable: true
+      base_font_pt: 9 # 11'den 9'a düşürdük
+
+      margin_left: 0.05  # Marjinleri kıstık, kağıdın her yeri dolsun
+      margin_right: 0.05
+      margin_top: 0.04
+      margin_bottom: 0.04
+
+      dense_two_columns: true
+      gutter_ratio: 0.03 # Kolon arası boşluğu da daralttık
+
+      # BÜYÜK DEĞİŞİM: Satırlar birbirine geçmek üzere
+      line_spacing: 0.97 
+      paragraph_indent_ratio: 0.035
+      paragraph_gap_mult: 0.15 # Paragraf arası boşluk çok az
+
+      body_layout_dist:
+        single: 0.10
+        triple: 0.90
+
+      ultra_dense_prob: 0.85
+
+      block_gap:
+        ratio_min: 0.005
+        ratio_max: 0.020
 
   latex:
     enable: true
@@ -139,32 +193,43 @@ render:
   non_text:
     enable: true
     watermark_prob: 0.10
+
     qr_like_prob: 0.05
     table_line_prob: 0.30
     figure_shape_prob: 0.25
+
+    force_table: false
+    force_figure: false
+
+    figure_w_ratio: 0.28
+    figure_h_ratio: 0.18
+
+    table_w_ratio: 0.78
+    table_h_ratio: 0.16
+    table_cols: 4
+    table_rows: 6
 
 augment:
   enable: true
   min_area_px: 25
 
-
-
   selection_policy:
+    # Her noise modunda geometri (bükülme/açı) ihtimalini artırdık
     clean:
       p_photometric: 0.40
       p_blur_noise: 0.25
       p_capture: 0.15
-      p_geometry: 0.10
+      p_geometry: 0.35 
     medium:
       p_photometric: 0.70
       p_blur_noise: 0.55
       p_capture: 0.45
-      p_geometry: 0.25
+      p_geometry: 0.60
     heavy:
       p_photometric: 0.85
       p_blur_noise: 0.75
       p_capture: 0.70
-      p_geometry: 0.45
+      p_geometry: 0.85
 
   photometric:
     gamma: [0.75, 1.25]
@@ -187,32 +252,58 @@ augment:
     enforce_size_invariant: true
 
   geometry:
-    rotation_deg: [-6.0, 6.0]
-    perspective_jitter_ratio: [0.00, 0.03]
+    rotation_deg: [-8.0, 8.0] # Biraz daha yamuk olsun
+    perspective_jitter_ratio: [0.01, 0.05]
     crop_ratio: [0.00, 0.03]
     border_fill_rgb: [255, 255, 255]
     mask_interp: "nearest"
 
+  edge_degredation:
+    prob: 0.70
+    num_erasures: [2, 5]
+    size_ratio: [0.05, 0.15]
+    protect_math: true
+    math_guard_px: 8
+    skip_if_remaining_area_lt: 64
+
+  elastic_distortion:
+    # BÜYÜK DEĞİŞİM: Neredeyse her kağıt buruşuk/dalgalı olacak
+    prob: 0.85 
+    alpha: [20.0, 35.0]
+    sigma: [5.0, 9.0]
+
 qc:
-  enable: true
-  mask_binary_required: true
-  overlap_text_over_math_max_ratio: 0.01
-  min_area_px: 25
-  bbox_clip: true
-  require_global_line_order_contiguous: true
-  dist_tolerance_abs: 0.03
+  density:
+    use_eligible_area_excluding_figures: true
+    eligible_pad_px: 6
+    exclude_block_types: ["auto_figure", "figure"]
+    use_content_union_if_equation: true
+    density_soft_margin_abs: 0.0025
+    allow_density_remap: true
+    figure_lo_scale: 0.75
+    table_lo_scale: 0.85
+    equation_lo_scale: 0.85
+    excluded_area_lo_scale: 0.80
+
+    lo_floor_by_density:
+      sparse: 0.0008
+      normal: 0.015
+      dense: 0.040 # QC'nin sayfaları reddetmemesi için yoğunluk tabanını biraz gevşettik
+      mixed: 0.012
+
+    mixed_variance_soft_scale: 0.85
 
 telemetry:
   enable: true
   mode: "single_line"
   update_interval_s: 1.2
-  ascii_only: true  # progress satırı bozulmasın diye; sayfa içi metinle ilgisi yok
+  ascii_only: true
   show_eta: true
   show_rate: true
   worker_stdout_forbidden: true
 
   temperature:
-    require_temp_sensor: true
+    require_temp_sensor: false
     prefer_gpu: true
     gpu_source: "nvidia_smi"
     cpu_source: "auto"
