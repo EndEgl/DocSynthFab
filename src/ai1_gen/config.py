@@ -83,6 +83,25 @@ class AppConfig:
         xs = _get(self.raw, "page.dpi_choices", [200, 300])
         return tuple(int(x) for x in xs)
 
+
+    def page_size_dist(self) -> Dict[str, float]:
+        return _norm_dist(
+            _get(
+                self.raw,
+                "page.size_dist",
+                {
+                    "a4_portrait": 0.60,
+                    "letter_portrait": 0.20,
+                    "a4_landscape": 0.10,
+                    "letter_landscape": 0.10,
+                },
+            ),
+            "cfg/invalid-page-size-dist",
+        )
+    def default_page_size(self) -> str:
+        return str(_get(self.raw, "page.default_size", "a4_portrait"))
+
+
     def density_targets(self) -> Dict[str, Dict[str, Tuple[int, int]]]:
         # {level: {line_count_range:(a,b), block_count_range:(a,b)}}
         t = _get(self.raw, "layout.targets", {})
@@ -125,9 +144,15 @@ def load_config(path: str | Path) -> AppConfig:
     p = Path(path)
     if not p.exists():
         raise FileNotFoundError(str(p))
+
     raw = yaml.safe_load(p.read_text(encoding="utf-8"))
     if not isinstance(raw, dict):
         raise ConfigError("cfg/invalid-yaml")
+
+    run = raw.get("run")
+    if not isinstance(run, dict) or not run:
+        raise ConfigError("cfg/missing-run-section")
+
+    _norm_dist(run.get("splits", {}), "cfg/invalid-split-distribution")
+
     return AppConfig(raw)
-
-

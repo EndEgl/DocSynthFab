@@ -13,6 +13,8 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
+
+from ai1_gen.content import ensure_content_bank, TextProvider
 from ai1_gen.layout.layout_sampler import PageSpec
 from ai1_gen.latex.miktex_render import (
     render_latex_to_rgba,
@@ -473,6 +475,26 @@ def _rand_code_token(rng: random.Random) -> str:
         tok = f"{tok}({rng.choice(['x', 'y', 'w', 'h', 'i', 'j'])})"
     return tok
 
+def _provider_token_or_empty(
+    text_provider: TextProvider | None,
+    *,
+    line_kind: str,
+    style: str,
+) -> str:
+    if text_provider is None:
+        return ""
+
+    if style in {"bars", "code", "mathish"}:
+        return ""
+
+    provider_line_kind = "text"
+    if line_kind in {"title", "caption", "table_cell", "list"}:
+        provider_line_kind = "text"
+
+    txt = text_provider.next_text(line_type=provider_line_kind).strip()
+    return txt
+
+
 
 def _make_line_text(
     rng: random.Random,
@@ -483,7 +505,8 @@ def _make_line_text(
     density_mode: str,
     noise_level: str,
     text_cfg: Dict[str, Any],
-    line_kind: str = "text",   # text | title | caption | table_cell | list | notes
+    text_provider: TextProvider | None = None,
+    line_kind: str = "text",
     page_family: str = "report",
     forced_script: str | None = None,
 ) -> Tuple[str, str]:
@@ -630,6 +653,14 @@ def _make_line_text(
 
     def make_token() -> str:
         tok_script = pick_script_for_token(script)
+
+        provided = _provider_token_or_empty(
+            text_provider,
+            line_kind=line_kind,
+            style=style,
+        )
+        if provided:
+            return provided
 
         if style == "bars":
             run = rng.randint(8, max(10, min(160, approx_chars)))
@@ -1106,6 +1137,15 @@ def render_page_layers(page_spec: PageSpec, cfg: Any, rng: random.Random) -> Dic
     non_text_cfg = render_cfg.get("non_text", {}) or {}
     style_cfg = (cfg.raw.get("style", {}) or {}) if hasattr(cfg, "raw") else {}
 
+    content_cfg = (cfg.raw.get("content", {}) or {}) if hasattr(cfg, "raw") else {}
+    content_paths = ensure_content_bank(cfg)
+    text_provider = TextProvider.from_json(
+        content_paths["generated_json"],
+        content_cfg,
+        rng,
+    )
+
+
     w, h = int(page_spec.w), int(page_spec.h)
     bg = tuple(int(x) for x in page_cfg.get("bg_color_rgb", [255, 255, 255]))
 
@@ -1277,7 +1317,15 @@ def render_page_layers(page_spec: PageSpec, cfg: Any, rng: random.Random) -> Dic
 
         if ln.line_type == "math":
             actual_has_equation = True
-            expr = sample_latex_expr(rng, level=page_spec.noise_level)
+            latex_cfg = (cfg.raw.get("latex", {}) or {}) if hasattr(cfg, "raw") else {}
+            latex_level = str(latex_cfg.get("level", "medium")).strip().lower()
+            allowed_ops = latex_cfg.get("allowed_ops", None)
+
+            expr = sample_latex_expr(rng, level=latex_level, allowed_ops=allowed_ops)
+
+
+            
+            
             gt_line_latex[ln.line_id] = expr
             gt_script_hist["math"] = gt_script_hist.get("math", 0) + 1
 
@@ -1378,6 +1426,7 @@ def render_page_layers(page_spec: PageSpec, cfg: Any, rng: random.Random) -> Dic
             density_mode=density_mode,
             noise_level=page_spec.noise_level,
             text_cfg=text_cfg,
+            text_provider=text_provider,
             line_kind=line_kind,
             page_family=page_spec.page_family,
             forced_script=script,
@@ -1499,6 +1548,7 @@ def render_page_layers(page_spec: PageSpec, cfg: Any, rng: random.Random) -> Dic
                             density_mode=page_spec.density_level,
                             noise_level=page_spec.noise_level,
                             text_cfg=text_cfg,
+                            text_provider=text_provider,
                             line_kind="text",
                             page_family=page_spec.page_family,
                             forced_script=script,
@@ -1566,7 +1616,15 @@ def render_page_layers(page_spec: PageSpec, cfg: Any, rng: random.Random) -> Dic
     ann = {
         "version": "ai1-ds-v1.3.2",
         "page_id": page_spec.page_id,
-        "size": {"w": w, "h": h, "dpi": page_spec.dpi},
+        "size": {
+            "w": w,
+            "h": h,
+            "dpi": page_spec.dpi,
+            "page_size_name": getattr(page_spec, "page_size_name", None),
+            "page_width_in": getattr(page_spec, "page_width_in", None),
+            "page_height_in": getattr(page_spec, "page_height_in", None),
+            "orientation": getattr(page_spec, "orientation", None),
+        },
         "meta": {
             "page_family": getattr(page_spec, "page_family", "report"),
             "layout_type": page_spec.layout_type,
@@ -1579,6 +1637,9 @@ def render_page_layers(page_spec: PageSpec, cfg: Any, rng: random.Random) -> Dic
             "rotation_deg": page_spec.rotation_deg,
             "perspective": bool(page_spec.perspective),
             "book_mode": bool(book_enable),
+            "text_mode": content_cfg.get("text_mode", "mixed"),
+            "text_order": content_cfg.get("text_order", "random"),
+            "content_bank_json": content_paths["generated_json"],
         },
         "blocks": [
             {

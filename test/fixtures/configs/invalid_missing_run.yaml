@@ -1,0 +1,25 @@
+version: ai1-ds-v1.3.2
+
+io:
+  out_root: out
+
+page:
+  bg_color_rgb: [255, 255, 255]
+
+qc:
+  mask_binary_required: true
+
+thresholds: {}
+
+augment:
+  enable: false
+
+telemetry:
+  mode: single_line
+  ascii_only: true
+  show_eta: true
+  show_rate: true
+  update_interval_s: 1.2
+  temperature:
+    require_temp_sensor: false
+    prefer_gpu: true

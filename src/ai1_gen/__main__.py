@@ -1,16 +1,17 @@
 # src/ai1_gen/__main__.py
+from __future__ import annotations
+
 import sys
 
-def main():
-    # Eğer komut satırından --config gibi argümanlar verilmişse CLI'yi çalıştır
+
+def main() -> None:
     if len(sys.argv) > 1:
         from ai1_gen.cli import main as cli_main
         cli_main()
     else:
-        # Hiçbir argüman yoksa kullanıcı dostu GUI'yi başlat
-        from ai1_gen.gui import AI1GenGUI
-        app = AI1GenGUI()
-        app.mainloop()
+        from ai1_gen.gui import launch_gui
+        raise SystemExit(launch_gui())
+
 
 if __name__ == "__main__":
     main()

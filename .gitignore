@@ -17,6 +17,9 @@ htmlcov/
 venv/
 ENV/
 env/
+.depcheck_venv/
+.pkg_venv/
+.wheel_test_venv/
 
 # === Build / packaging ===
 build/
@@ -24,6 +27,9 @@ dist/
 *.egg-info/
 .eggs/
 pip-wheel-metadata/
+*.whl
+*.tar
+*.tar.gz
 
 # === IDEs ===
 .vscode/
@@ -34,11 +40,13 @@ pip-wheel-metadata/
 Thumbs.db
 Desktop.ini
 
-# === Logs / run outputs (repo içine düşerse) ===
+# === Logs / run outputs ===
 *.log
 logs/
 run.log
 failed_pages.log
+errors.jsonl
+gt_pages.jsonl
 qc_summary.json
 
 # === Local temp / scratch ===
@@ -46,12 +54,24 @@ _tmp/
 tmp/
 *.tmp
 
-# === Dataset outputs (repo içine yazılırsa) ===
+# === Dataset outputs ===
 out/
+out*/
+out_*/
+*_out/
 outputs/
 dataset/
 datasets/
 
-# === Local configs (kişisel override) ===
+# === Local LaTeX / Docker test outputs ===
+_latex_test/
+ai1_latex_test/
+
+# === Local configs ===
 configs/local*.yaml
 configs/*_local.yaml
+
+# === Optional local secrets / environment files ===
+.env
+.env.*
+!.env.example

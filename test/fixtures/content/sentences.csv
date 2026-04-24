@@ -1,0 +1,6 @@
+text
+This is a sample sentence.
+Another sentence for testing.
+Synthetic content generation should remain stable.
+Relative paths should work from the project root.
+A small content bank is enough for tests.

@@ -37,6 +37,10 @@ class PageSpec:
     w: int
     h: int
     dpi: int
+    page_size_name: str
+    page_width_in: float
+    page_height_in: float
+    orientation: str
     page_family: str
     layout_type: str
     density_level: str
@@ -83,9 +87,29 @@ def _clamp(v: int, lo: int, hi: int) -> int:
     return max(lo, min(hi, v))
 
 
-def _a4_px(dpi: int) -> Tuple[int, int]:
-    return int(8.27 * dpi), int(11.69 * dpi)
+def _page_size_meta(size_key: str, dpi: int) -> Tuple[int, int, float, float, str]:
+    size_map_in = {
+        "a4_portrait": (8.27, 11.69),
+        "a4_landscape": (11.69, 8.27),
+        "letter_portrait": (8.5, 11.0),
+        "letter_landscape": (11.0, 8.5),
+        "legal_portrait": (8.5, 14.0),
+        "legal_landscape": (14.0, 8.5),
+        "a5_portrait": (5.83, 8.27),
+        "a5_landscape": (8.27, 5.83),
+        "b5_portrait": (6.93, 9.84),
+        "b5_landscape": (9.84, 6.93),
+        "executive_portrait": (7.25, 10.5),
+        "executive_landscape": (10.5, 7.25),
+        "tabloid_portrait": (11.0, 17.0),
+        "tabloid_landscape": (17.0, 11.0),
+    }
 
+    w_in, h_in = size_map_in.get(size_key, size_map_in["a4_portrait"])
+    w = int(round(w_in * dpi))
+    h = int(round(h_in * dpi))
+    orientation = "landscape" if w_in > h_in else "portrait"
+    return w, h, w_in, h_in, orientation
 
 # ---------------------------------------------------------------------
 # Defaults
@@ -128,6 +152,22 @@ def _sample_layout_type(cfg, rng: random.Random, page_family: str) -> str:
     fam_dist = fam_map.get(page_family, _default_family_layout_dist(page_family))
     return _choice_dist(rng, fam_dist, default="single_col")
 
+def _sample_page_size(cfg, rng: random.Random) -> str:
+    page_cfg = cfg.raw.get("page", {}) or {}
+    size_dist = page_cfg.get("size_dist", None)
+
+    if isinstance(size_dist, dict) and size_dist:
+        return _choice_dist(rng, size_dist, default="a4_portrait")
+
+    size_name = str(page_cfg.get("size_name", "A4")).strip().upper()
+    if size_name == "A4":
+        return "a4_portrait"
+    if size_name == "LETTER":
+        return "letter_portrait"
+    if size_name == "LEGAL":
+        return "legal_portrait"
+
+    return "a4_portrait"
 
 def _sample_content_flags(
     page_family: str,
@@ -429,6 +469,7 @@ def _assign_block_positions(
     h: int,
     rng: random.Random,
     density_level: str,
+    page_size_name: str,
 ) -> List[Tuple[int, int, int, int, int, str, Dict[str, object]]]:
     """
     Dönen tuple:
@@ -465,6 +506,8 @@ def _assign_block_positions(
         style: Dict[str, object] = {
             "page_family": page_family,
             "layout_type": layout_type,
+            "page_size_name": page_size_name,
+            "orientation": "landscape" if w > h else "portrait",
         }
 
         if block_type == "caption" and prev_item is not None and prev_item[5] in {"figure", "table"}:
@@ -1032,7 +1075,9 @@ def sample_page_spec(cfg, rng: random.Random, page_index: int, page_id: str) -> 
     noise_level = _choice_dist(rng, cfg.noise_dist(), default="medium")
 
     dpi = 200 if scale_profile == "dpi200" else 300
-    w, h = _a4_px(dpi)
+    page_size_name = _sample_page_size(cfg, rng)
+    w, h, page_width_in, page_height_in, orientation = _page_size_meta(page_size_name, dpi)
+
 
     content_cfg = cfg.raw.get("content", {}) or {}
     page_family = _sample_page_family(cfg, rng)
@@ -1064,6 +1109,7 @@ def sample_page_spec(cfg, rng: random.Random, page_index: int, page_id: str) -> 
         h=h,
         rng=rng,
         density_level=density_level,
+        page_size_name=page_size_name,
     )
 
     blocks: List[BlockSpec] = []
@@ -1201,6 +1247,10 @@ def sample_page_spec(cfg, rng: random.Random, page_index: int, page_id: str) -> 
         w=w,
         h=h,
         dpi=dpi,
+        page_size_name=page_size_name,
+        page_width_in=page_width_in,
+        page_height_in=page_height_in,
+        orientation=orientation,
         page_family=page_family,
         layout_type=layout_type,
         density_level=density_level,

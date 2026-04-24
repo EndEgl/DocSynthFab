@@ -1,0 +1,86 @@
+﻿section,key,value
+run,config_path,C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\ai1_gen\configs\default.yaml
+run,out_root,C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\ai1_gen\out\web_gui
+run,pages,100
+run,workers,4
+run,seed,1337
+run,smoke_test,False
+field,run.pages,100
+field,run.workers,4
+field,run.seed,1337
+field,io.out_root,
+field,page.default_size,a4_portrait
+field,content.text_mode,mixed
+field,content.text_order,random
+field,content.has_equation_prob,0.4
+field,content.has_table_prob,0.2
+field,content.has_figure_prob,0.05
+field,augment.enable,True
+field,ui.yaml_manager.enable_raw_override,False
+field,ui.yaml_manager.allow_export,True
+field,ui.yaml_manager.allow_reset_to_baseline,True
+field,ui.yaml_manager.show_effective_preview,True
+field,run.fail_fast,False
+field,run.max_fail_ratio,0.1
+field,run.jsonl_flush_batch_size,50
+field,run.max_pending_mult,2.0
+field,run.max_pending_min,8
+field,run.worker.max_tries,8
+field,run.worker.disable_augment_on_try,6
+field,run.worker.jitter_seed_step,10000019
+field,run.worker.fallback_dpi,300
+field,run.splits.train,0.9
+field,run.splits.val,0.1
+field,run.splits.test,0.0
+field,page.size_name,A4
+field,page.dpi_choices,"[200, 300]"
+field,page.bg_color_rgb,"[255, 255, 255]"
+field,page.size_dist,"{""a4_portrait"": 0.42, ""a4_landscape"": 0.08, ""letter_portrait"": 0.16, ""letter_landscape"": 0.06, ""legal_portrait"": 0.06, ""legal_landscape"": 0.02, ""a5_portrait"": 0.05, ""a5_landscape"": 0.02, ""b5_portrait"": 0.05, ""b5_landscape"": 0.02, ""executive_portrait"": 0.03, ""executive_landscape"": 0.01, ""tabloid_portrait"": 0.01, ""tabloid_landscape"": 0.01}"
+field,dist.density_dist,"{""sparse"": 0.0, ""normal"": 0.0, ""dense"": 0.85, ""mixed"": 0.15}"
+field,dist.scale_dist,"{""dpi300"": 0.65, ""dpi200"": 0.18, ""lowres_capture"": 0.12, ""hires_crop"": 0.05}"
+field,dist.noise_level_dist,"{""clean"": 0.2, ""medium"": 0.4, ""heavy"": 0.4}"
+field,layout.targets,"{""sparse"": {""line_count_range"": [15, 35], ""block_count_range"": [2, 5]}, ""normal"": {""line_count_range"": [40, 85], ""block_count_range"": [5, 12]}, ""dense"": {""line_count_range"": [110, 180], ""block_count_range"": [8, 18]}, ""mixed"": {""line_count_range"": [70, 120], ""block_count_range"": [6, 15]}}"
+field,density_thresholds,"{""ink_ratio_text_ranges"": {""sparse"": [0.001, 0.2], ""normal"": [0.15, 0.7], ""dense"": [0.3, 1.0], ""mixed"": [0.1, 0.9]}, ""mixed"": {""bands"": 8, ""variance_thr"": 0.0001}}"
+field,thresholds,{}
+field,layout.anchor.mode,top_left
+field,layout.anchor.x_px,0
+field,layout.anchor.y_px,0
+field,content.has_caption_prob,0.4
+field,content.hard_negative_page_prob,0.05
+field,content.source.words_csv,data/content/words.csv
+field,content.source.sentences_csv,data/content/sentences.csv
+field,content.source.generated_json,data/content/content_bank.json
+field,content.source.label_registry_csv,data/content/label_registry.csv
+field,content.generate_json_if_missing,True
+field,content.regenerate_json_on_start,False
+field,content.mixed_probs,"{""chars"": 0.1, ""words"": 0.45, ""sentences"": 0.45}"
+field,content.chars,"{""charset"": ""abcçdefgğhıijklmnoöprsştuüvyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"", ""min_len"": 3, ""max_len"": 18}"
+field,content.words,"{""min_words"": 1, ""max_words"": 8, ""join_with"": "" ""}"
+field,content.sentences,"{""min_sentences"": 1, ""max_sentences"": 2, ""separator"": "" ""}"
+field,latex.enable,True
+field,latex.miktex_bin,
+field,latex.compiler,pdflatex
+field,latex.timeout_s,12
+field,latex.raster_dpi,300
+field,latex.level,medium
+field,latex.allowed_ops,"[""add_sub"", ""multiply"", ""fraction"", ""power"", ""root"", ""trig"", ""log_exp"", ""integral"", ""sum_product"", ""matrix"", ""probability"", ""set"", ""piecewise""]"
+field,render.text,"{""enable"": true, ""lang_mode"": ""utf8"", ""fonts_dir"": ""C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\ai1_gen\\assets\\fonts"", ""meaningful_prob"": 0.68, ""gibberish_prob"": 0.22, ""code_switch_prob"": 0.1, ""space_profile_dist"": {""tight"": 0.99, ""normal"": 0.01, ""loose"": 0.0}, ""tab_prob"": 0.005, ""very_short_line_prob"": 0.01, ""very_full_line_prob"": 0.25, ""scripts_dist"": {""latin"": 0.5, ""tr"": 0.15, ""de"": 0.05, ""ru"": 0.15, ""el"": 0.05, ""ar"": 0.1, ""symbols"": 0.09}, ""line_style_dist"": {""prose"": 0.54, ""mixed"": 0.18, ""code"": 0.1, ""mathish"": 0.07, ""bars"": 0.03, ""noisy"": 0.08}, ""book_mode"": {""enable"": true, ""base_font_pt"": 9, ""margin_left"": 0.05, ""margin_right"": 0.05, ""margin_top"": 0.04, ""margin_bottom"": 0.04, ""dense_two_columns"": true, ""gutter_ratio"": 0.03, ""line_spacing"": 0.97, ""paragraph_indent_ratio"": 0.035, ""paragraph_gap_mult"": 0.15, ""body_layout_dist"": {""single"": 0.1, ""triple"": 0.9}, ""ultra_dense_prob"": 0.85, ""block_gap"": {""ratio_min"": 0.005, ""ratio_max"": 0.02}}}"
+field,render.non_text,"{""enable"": true, ""watermark_prob"": 0.1, ""qr_like_prob"": 0.05, ""table_line_prob"": 0.3, ""figure_shape_prob"": 0.25, ""force_table"": false, ""force_figure"": false, ""figure_w_ratio"": 0.28, ""figure_h_ratio"": 0.18, ""table_w_ratio"": 0.78, ""table_h_ratio"": 0.16, ""table_cols"": 4, ""table_rows"": 6}"
+field,render.latex,"{""enable"": true, ""miktex_bin"": null, ""compiler"": ""pdflatex"", ""timeout_s"": 12, ""raster_dpi"": 300, ""level"": ""medium"", ""allowed_ops"": [""add_sub"", ""multiply"", ""fraction"", ""power"", ""root"", ""integral"", ""matrix""]}"
+field,style,"{""font_size_pt_dist"": {""small"": 0.95, ""normal"": 0.05, ""large"": 0.0}, ""weight_dist"": {""regular"": 0.85, ""bold"": 0.15}, ""contrast_class_dist"": {""low"": 0.3, ""med"": 0.6, ""high"": 0.1}, ""local_scale_mode_prob"": 0.6}"
+field,augment.selection_policy,"{""clean"": {""p_photometric"": 0.4, ""p_blur_noise"": 0.25, ""p_capture"": 0.15, ""p_geometry"": 0.35}, ""medium"": {""p_photometric"": 0.7, ""p_blur_noise"": 0.55, ""p_capture"": 0.45, ""p_geometry"": 0.6}, ""heavy"": {""p_photometric"": 0.85, ""p_blur_noise"": 0.75, ""p_capture"": 0.7, ""p_geometry"": 0.85}}"
+field,augment.photometric,"{""gamma"": [0.75, 1.25], ""brightness"": [-20, 20], ""contrast"": [0.85, 1.2], ""shadow_opacity"": [0.1, 0.45], ""vignette"": [0.05, 0.25]}"
+field,augment.blur_noise,"{""gaussian_kernel_choices"": [3, 5, 7], ""motion_length"": [7, 21], ""motion_angle_deg"": [0, 180], ""gaussian_sigma"": [3, 18], ""speckle"": [0.02, 0.1]}"
+field,augment.capture_sim,"{""downscale_factor"": [0.5, 0.85], ""jpeg_quality_clean_medium"": [40, 90], ""jpeg_quality_heavy"": [25, 70], ""enforce_size_invariant"": true}"
+field,augment.geometry,"{""rotation_deg"": [-8.0, 8.0], ""perspective_jitter_ratio"": [0.01, 0.05], ""crop_ratio"": [0.0, 0.03], ""border_fill_rgb"": [255, 255, 255], ""mask_interp"": ""nearest""}"
+field,augment.edge_degredation,"{""prob"": 0.7, ""num_erasures"": [2, 5], ""size_ratio"": [0.05, 0.15], ""protect_math"": true, ""math_guard_px"": 8, ""skip_if_remaining_area_lt"": 64}"
+field,augment.elastic_distortion,"{""prob"": 0.85, ""alpha"": [20.0, 35.0], ""sigma"": [5.0, 9.0]}"
+field,augment.min_area_px,25
+field,qc.dist_tolerance_abs,0.03
+field,telemetry.mode,single_line
+field,telemetry.ascii_only,True
+field,telemetry.update_interval_s,1.2
+field,telemetry.show_eta,True
+field,telemetry.show_rate,True
+field,telemetry.temperature.require_temp_sensor,False
+field,telemetry.temperature.prefer_gpu,True

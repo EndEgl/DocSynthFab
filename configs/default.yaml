@@ -41,8 +41,25 @@ run:
 
 page:
   size_name: "A4"
+  default_size: a4_portrait
   dpi_choices: [200, 300]
   bg_color_rgb: [255, 255, 255]
+
+  size_dist:
+    a4_portrait: 0.42
+    a4_landscape: 0.08
+    letter_portrait: 0.16
+    letter_landscape: 0.06
+    legal_portrait: 0.06
+    legal_landscape: 0.02
+    a5_portrait: 0.05
+    a5_landscape: 0.02
+    b5_portrait: 0.05
+    b5_landscape: 0.02
+    executive_portrait: 0.03
+    executive_landscape: 0.01
+    tabloid_portrait: 0.01
+    tabloid_landscape: 0.01
 
 dist:
   density_dist:
@@ -66,10 +83,46 @@ dist:
 content:
   has_equation_prob: 0.40
   has_table_prob: 0.20
-  has_figure_prob: 0.05 # Figürler çok yer kaplar, satır aramak istiyoruz, figürü kıstık
+  has_figure_prob: 0.05   # Figürler çok yer kaplar, satır aramak istiyoruz, figürü kıstık
   has_caption_prob: 0.40
   hard_negative_page_prob: 0.05
 
+  text_mode: mixed        # chars / words / sentences / mixed
+  text_order: random      # random / sequential
+
+  source:
+    words_csv: data/content/words.csv
+    sentences_csv: data/content/sentences.csv
+    generated_json: data/content/content_bank.json
+    label_registry_csv: data/content/label_registry.csv
+
+  generate_json_if_missing: true
+  regenerate_json_on_start: false
+
+  mixed_probs:
+    chars: 0.10
+    words: 0.45
+    sentences: 0.45
+
+  chars:
+    charset: "abcçdefgğhıijklmnoöprsştuüvyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    min_len: 3
+    max_len: 18
+
+  words:
+    min_words: 1
+    max_words: 8
+    join_with: " "
+
+  sentences:
+    min_sentences: 1
+    max_sentences: 2
+    separator: " "
+
+  filters:
+    enabled_only: true
+    min_weight: 0.0
+    
 layout:
   layout_type_dist:
     single_col: 0.20
@@ -189,6 +242,18 @@ render:
     compiler: "pdflatex"
     timeout_s: 12
     raster_dpi: 300
+    level: medium
+    allowed_ops:
+      - add_sub
+      - multiply
+      - fraction
+      - power
+      - root
+      - integral
+      - matrix
+
+
+
 
   non_text:
     enable: true

@@ -7,6 +7,20 @@
 
 from __future__ import annotations
 
+
+import sys
+from pathlib import Path
+
+# Dosya doğrudan çalıştırılırsa package root'u sys.path'e ekle
+_THIS_FILE = Path(__file__).resolve()
+_PKG_DIR = _THIS_FILE.parent              # .../ai1_gen/src/ai1_gen
+_SRC_ROOT = _THIS_FILE.parents[1]         # .../ai1_gen/src
+_PROJECT_ROOT = _THIS_FILE.parents[2]     # .../ai1_gen
+
+if str(_SRC_ROOT) not in sys.path:
+    sys.path.insert(0, str(_SRC_ROOT))
+
+
 import argparse
 import concurrent.futures as cf
 import json
@@ -117,23 +131,49 @@ def _build_gt_export(ann: Dict[str, Any]) -> Dict[str, Any]:
             "w": int(size.get("w", 0)),
             "h": int(size.get("h", 0)),
             "dpi": int(size.get("dpi", 0)),
+            "page_size_name": size.get("page_size_name", None),
+            "page_width_in": size.get("page_width_in", None),
+            "page_height_in": size.get("page_height_in", None),
+            "orientation": size.get("orientation", None),
         },
+
         "meta": {
             "layout_type": meta.get("layout_type", None),
             "density_level": meta.get("density_level", None),
             "scale_profile": meta.get("scale_profile", None),
             "noise_level": meta.get("noise_level", None),
             "page_family": meta.get("page_family", None),
+
             "_fallback": meta.get("_fallback", False),
+            "_augment_disabled_by_retry": meta.get("_augment_disabled_by_retry", None),
+            "_fallback_from_qc_code": meta.get("_fallback_from_qc_code", None),
+            "_fallback_from_qc_extra": meta.get("_fallback_from_qc_extra", None),
+            "_fallback_from_exception": meta.get("_fallback_from_exception", None),
+
             "has_table": meta.get("has_table", None),
             "has_equation": meta.get("has_equation", None),
             "has_equation_layout": meta.get("has_equation_layout", None),
             "has_figure": meta.get("has_figure", None),
+
             "mask_text_nonzero": meta.get("mask_text_nonzero", None),
             "mask_math_nonzero": meta.get("mask_math_nonzero", None),
             "math_line_count": meta.get("math_line_count", None),
             "equation_block_count": meta.get("equation_block_count", None),
+            "table_block_count": meta.get("table_block_count", None),
+            "figure_block_count": meta.get("figure_block_count", None),
+
+            "rotation_deg": meta.get("rotation_deg", None),
+            "perspective": meta.get("perspective", None),
+            "book_mode": meta.get("book_mode", None),
+
+            "text_mode": meta.get("text_mode", None),
+            "text_order": meta.get("text_order", None),
+            "content_bank_json": meta.get("content_bank_json", None),
+
+            "aug_trace": meta.get("aug_trace", []),
         },
+
+
         "lines": lines_out,
         "page_text": page_text,
         "gt_stats": ann.get("gt_stats", {}),
@@ -472,6 +512,11 @@ def main() -> None:
     out_root = Path(str(out_root))
     dirs = ensure_dataset_dirs(out_root)
 
+    out_root.mkdir(parents=True, exist_ok=True)
+
+    for key in ("images", "masks", "ann", "gt", "splits", "tmp"):
+        Path(dirs[key]).mkdir(parents=True, exist_ok=True)
+
     total = int(args.pages) if args.pages and args.pages > 0 else int(cfg.pages)
     workers = int(args.workers) if args.workers and args.workers > 0 else int(cfg.workers)
     seed = int(args.seed) if args.seed >= 0 else int(cfg.seed)
@@ -522,10 +567,19 @@ def main() -> None:
         "math_mask_nonempty_pages": 0,
     }
 
-    failed_log = out_root / "failed_pages.log"
-    errors_jsonl = out_root / "errors.jsonl"
-    run_log = out_root / "run.log"
-    gt_jsonl_path = out_root / "gt_pages.jsonl"
+    root_dir = Path(dirs.get("root", out_root))
+
+    failed_log = root_dir / "failed_pages.log"
+    errors_jsonl = root_dir / "errors.jsonl"
+    run_log = root_dir / "run.log"
+    gt_jsonl_path = root_dir / "gt_pages.jsonl"
+
+
+    failed_log.parent.mkdir(parents=True, exist_ok=True)
+    errors_jsonl.parent.mkdir(parents=True, exist_ok=True)
+    run_log.parent.mkdir(parents=True, exist_ok=True)
+    gt_jsonl_path.parent.mkdir(parents=True, exist_ok=True)
+    Path(dirs["splits"]).mkdir(parents=True, exist_ok=True)
 
     jsonl_flush_batch_size = int(run_cfg.get("jsonl_flush_batch_size", 50))
     jsonl_buffer: list[str] = []
@@ -768,7 +822,7 @@ def main() -> None:
 
     qc_summary["ok"] = ok
     qc_summary["fail"] = fail
-    save_json(out_root / "qc_summary.json", qc_summary, dirs["tmp"])
+    save_json(root_dir / "qc_summary.json", qc_summary, dirs["tmp"])
 
     with run_log.open("a", encoding="utf-8") as f:
         f.write(

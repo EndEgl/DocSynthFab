@@ -1,0 +1,39 @@
+{
+  "version": "ai1-ds-v1.3.2",
+  "page_id": "000002",
+  "size": {
+    "w": 200,
+    "h": 100,
+    "dpi": 300
+  },
+  "meta": {
+    "density_level": "normal",
+    "scale_profile": "dpi300",
+    "noise_level": "clean",
+    "page_family": "report",
+    "has_table": false,
+    "has_equation": true,
+    "has_equation_layout": true,
+    "has_figure": false
+  },
+  "gt_page_text": "x^2 + y^2 = z^2",
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 0,
+      "global_line_order": 0,
+      "bbox": [20, 20, 100, 20],
+      "gt_latex": "x^2 + y^2 = z^2"
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "equation",
+      "bbox": [20, 20, 100, 20]
+    }
+  ],
+  "gt_stats": {}
+}

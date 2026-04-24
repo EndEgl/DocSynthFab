@@ -1,0 +1,59 @@
+version: ai1-ds-v1.3.2
+
+io:
+  out_root: out
+
+run:
+  pages: 4
+  workers: 1
+  seed: 123
+  fail_fast: false
+  max_fail_ratio: 0.5
+  jsonl_flush_batch_size: 2
+  max_pending_mult: 2.0
+  max_pending_min: 2
+  worker:
+    max_tries: 2
+    disable_augment_on_try: 2
+    jitter_seed_step: 1000
+    fallback_dpi: 300
+  splits:
+    train: 0.8
+    val: 0.1
+    test: 0.1
+
+page:
+  bg_color_rgb: [255, 255, 255]
+
+content:
+  source:
+    words_csv: data/content/words.csv
+    sentences_csv: data/content/sentences.csv
+    generated_json: data/content/content_bank.json
+  generate_json_if_missing: true
+  regenerate_json_on_start: false
+
+qc:
+  mask_binary_required: true
+  overlap_text_over_math_max_ratio: 0.01
+  require_global_line_order_contiguous: true
+  require_title_near_top: false
+  require_caption_near_target: false
+  use_page_family_rules: false
+  soft_reading_order_check: false
+  max_block_overlap_ratio_min_area: 0.35
+
+thresholds: {}
+
+augment:
+  enable: false
+
+telemetry:
+  mode: single_line
+  ascii_only: true
+  show_eta: true
+  show_rate: true
+  update_interval_s: 1.2
+  temperature:
+    require_temp_sensor: false
+    prefer_gpu: true
