@@ -21,6 +21,14 @@ class TextProvider:
         self.text_mode = str(self.cfg.get("text_mode", "mixed")).strip().lower()
         self.text_order = str(self.cfg.get("text_order", "random")).strip().lower()
 
+        self.source_mode = str(self.cfg.get("source_mode", "content_bank")).strip().lower()
+
+        if self.source_mode == "random_chars":
+            self.words = []
+            self.sentences = []
+            self.text_mode = "chars"
+
+
         self.word_idx = 0
         self.sentence_idx = 0
 

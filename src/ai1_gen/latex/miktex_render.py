@@ -2,17 +2,22 @@
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 # - Pillow>=10,<12
-# - pypdfium2>=4,<5  (PDF rasterize için)
+# - requests>=2.31,<3.0
+#
+# External runtime:
+# - Docker container içinde çalışan LaTeX HTTP renderer gerekir.
+# - pypdfium2, pdflatex ve MiKTeX ana Python ortamında kullanılmaz.
+# - pypdfium2 ve MiKTeX sadece docker/latex image içinde bulunur.
 
 from __future__ import annotations
 
+import base64
 import json
 import random
-import subprocess
-import tempfile
 from dataclasses import dataclass
+from io import BytesIO
 from pathlib import Path
-from typing import List, Set
+from typing import Any, Dict, List, Set
 
 from PIL import Image
 
@@ -48,91 +53,117 @@ def _crop_rgba_to_alpha_bbox(img: Image.Image, pad: int = 4) -> Image.Image:
     return out
 
 
-def render_latex_to_rgba(
+def _render_latex_to_rgba_http(
     latex_expr: str,
     *,
-    pdflatex_cmd: str = "pdflatex",
+    http_base_url: str = "http://127.0.0.1:8080",
     timeout_s: int = 12,
     raster_dpi: int = 300,
 ) -> Image.Image:
     """
-    pdflatex ile tek sayfalık PDF üretir, pypdfium2 ile rasterize edip
-    kırpılmış RGBA döndürür.
+    Docker içindeki HTTP LaTeX renderer'a istek atar.
+    Beklenen endpoint:
+    - GET  /health
+    - POST /render
     """
     try:
-        import pypdfium2 as pdfium
+        import requests
     except Exception as e:
-        raise LatexRenderError("render/latex-missing: pypdfium2 import edilemedi") from e
+        raise LatexRenderError("render/latex-http-missing: requests import edilemedi") from e
 
-    tex = r"""
-\documentclass[12pt]{article}
-\usepackage[margin=1pt]{geometry}
-\usepackage{amsmath,amssymb}
-\pagestyle{empty}
-\setlength{\parindent}{0pt}
-\begin{document}
-\noindent
-$\displaystyle %s$
-\end{document}
-""" % latex_expr
+    url = f"{http_base_url.rstrip('/')}/render"
 
-    with tempfile.TemporaryDirectory() as td:
-        td_p = Path(td)
-        tex_path = td_p / "eq.tex"
-        tex_path.write_text(tex, encoding="utf-8")
+    payload: Dict[str, Any] = {
+        "expr": latex_expr,
+        "dpi": int(raster_dpi),
+        "timeout_s": int(timeout_s),
+    }
 
-        try:
-            subprocess.run(
-                [pdflatex_cmd, "-interaction=nonstopmode", "-halt-on-error", str(tex_path.name)],
-                cwd=str(td_p),
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
-                timeout=timeout_s,
-                check=True,
-            )
-        except FileNotFoundError as e:
-            raise LatexRenderError("render/latex-missing: pdflatex bulunamadı (MiKTeX PATH?)") from e
-        except subprocess.TimeoutExpired as e:
-            raise LatexRenderError("render/latex-timeout") from e
-        except subprocess.CalledProcessError as e:
-            raise LatexRenderError("render/latex-failed") from e
+    try:
+        resp = requests.post(url, json=payload, timeout=float(timeout_s) + 10.0)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        raise LatexRenderError(
+            f"render/latex-http-unreachable: LaTeX HTTP renderer erişilemedi: {url}"
+        ) from e
 
-        pdf_path = td_p / "eq.pdf"
-        if not pdf_path.exists():
-            raise LatexRenderError("render/latex-failed")
+    if not bool(data.get("ok", False)):
+        err = data.get("error", "unknown")
+        stdout = str(data.get("stdout", "") or "")
+        stderr = str(data.get("stderr", "") or "")
+        raise LatexRenderError(
+            "render/latex-http-failed: "
+            f"{err}\nstdout={stdout[-1200:]}\nstderr={stderr[-1200:]}"
+        )
 
-        try:
-            pdf = pdfium.PdfDocument(str(pdf_path))
-            page = pdf[0]
+    png_b64 = data.get("png_base64")
+    if not png_b64:
+        raise LatexRenderError("render/latex-http-empty-response: png_base64 yok")
 
-            scale = float(raster_dpi) / 72.0
+    try:
+        png_bytes = base64.b64decode(png_b64)
+        img = Image.open(BytesIO(png_bytes)).convert("RGBA")
+    except Exception as e:
+        raise LatexRenderError("render/latex-http-decode-failed") from e
 
-            # maybe_alpha=True: sayfada transparency varsa alpha’lı bitmap seçebilir.
-            # fill_color=(0,0,0,0): boş arka planı transparan tutmaya çalışır.
-            bitmap = page.render(
-                scale=scale,
-                maybe_alpha=True,
-                fill_color=(0, 0, 0, 0),
-            )
-            img = bitmap.to_pil()
+    return _crop_rgba_to_alpha_bbox(img, pad=4)
 
-            if img.mode != "RGBA":
-                img = img.convert("RGBA")
 
-        except Exception as e:
-            raise LatexRenderError("render/pdf-raster-failed") from e
-        finally:
-            try:
-                page.close()
-            except Exception:
-                pass
-            try:
-                pdf.close()
-            except Exception:
-                pass
+def render_latex_to_rgba(
+    latex_expr: str,
+    *,
+    pdflatex_cmd: str = "pdflatex",  # backward compatibility, kullanılmıyor
+    timeout_s: int = 12,
+    raster_dpi: int = 300,
+    backend: str = "http",
+    http_base_url: str = "http://127.0.0.1:8080",
+) -> Image.Image:
+    """
+    LaTeX render ana giriş noktası.
 
-        img = _crop_rgba_to_alpha_bbox(img, pad=4)
-        return img
+    Bu paketleme sürümünde render işlemi sadece Docker HTTP renderer üzerinden yapılır.
+    pdflatex/pypdfium2/MiKTeX ana Python ortamında kullanılmaz.
+
+    Not:
+    - pdflatex_cmd parametresi eski çağrılar kırılmasın diye korunmuştur.
+    - backend parametresi eski çağrılar kırılmasın diye korunmuştur.
+    - backend yalnızca "http" olabilir.
+    """
+    backend = (backend or "http").strip().lower()
+
+    if backend != "http":
+        raise LatexRenderError(
+            f"render/latex-unsupported-backend: {backend}. "
+            "Bu sürümde sadece Docker HTTP renderer backend='http' desteklenir."
+        )
+
+    return _render_latex_to_rgba_http(
+        latex_expr,
+        http_base_url=http_base_url,
+        timeout_s=timeout_s,
+        raster_dpi=raster_dpi,
+    )
+
+
+def check_latex_http_health(
+    *,
+    http_base_url: str = "http://127.0.0.1:8080",
+    timeout_s: float = 5.0,
+) -> bool:
+    """
+    Docker LaTeX HTTP renderer çalışıyor mu kontrol eder.
+    """
+    try:
+        import requests
+
+        url = f"{http_base_url.rstrip('/')}/health"
+        resp = requests.get(url, timeout=timeout_s)
+        resp.raise_for_status()
+        data = resp.json()
+        return bool(data.get("ok", False))
+    except Exception:
+        return False
 
 
 # ----------------------------------------------------------------------
@@ -196,7 +227,6 @@ def _atom(rng: random.Random, allowed_ops: List[str] | None = None) -> str:
     return f"{f}({v})"
 
 
-
 def _expr(
     rng: random.Random,
     depth: int = 0,
@@ -221,7 +251,6 @@ def _expr(
     if "root" in allowed:
         choices.append("root")
 
-    # trig/log_exp atom seviyesinde çalışıyor ama expr boş kalmasın
     if not choices:
         return _atom(rng, list(allowed))
 
@@ -256,8 +285,6 @@ def _expr(
         return f"\\sqrt{{{inside}}}"
 
     return _atom(rng, list(allowed))
-
-
 
 
 def _template_equation(rng: random.Random, allowed_ops: List[str] | None = None) -> str:
@@ -305,7 +332,6 @@ def _template_equation(rng: random.Random, allowed_ops: List[str] | None = None)
     return rng.choice(templates)
 
 
-
 def sample_latex_expr(
     rng: random.Random,
     *,
@@ -322,9 +348,6 @@ def sample_latex_expr(
     return _template_equation(rng, allowed) if rng.random() < 0.45 else _expr(rng, 0, 3, allowed)
 
 
-
-
-
 def generate_math_bank(
     *,
     out_dir: str | Path,
@@ -337,11 +360,20 @@ def generate_math_bank(
     max_tries: int = 50_000,
     level: str = "medium",
     allowed_ops: List[str] | None = None,
+    backend: str = "http",
+    http_base_url: str = "http://127.0.0.1:8080",
 ) -> List[MathSample]:
     """
     Belirli miktarda matematik PNG üretir.
     - out_dir içine: eq_000001.png ... + math_bank.json
     """
+    backend = (backend or "http").strip().lower()
+    if backend != "http":
+        raise LatexRenderError(
+            f"render/latex-unsupported-backend: {backend}. "
+            "Bu sürümde sadece Docker HTTP renderer backend='http' desteklenir."
+        )
+
     outp = Path(out_dir)
     outp.mkdir(parents=True, exist_ok=True)
 
@@ -366,6 +398,8 @@ def generate_math_bank(
             pdflatex_cmd=pdflatex_cmd,
             timeout_s=timeout_s,
             raster_dpi=raster_dpi,
+            backend="http",
+            http_base_url=http_base_url,
         )
 
         idx = len(samples) + 1
@@ -379,14 +413,15 @@ def generate_math_bank(
         "version": "ai1-ds-v1.3.2",
         "seed": seed,
         "count": len(samples),
-        "pdflatex_cmd": pdflatex_cmd,
+        "pdflatex_cmd": None,
         "timeout_s": timeout_s,
         "raster_dpi": raster_dpi,
         "level": level,
         "allowed_ops": allowed_ops or _ALLOWED_OPS_DEFAULT,
+        "backend": "http",
+        "http_base_url": http_base_url,
         "items": [{"expr": s.expr, "png_path": s.png_path, "w": s.w, "h": s.h} for s in samples],
     }
-        
 
     (outp / "math_bank.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
     return samples

@@ -5,6 +5,12 @@ run,pages,100
 run,workers,4
 run,seed,1337
 run,smoke_test,False
+simple,dataset_goal,Layout + OCR Dataset
+simple,dataset_character,Balanced
+simple,content_mix,Mostly Text
+simple,text_length,Balanced blocks
+simple,table_amount,Some tables
+simple,variation,Medium
 field,run.pages,100
 field,run.workers,4
 field,run.seed,1337

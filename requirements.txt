@@ -1,25 +1,6 @@
-# requirements.txt
-# Önerilen sürüm aralıkları:
-# - Python>=3.10,<3.14
-
 numpy>=1.24,<3.0
-Pillow>=10,<12
 opencv-python>=4.8,<5.0
+Pillow>=10,<12
 PyYAML>=6.0,<7.0
-
-# Opsiyonel ama stdout bozulmadan progress için çok faydalı:
-tqdm>=4.66,<5.0
-
-# Opsiyonel: PDF çizimi/ek raporlar istersen
-reportlab>=4.0,<5.0
-
-# Opsiyonel: PDF rasterize/yerleştirme işlerinde
-PyMuPDF>=1.23,<1.25
-
-# Opsiyonel: config/şema doğrulama istersen
-pydantic>=2.5,<3.0
-
-# Opsiyonel (Windows CPU temp için yardımcı olabilir; her makinede garanti değil)
-wmi>=1.5.1,<2.0
-pywin32>=306,<308
-psutil>=5.9,<6.0
+requests>=2.31,<3.0
+PySide6>=6.5,<7.0
