@@ -10,21 +10,24 @@ from PIL import Image
 import numpy as np
 
 
-def ensure_dataset_dirs(out_root: Path) -> Dict[str, Path]:
-    out_root = Path(out_root)
+def ensure_dataset_dirs(out_root):
+    root = Path(out_root)
     dirs = {
-        "root": out_root,
-        "images": out_root / "images",
-        "masks": out_root / "masks",
-        "ann": out_root / "ann",
-        "splits": out_root / "splits",
-        "gt": out_root / "gt",
-        "tmp": out_root / "_tmp",
+        "root": root,
+        "images": root / "images",
+        "masks": root / "masks",
+        "ann": root / "ann",
+        "gt": root / "gt",
+        "splits": root / "splits",
+        "reports": root / "reports",
+        "exports": root / "exports",
+        "tmp": root / "_tmp",
     }
-    for p in dirs.values():
-        p.mkdir(parents=True, exist_ok=True)
-    return dirs
 
+    for p in dirs.values():
+        Path(p).mkdir(parents=True, exist_ok=True)
+
+    return dirs
 
 def _atomic_write_bytes(dst: Path, data: bytes, tmp_dir: Path) -> None:
     dst = Path(dst)

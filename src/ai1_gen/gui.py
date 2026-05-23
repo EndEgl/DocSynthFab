@@ -6,6 +6,9 @@
 
 from __future__ import annotations
 
+import csv
+import html
+import io
 import json
 import os
 import sys
@@ -25,8 +28,9 @@ if str(_SRC_ROOT) not in sys.path:
 
 _DEFAULT_CONFIG = _PROJECT_ROOT / "configs" / "default.yaml"
 
-from PySide6.QtCore import QTimer, Qt
+from PySide6.QtCore import QByteArray, QTimer, Qt
 from PySide6.QtGui import QAction
+from PySide6.QtSvgWidgets import QSvgWidget
 from PySide6.QtWidgets import (
     QApplication,
     QCheckBox,
@@ -61,6 +65,769 @@ def _safe_json_loads(text: str, fallback: Any = None) -> Any:
         return json.loads(text)
     except Exception:
         return fallback
+
+
+# ---------------------------------------------------------
+# Template Manager Widget
+# UI-level multi-template editor.
+# Backend üretime bağlanmaz.
+# ---------------------------------------------------------
+
+CSV_EXPORT_DELIMITER = ";"
+
+TEMPLATE_REGION_TYPES = [
+    "text_block",
+    "field",
+    "table",
+    "checkbox",
+    "checkbox_group",
+    "signature",
+    "stamp",
+    "figure",
+    "separator",
+    "empty_box",
+    "barcode_like",
+    "qr_like",
+    "numbered_list",
+    "bullet_list",
+    "paragraph",
+    "math_block",
+    "header",
+    "footer",
+]
+
+TEMPLATE_COLUMNS = [
+    "template_name",
+    "page_no",
+    "region_id",
+    "type",
+    "label",
+    "x",
+    "y",
+    "w",
+    "h",
+    "content_source",
+    "min_rows",
+    "max_rows",
+    "cols",
+    "required",
+    "jitter",
+    "style_hint",
+    "mask_role",
+    "annotation_label",
+]
+
+SAMPLE_TEMPLATE_ROWS: List[Dict[str, Any]] = [
+    {
+        "template_name": "invoice_basic",
+        "page_no": 1,
+        "region_id": "title",
+        "type": "header",
+        "label": "document_title",
+        "x": 0.05,
+        "y": 0.04,
+        "w": 0.45,
+        "h": 0.05,
+        "content_source": "doc_titles",
+        "min_rows": "",
+        "max_rows": "",
+        "cols": "",
+        "required": True,
+        "jitter": 0.005,
+        "style_hint": "bold_header",
+        "mask_role": "text",
+        "annotation_label": "title",
+    },
+    {
+        "template_name": "invoice_basic",
+        "page_no": 1,
+        "region_id": "seller",
+        "type": "text_block",
+        "label": "seller_info",
+        "x": 0.05,
+        "y": 0.11,
+        "w": 0.42,
+        "h": 0.12,
+        "content_source": "company_info",
+        "min_rows": "",
+        "max_rows": "",
+        "cols": "",
+        "required": True,
+        "jitter": 0.01,
+        "style_hint": "normal_block",
+        "mask_role": "text",
+        "annotation_label": "seller_info",
+    },
+    {
+        "template_name": "invoice_basic",
+        "page_no": 1,
+        "region_id": "invoice_no",
+        "type": "field",
+        "label": "invoice_number",
+        "x": 0.66,
+        "y": 0.05,
+        "w": 0.26,
+        "h": 0.04,
+        "content_source": "invoice_numbers",
+        "min_rows": "",
+        "max_rows": "",
+        "cols": "",
+        "required": True,
+        "jitter": 0.005,
+        "style_hint": "small_field",
+        "mask_role": "text",
+        "annotation_label": "invoice_number",
+    },
+    {
+        "template_name": "invoice_basic",
+        "page_no": 1,
+        "region_id": "items",
+        "type": "table",
+        "label": "items_table",
+        "x": 0.05,
+        "y": 0.30,
+        "w": 0.90,
+        "h": 0.38,
+        "content_source": "product_rows",
+        "min_rows": 4,
+        "max_rows": 12,
+        "cols": 6,
+        "required": True,
+        "jitter": 0.01,
+        "style_hint": "bordered_table",
+        "mask_role": "text",
+        "annotation_label": "items_table",
+    },
+    {
+        "template_name": "invoice_basic",
+        "page_no": 1,
+        "region_id": "signature",
+        "type": "signature",
+        "label": "signature_area",
+        "x": 0.62,
+        "y": 0.82,
+        "w": 0.28,
+        "h": 0.08,
+        "content_source": "signatures",
+        "min_rows": "",
+        "max_rows": "",
+        "cols": "",
+        "required": False,
+        "jitter": 0.01,
+        "style_hint": "signature_box",
+        "mask_role": "text",
+        "annotation_label": "signature",
+    },
+]
+
+
+class TemplateManagerWidget(QWidget):
+    """PySide6 multi-template CSV editor.
+
+    Bu widget bilinçli olarak sadece UI seviyesindedir:
+    - çoklu template CSV import/export yapar,
+    - aktif template seçtirir,
+    - region edit ettirir,
+    - SVG preview gösterir,
+    - generator backend'ini değiştirmez.
+    """
+
+    def __init__(self, output_root_getter: Any, parent: Optional[QWidget] = None) -> None:
+        super().__init__(parent)
+
+        self.output_root_getter = output_root_getter
+
+        self.template_rows: List[Dict[str, Any]] = []
+        self.active_template_name: Optional[str] = None
+        self.selected_template_region_id: Optional[str] = None
+
+        self._build_ui()
+        self._update_template_preview()
+
+    def _build_ui(self) -> None:
+        root = QVBoxLayout(self)
+
+        top_row = QHBoxLayout()
+
+        self.load_sample_btn = QPushButton("Load Sample Template")
+        self.import_btn = QPushButton("Import Template CSV")
+        self.export_btn = QPushButton("Export Template CSV")
+        self.open_btn = QPushButton("Open Template CSV")
+
+        self.load_sample_btn.clicked.connect(self.load_sample_template_rows)
+        self.import_btn.clicked.connect(self.import_template_csv)
+        self.export_btn.clicked.connect(self.export_template_csv)
+        self.open_btn.clicked.connect(self.open_template_csv)
+
+        top_row.addWidget(self.load_sample_btn)
+        top_row.addWidget(self.import_btn)
+        top_row.addWidget(self.export_btn)
+        top_row.addWidget(self.open_btn)
+
+        root.addLayout(top_row)
+
+        splitter = QSplitter(Qt.Horizontal)
+        root.addWidget(splitter, 1)
+
+        left = QWidget()
+        left_layout = QVBoxLayout(left)
+
+        selector_box = QGroupBox("Template Selector")
+        selector_form = QFormLayout(selector_box)
+
+        self.template_name_combo = QComboBox()
+        self.template_name_combo.currentIndexChanged.connect(self._on_template_name_changed)
+
+        self.region_combo = QComboBox()
+        self.region_combo.currentIndexChanged.connect(self._on_region_changed)
+
+        selector_form.addRow("Active Template", self.template_name_combo)
+        selector_form.addRow("Selected Region", self.region_combo)
+
+        left_layout.addWidget(selector_box)
+
+        editor_box = QGroupBox("Region Editor")
+        editor_form = QFormLayout(editor_box)
+
+        self.type_combo = QComboBox()
+        self.type_combo.addItems(TEMPLATE_REGION_TYPES)
+
+        self.label_edit = QLineEdit()
+        self.content_source_edit = QLineEdit()
+
+        self.x_spin = QDoubleSpinBox()
+        self.y_spin = QDoubleSpinBox()
+        self.w_spin = QDoubleSpinBox()
+        self.h_spin = QDoubleSpinBox()
+
+        for spin in [self.x_spin, self.y_spin, self.w_spin, self.h_spin]:
+            spin.setRange(0.0, 1.0)
+            spin.setSingleStep(0.01)
+            spin.setDecimals(4)
+
+        self.min_rows_spin = QSpinBox()
+        self.max_rows_spin = QSpinBox()
+        self.cols_spin = QSpinBox()
+
+        for spin in [self.min_rows_spin, self.max_rows_spin, self.cols_spin]:
+            spin.setRange(0, 10_000)
+
+        self.required_check = QCheckBox("Required")
+
+        self.jitter_spin = QDoubleSpinBox()
+        self.jitter_spin.setRange(0.0, 0.20)
+        self.jitter_spin.setSingleStep(0.005)
+        self.jitter_spin.setDecimals(4)
+
+        editor_form.addRow("Type", self.type_combo)
+        editor_form.addRow("Label", self.label_edit)
+        editor_form.addRow("Content Source", self.content_source_edit)
+        editor_form.addRow("X", self.x_spin)
+        editor_form.addRow("Y", self.y_spin)
+        editor_form.addRow("W", self.w_spin)
+        editor_form.addRow("H", self.h_spin)
+        editor_form.addRow("Min Rows", self.min_rows_spin)
+        editor_form.addRow("Max Rows", self.max_rows_spin)
+        editor_form.addRow("Cols", self.cols_spin)
+        editor_form.addRow("Required", self.required_check)
+        editor_form.addRow("Jitter", self.jitter_spin)
+
+        self.apply_btn = QPushButton("Apply Region Changes")
+        self.apply_btn.clicked.connect(self.apply_editor_to_selected_region)
+        editor_form.addRow(self.apply_btn)
+
+        left_layout.addWidget(editor_box)
+
+        self.status_label = QLabel("No template loaded.")
+        self.status_label.setTextInteractionFlags(Qt.TextSelectableByMouse)
+        left_layout.addWidget(self.status_label)
+
+        left_layout.addStretch(1)
+
+        right = QWidget()
+        right_layout = QVBoxLayout(right)
+
+        right_layout.addWidget(QLabel("Template Preview"))
+
+        self.preview_svg = QSvgWidget()
+        self.preview_svg.setMinimumSize(420, 560)
+        right_layout.addWidget(self.preview_svg, 1)
+
+        splitter.addWidget(left)
+        splitter.addWidget(right)
+        splitter.setSizes([430, 620])
+
+    @staticmethod
+    def _parse_bool(value: Any) -> bool:
+        return str(value).strip().lower() in {"1", "true", "yes", "on", "y"}
+
+    @staticmethod
+    def _parse_float(value: Any, default: float = 0.0) -> float:
+        try:
+            return float(value)
+        except Exception:
+            return float(default)
+
+    @staticmethod
+    def _parse_int_or_blank(value: Any) -> Any:
+        txt = str(value or "").strip()
+        if not txt:
+            return ""
+        try:
+            return int(float(txt))
+        except Exception:
+            return txt
+
+    def _coerce_template_row(self, row: Dict[str, Any]) -> Dict[str, Any]:
+        out = {col: row.get(col, "") for col in TEMPLATE_COLUMNS}
+
+        out["template_name"] = (
+            str(out.get("template_name") or "custom_template").strip()
+            or "custom_template"
+        )
+        out["page_no"] = int(self._parse_int_or_blank(out.get("page_no") or 1) or 1)
+        out["region_id"] = str(out.get("region_id") or "region").strip() or "region"
+
+        out["type"] = str(out.get("type") or "text_block").strip() or "text_block"
+        if out["type"] not in TEMPLATE_REGION_TYPES:
+            out["type"] = "text_block"
+
+        out["label"] = str(out.get("label") or out["region_id"]).strip()
+
+        out["x"] = max(0.0, min(1.0, self._parse_float(out.get("x"), 0.05)))
+        out["y"] = max(0.0, min(1.0, self._parse_float(out.get("y"), 0.05)))
+        out["w"] = max(0.01, min(1.0, self._parse_float(out.get("w"), 0.30)))
+        out["h"] = max(0.01, min(1.0, self._parse_float(out.get("h"), 0.08)))
+
+        if out["x"] + out["w"] > 1.0:
+            out["w"] = max(0.01, 1.0 - out["x"])
+
+        if out["y"] + out["h"] > 1.0:
+            out["h"] = max(0.01, 1.0 - out["y"])
+
+        out["content_source"] = str(out.get("content_source") or "").strip()
+        out["min_rows"] = self._parse_int_or_blank(out.get("min_rows"))
+        out["max_rows"] = self._parse_int_or_blank(out.get("max_rows"))
+        out["cols"] = self._parse_int_or_blank(out.get("cols"))
+        out["required"] = self._parse_bool(out.get("required"))
+        out["jitter"] = max(0.0, min(0.20, self._parse_float(out.get("jitter"), 0.01)))
+        out["style_hint"] = str(out.get("style_hint") or "normal_block").strip()
+        out["mask_role"] = str(out.get("mask_role") or "text").strip()
+        out["annotation_label"] = str(out.get("annotation_label") or out["label"]).strip()
+
+        return out
+
+    def available_template_names(self) -> List[str]:
+        return sorted(
+            {
+                str(row.get("template_name") or "custom_template").strip()
+                or "custom_template"
+                for row in self.template_rows
+            }
+        )
+
+    def get_active_template_name(self) -> Optional[str]:
+        names = self.available_template_names()
+
+        if not names:
+            self.active_template_name = None
+            return None
+
+        if self.active_template_name not in names:
+            self.active_template_name = names[0]
+
+        return self.active_template_name
+
+    def active_template_rows(self) -> List[Dict[str, Any]]:
+        name = self.get_active_template_name()
+
+        if not name:
+            return []
+
+        return [
+            row
+            for row in self.template_rows
+            if str(row.get("template_name") or "custom_template").strip() == name
+        ]
+
+    def selected_template_row(self) -> Optional[Dict[str, Any]]:
+        active_rows = self.active_template_rows()
+        rid = self.selected_template_region_id
+
+        if not rid:
+            rid = self.region_combo.currentData() or self.region_combo.currentText()
+
+        for row in active_rows:
+            if str(row.get("region_id")) == str(rid):
+                return row
+
+        return active_rows[0] if active_rows else None
+
+    def refresh_template_name_combo(self) -> None:
+        self.template_name_combo.blockSignals(True)
+        self.template_name_combo.clear()
+
+        names = self.available_template_names()
+
+        for name in names:
+            self.template_name_combo.addItem(name, name)
+
+        if names:
+            if self.active_template_name not in names:
+                self.active_template_name = names[0]
+
+            idx = self.template_name_combo.findData(self.active_template_name)
+            if idx >= 0:
+                self.template_name_combo.setCurrentIndex(idx)
+        else:
+            self.active_template_name = None
+
+        self.template_name_combo.blockSignals(False)
+
+    def refresh_region_combo(self) -> None:
+        self.region_combo.blockSignals(True)
+        self.region_combo.clear()
+
+        rows = self.active_template_rows()
+
+        for row in rows:
+            rid = str(row.get("region_id", ""))
+            label = (
+                f"{rid} · {row.get('type', '')} · "
+                f"source={row.get('content_source', '')}"
+            )
+            self.region_combo.addItem(label, rid)
+
+        ids = [str(row.get("region_id", "")) for row in rows]
+
+        if ids:
+            if self.selected_template_region_id not in ids:
+                self.selected_template_region_id = ids[0]
+
+            idx = self.region_combo.findData(self.selected_template_region_id)
+            if idx >= 0:
+                self.region_combo.setCurrentIndex(idx)
+        else:
+            self.selected_template_region_id = None
+
+        self.region_combo.blockSignals(False)
+
+    def _on_template_name_changed(self, *_: Any) -> None:
+        self.active_template_name = (
+            self.template_name_combo.currentData()
+            or self.template_name_combo.currentText()
+            or None
+        )
+        self.selected_template_region_id = None
+
+        self.refresh_region_combo()
+        self.load_selected_region_to_editor()
+        self._update_template_preview()
+
+    def _on_region_changed(self, *_: Any) -> None:
+        self.selected_template_region_id = (
+            self.region_combo.currentData()
+            or self.region_combo.currentText()
+            or None
+        )
+
+        self.load_selected_region_to_editor()
+        self._update_template_preview()
+
+    def load_selected_region_to_editor(self) -> None:
+        row = self.selected_template_row()
+
+        if row is None:
+            return
+
+        idx = self.type_combo.findText(str(row.get("type", "text_block")))
+        if idx >= 0:
+            self.type_combo.setCurrentIndex(idx)
+
+        self.label_edit.setText(str(row.get("label", "")))
+        self.content_source_edit.setText(str(row.get("content_source", "")))
+
+        self.x_spin.setValue(float(row.get("x", 0.0)))
+        self.y_spin.setValue(float(row.get("y", 0.0)))
+        self.w_spin.setValue(float(row.get("w", 0.1)))
+        self.h_spin.setValue(float(row.get("h", 0.1)))
+
+        self.min_rows_spin.setValue(int(row.get("min_rows") or 0))
+        self.max_rows_spin.setValue(int(row.get("max_rows") or 0))
+        self.cols_spin.setValue(int(row.get("cols") or 0))
+
+        self.required_check.setChecked(bool(row.get("required", False)))
+        self.jitter_spin.setValue(float(row.get("jitter", 0.01)))
+
+    def apply_editor_to_selected_region(self) -> None:
+        row = self.selected_template_row()
+
+        if row is None:
+            return
+
+        row["type"] = self.type_combo.currentText() or "text_block"
+        row["label"] = self.label_edit.text().strip() or str(row.get("region_id", "region"))
+        row["content_source"] = self.content_source_edit.text().strip()
+
+        x = max(0.0, min(1.0, float(self.x_spin.value())))
+        y = max(0.0, min(1.0, float(self.y_spin.value())))
+        w = max(0.01, min(1.0 - x, float(self.w_spin.value())))
+        h = max(0.01, min(1.0 - y, float(self.h_spin.value())))
+
+        row["x"], row["y"], row["w"], row["h"] = x, y, w, h
+        row["min_rows"] = int(self.min_rows_spin.value())
+        row["max_rows"] = int(self.max_rows_spin.value())
+        row["cols"] = int(self.cols_spin.value())
+        row["required"] = bool(self.required_check.isChecked())
+        row["jitter"] = max(0.0, min(0.20, float(self.jitter_spin.value())))
+
+        self.refresh_region_combo()
+        self._update_template_preview()
+
+    def template_output_path(self) -> Path:
+        out_root = str(self.output_root_getter() or "").strip()
+        base = Path(out_root) if out_root else (_PROJECT_ROOT / "out" / "desktop_gui")
+        return base / "template_regions.csv"
+
+    @staticmethod
+    def _strip_excel_sep_line(text: str) -> str:
+        lines = str(text or "").splitlines()
+
+        if lines and lines[0].strip().lower().startswith("sep="):
+            return "\n".join(lines[1:])
+
+        return str(text or "")
+
+    def _make_csv_reader(self, text: str) -> csv.DictReader:
+        clean_text = self._strip_excel_sep_line(text)
+        sample = clean_text[:4096]
+
+        try:
+            dialect = csv.Sniffer().sniff(sample, delimiters=";,\t")
+        except Exception:
+            dialect = csv.excel
+            dialect.delimiter = CSV_EXPORT_DELIMITER
+
+        return csv.DictReader(io.StringIO(clean_text), dialect=dialect)
+
+    def load_sample_template_rows(self) -> None:
+        self.template_rows = [
+            self._coerce_template_row(dict(row))
+            for row in SAMPLE_TEMPLATE_ROWS
+        ]
+
+        names = self.available_template_names()
+        self.active_template_name = names[0] if names else None
+
+        active_rows = self.active_template_rows()
+        self.selected_template_region_id = (
+            str(active_rows[0].get("region_id"))
+            if active_rows
+            else None
+        )
+
+        self.refresh_template_name_combo()
+        self.refresh_region_combo()
+        self.load_selected_region_to_editor()
+        self._update_template_preview()
+
+    def import_template_csv(self) -> None:
+        path, _ = QFileDialog.getOpenFileName(
+            self,
+            "Import Template CSV",
+            str(_PROJECT_ROOT),
+            "CSV Files (*.csv);;All Files (*)",
+        )
+
+        if not path:
+            return
+
+        try:
+            text = Path(path).read_text(encoding="utf-8-sig", errors="replace")
+            reader = self._make_csv_reader(text)
+
+            rows = [
+                self._coerce_template_row(dict(row))
+                for row in reader
+            ]
+
+            if not rows:
+                QMessageBox.warning(self, "Template CSV", "Template CSV is empty.")
+                return
+
+            self.template_rows = rows
+
+            names = self.available_template_names()
+            self.active_template_name = names[0] if names else None
+
+            active_rows = self.active_template_rows()
+            self.selected_template_region_id = (
+                str(active_rows[0].get("region_id"))
+                if active_rows
+                else None
+            )
+
+            self.refresh_template_name_combo()
+            self.refresh_region_combo()
+            self.load_selected_region_to_editor()
+            self._update_template_preview()
+
+            QMessageBox.information(
+                self,
+                "Template CSV loaded",
+                f"Loaded {len(self.template_rows)} region(s) from:\n{path}",
+            )
+
+        except Exception as e:
+            QMessageBox.critical(self, "Template CSV load failed", repr(e))
+
+    def export_template_csv(self) -> None:
+        try:
+            path = self.template_output_path()
+            path.parent.mkdir(parents=True, exist_ok=True)
+
+            rows = self.template_rows if self.template_rows else [
+                self._coerce_template_row(dict(row))
+                for row in SAMPLE_TEMPLATE_ROWS
+            ]
+
+            with path.open("w", newline="", encoding="utf-8-sig") as f:
+                f.write(f"sep={CSV_EXPORT_DELIMITER}\n")
+
+                writer = csv.DictWriter(
+                    f,
+                    fieldnames=TEMPLATE_COLUMNS,
+                    delimiter=CSV_EXPORT_DELIMITER,
+                )
+                writer.writeheader()
+
+                for row in rows:
+                    writer.writerow({col: row.get(col, "") for col in TEMPLATE_COLUMNS})
+
+            QMessageBox.information(self, "Template CSV saved", f"Saved:\n{path}")
+
+        except Exception as e:
+            QMessageBox.critical(self, "Template CSV export failed", repr(e))
+
+    def open_template_csv(self) -> None:
+        path = self.template_output_path()
+
+        if not path.exists():
+            QMessageBox.warning(
+                self,
+                "Template CSV",
+                "Template CSV not found. Export it first.",
+            )
+            return
+
+        self._open_path(str(path))
+
+    def _template_preview_svg(self, width: int = 390, height: int = 520) -> str:
+        selected_id = self.selected_template_region_id or ""
+
+        page_x, page_y = 22, 22
+        page_w, page_h = width - 44, height - 44
+
+        palette = {
+            "table": ("#eff6ff", "#2563eb"),
+            "field": ("#fef3c7", "#d97706"),
+            "text_block": ("#f3f4f6", "#6b7280"),
+            "paragraph": ("#f3f4f6", "#6b7280"),
+            "header": ("#ecfeff", "#0891b2"),
+            "footer": ("#ecfeff", "#0891b2"),
+            "math_block": ("#fff7ed", "#f97316"),
+            "signature": ("#fdf2f8", "#db2777"),
+            "checkbox": ("#f0fdf4", "#16a34a"),
+            "checkbox_group": ("#f0fdf4", "#16a34a"),
+            "figure": ("#f5f3ff", "#7c3aed"),
+        }
+
+        parts = [f"""
+        <svg width="{width}" height="{height}" viewBox="0 0 {width} {height}"
+             xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="{width}" height="{height}" rx="22" fill="#111827"/>
+          <rect x="22" y="22" width="{width-44}" height="{height-44}" rx="14"
+                fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+        """]
+
+        for row in self.active_template_rows():
+            rx = page_x + float(row.get("x", 0)) * page_w
+            ry = page_y + float(row.get("y", 0)) * page_h
+            rw = float(row.get("w", 0.1)) * page_w
+            rh = float(row.get("h", 0.1)) * page_h
+
+            rtype = str(row.get("type", "text_block"))
+            fill, stroke = palette.get(rtype, ("#f3f4f6", "#6b7280"))
+
+            selected = str(row.get("region_id")) == str(selected_id)
+            sw = 4 if selected else 2
+            opacity = 0.92 if selected else 0.62
+            dash = "" if rtype in {"table", "field", "header"} else ' stroke-dasharray="6 5"'
+
+            parts.append(
+                f'<rect x="{rx:.1f}" y="{ry:.1f}" width="{rw:.1f}" height="{rh:.1f}" '
+                f'rx="7" fill="{fill}" stroke="{stroke}" stroke-width="{sw}" '
+                f'opacity="{opacity}"{dash}/>'
+            )
+
+            label = html.escape(str(row.get("label") or row.get("region_id") or "region")[:28])
+            parts.append(
+                f'<text x="{rx+7:.1f}" y="{ry+18:.1f}" font-size="11" '
+                f'fill="#111827">{label}</text>'
+            )
+
+            if rtype == "table":
+                cols = int(row.get("cols") or 4) if str(row.get("cols") or "").strip() else 4
+                rows_n = int(row.get("max_rows") or 4) if str(row.get("max_rows") or "").strip() else 4
+
+                cols = max(2, min(cols, 8))
+                rows_n = max(2, min(rows_n, 8))
+
+                for k in range(1, cols):
+                    x = rx + k * rw / cols
+                    parts.append(
+                        f'<line x1="{x:.1f}" y1="{ry:.1f}" x2="{x:.1f}" y2="{ry+rh:.1f}" '
+                        f'stroke="{stroke}" stroke-width="1" opacity="0.45"/>'
+                    )
+
+                for k in range(1, rows_n):
+                    y = ry + k * rh / rows_n
+                    parts.append(
+                        f'<line x1="{rx:.1f}" y1="{y:.1f}" x2="{rx+rw:.1f}" y2="{y:.1f}" '
+                        f'stroke="{stroke}" stroke-width="1" opacity="0.45"/>'
+                    )
+
+        parts.append("</svg>")
+        return "".join(parts)
+
+    def _update_template_preview(self) -> None:
+        svg = self._template_preview_svg()
+        self.preview_svg.load(QByteArray(svg.encode("utf-8")))
+
+        active_rows = self.active_template_rows()
+        active_name = self.get_active_template_name() or "-"
+
+        self.status_label.setText(
+            f"Templates loaded: {len(self.available_template_names())} · "
+            f"Active: {active_name} · "
+            f"Active regions: {len(active_rows)} · "
+            f"Total regions: {len(self.template_rows)}"
+        )
+
+    @staticmethod
+    def _open_path(path: str) -> None:
+        p = str(Path(path))
+
+        if sys.platform.startswith("win"):
+            os.startfile(p)  # type: ignore[attr-defined]
+            return
+
+        import subprocess
+
+        if sys.platform == "darwin":
+            subprocess.Popen(["open", p])
+        else:
+            subprocess.Popen(["xdg-open", p])
 
 
 class AI1GenGUI(QMainWindow):
@@ -146,6 +913,12 @@ class AI1GenGUI(QMainWindow):
 
         self.tabs.addTab(self.basic_scroll, "Basic")
         self.tabs.addTab(self.advanced_tab, "Advanced")
+
+        self.template_tab = TemplateManagerWidget(
+            output_root_getter=lambda: self.out_root_edit.text().strip(),
+            parent=self,
+        )
+        self.tabs.addTab(self.template_tab, "Templates")
 
         # Right
         self.status_group = self._build_status_group()

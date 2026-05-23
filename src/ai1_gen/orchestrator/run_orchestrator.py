@@ -9,7 +9,7 @@ import copy
 import time
 import uuid
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Any, Dict, Optional, List
 
 import yaml
 
@@ -200,6 +200,7 @@ class RunOrchestrator:
         workers: int = 0,
         seed: int = -1,
         smoke_test: bool = False,
+        export_targets: Optional[List[str]] = None,
     ) -> Dict[str, Any]:
         cfg = self.build_config_with_user_override(
             config_path=config_path,
@@ -216,9 +217,19 @@ class RunOrchestrator:
         if seed >= 0:
             _deep_set(cfg, "run.seed", seed)
 
+        if export_targets:
+            clean_targets = [
+                str(x).strip().lower()
+                for x in export_targets
+                if str(x).strip()
+            ]
+            if clean_targets:
+                _deep_set(cfg, "run.export_targets", clean_targets)
+
         if smoke_test:
             _deep_set(cfg, "run.pages", min(int(_deep_get(cfg, "run.pages", 10)), 10))
             _deep_set(cfg, "run.workers", max(1, min(int(_deep_get(cfg, "run.workers", 1)), 2)))
+
 
         return cfg
 
@@ -232,6 +243,7 @@ class RunOrchestrator:
         workers: int = 0,
         seed: int = -1,
         smoke_test: bool = False,
+        export_targets: Optional[List[str]] = None,
     ) -> str:
         cfg = self.build_effective_config_preview(
             config_path=config_path,
@@ -242,6 +254,7 @@ class RunOrchestrator:
             workers=workers,
             seed=seed,
             smoke_test=smoke_test,
+            export_targets=export_targets,
         )
         return yaml.safe_dump(cfg, sort_keys=False, allow_unicode=True)
 
@@ -289,10 +302,20 @@ class RunOrchestrator:
         if request.seed >= 0:
             _deep_set(raw, "run.seed", request.seed)
 
+        if getattr(request, "export_targets", None):
+            clean_targets = [
+                str(x).strip().lower()
+                for x in request.export_targets
+                if str(x).strip()
+            ]
+            if clean_targets:
+                _deep_set(raw, "run.export_targets", clean_targets)
+
         if request.smoke_test:
             _deep_set(raw, "run.pages", min(int(_deep_get(raw, "run.pages", 10)), 10))
             _deep_set(raw, "run.workers", max(1, min(int(_deep_get(raw, "run.workers", 1)), 2)))
 
+            
         return raw
 
     def save_effective_config(self, run_id: str, cfg_obj: Dict[str, Any]) -> Path:

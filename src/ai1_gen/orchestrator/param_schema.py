@@ -51,6 +51,17 @@ _PARAM_FIELDS: List[ParamField] = [
         help_text="Çıktı klasörü.",
         visibility="basic",
     ),
+
+    ParamField(
+        key="run.export_targets",
+        label="Export Targets",
+        group="Output / Export",
+        field_type="json",
+        default=["native", "segformer", "coco"],
+        help_text='Active export targets. Example: ["native", "segformer", "coco"]. Future targets: yolo, paddleocr_det, paddleocr_rec, trocr, latex_ocr, table_parser.',
+        visibility="basic",
+    ),
+
     ParamField(
         key="page.default_size",
         label="Default Page Size",

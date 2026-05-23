@@ -18,6 +18,12 @@ from dataclasses import dataclass
 from io import BytesIO
 from pathlib import Path
 from typing import Any, Dict, List, Set
+import os
+
+from ai1_gen.latex.docker_runtime import (
+    LatexDockerRuntimeError,
+    ensure_latex_container,
+)
 
 from PIL import Image
 
@@ -70,6 +76,32 @@ def _render_latex_to_rgba_http(
         import requests
     except Exception as e:
         raise LatexRenderError("render/latex-http-missing: requests import edilemedi") from e
+
+    auto_docker = str(
+        os.environ.get("AI1_LATEX_AUTO_DOCKER", "1")
+    ).strip().lower() not in {"0", "false", "no", "off"}
+
+    if auto_docker:
+        try:
+            ensure_latex_container(
+                http_base_url=http_base_url,
+                container_name=os.environ.get(
+                    "AI1_LATEX_CONTAINER_NAME",
+                    "ai1_gen_latex_renderer",
+                ),
+                image_name=os.environ.get(
+                    "AI1_LATEX_IMAGE",
+                    "ai1-gen-latex-renderer:latest",
+                ),
+
+
+                host_port=int(os.environ.get("AI1_LATEX_HOST_PORT", "8080")),
+                container_port=int(os.environ.get("AI1_LATEX_CONTAINER_PORT", "8080")),
+                build_if_missing=True,
+                force_recreate_if_unhealthy=True,
+            )
+        except LatexDockerRuntimeError as e:
+            raise LatexRenderError(f"render/latex-docker-runtime-failed: {e}") from e
 
     url = f"{http_base_url.rstrip('/')}/render"
 
@@ -190,8 +222,13 @@ _ALLOWED_OPS_DEFAULT = [
     "trig",
     "log_exp",
     "integral",
+    "derivative",
+    "limit",
+    "taylor_series",
     "sum_product",
     "matrix",
+    "determinant",
+    "system",
     "probability",
     "set",
     "piecewise",
@@ -294,6 +331,50 @@ def _template_equation(rng: random.Random, allowed_ops: List[str] | None = None)
     if "integral" in allowed:
         templates.append(r"\int_{0}^{1} " + _expr(rng, 0, 2, list(allowed)) + r"\, dx")
 
+    if "derivative" in allowed:
+        v = rng.choice(_VARS)
+        f = rng.choice([
+            f"{v}^{{{_rand_int(rng, 2, 5)}}}",
+            f"\\sin({v})",
+            f"\\cos({v})",
+            f"e^{{{v}}}",
+            f"\\ln({v})",
+        ])
+        templates.append(r"\frac{d}{d" + v + r"}\left(" + f + r"\right)")
+        templates.append(r"\frac{\partial}{\partial " + v + r"}\left(" + f + r"\right)")
+        templates.append(r"f'(" + v + r")=" + _expr(rng, 0, 2, list(allowed)))
+
+    if "limit" in allowed:
+        v = rng.choice(["x", "n", "t"])
+        target = rng.choice(["0", "1", r"\infty"])
+        templates.append(
+            r"\lim_{" + v + r"\to " + target + r"} "
+            + _expr(rng, 0, 2, list(allowed))
+        )
+        templates.append(
+            r"\lim_{" + v + r"\to 0} \frac{\sin " + v + r"}{" + v + r"} = 1"
+        )
+
+    if "taylor_series" in allowed:
+        v = rng.choice(["x", "t"])
+        templates.append(
+            r"e^{" + v + r"} = \sum_{n=0}^{\infty} \frac{"
+            + v + r"^n}{n!}"
+        )
+        templates.append(
+            r"\sin " + v + r" = \sum_{n=0}^{\infty} "
+            r"(-1)^n \frac{" + v + r"^{2n+1}}{(2n+1)!}"
+        )
+        templates.append(
+            r"\cos " + v + r" = \sum_{n=0}^{\infty} "
+            r"(-1)^n \frac{" + v + r"^{2n}}{(2n)!}"
+        )
+        templates.append(
+            r"f(" + v + r") \approx f(a) + f'(a)(" + v + r"-a)"
+            r" + \frac{f''(a)}{2!}(" + v + r"-a)^2"
+        )
+
+
     if "sum_product" in allowed:
         templates.append(r"\sum_{i=1}^{n} " + _expr(rng, 0, 2, list(allowed)))
         templates.append(r"\prod_{k=1}^{n}\left(1+\frac{1}{k}\right)")
@@ -309,7 +390,27 @@ def _template_equation(rng: random.Random, allowed_ops: List[str] | None = None)
             + " & ".join([_expr(rng, 0, 1, list(allowed)) for _ in range(3)]) + r"\\"
             + " & ".join([_expr(rng, 0, 1, list(allowed)) for _ in range(3)]) + r" \end{bmatrix}"
         )
+    
+    if "determinant" in allowed:
+        templates.append(
+            r"\det(A)=\begin{vmatrix} "
+            + " & ".join([_expr(rng, 0, 1, list(allowed)) for _ in range(2)]) + r"\\"
+            + " & ".join([_expr(rng, 0, 1, list(allowed)) for _ in range(2)])
+            + r" \end{vmatrix}"
+        )
 
+    if "system" in allowed:
+        x, y = rng.choice(["x", "u"]), rng.choice(["y", "v"])
+        templates.append(
+            r"\begin{cases} "
+            + f"{_rand_int(rng, 1, 5)}{x} + {_rand_int(rng, 1, 5)}{y}"
+            + f" = {_rand_int(rng, 1, 20)}"
+            + r" \\ "
+            + f"{_rand_int(rng, 1, 5)}{x} - {_rand_int(rng, 1, 5)}{y}"
+            + f" = {_rand_int(rng, 1, 20)}"
+            + r" \end{cases}"
+        )
+        
     if "probability" in allowed:
         templates.append(r"P(A\mid B)=\frac{P(A\cap B)}{P(B)}")
 

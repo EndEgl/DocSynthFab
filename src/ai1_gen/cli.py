@@ -40,7 +40,8 @@ from ai1_gen.layout.layout_sampler import sample_page_spec
 from ai1_gen.qc.validators import validate_page
 from ai1_gen.render.page_renderer import render_page_layers
 from ai1_gen.telemetry.progress import ProgressPrinter, TemperatureReader, TelemetryError
-
+from ai1_gen.reports import write_dataset_reports
+from ai1_gen.exporters import export_dataset_package
 
 # ----------------------------
 # Meta sync / debug helpers
@@ -503,10 +504,44 @@ def main() -> None:
     ap.add_argument("--pages", type=int, default=0, help="Total pages override")
     ap.add_argument("--workers", type=int, default=0, help="Workers override")
     ap.add_argument("--seed", type=int, default=-1, help="Seed override")
+    ap.add_argument(
+        "--export",
+        default="",
+        help="Comma-separated export targets override: native,segformer,coco",
+    )
     args = ap.parse_args()
 
     cfg = load_config(args.config)
     run_cfg = (cfg.raw.get("run", {}) or {}) if hasattr(cfg, "raw") else {}
+
+    raw_export = str(args.export or "").strip()
+
+    if raw_export:
+        export_targets = [
+            x.strip().lower()
+            for x in raw_export.split(",")
+            if x.strip()
+        ]
+    else:
+        cfg_export = run_cfg.get("export_targets", ["native", "segformer", "coco"])
+
+        if isinstance(cfg_export, str):
+            export_targets = [
+                x.strip().lower()
+                for x in cfg_export.split(",")
+                if x.strip()
+            ]
+        elif isinstance(cfg_export, list):
+            export_targets = [
+                str(x).strip().lower()
+                for x in cfg_export
+                if str(x).strip()
+            ]
+        else:
+            export_targets = ["native", "segformer", "coco"]
+
+    if not export_targets:
+        export_targets = ["native"]
 
     out_root = Path(args.out) if args.out else Path(cfg.out_root)
     out_root = Path(str(out_root))
@@ -514,8 +549,9 @@ def main() -> None:
 
     out_root.mkdir(parents=True, exist_ok=True)
 
-    for key in ("images", "masks", "ann", "gt", "splits", "tmp"):
+    for key in ("images", "masks", "ann", "gt", "splits", "reports", "exports", "tmp"):
         Path(dirs[key]).mkdir(parents=True, exist_ok=True)
+
 
     total = int(args.pages) if args.pages and args.pages > 0 else int(cfg.pages)
     workers = int(args.workers) if args.workers and args.workers > 0 else int(cfg.workers)
@@ -823,6 +859,52 @@ def main() -> None:
     qc_summary["ok"] = ok
     qc_summary["fail"] = fail
     save_json(root_dir / "qc_summary.json", qc_summary, dirs["tmp"])
+
+    try:
+        report_result = write_dataset_reports(
+            out_root=root_dir,
+            cfg_raw=cfg.raw if hasattr(cfg, "raw") else {},
+            cfg_path=str(Path(args.config).resolve()),
+            version=getattr(cfg, "version", "0.1.0"),
+            pages_requested=total,
+            pages_ok=ok,
+            pages_fail=fail,
+            seed=seed,
+            workers=workers,
+            splits={
+                "train": len(train),
+                "val": len(val),
+                "test": len(test),
+            },
+            qc_summary=qc_summary,
+            project_name="AI1 Gen",
+            export_targets=export_targets,
+        )
+
+        with run_log.open("a", encoding="utf-8") as f:
+            f.write(
+                f"reports written reports_dir={report_result.get('reports_dir')} "
+                f"feature_pages={report_result.get('page_count')}\n"
+            )
+
+    except Exception as e:
+        with run_log.open("a", encoding="utf-8") as f:
+            f.write(f"reports failed error={repr(e)}\n")
+
+    try:
+        export_result = export_dataset_package(
+            out_root=root_dir,
+            targets=export_targets,
+        )
+        with run_log.open("a", encoding="utf-8") as f:
+            f.write(
+                f"exports written targets={','.join(export_targets)} "
+                f"summary={json.dumps(export_result, ensure_ascii=False)}\n"
+            )
+    except Exception as e:
+        with run_log.open("a", encoding="utf-8") as f:
+            f.write(f"exports failed error={repr(e)}\n")
+            
 
     with run_log.open("a", encoding="utf-8") as f:
         f.write(

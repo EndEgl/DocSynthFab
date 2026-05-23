@@ -73,6 +73,7 @@ csv_upload_widget = None
 
 template_csv_upload_widget = None
 document_template_select = None
+template_name_select = None
 template_region_select = None
 template_preview_html = None
 template_editor_preview_html = None
@@ -91,7 +92,9 @@ template_region_jitter_input = None
 template_status_label = None
 
 template_rows: List[Dict[str, Any]] = []
+active_template_name: Optional[str] = None
 selected_template_region_id: Optional[str] = None
+
 
 content_source_mode_select = None
 
@@ -102,6 +105,7 @@ content_mix_select = None
 text_length_select = None
 table_amount_select = None
 variation_select = None
+diversity_strength_select = None
 preview_html = None
 preview_caption = None
 simple_summary_label = None
@@ -201,6 +205,141 @@ VARIATION_PRESETS: Dict[str, Dict[str, Any]] = {
     },
     "High": {
         "dist.density_dist": {"sparse": 0.22, "normal": 0.38, "dense": 0.40},
+    },
+}
+
+DIVERSITY_STRENGTH_PRESETS: Dict[str, Dict[str, Any]] = {
+    "Balanced diversity": {
+        "diversity_preset": "balanced_document_ai_diverse",
+
+        "content.has_equation_prob": 0.38,
+        "content.has_table_prob": 0.38,
+        "content.has_figure_prob": 0.12,
+
+        "dist.density_dist": {
+            "sparse": 0.20,
+            "normal": 0.40,
+            "dense": 0.30,
+            "mixed": 0.10,
+        },
+        "dist.noise_level_dist": {
+            "clean": 0.30,
+            "medium": 0.45,
+            "heavy": 0.25,
+        },
+        "layout.layout_type_dist": {
+            "single_col": 0.28,
+            "double_col": 0.24,
+            "mixed_cols": 0.28,
+            "academic": 0.12,
+            "report_like": 0.08,
+        },
+        "render.text.scripts_dist": {
+            "latin": 0.42,
+            "tr": 0.20,
+            "de": 0.06,
+            "ru": 0.10,
+            "el": 0.06,
+            "ar": 0.07,
+            "symbols": 0.09,
+        },
+    },
+
+    "High diversity": {
+        "diversity_preset": "high_document_ai_diverse",
+
+        "content.has_equation_prob": 0.45,
+        "content.has_table_prob": 0.45,
+        "content.has_figure_prob": 0.16,
+        "content.has_caption_prob": 0.45,
+
+        "dist.density_dist": {
+            "sparse": 0.22,
+            "normal": 0.32,
+            "dense": 0.32,
+            "mixed": 0.14,
+        },
+        "dist.noise_level_dist": {
+            "clean": 0.22,
+            "medium": 0.48,
+            "heavy": 0.30,
+        },
+        "layout.layout_type_dist": {
+            "single_col": 0.22,
+            "double_col": 0.24,
+            "mixed_cols": 0.34,
+            "academic": 0.12,
+            "report_like": 0.08,
+        },
+        "render.text.scripts_dist": {
+            "latin": 0.34,
+            "tr": 0.20,
+            "de": 0.07,
+            "ru": 0.12,
+            "el": 0.08,
+            "ar": 0.09,
+            "symbols": 0.10,
+        },
+        "render.latex.complexity_mix": {
+            "simple": 0.25,
+            "medium": 0.45,
+            "complex": 0.30,
+        },
+        "render.non_text.table_size_mix": {
+            "small": 0.28,
+            "medium": 0.42,
+            "large": 0.30,
+        },
+    },
+
+    "Max diversity / stress": {
+        "diversity_preset": "max_document_ai_diverse_stress",
+
+        "content.has_equation_prob": 0.55,
+        "content.has_table_prob": 0.55,
+        "content.has_figure_prob": 0.22,
+        "content.has_caption_prob": 0.55,
+
+        "dist.density_dist": {
+            "sparse": 0.24,
+            "normal": 0.26,
+            "dense": 0.34,
+            "mixed": 0.16,
+        },
+        "dist.noise_level_dist": {
+            "clean": 0.15,
+            "medium": 0.45,
+            "heavy": 0.40,
+        },
+        "layout.layout_type_dist": {
+            "single_col": 0.18,
+            "double_col": 0.24,
+            "mixed_cols": 0.38,
+            "academic": 0.12,
+            "report_like": 0.08,
+        },
+        "render.text.scripts_dist": {
+            "latin": 0.28,
+            "tr": 0.18,
+            "de": 0.08,
+            "ru": 0.14,
+            "el": 0.09,
+            "ar": 0.11,
+            "symbols": 0.12,
+        },
+        "render.latex.complexity_mix": {
+            "simple": 0.18,
+            "medium": 0.42,
+            "complex": 0.40,
+        },
+        "render.non_text.table_size_mix": {
+            "small": 0.30,
+            "medium": 0.35,
+            "large": 0.35,
+        },
+        "augment.selection_policy.heavy.p_capture": 0.65,
+        "augment.selection_policy.heavy.p_blur_noise": 0.68,
+        "augment.selection_policy.heavy.p_geometry": 0.50,
     },
 }
 
@@ -524,6 +663,10 @@ def _collect_simple_overrides() -> Dict[str, Any]:
     table_amount = str(table_amount_select.value or "Some tables")
     variation = str(variation_select.value or "Medium")
 
+    diversity_strength = str(
+        diversity_strength_select.value or "Balanced diversity"
+    ) if diversity_strength_select is not None else "Balanced diversity"
+
     return _merge_maps(
         DOCUMENT_TEMPLATE_PRESETS.get(
             str(document_template_select.value or "Generic random document")
@@ -536,8 +679,8 @@ def _collect_simple_overrides() -> Dict[str, Any]:
         TEXT_LENGTH_PRESETS.get(text_length, {}),
         TABLE_AMOUNT_PRESETS.get(table_amount, {}),
         VARIATION_PRESETS.get(variation, {}),
+        DIVERSITY_STRENGTH_PRESETS.get(diversity_strength, {}),
     )
-
 
 def _collect_all_overrides_for_run() -> Dict[str, Any]:
     # Advanced alanlar korunur. Simple presetler sonradan merge edilir.
@@ -841,6 +984,10 @@ def _update_preview() -> None:
     table_amount = str(table_amount_select.value or "Some tables")
     variation = str(variation_select.value or "Medium")
 
+    diversity_strength = str(
+        diversity_strength_select.value or "Balanced diversity"
+    ) if diversity_strength_select is not None else "Balanced diversity"
+
     preview_html.set_content(
         _wireframe_svg(
             goal=goal,
@@ -852,18 +999,14 @@ def _update_preview() -> None:
         )
     )
 
-    if preview_caption is not None:
-        preview_caption.text = (
-            f"Approximate preview · {goal} · {character} · {content_mix} · "
-            f"{text_length} · {table_amount} · {variation} variation"
-        )
-
     if simple_summary_label is not None:
         simple_summary_label.text = (
             f"Preset summary: {goal} with {character.lower()} visual character, "
             f"{content_mix.lower()} content, {text_length.lower()}, "
-            f"{table_amount.lower()}, and {variation.lower()} variation."
+            f"{table_amount.lower()}, {variation.lower()} variation, "
+            f"and {diversity_strength.lower()}."
         )
+
 
     _refresh_effective_yaml_preview()
 
@@ -928,20 +1071,88 @@ def _template_output_path() -> Path:
     return base / "template_regions.csv"
 
 
+def _available_template_names() -> List[str]:
+    names = sorted(
+        {
+            str(row.get("template_name") or "custom_template").strip()
+            or "custom_template"
+            for row in template_rows
+        }
+    )
+    return names
+
+
+def _get_active_template_name() -> Optional[str]:
+    global active_template_name
+
+    names = _available_template_names()
+    if not names:
+        active_template_name = None
+        return None
+
+    if active_template_name not in names:
+        active_template_name = names[0]
+
+    return active_template_name
+
+
+def _active_template_rows() -> List[Dict[str, Any]]:
+    name = _get_active_template_name()
+    if not name:
+        return []
+
+    return [
+        row
+        for row in template_rows
+        if str(row.get("template_name") or "custom_template").strip() == name
+    ]
+
+
+def _refresh_template_name_select() -> None:
+    global active_template_name
+
+    if template_name_select is None:
+        return
+
+    names = _available_template_names()
+    options = {name: name for name in names}
+
+    template_name_select.options = options
+
+    if names:
+        if active_template_name not in names:
+            active_template_name = names[0]
+        template_name_select.value = active_template_name
+    else:
+        active_template_name = None
+        template_name_select.value = None
+
+    template_name_select.update()
+
+
 def _template_region_options() -> Dict[str, str]:
-    # region_id is the stable part ID of each document region.
     return {
-        str(r.get("region_id", "")): f"{r.get('region_id', '')} · {r.get('type', '')} · source={r.get('content_source', '')}"
-        for r in template_rows
+        str(r.get("region_id", "")): (
+            f"{r.get('region_id', '')} · "
+            f"{r.get('type', '')} · "
+            f"source={r.get('content_source', '')}"
+        )
+        for r in _active_template_rows()
     }
 
 
 def _selected_template_row() -> Optional[Dict[str, Any]]:
-    rid = selected_template_region_id or (template_region_select.value if template_region_select is not None else None)
-    for row in template_rows:
+    active_rows = _active_template_rows()
+
+    rid = selected_template_region_id or (
+        template_region_select.value if template_region_select is not None else None
+    )
+
+    for row in active_rows:
         if str(row.get("region_id")) == str(rid):
             return row
-    return template_rows[0] if template_rows else None
+
+    return active_rows[0] if active_rows else None
 
 
 def _set_template_status(message: str) -> None:
@@ -971,7 +1182,7 @@ def _template_preview_svg(width: int = 390, height: int = 520) -> str:
         "checkbox_group": ("#f0fdf4", "#16a34a"),
         "figure": ("#f5f3ff", "#7c3aed"),
     }
-    for row in template_rows:
+    for row in _active_template_rows():
         rx = page_x + float(row.get("x", 0)) * page_w
         ry = page_y + float(row.get("y", 0)) * page_h
         rw = float(row.get("w", 0.1)) * page_w
@@ -1007,10 +1218,13 @@ def _template_preview_svg(width: int = 390, height: int = 520) -> str:
 
 def _refresh_template_region_select() -> None:
     global selected_template_region_id
+
     if template_region_select is None:
         return
+
     opts = _template_region_options()
     template_region_select.options = opts
+
     if opts:
         if selected_template_region_id not in opts:
             selected_template_region_id = next(iter(opts.keys()))
@@ -1018,8 +1232,8 @@ def _refresh_template_region_select() -> None:
     else:
         selected_template_region_id = None
         template_region_select.value = None
-    template_region_select.update()
 
+    template_region_select.update()
 
 def _load_selected_template_region_to_editor() -> None:
     row = _selected_template_row()
@@ -1079,11 +1293,22 @@ def _apply_template_editor_to_selected_region(*_: Any) -> None:
 
 def _update_template_preview() -> None:
     svg = _template_preview_svg()
+
     if template_preview_html is not None:
         template_preview_html.set_content(svg)
+
     if template_editor_preview_html is not None:
         template_editor_preview_html.set_content(svg)
-    _set_template_status(f"Template regions loaded: {len(template_rows)}")
+
+    active_rows = _active_template_rows()
+    active_name = _get_active_template_name() or "-"
+
+    _set_template_status(
+        f"Templates loaded: {len(_available_template_names())} · "
+        f"Active: {active_name} · "
+        f"Active regions: {len(active_rows)} · "
+        f"Total regions: {len(template_rows)}"
+    )
 
 
 def _on_template_region_selected(e: Any) -> None:
@@ -1092,15 +1317,41 @@ def _on_template_region_selected(e: Any) -> None:
     _load_selected_template_region_to_editor()
     _update_template_preview()
 
+def _on_template_name_selected(e: Any) -> None:
+    global active_template_name, selected_template_region_id
 
-def _load_sample_template_rows() -> None:
-    global template_rows, selected_template_region_id
-    template_rows = [_coerce_template_row(dict(r)) for r in SAMPLE_TEMPLATE_ROWS]
-    selected_template_region_id = template_rows[0]["region_id"] if template_rows else None
+    active_template_name = str(e.value or "").strip() or None
+    selected_template_region_id = None
+
     _refresh_template_region_select()
     _load_selected_template_region_to_editor()
     _update_template_preview()
-    _set_template_status("Loaded built-in invoice_basic sample template.")
+
+
+def _load_sample_template_rows() -> None:
+    global template_rows, active_template_name, selected_template_region_id
+
+    template_rows = [_coerce_template_row(dict(r)) for r in SAMPLE_TEMPLATE_ROWS]
+
+    names = _available_template_names()
+    active_template_name = names[0] if names else None
+
+    active_rows = _active_template_rows()
+    selected_template_region_id = (
+        str(active_rows[0].get("region_id"))
+        if active_rows
+        else None
+    )
+
+    _refresh_template_name_select()
+    _refresh_template_region_select()
+    _load_selected_template_region_to_editor()
+    _update_template_preview()
+    _set_template_status(
+        f"Loaded built-in sample templates: "
+        f"{len(names)} template(s), {len(template_rows)} region(s)."
+    )
+
 
 
 def _strip_excel_sep_line(text: str) -> str:
@@ -1156,7 +1407,7 @@ async def _read_upload_bytes(e: Any) -> bytes:
 
 
 async def _handle_template_csv_upload(e: Any) -> None:
-    global template_rows, selected_template_region_id
+    global template_rows, active_template_name, selected_template_region_id
 
     try:
         uploaded_bytes = await _read_upload_bytes(e)
@@ -1170,11 +1421,23 @@ async def _handle_template_csv_upload(e: Any) -> None:
             return
 
         template_rows = rows
-        selected_template_region_id = str(template_rows[0].get("region_id", ""))
 
+        names = _available_template_names()
+        active_template_name = names[0] if names else None
+
+        active_rows = _active_template_rows()
+        selected_template_region_id = (
+            str(active_rows[0].get("region_id"))
+            if active_rows
+            else None
+        )
+
+        _refresh_template_name_select()
         _refresh_template_region_select()
         _load_selected_template_region_to_editor()
         _update_template_preview()
+
+
 
         if document_template_select is not None:
             document_template_select.value = "Custom CSV template"
@@ -1683,6 +1946,11 @@ def _export_recipe_csv() -> None:
                 "key": "variation",
                 "value": str(variation_select.value or ""),
             })
+            rows.append({
+                "section": "simple",
+                "key": "diversity_strength",
+                "value": str(diversity_strength_select.value or "") if diversity_strength_select is not None else "",
+            })
 
         for key, widget in field_widgets.items():
             value = _read_widget_value(key, widget)
@@ -1761,6 +2029,7 @@ def _apply_recipe_csv_rows(rows: list[dict[str, str]]) -> None:
     pending_text_length: Optional[str] = None
     pending_table_amount: Optional[str] = None
     pending_variation: Optional[str] = None
+    pending_diversity_strength: Optional[str] = None
 
     _csv_loading_mode = True
 
@@ -1773,41 +2042,58 @@ def _apply_recipe_csv_rows(rows: list[dict[str, str]]) -> None:
             if section == "run":
                 if key == "config_path":
                     pending_config_path = _normalize_config_path(str(value or ""))
+
                 elif key == "out_root":
                     pending_out_root = _normalize_out_root(str(value or ""))
+
                 elif key == "pages":
                     try:
                         pending_pages = int(float(value or 0))
                     except Exception:
                         pending_pages = 0
+
                 elif key == "workers":
                     try:
                         pending_workers = int(float(value or 0))
                     except Exception:
                         pending_workers = 0
+
                 elif key == "seed":
                     try:
                         pending_seed = int(float(value or -1))
                     except Exception:
                         pending_seed = -1
+
                 elif key == "smoke_test":
                     pending_smoke_test = str(value).strip().lower() in {
-                        "1", "true", "yes", "on", "y"
+                        "1",
+                        "true",
+                        "yes",
+                        "on",
+                        "y",
                     }
 
             elif section == "simple":
                 if key == "dataset_goal":
                     pending_goal = str(value or "")
+
                 elif key == "dataset_character":
                     pending_character = str(value or "")
+
                 elif key == "content_mix":
                     pending_content_mix = str(value or "")
+
                 elif key == "text_length":
                     pending_text_length = str(value or "")
+
                 elif key == "table_amount":
                     pending_table_amount = str(value or "")
+
                 elif key == "variation":
                     pending_variation = str(value or "")
+
+                elif key == "diversity_strength":
+                    pending_diversity_strength = str(value or "")
 
             elif section == "field":
                 field = SCHEMA_MAP.get(key, {})
@@ -1818,19 +2104,28 @@ def _apply_recipe_csv_rows(rows: list[dict[str, str]]) -> None:
                 try:
                     if field_type == "bool":
                         parsed = str(value).strip().lower() in {
-                            "1", "true", "yes", "on", "y"
+                            "1",
+                            "true",
+                            "yes",
+                            "on",
+                            "y",
                         }
+
                     elif field_type == "int":
                         parsed = int(float(value))
+
                     elif field_type == "float":
                         parsed = float(value)
+
                     elif field_type in {"json", "color_rgb"}:
                         try:
                             parsed = json.loads(value)
                         except Exception:
                             parsed = value
+
                     else:
                         parsed = str(value or "")
+
                 except Exception:
                     parsed = value
 
@@ -1863,16 +2158,27 @@ def _apply_recipe_csv_rows(rows: list[dict[str, str]]) -> None:
         if dataset_goal_select is not None:
             if pending_goal in DATASET_GOAL_PRESETS:
                 dataset_goal_select.value = pending_goal
+
             if pending_character in DATASET_CHARACTER_PRESETS:
                 dataset_character_select.value = pending_character
+
             if pending_content_mix in CONTENT_MIX_PRESETS:
                 content_mix_select.value = pending_content_mix
+
             if pending_text_length in TEXT_LENGTH_PRESETS:
                 text_length_select.value = pending_text_length
+
             if pending_table_amount in TABLE_AMOUNT_PRESETS:
                 table_amount_select.value = pending_table_amount
+
             if pending_variation in VARIATION_PRESETS:
                 variation_select.value = pending_variation
+
+            if (
+                pending_diversity_strength in DIVERSITY_STRENGTH_PRESETS
+                and diversity_strength_select is not None
+            ):
+                diversity_strength_select.value = pending_diversity_strength
 
         if override_map:
             _load_form_from_override_map(override_map)
@@ -1886,6 +2192,7 @@ def _apply_recipe_csv_rows(rows: list[dict[str, str]]) -> None:
     finally:
         _csv_loading_mode = False
 
+        
 async def _handle_recipe_csv_upload(e: Any) -> None:
     try:
         uploaded_bytes = await _read_upload_bytes(e)
@@ -1991,6 +2298,17 @@ with ui.column().classes("w-full max-w-7xl mx-auto p-4 gap-4"):
                     on_change=lambda e: _update_preview(),
                 ).classes("w-full")
                 variation_select.tooltip("Controls how much layout diversity the dataset should have.")
+
+                diversity_strength_select = ui.select(
+                    options=list(DIVERSITY_STRENGTH_PRESETS.keys()),
+                    value="Balanced diversity",
+                    label="Diversity strength",
+                    on_change=lambda e: _update_preview(),
+                ).classes("w-full")
+                diversity_strength_select.tooltip(
+                    "Controls how aggressively the generator diversifies text, tables, LaTeX, layout, noise, density, and scripts."
+                )
+
 
                 simple_summary_label = ui.label("").classes("text-sm text-gray-400")
 
@@ -2176,9 +2494,18 @@ with ui.column().classes("w-full max-w-7xl mx-auto p-4 gap-4"):
 
                     template_status_label = ui.label("No template loaded yet.").classes("text-sm text-gray-400")
 
-                with ui.row().classes("w-full gap-4 flex-wrap"):
                     with ui.card().classes("w-full lg:w-[420px] p-4"):
                         ui.label("Region editor").classes("text-lg font-semibold")
+
+                        template_name_select = ui.select(
+                            options={},
+                            value=None,
+                            label="Active Template",
+                            on_change=_on_template_name_selected,
+                        ).classes("w-full")
+                        template_name_select.tooltip(
+                            "Select which template_name from the uploaded CSV should be previewed and edited."
+                        )
 
                         template_region_select = ui.select(
                             options={},
@@ -2186,7 +2513,10 @@ with ui.column().classes("w-full max-w-7xl mx-auto p-4 gap-4"):
                             label="Selected part / region ID",
                             on_change=_on_template_region_selected,
                         ).classes("w-full")
-                        template_region_select.tooltip("region_id is the stable part ID. It connects the template region to its label, content_source, masks, and annotations.")
+                        template_region_select.tooltip(
+                            "region_id is the stable part ID. It connects the template region to its label, content_source, masks, and annotations."
+                        )
+
 
                         template_region_type_select = ui.select(
                             options=TEMPLATE_REGION_TYPES,

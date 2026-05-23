@@ -39,12 +39,14 @@ class RunRequest:
     seed: int = -1
     preset_name: Optional[str] = None
     smoke_test: bool = False
+    export_targets: List[str] = field(
+        default_factory=lambda: ["native", "segformer", "coco"]
+    )
     overrides: Dict[str, Any] = field(default_factory=dict)
     notes: str = ""
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
-
 
 @dataclass
 class RunProgress:
