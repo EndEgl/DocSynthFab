@@ -103,21 +103,26 @@ dist:
     medium: 0.35
     heavy: 0.10
 
-content_mix_targets:
-  plain_only: 0.36
-  plain_table: 0.24
-  plain_math: 0.14
-  plain_table_math: 0.10
-  plain_figure: 0.08
-  mixed_other: 0.08
-
 content:
-  has_equation_prob: 0.30
-  has_table_prob: 0.32
-  has_figure_prob: 0.08
-  has_caption_prob: 0.28
-  hard_negative_page_prob: 0.03
+  # Ana içerik kompozisyonu.
+  # Toplam 100 olmalı.
+  #
+  # text=100  -> sadece yazı blokları
+  # table=100 -> sadece tablo blokları
+  # latex=100 -> sadece LaTeX / math blokları
+  #
+  # Örnekler:
+  # text: 100, table: 0, latex: 0   -> saf OCR/text dataset
+  # text: 0, table: 100, latex: 0   -> saf tablo dataset
+  # text: 0, table: 0, latex: 100   -> saf LaTeX/math dataset
+  # text: 60, table: 25, latex: 15  -> karışık Document AI dataset
+  block_mix:
+    text: 60
+    table: 25
+    latex: 15
 
+  # Metin üretim modu.
+  # block_mix içindeki text oranı > 0 olduğunda kullanılır.
   text_mode: mixed
   text_order: random
 
@@ -154,7 +159,55 @@ content:
     enabled_only: true
     min_weight: 0.0
 
+    
 layout:
+  # Satırlar arası boşluk randomluğu.
+  # 0.0  -> eski/sabit davranış
+  # 0.35 -> doğal ve güvenli
+  # 0.70 -> daha çeşitli
+  # 1.20 -> agresif/zor örnek
+  line_gap_random_scale: 0.45
+
+  # İleride GUI / preset tarafında kullanmak için.
+  # Şu an layout_sampler.py doğrudan bu alanları okumasa bile
+  # config kontratında durması faydalı.
+  table_diversity_scale: 0.75
+  table_empty_cell_scale: 0.35
+  table_merge_cell_scale: 0.25
+
+  # RAM-only occupancy / whitespace placement engine.
+  # Bu ayarlar sadece üretim sırasında kullanılır.
+  # Annotation JSON'a occupancy rect/debug bilgisi yazılmaz.
+  occupancy:
+    enable: true
+
+    # airy     -> daha boş, daha fazla nefes alan sayfa
+    # balanced -> doğal varsayılan
+    # compact  -> daha dolu ama hâlâ güvenli
+    # packed   -> stres / yoğun örnekler
+    whitespace_strategy: balanced
+
+    # İçerik sayfaya ne kadar yayılsın?
+    # 0   -> daha kümeli
+    # 50  -> dengeli
+    # 100 -> daha dağınık / yayılmış
+    spread_percent: 65
+
+    # Bloklar arası minimum güvenli boşluk.
+    min_gap_px: 12
+
+    # Her blok için kaç farklı konum denensin?
+    max_place_attempts: 48
+
+    # Density seviyesine göre hedef kaplanan alan oranı.
+    # Bunlar çıktı JSON'a yazılmaz; sadece layout hesaplarında kullanılır.
+    target_fill_ratio:
+      sparse: [0.06, 0.14]
+      normal: [0.14, 0.26]
+      dense: [0.26, 0.42]
+      mixed: [0.12, 0.34]
+
+
   layout_type_dist:
     single_col: 0.36
     double_col: 0.26
@@ -178,7 +231,7 @@ layout:
     mixed:
       line_count_range: [45, 105]
       block_count_range: [5, 14]
-
+      
 style:
   font_size_pt_dist:
     small: 0.34
@@ -213,6 +266,27 @@ render:
     enable: true
     lang_mode: "utf8"
     fonts_dir: "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\ai1_gen\\assets\\fonts"
+
+    font_script_dirs:
+      latin: latin
+      tr: latin
+      de: latin
+      ru: cyrillic
+      cyrillic: cyrillic
+      el: greek
+      greek: greek
+      ar: arabic
+      arabic: arabic
+      symbols: symbols
+      mono: mono
+
+    font_style_dirs:
+      normal: latin
+      mono: mono
+      handwriting: handwriting
+      decorative: decorative
+
+    disabled_font_dir: disabled
 
     meaningful_prob: 0.88
     gibberish_prob: 0.06
@@ -273,12 +347,14 @@ render:
 
   latex:
     enable: true
-    miktex_bin: null
+    backend: "http"
+    http_base_url: "http://127.0.0.1:8080"
     compiler: "pdflatex"
     timeout_s: 18
     raster_dpi: 300
     level: heavy
-
+    health_check: false
+    draw_fallback_expr: true
     allowed_ops:
       - add_sub
       - multiply
@@ -294,7 +370,7 @@ render:
       - sum_product
       - matrix
       - determinant
-      - system
+      - cases
       - probability
       - set
       - piecewise
@@ -431,6 +507,18 @@ qc:
   overlap_text_over_math_max_ratio: 0.01
   require_global_line_order_contiguous: true
 
+  # Pure mode contract:
+  # table=100  -> sadece table/table_cell
+  # latex=100  -> sadece equation/math
+  # text=100   -> sadece text ailesi
+  require_content_purity_contract: true
+
+  # Annotation içinde kare/tofu/replacement karakter varsa sayfayı reddet.
+  reject_tofu_text_chars: true
+
+  # Font coverage hatası renderer meta'sına düşerse sayfayı reddet.
+  reject_render_font_errors: true
+
   require_title_near_top: false
   require_caption_near_target: false
   use_page_family_rules: false
@@ -463,6 +551,30 @@ qc:
 
     mixed_variance_soft_scale: 0.85
 
+  visual_coverage:
+    enable: true
+
+    # Mask/text/math pixel oranı. LaTeX ince çizgili olduğu için çok yüksek tutma.
+    min_content_ratio_by_density:
+      sparse: 0.00035
+      normal: 0.00075
+      dense: 0.00110
+      mixed: 0.00075
+
+    # Annotation bbox extent oranı. Tiny single-formula sayfaları burada yakalanır.
+    min_bbox_extent_ratio_by_density:
+      sparse: 0.0040
+      normal: 0.0080
+      dense: 0.0120
+      mixed: 0.0080
+
+    # Equation/LaTeX sayfalarında ink ratio düşük olabilir.
+    equation_content_ratio_relax: 0.55
+    equation_extent_ratio_relax: 0.90
+
+    # Tablo sayfaları daha görünür alan kaplamalı.
+    table_content_ratio_boost: 1.15
+    table_extent_ratio_boost: 1.10
 thresholds: {}
 
 diversity_targets:

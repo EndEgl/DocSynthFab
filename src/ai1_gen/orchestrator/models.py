@@ -44,6 +44,7 @@ class RunRequest:
     )
     overrides: Dict[str, Any] = field(default_factory=dict)
     notes: str = ""
+    raw_yaml_override_text: str = ""
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)

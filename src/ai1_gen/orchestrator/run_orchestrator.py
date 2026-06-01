@@ -290,7 +290,7 @@ class RunOrchestrator:
         raw = self.build_config_with_user_override(
             config_path=request.config_path,
             overrides=request.overrides,
-            raw_yaml_override_text=None,
+            raw_yaml_override_text=getattr(request, "raw_yaml_override_text", None),
         )
 
         if request.out_root:

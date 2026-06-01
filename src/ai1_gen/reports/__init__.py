@@ -1,5 +1,5 @@
 # src/ai1_gen/reports/__init__.py
-# Önerilen sürüm aralıkları:
+# Recommended version ranges:
 # - Python>=3.10,<3.14
 
 from __future__ import annotations

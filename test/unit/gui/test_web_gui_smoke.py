@@ -1,25 +1,37 @@
 from __future__ import annotations
 
 from types import SimpleNamespace
+from typing import Any
 
-import ai1_gen.web_gui as web_mod
+import ai1_gen.gui.web.app as web_mod
+from ai1_gen.gui.web.state import WebGuiState
 
 
 class DummyWidget:
-    def __init__(self, value=None):
+    def __init__(self, value: Any = None, text: str = "") -> None:
         self.value = value
-        self.text = ""
+        self.text = text
         self.disabled = False
 
-    def enable(self):
+    def enable(self) -> None:
         self.disabled = False
 
-    def disable(self):
+    def disable(self) -> None:
         self.disabled = True
+
+    def update(self) -> None:
+        pass
+
+    def set_content(self, value: Any) -> None:
+        self.value = value
+        self.text = str(value)
+
+    def set_text(self, text: str) -> None:
+        self.text = str(text)
 
 
 class DummyOrchestrator:
-    def __init__(self):
+    def __init__(self) -> None:
         self.started_req = None
         self.cancelled_run_id = None
 
@@ -33,13 +45,19 @@ class DummyOrchestrator:
 
     def get_status(self, run_id):
         return SimpleNamespace(
+            run_id=run_id,
             state="done",
             pid=222,
             return_code=0,
             out_root="D:/web_out",
-            progress=SimpleNamespace(state="finished"),
+            progress=SimpleNamespace(
+                state="finished",
+                message="finished",
+                to_dict=lambda: {"state": "finished", "message": "finished"},
+            ),
             stdout_log="stdout text",
             stderr_log="stderr text",
+            to_dict=lambda: {"run_id": run_id, "state": "done"},
         )
 
     def get_summary(self, run_id):
@@ -51,72 +69,90 @@ class DummyOrchestrator:
         )
 
 
-def setup_dummy_globals(monkeypatch):
-    monkeypatch.setattr(web_mod, "orchestrator", DummyOrchestrator())
-    monkeypatch.setattr(web_mod, "field_widgets", {})
-    monkeypatch.setattr(web_mod, "current_run_id", None)
+def setup_dummy_state() -> WebGuiState:
+    state = WebGuiState()
+    state.orchestrator = DummyOrchestrator()
 
-    web_mod.config_path_input = DummyWidget("configs/default.yaml")
-    web_mod.out_root_input = DummyWidget("D:/web_out")
-    web_mod.pages_input = DummyWidget(10)
-    web_mod.workers_input = DummyWidget(2)
-    web_mod.seed_input = DummyWidget(123)
-    web_mod.smoke_test_input = DummyWidget(False)
+    state.config_path_input = DummyWidget("configs/default.yaml")
+    state.out_root_input = DummyWidget("D:/web_out")
+    state.pages_input = DummyWidget(10)
+    state.workers_input = DummyWidget(2)
+    state.seed_input = DummyWidget(123)
+    state.smoke_test_input = DummyWidget(False)
 
-    web_mod.run_id_label = DummyWidget()
-    web_mod.state_label = DummyWidget()
-    web_mod.pid_label = DummyWidget()
-    web_mod.return_code_label = DummyWidget()
-    web_mod.out_root_label = DummyWidget()
-    web_mod.progress_label = DummyWidget()
+    state.run_id_label = DummyWidget(text="-")
+    state.state_label = DummyWidget(text="idle")
+    state.pid_label = DummyWidget(text="-")
+    state.return_code_label = DummyWidget(text="-")
+    state.out_root_label = DummyWidget(text="-")
+    state.progress_label = DummyWidget(text="no active run")
 
-    web_mod.status_json = DummyWidget("")
-    web_mod.summary_json = DummyWidget("")
-    web_mod.stdout_log = DummyWidget("")
-    web_mod.stderr_log = DummyWidget("")
+    state.status_json = DummyWidget()
+    state.summary_json = DummyWidget()
+    state.stdout_log = DummyWidget()
+    state.stderr_log = DummyWidget()
 
-    web_mod.start_btn = DummyWidget()
-    web_mod.stop_btn = DummyWidget()
+    state.start_btn = DummyWidget()
+    state.stop_btn = DummyWidget()
+    state.stop_btn.disable()
+
+    return state
 
 
 def test_web_collect_overrides_empty(monkeypatch):
-    setup_dummy_globals(monkeypatch)
-    assert web_mod._collect_overrides() == {}
+    state = setup_dummy_state()
+
+    assert web_mod._collect_simple_overrides(state) == {}
 
 
 def test_web_start_run_sets_state(monkeypatch):
-    setup_dummy_globals(monkeypatch)
-    monkeypatch.setattr(web_mod.ui, "notify", lambda *a, **k: None)
+    state = setup_dummy_state()
 
-    web_mod._start_run()
+    monkeypatch.setattr(web_mod, "_collect_all_overrides_for_run", lambda _state: {})
+    monkeypatch.setattr(web_mod, "_refresh_status", lambda _state: None)
+    monkeypatch.setattr(web_mod, "write_active_run_state", lambda **kwargs: None)
+    monkeypatch.setattr(web_mod, "safe_notify", lambda *args, **kwargs: None)
 
-    assert web_mod.current_run_id == "run-web-1"
-    assert web_mod.run_id_label.text == "run-web-1"
-    assert web_mod.state_label.text == "running"
-    assert web_mod.progress_label.text == "started"
+    web_mod._start_run(state)
+
+    assert state.current_run_id == "run-web-1"
+    assert state.run_id_label.text == "run-web-1"
+    assert state.state_label.text == "running"
+    assert state.out_root_label.text.replace("\\", "/") == "D:/web_out"
+    assert state.progress_label.text == "run started"
+    assert state.start_btn.disabled is True
+    assert state.stop_btn.disabled is False
+    assert state.orchestrator.started_req is not None
 
 
 def test_web_stop_run_calls_cancel(monkeypatch):
-    setup_dummy_globals(monkeypatch)
-    monkeypatch.setattr(web_mod.ui, "notify", lambda *a, **k: None)
-    web_mod.current_run_id = "run-web-1"
+    state = setup_dummy_state()
+    state.current_run_id = "run-web-1"
 
-    web_mod._stop_run()
+    monkeypatch.setattr(web_mod, "clear_active_run_state", lambda: None)
+    monkeypatch.setattr(web_mod, "_refresh_status", lambda _state: None)
+    monkeypatch.setattr(web_mod, "safe_notify", lambda *args, **kwargs: None)
 
-    assert web_mod.orchestrator.cancelled_run_id == "run-web-1"
-    assert web_mod.state_label.text == "cancelled"
+    web_mod._stop_run(state)
+
+    assert state.orchestrator.cancelled_run_id == "run-web-1"
 
 
 def test_web_refresh_status_updates_panels(monkeypatch):
-    setup_dummy_globals(monkeypatch)
-    monkeypatch.setattr(web_mod.ui, "notify", lambda *a, **k: None)
-    web_mod.current_run_id = "run-web-1"
+    state = setup_dummy_state()
+    state.current_run_id = "run-web-1"
 
-    web_mod._refresh_status_panels()
+    monkeypatch.setattr(web_mod, "refresh_live_event_log", lambda _state: None)
+    monkeypatch.setattr(web_mod, "clear_active_run_state", lambda: None)
+    monkeypatch.setattr(web_mod, "safe_notify", lambda *args, **kwargs: None)
 
-    assert web_mod.state_label.text == "done"
-    assert web_mod.pid_label.text == "222"
-    assert web_mod.return_code_label.text == "0"
-    assert web_mod.out_root_label.text == "D:/web_out"
-    assert web_mod.progress_label.text == "finished"
-    
+    web_mod._refresh_status(state)
+
+    assert state.run_id_label.text == "run-web-1"
+    assert state.state_label.text == "done"
+    assert state.pid_label.text == "222"
+    assert state.return_code_label.text == "0"
+    assert state.out_root_label.text.replace("\\", "/") == "D:/web_out"
+    assert state.progress_label.text == "finished"
+    assert state.start_btn.disabled is False
+    assert state.stop_btn.disabled is True

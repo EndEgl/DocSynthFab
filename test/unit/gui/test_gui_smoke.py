@@ -1,11 +1,30 @@
 from __future__ import annotations
 
 from types import SimpleNamespace
+from typing import Any
 
-import pytest
-from PySide6.QtWidgets import QMessageBox
+import ai1_gen.gui.web.app as web_mod
+from ai1_gen.gui.web.state import WebGuiState
 
-import ai1_gen.gui as gui_mod
+
+class DummyWidget:
+    def __init__(self, value: Any = None, text: str = ""):
+        self.value = value
+        self.text = text
+        self.disabled = False
+
+    def enable(self):
+        self.disabled = False
+
+    def disable(self):
+        self.disabled = True
+
+    def update(self):
+        pass
+
+    def set_content(self, value):
+        self.value = value
+        self.text = str(value)
 
 
 class DummyOrchestrator:
@@ -13,12 +32,9 @@ class DummyOrchestrator:
         self.started_req = None
         self.cancelled_run_id = None
 
-    def get_schema_for_ui(self, mode=None):
-        return []
-
     def start(self, req):
         self.started_req = req
-        return "run-123"
+        return "run-web-1"
 
     def cancel(self, run_id):
         self.cancelled_run_id = run_id
@@ -26,72 +42,104 @@ class DummyOrchestrator:
 
     def get_status(self, run_id):
         return SimpleNamespace(
+            run_id=run_id,
             state="done",
-            pid=111,
+            pid=222,
             return_code=0,
-            out_root="D:/out",
-            progress=SimpleNamespace(state="finished"),
+            out_root="D:/web_out",
+            progress=SimpleNamespace(state="finished", message="finished", to_dict=lambda: {"state": "finished"}),
             stdout_log="",
             stderr_log="",
+            to_dict=lambda: {"run_id": run_id, "state": "done"},
         )
 
     def get_summary(self, run_id):
         return SimpleNamespace(
             to_dict=lambda: {"run_id": run_id, "state": "done"},
-            out_root="D:/out",
-            qc_summary_path="D:/out/qc_summary.json",
-            run_log_path="D:/out/run.log",
+            out_root="D:/web_out",
+            qc_summary_path="D:/web_out/qc_summary.json",
+            run_log_path="D:/web_out/run.log",
         )
 
 
-@pytest.fixture
-def gui_window(qtbot, monkeypatch):
-    monkeypatch.setattr(gui_mod, "RunOrchestrator", DummyOrchestrator)
-    win = gui_mod.AI1GenGUI()
-    qtbot.addWidget(win)
-    return win
+def make_state():
+    state = WebGuiState()
+    state.orchestrator = DummyOrchestrator()
+
+    state.config_path_input = DummyWidget("configs/default.yaml")
+    state.out_root_input = DummyWidget("D:/web_out")
+    state.pages_input = DummyWidget(10)
+    state.workers_input = DummyWidget(2)
+    state.seed_input = DummyWidget(123)
+    state.smoke_test_input = DummyWidget(False)
+
+    state.start_btn = DummyWidget()
+    state.stop_btn = DummyWidget()
+    state.stop_btn.disable()
+
+    state.run_id_label = DummyWidget(text="-")
+    state.state_label = DummyWidget(text="idle")
+    state.pid_label = DummyWidget(text="-")
+    state.return_code_label = DummyWidget(text="-")
+    state.out_root_label = DummyWidget(text="-")
+    state.progress_label = DummyWidget(text="no active run")
+
+    state.status_json = DummyWidget()
+    state.summary_json = DummyWidget()
+    state.stdout_log = DummyWidget()
+    state.stderr_log = DummyWidget()
+
+    return state
 
 
-def test_gui_constructs_and_has_basic_state(gui_window):
-    assert gui_window.windowTitle() == "AI1 Gen | Desktop GUI"
-    assert gui_window.current_run_id is None
-    assert gui_window.start_btn.isEnabled()
-    assert not gui_window.stop_btn.isEnabled()
+def test_web_collect_overrides_empty(monkeypatch):
+    state = make_state()
+    monkeypatch.setattr(web_mod, "_collect_simple_overrides", lambda _state: {})
+    monkeypatch.setattr(web_mod, "collect_overrides", lambda *a, **k: {})
+
+    assert web_mod._collect_all_overrides_for_run(state) == {}
 
 
-def test_gui_start_run_updates_state(gui_window):
-    gui_window.config_path_edit.setText("configs/default.yaml")
-    gui_window.out_root_edit.setText("D:/out")
-    gui_window.pages_spin.setValue(10)
-    gui_window.workers_spin.setValue(2)
-    gui_window.seed_spin.setValue(123)
+def test_web_start_run_sets_state(monkeypatch):
+    state = make_state()
 
-    gui_window._start_run()
+    monkeypatch.setattr(web_mod, "_collect_all_overrides_for_run", lambda _state: {})
+    monkeypatch.setattr(web_mod, "_refresh_status", lambda _state: None)
+    monkeypatch.setattr(web_mod, "write_active_run_state", lambda **kwargs: None)
+    monkeypatch.setattr(web_mod, "safe_notify", lambda *args, **kwargs: None)
 
-    assert gui_window.current_run_id == "run-123"
-    assert gui_window.run_id_label.text() == "run-123"
-    assert gui_window.state_label.text() == "running"
-    assert not gui_window.start_btn.isEnabled()
-    assert gui_window.stop_btn.isEnabled()
+    web_mod._start_run(state)
 
-
-def test_gui_stop_run_calls_orchestrator(gui_window):
-    gui_window.current_run_id = "run-123"
-    gui_window._stop_run()
-
-    assert gui_window.orchestrator.cancelled_run_id == "run-123"
-    assert gui_window.state_label.text() == "cancelled"
-    assert gui_window.start_btn.isEnabled()
-    assert not gui_window.stop_btn.isEnabled()
+    assert state.current_run_id == "run-web-1"
+    assert state.run_id_label.text == "run-web-1"
+    assert state.state_label.text == "running"
 
 
-def test_gui_poll_run_updates_labels(gui_window):
-    gui_window.current_run_id = "run-123"
+def test_web_stop_run_calls_cancel(monkeypatch):
+    state = make_state()
+    state.current_run_id = "run-web-1"
 
-    gui_window._poll_run()
+    monkeypatch.setattr(web_mod, "clear_active_run_state", lambda: None)
+    monkeypatch.setattr(web_mod, "_refresh_status", lambda _state: None)
+    monkeypatch.setattr(web_mod, "safe_notify", lambda *args, **kwargs: None)
 
-    assert gui_window.state_label.text() == "done"
-    assert gui_window.pid_label.text() == "111"
-    assert gui_window.return_code_label.text() == "0"
-    assert gui_window.out_root_label.text() == "D:/out"
-    assert gui_window.progress_label.text() == "finished"
+    web_mod._stop_run(state)
+
+    assert state.orchestrator.cancelled_run_id == "run-web-1"
+
+
+def test_web_refresh_status_updates_panels(monkeypatch):
+    state = make_state()
+    state.current_run_id = "run-web-1"
+
+    monkeypatch.setattr(web_mod, "refresh_live_event_log", lambda _state: None)
+    monkeypatch.setattr(web_mod, "clear_active_run_state", lambda: None)
+    monkeypatch.setattr(web_mod, "safe_notify", lambda *args, **kwargs: None)
+
+    web_mod._refresh_status(state)
+
+    assert state.state_label.text == "done"
+    assert state.pid_label.text == "222"
+    assert state.return_code_label.text == "0"
+    assert state.out_root_label.text.replace("\\", "/") == "D:/web_out"
+    assert state.progress_label.text == "finished"
