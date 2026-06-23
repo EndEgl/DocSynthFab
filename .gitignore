@@ -75,3 +75,28 @@ configs/*_local.yaml
 .env
 .env.*
 !.env.example
+
+
+# === DocSynthFab generated/runtime ===
+.ai1_orchestrator/
+test_artifacts/
+_archived_tests/
+
+# === Local inspection / cleanup reports ===
+cleanup_refs.txt
+cleanup_refs_after2.txt
+imports_report.txt
+pyside_refs_after.txt
+text_block_refs.txt
+texput.log
+
+# === Backup files ===
+*.bak
+
+# === Generated Data, Images and Texts ===
+*.json
+*.jsonl
+*.png
+*.jpg
+*.jpeg
+*.txt
