@@ -1,0 +1,23 @@
+kind,field,count,mean,std,variance,min,max,p05,p50,p95,unique,entropy_bits,counts_json
+numeric,line_count,2,51.0,7.0,49.0,44.0,58.0,44.699999999999996,51.0,57.3,,,
+numeric,block_count,2,7.5,0.5,0.25,7.0,8.0,7.05,7.5,7.95,,,
+numeric,math_line_count,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,table_block_count,2,1.0,1.0,1.0,0.0,2.0,0.1,1.0,1.9,,,
+numeric,equation_block_count,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,figure_block_count,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,text_mask_ratio,2,0.005701365382587673,0.0035442649666637283,1.2561814153919838e-05,0.0021571004159239454,0.009245630349251402,0.0025115269125903185,0.005701365382587673,0.008891203852585027,,,
+numeric,math_mask_ratio,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,table_area_ratio,2,0.13901426024955438,0.13901426024955438,0.019324964552730833,0.0,0.27802852049910876,0.013901426024955438,0.13901426024955438,0.2641270944741533,,,
+numeric,equation_area_ratio,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,figure_area_ratio,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,rotation_deg,2,-0.19587780714979508,1.7942702437337108,3.21940570754823,-1.9901480508835059,1.5983924365839157,-1.8107210265101348,-0.19587780714979508,1.4189654122105446,,,
+categorical,layout_type,2,,,,,,,,,2,1.0,"{""mixed_cols"": 1, ""single_col"": 1}"
+categorical,density_level,2,,,,,,,,,1,0.0,"{""sparse"": 2}"
+categorical,noise_level,2,,,,,,,,,1,0.0,"{""medium"": 2}"
+categorical,scale_profile,2,,,,,,,,,1,0.0,"{""dpi300"": 2}"
+categorical,page_family,2,,,,,,,,,2,1.0,"{""book"": 1, ""worksheet"": 1}"
+categorical,dominant_script,2,,,,,,,,,1,0.0,"{""latin"": 2}"
+categorical,has_table,2,,,,,,,,,2,1.0,"{""0"": 1, ""1"": 1}"
+categorical,has_equation,2,,,,,,,,,1,0.0,"{""0"": 2}"
+categorical,has_figure,2,,,,,,,,,1,0.0,"{""0"": 2}"
+categorical,fallback_used,2,,,,,,,,,1,0.0,"{""0"": 2}"

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "plain_text",
+    "supercategory": "document"
+  },
+  {
+    "id": 2,
+    "name": "table_region",
+    "supercategory": "document"
+  },
+  {
+    "id": 3,
+    "name": "math_latex",
+    "supercategory": "document"
+  },
+  {
+    "id": 4,
+    "name": "figure",
+    "supercategory": "document"
+  }
+]

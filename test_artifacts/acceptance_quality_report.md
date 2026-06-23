@@ -1,13 +1,13 @@
-# AI1 Gen Acceptance Quality Report
+# DocSynthFab Acceptance Quality Report
 
-- Suite: `ai1_gen_e2e_acceptance`
+- Suite: `backend_acceptance_package`
 - Decision: **PASS**
-- Overall acceptance score: `0.9518`
+- Overall acceptance score: `0.8842`
 - Package score: `1.0000`
 - Manifest score: `1.0000`
 - BBox valid ratio: `1.0000`
 - ANN/GT text match ratio: `1.0000`
-- Text mask bbox hit ratio: `0.5980`
+- Text mask bbox hit ratio: `0.7292`
 - Math mask bbox hit ratio: `1.0000`
 - Export score: `1.0000`
 - Diversity score: `1.0000`
@@ -17,7 +17,7 @@
 - `ann_count`: `3`
 - `ann_gt_text_match_ratio`: `1.0`
 - `bbox_valid_ratio`: `1.0`
-- `categorical_metrics_count`: `80`
+- `categorical_metrics_count`: `88`
 - `coco_annotations`: `0`
 - `coco_categories`: `4`
 - `coco_export_valid`: `True`
@@ -34,25 +34,26 @@
 - `has_generator_version`: `True`
 - `has_run_id`: `True`
 - `image_count`: `3`
+- `interface`: `backend`
 - `invalid_bboxes_count`: `0`
 - `json_export_files_count`: `14`
 - `json_export_parse_ok`: `14`
 - `json_export_parse_ratio`: `1.0`
-- `latex_presence_ratio`: `1.0`
+- `latex_presence_ratio`: `0.0`
 - `line_count_compatible_ratio`: `1.0`
 - `manifest_fields_present_ratio`: `1.0`
 - `manifest_present_fields`: `18`
 - `manifest_required_fields`: `18`
 - `manifest_score`: `1.0`
-- `math_line_ratio`: `0.02857142857142857`
-- `math_lines_checked`: `3`
-- `math_lines_with_mask_hit`: `3`
+- `math_line_ratio`: `0.0`
+- `math_lines_checked`: `0`
+- `math_lines_with_mask_hit`: `0`
 - `math_mask_bbox_hit_ratio`: `1.0`
-- `math_mask_coverage_mean`: `0.03150287179987981`
-- `math_mask_ratio_mean`: `0.0007679790224736608`
+- `math_mask_coverage_mean`: `0.0`
+- `math_mask_ratio_mean`: `0.0`
 - `native_export_valid`: `True`
-- `numeric_metrics_count`: `291`
-- `overall_acceptance_score`: `0.951764705882353`
+- `numeric_metrics_count`: `299`
+- `overall_acceptance_score`: `0.8841666666666667`
 - `package_score`: `1.0`
 - `page_count`: `3`
 - `page_id_match_ratio`: `1.0`
@@ -62,8 +63,8 @@
 - `pages_fail`: `0`
 - `pages_ok`: `3`
 - `pages_requested`: `3`
-- `pages_with_equation`: `3`
-- `pages_with_table`: `3`
+- `pages_with_equation`: `0`
+- `pages_with_table`: `1`
 - `required_dirs_found`: `7`
 - `required_dirs_found_ratio`: `1.0`
 - `required_dirs_total`: `7`
@@ -73,15 +74,15 @@
 - `segformer_export_valid`: `True`
 - `segformer_masks`: `9`
 - `split_total`: `3`
-- `table_area_ratio_mean`: `0.054779713332016214`
-- `table_block_ratio`: `0.26666666666666666`
-- `table_presence_ratio`: `1.0`
-- `text_line_ratio`: `0.9714285714285714`
-- `text_lines_checked`: `102`
-- `text_lines_matched`: `64`
-- `text_lines_with_mask_hit`: `61`
-- `text_mask_bbox_hit_ratio`: `0.5980392156862745`
-- `text_mask_coverage_mean`: `0.08005812242986092`
-- `text_mask_ratio_mean`: `0.010633681677929337`
-- `total_bboxes`: `120`
-- `valid_bboxes`: `120`
+- `table_area_ratio_mean`: `0.12173333333333333`
+- `table_block_ratio`: `0.0625`
+- `table_presence_ratio`: `0.3333333333333333`
+- `text_line_ratio`: `1.0`
+- `text_lines_checked`: `96`
+- `text_lines_matched`: `65`
+- `text_lines_with_mask_hit`: `70`
+- `text_mask_bbox_hit_ratio`: `0.7291666666666666`
+- `text_mask_coverage_mean`: `0.22829521892097637`
+- `text_mask_ratio_mean`: `0.012238890398655042`
+- `total_bboxes`: `112`
+- `valid_bboxes`: `112`

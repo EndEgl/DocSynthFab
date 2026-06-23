@@ -1,0 +1,23 @@
+kind,field,count,mean,std,variance,min,max,p05,p50,p95,unique,entropy_bits,counts_json
+numeric,line_count,1,35.0,0.0,0.0,35.0,35.0,35.0,35.0,35.0,,,
+numeric,block_count,1,8.0,0.0,0.0,8.0,8.0,8.0,8.0,8.0,,,
+numeric,math_line_count,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,table_block_count,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,equation_block_count,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,figure_block_count,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,text_mask_ratio,1,0.0036957236560448514,0.0,0.0,0.0036957236560448514,0.0036957236560448514,0.0036957236560448514,0.0036957236560448514,0.0036957236560448514,,,
+numeric,math_mask_ratio,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,table_area_ratio,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,equation_area_ratio,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,figure_area_ratio,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,rotation_deg,1,1.8500372640757816,0.0,0.0,1.8500372640757816,1.8500372640757816,1.8500372640757816,1.8500372640757816,1.8500372640757816,,,
+categorical,layout_type,1,,,,,,,,,1,0.0,"{""single_col"": 1}"
+categorical,density_level,1,,,,,,,,,1,0.0,"{""sparse"": 1}"
+categorical,noise_level,1,,,,,,,,,1,0.0,"{""clean"": 1}"
+categorical,scale_profile,1,,,,,,,,,1,0.0,"{""dpi300"": 1}"
+categorical,page_family,1,,,,,,,,,1,0.0,"{""book"": 1}"
+categorical,dominant_script,1,,,,,,,,,1,0.0,"{""unknown"": 1}"
+categorical,has_table,1,,,,,,,,,1,0.0,"{""0"": 1}"
+categorical,has_equation,1,,,,,,,,,1,0.0,"{""0"": 1}"
+categorical,has_figure,1,,,,,,,,,1,0.0,"{""0"": 1}"
+categorical,fallback_used,1,,,,,,,,,1,0.0,"{""0"": 1}"

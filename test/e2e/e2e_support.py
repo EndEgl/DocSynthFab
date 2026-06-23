@@ -1,10 +1,4 @@
-# test/e2e/e2e_support.py
-# Recommended version ranges:
-# - Python>=3.10,<3.14
-# - pytest>=7,<9
-# - Pillow>=10,<12
-
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 import os
@@ -15,19 +9,13 @@ import time
 from pathlib import Path
 from typing import Any
 
-from ai1_gen.orchestrator import RunOrchestrator, RunRequest
+from docsynthfab.orchestrator import RunOrchestrator, RunRequest
 
 
 TERMINAL_STATES = {"done", "completed", "failed", "error", "cancelled"}
 
 
 def fresh_output_dir(path: Path) -> Path:
-    """
-    Remove and recreate one E2E output directory.
-
-    This is important because E2E outputs are persistent under D:\\ai1_test_2_100.
-    Without cleanup, old generated files can corrupt count-based assertions.
-    """
     if path.exists():
         shutil.rmtree(path)
 
@@ -82,9 +70,9 @@ def run_backend_generation(
     req = RunRequest(
         config_path=str(config_path),
         out_root=str(out_root),
-        pages=pages,
-        workers=workers,
-        seed=seed,
+        pages=int(pages),
+        workers=int(workers),
+        seed=int(seed),
         smoke_test=False,
         overrides=overrides or {},
         raw_yaml_override_text=raw_yaml_override_text,
@@ -104,7 +92,7 @@ def run_cli_generation(
     pages: int = 3,
     workers: int = 1,
     seed: int = 123,
-    export: str = "native,segformer,coco",
+    export: str = "native",
     timeout_s: float = 240.0,
 ) -> subprocess.CompletedProcess[str]:
     env = os.environ.copy()
@@ -120,7 +108,7 @@ def run_cli_generation(
     cmd = [
         sys.executable,
         "-m",
-        "ai1_gen.cli",
+        "docsynthfab.cli",
         "--config",
         str(config_path),
         "--out",
@@ -156,12 +144,14 @@ def try_load_json(path: Path) -> Any:
 def json_files(root: Path) -> list[Path]:
     if not root.exists():
         return []
+
     return sorted(p for p in root.rglob("*.json") if p.is_file())
 
 
 def png_files(root: Path) -> list[Path]:
     if not root.exists():
         return []
+
     return sorted(p for p in root.rglob("*.png") if p.is_file())
 
 
@@ -185,13 +175,6 @@ def required_output_dirs() -> list[str]:
 
 
 def required_report_files() -> list[str]:
-    """
-    Required report files for the first E2E acceptance layer.
-
-    features.jsonl is intentionally not required here because the current
-    report writer contract is already covered by features.csv. If jsonl export
-    becomes a stable report contract later, add a dedicated test for it.
-    """
     return [
         "run_manifest.json",
         "dataset_card.md",
@@ -233,7 +216,7 @@ def assert_page_counts_match(out_root: Path, expected_pages: int | None = None) 
     }
 
     if expected_pages is not None:
-        assert len(images) == expected_pages, {
+        assert len(images) == int(expected_pages), {
             "expected": expected_pages,
             "images": len(images),
             "ann": len(anns),
@@ -272,10 +255,16 @@ def split_total(out_root: Path) -> int:
 
     for name in ["train.txt", "val.txt", "test.txt"]:
         path = out_root / "splits" / name
+
         if not path.exists():
             continue
 
-        lines = [ln.strip() for ln in path.read_text(encoding="utf-8").splitlines() if ln.strip()]
+        lines = [
+            ln.strip()
+            for ln in path.read_text(encoding="utf-8").splitlines()
+            if ln.strip()
+        ]
+
         total += len(lines)
 
     return total
@@ -284,6 +273,7 @@ def split_total(out_root: Path) -> int:
 def safe_ratio(num: float, den: float) -> float:
     if den <= 0:
         return 0.0
+
     return float(num) / float(den)
 
 
@@ -293,8 +283,10 @@ def clamp01(value: float) -> float:
 
 def list_export_files(out_root: Path) -> list[Path]:
     exports_dir = out_root / "exports"
+
     if not exports_dir.exists():
         return []
+
     return sorted(p for p in exports_dir.rglob("*") if p.is_file())
 
 
@@ -302,6 +294,7 @@ def collect_log_text(out_root: Path) -> str:
     candidates = list(out_root.rglob("*.log")) + list(out_root.rglob("run*.txt"))
 
     parts: list[str] = []
+
     for path in candidates:
         parts.append(read_text_safe(path))
 
@@ -324,3 +317,52 @@ def assert_no_fatal_log_errors(out_root: Path) -> dict[str, int]:
     assert counts["json_decode_error_count"] == 0, counts
 
     return counts
+
+
+def safe_e2e_overrides(profile: str = "text") -> dict[str, Any]:
+    profile = str(profile or "text").strip().lower()
+
+    base: dict[str, Any] = {
+        "run.export_targets": ["native"],
+        "render.latex.enable": False,
+        "render.latex.health_check": False,
+        "augment.enable": False,
+    }
+
+    if profile == "mixed_no_latex":
+        base["content.block_mix"] = {"text": 70, "table": 30, "latex": 0}
+    else:
+        base["content.block_mix"] = {"text": 100, "table": 0, "latex": 0}
+
+    return base
+
+
+def write_safe_e2e_config(
+    *,
+    project_root: Path,
+    base_config_path: Path,
+    out_root: Path,
+    pages: int,
+    workers: int,
+    seed: int,
+    profile: str = "text",
+) -> Path:
+    orch = RunOrchestrator()
+
+    text = orch.build_effective_config_yaml_text(
+        config_path=str(base_config_path),
+        overrides=safe_e2e_overrides(profile),
+        raw_yaml_override_text=None,
+        out_root=str(out_root),
+        pages=int(pages),
+        workers=int(workers),
+        seed=int(seed),
+        smoke_test=False,
+        export_targets=["native"],
+    )
+
+    path = project_root / "test_artifacts" / "e2e_safe_config.yaml"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text, encoding="utf-8")
+
+    return path

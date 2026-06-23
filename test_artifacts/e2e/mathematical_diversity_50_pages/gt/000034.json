@@ -1,0 +1,825 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000034",
+  "size": {
+    "w": 2550,
+    "h": 3300,
+    "dpi": 300,
+    "page_size_name": "letter_portrait",
+    "page_width_in": 8.5,
+    "page_height_in": 11.0,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "single_col",
+    "density_level": "sparse",
+    "scale_profile": "dpi300",
+    "noise_level": "clean",
+    "page_family": "book",
+    "_fallback": false,
+    "_augment_disabled_by_retry": null,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": true,
+    "has_equation": true,
+    "has_equation_layout": true,
+    "has_figure": false,
+    "mask_text_nonzero": 26122,
+    "mask_math_nonzero": 238,
+    "math_line_count": 6,
+    "equation_block_count": 2,
+    "table_block_count": 1,
+    "figure_block_count": 0,
+    "rotation_deg": 0.8671389504832825,
+    "perspective": false,
+    "book_mode": true,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": [
+      {
+        "op": "photometric",
+        "gamma": 1.1316523950599426,
+        "alpha": 1.0930578931133264,
+        "beta": 0.07587593477517807
+      },
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 26122.0,
+        "after_text_nz": 26122.0,
+        "before_math_nz": 238.0,
+        "after_math_nz": 238.0,
+        "accepted": true
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "title",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        204,
+        2218,
+        2142,
+        82
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 0,
+      "bbox": [
+        324,
+        1587,
+        1714,
+        607
+      ]
+    },
+    {
+      "block_id": 2,
+      "block_type": "table",
+      "block_order": 2,
+      "column_id": 1,
+      "bbox": [
+        444,
+        264,
+        1714,
+        521
+      ]
+    },
+    {
+      "block_id": 3,
+      "block_type": "equation",
+      "block_order": 3,
+      "column_id": 0,
+      "bbox": [
+        342,
+        2452,
+        1714,
+        574
+      ]
+    },
+    {
+      "block_id": 4,
+      "block_type": "list",
+      "block_order": 4,
+      "column_id": 1,
+      "bbox": [
+        647,
+        1265,
+        1714,
+        299
+      ]
+    },
+    {
+      "block_id": 5,
+      "block_type": "list",
+      "block_order": 5,
+      "column_id": 0,
+      "bbox": [
+        140,
+        941,
+        1714,
+        19
+      ]
+    },
+    {
+      "block_id": 6,
+      "block_type": "equation",
+      "block_order": 6,
+      "column_id": 0,
+      "bbox": [
+        247,
+        841,
+        1714,
+        19
+      ]
+    },
+    {
+      "block_id": 7,
+      "block_type": "paragraph",
+      "block_order": 7,
+      "column_id": 0,
+      "bbox": [
+        185,
+        2319,
+        1714,
+        19
+      ]
+    },
+    {
+      "block_id": 8,
+      "block_type": "paragraph",
+      "block_order": 8,
+      "column_id": 1,
+      "bbox": [
+        696,
+        1033,
+        1714,
+        19
+      ]
+    },
+    {
+      "block_id": 9,
+      "block_type": "paragraph",
+      "block_order": 9,
+      "column_id": 0,
+      "bbox": [
+        353,
+        2373,
+        1714,
+        19
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "text",
+      "global_line_order": 0,
+      "bbox": [
+        246,
+        2227,
+        1608,
+        58
+      ]
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 1,
+      "bbox": [
+        458,
+        1657,
+        382,
+        12
+      ],
+      "text": "Seite 余额 Arbeiter Stapel Absatz Gleichung Rand Temperatur Annotation Fahrzeug",
+      "script": "latin"
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 2,
+      "bbox": [
+        373,
+        1715,
+        638,
+        18
+      ],
+      "text": "πρότυπο τερματικός εικόνα κεφαλίδα συνάντηση φίλτρο μονάδα έλεγχος έργο εξοπλισμός",
+      "script": "el"
+    },
+    {
+      "line_id": 3,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 3,
+      "bbox": [
+        372,
+        1770,
+        461,
+        13
+      ],
+      "text": "spacing report supplier Rand document manager 警告 email risk package formula email quality folder",
+      "script": "latin"
+    },
+    {
+      "line_id": 4,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 4,
+      "bbox": [
+        373,
+        1828,
+        327,
+        15
+      ],
+      "text": "yazı_tipi müşteri sigorta bölüm imza kategori hesap sayfa",
+      "script": "latin"
+    },
+    {
+      "line_id": 5,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 5,
+      "bbox": [
+        375,
+        1882,
+        1544,
+        40
+      ]
+    },
+    {
+      "line_id": 6,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 6,
+      "bbox": [
+        375,
+        1940,
+        1566,
+        40
+      ]
+    },
+    {
+      "line_id": 7,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 7,
+      "bbox": [
+        375,
+        1996,
+        1549,
+        40
+      ]
+    },
+    {
+      "line_id": 8,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 8,
+      "bbox": [
+        373,
+        2055,
+        724,
+        15
+      ],
+      "text": "έλεγχος παρτίδα ασφάλεια επικύρωση σχήμα_δεδομένων φόρος λιμάνι συνάντηση διόδια τιμή φάκελος κεφαλίδα note τελωνείο",
+      "script": "el"
+    },
+    {
+      "line_id": 9,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 9,
+      "bbox": [
+        375,
+        2111,
+        1575,
+        40
+      ]
+    },
+    {
+      "line_id": 10,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 10,
+      "bbox": [
+        373,
+        2157,
+        597,
+        16
+      ],
+      "text": "sertifika maske şoför note toplam araç barkod paket görev analiz tedarikçi yorum son_tarih lisans",
+      "script": "latin"
+    },
+    {
+      "line_id": 11,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 11,
+      "bbox": [
+        453,
+        281,
+        67,
+        18
+      ],
+      "text": "ΦΔψΠΨέ",
+      "script": "el"
+    },
+    {
+      "line_id": 12,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 12,
+      "bbox": [
+        738,
+        279,
+        34,
+        15
+      ],
+      "text": "ölçek",
+      "script": "latin"
+    },
+    {
+      "line_id": 13,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 13,
+      "bbox": [
+        915,
+        281,
+        55,
+        19
+      ],
+      "text": "görsel.",
+      "script": "latin"
+    },
+    {
+      "line_id": 14,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 14,
+      "bbox": [
+        1071,
+        280,
+        30,
+        13
+      ],
+      "text": "veri.",
+      "script": "latin"
+    },
+    {
+      "line_id": 15,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 15,
+      "bbox": [
+        1211,
+        277,
+        172,
+        191
+      ]
+    },
+    {
+      "line_id": 16,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 16,
+      "bbox": [
+        1394,
+        281,
+        48,
+        16
+      ],
+      "text": "lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 17,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 17,
+      "bbox": [
+        1555,
+        281,
+        87,
+        18
+      ],
+      "text": "metin süreç",
+      "script": "latin"
+    },
+    {
+      "line_id": 18,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 18,
+      "bbox": [
+        1700,
+        282,
+        132,
+        17
+      ],
+      "text": "HUb+test • test",
+      "script": "latin"
+    },
+    {
+      "line_id": 19,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 19,
+      "bbox": [
+        1841,
+        282,
+        90,
+        18
+      ],
+      "text": "süreç süreç",
+      "script": "latin"
+    },
+    {
+      "line_id": 20,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 20,
+      "bbox": [
+        1978,
+        283,
+        65,
+        11
+      ],
+      "text": "качество",
+      "script": "ru"
+    },
+    {
+      "line_id": 21,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 21,
+      "bbox": [
+        457,
+        496,
+        59,
+        16
+      ],
+      "text": "testVxp\"",
+      "script": "latin"
+    },
+    {
+      "line_id": 22,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 22,
+      "bbox": [
+        741,
+        496,
+        38,
+        13
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 23,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 23,
+      "bbox": [
+        919,
+        492,
+        141,
+        118
+      ]
+    },
+    {
+      "line_id": 24,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 24,
+      "bbox": [
+        1073,
+        496,
+        44,
+        10
+      ],
+      "text": "решение",
+      "script": "ru"
+    },
+    {
+      "line_id": 25,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 25,
+      "bbox": [
+        1212,
+        496,
+        170,
+        15
+      ],
+      "text": "örnek  metin   merhaba",
+      "script": "latin"
+    },
+    {
+      "line_id": 26,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 26,
+      "bbox": [
+        1396,
+        495,
+        105,
+        16
+      ],
+      "text": "yoğunluk çözüm",
+      "script": "latin"
+    },
+    {
+      "line_id": 27,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 27,
+      "bbox": [
+        1557,
+        496,
+        104,
+        19
+      ],
+      "text": "görsel   süreç",
+      "script": "latin"
+    },
+    {
+      "line_id": 28,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 28,
+      "bbox": [
+        1702,
+        497,
+        50,
+        18
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 29,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 29,
+      "bbox": [
+        1843,
+        498,
+        31,
+        13
+      ],
+      "text": "test",
+      "script": "latin"
+    },
+    {
+      "line_id": 30,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 30,
+      "bbox": [
+        1981,
+        494,
+        71,
+        12
+      ],
+      "text": "kalite   örnek",
+      "script": "latin"
+    },
+    {
+      "line_id": 31,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 31,
+      "bbox": [
+        457,
+        634,
+        180,
+        16
+      ],
+      "text": "ölçek  çözüm merhabaÜdÖŞğ çıktı",
+      "script": "latin"
+    },
+    {
+      "line_id": 32,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 32,
+      "bbox": [
+        741,
+        638,
+        139,
+        19
+      ],
+      "text": "doğrulama  örnek",
+      "script": "latin"
+    },
+    {
+      "line_id": 33,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 33,
+      "bbox": [
+        917,
+        637,
+        23,
+        13
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 34,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 34,
+      "bbox": [
+        1212,
+        637,
+        115,
+        17
+      ],
+      "text": "doğrulama ölçek",
+      "script": "latin"
+    },
+    {
+      "line_id": 35,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 35,
+      "bbox": [
+        1396,
+        637,
+        115,
+        17
+      ],
+      "text": "çıktı kalite  metin",
+      "script": "latin"
+    },
+    {
+      "line_id": 36,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 36,
+      "bbox": [
+        1557,
+        637,
+        120,
+        16
+      ],
+      "text": "amet  – test ipsum.",
+      "script": "latin"
+    },
+    {
+      "line_id": 37,
+      "block_id": 3,
+      "line_type": "math",
+      "global_line_order": 37,
+      "bbox": [
+        395,
+        2460,
+        948,
+        82
+      ],
+      "latex": "8^{\\mu}"
+    },
+    {
+      "line_id": 38,
+      "block_id": 3,
+      "line_type": "math",
+      "global_line_order": 38,
+      "bbox": [
+        539,
+        2573,
+        1355,
+        68
+      ],
+      "latex": "\\lim_{n\\to 0} 5^{y}"
+    },
+    {
+      "line_id": 39,
+      "block_id": 3,
+      "line_type": "math",
+      "global_line_order": 39,
+      "bbox": [
+        396,
+        2662,
+        1312,
+        70
+      ],
+      "latex": "\\int_{0}^{1} 2 - \\ln(z) \\cdot \\tan(a) \\cdot 7\\, dx"
+    },
+    {
+      "line_id": 40,
+      "block_id": 3,
+      "line_type": "math",
+      "global_line_order": 40,
+      "bbox": [
+        409,
+        2744,
+        966,
+        74
+      ],
+      "latex": "\\frac{\\omega^{\\delta} \\cdot \\sqrt{j} \\cdot \\sqrt[3]{\\sin(k)^{\\mu}}}{\\frac{\\frac{\\theta + c}{5 \\cdot \\exp(c)}}{\\frac{\\frac{k}{\\phi}}{\\frac{\\ln(k)}{\\mu}}}}"
+    },
+    {
+      "line_id": 41,
+      "block_id": 3,
+      "line_type": "math",
+      "global_line_order": 41,
+      "bbox": [
+        480,
+        2846,
+        1390,
+        70
+      ],
+      "latex": "\\cos x = \\sum_{n=0}^{\\infty} (-1)^n \\frac{x^{2n}}{(2n)!}"
+    },
+    {
+      "line_id": 42,
+      "block_id": 3,
+      "line_type": "math",
+      "global_line_order": 42,
+      "bbox": [
+        400,
+        2942,
+        1325,
+        68
+      ],
+      "latex": "\\sqrt{\\sqrt[4]{\\lambda^{y}} \\cdot 4 \\cdot b - 5 + a}"
+    },
+    {
+      "line_id": 43,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 43,
+      "bbox": [
+        766,
+        1301,
+        1422,
+        40
+      ]
+    },
+    {
+      "line_id": 44,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 44,
+      "bbox": [
+        766,
+        1360,
+        1329,
+        40
+      ]
+    },
+    {
+      "line_id": 45,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 45,
+      "bbox": [
+        766,
+        1417,
+        1496,
+        40
+      ]
+    },
+    {
+      "line_id": 46,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 46,
+      "bbox": [
+        766,
+        1473,
+        1488,
+        40
+      ]
+    }
+  ],
+  "page_text": "Seite 余额 Arbeiter Stapel Absatz Gleichung Rand Temperatur Annotation Fahrzeug\nπρότυπο τερματικός εικόνα κεφαλίδα συνάντηση φίλτρο μονάδα έλεγχος έργο εξοπλισμός\nspacing report supplier Rand document manager 警告 email risk package formula email quality folder\nyazı_tipi müşteri sigorta bölüm imza kategori hesap sayfa\nέλεγχος παρτίδα ασφάλεια επικύρωση σχήμα_δεδομένων φόρος λιμάνι συνάντηση διόδια τιμή φάκελος κεφαλίδα note τελωνείο\nsertifika maske şoför note toplam araç barkod paket görev analiz tedarikçi yorum son_tarih lisans\nΦΔψΠΨέ\nölçek\ngörsel.\nveri.\nlorem\nmetin süreç\nHUb+test • test\nsüreç süreç\nкачество\ntestVxp\"\namet\nрешение\nörnek  metin   merhaba\nyoğunluk çözüm\ngörsel   süreç\nipsum\ntest\nkalite   örnek\nölçek  çözüm merhabaÜdÖŞğ çıktı\ndoğrulama  örnek\nelit\ndoğrulama ölçek\nçıktı kalite  metin\namet  – test ipsum.",
+  "gt_stats": {
+    "scripts_hist": {
+      "latin": 25,
+      "el": 3,
+      "ru": 2,
+      "math": 6
+    },
+    "has_gt_text_lines": 30,
+    "has_gt_math_lines": 6,
+    "book_mode_added_lines": 0
+  }
+}

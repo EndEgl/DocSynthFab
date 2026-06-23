@@ -1,34 +1,64 @@
-# NOTICE
-
+﻿DocSynthFab
 Copyright 2026 Ender Emre Hayırlıoğlu
 
 This project is licensed under the Apache License 2.0.
 
-## Third-Party Components
+This NOTICE file provides attribution and third-party component information
+for the DocSynthFab project.
 
-This project includes third-party components, each licensed under their own terms:
+Third-Party Components
 
-* **Google Fonts**
-  Fonts are licensed under SIL Open Font License, Apache License 2.0, or Ubuntu Font License.
-  See individual font directories for license files.
+This project may include or depend on third-party components, each licensed
+under its own terms.
 
-* **LaTeX Rendering**
-  This project may use TeX Live or MiKTeX for LaTeX rendering.
-  LaTeX distributions and included packages are licensed under various open source licenses.
-See `THIRD_PARTY_LICENSES/miktex/` and `THIRD_PARTY_LICENSES/docker/` for details.
+1. Fonts
 
-* **Python Libraries**
-  Runtime dependencies are listed in `requirements.txt`.
-  Development dependencies are listed in `requirements-dev.txt`.
-  Web/GUI dependencies are listed in `requirements-web.txt`.
-  Docker-specific Python dependencies may also be listed under `docker/*/requirements.txt`.
-  Each library is licensed under its respective license.
+DocSynthFab includes bundled font files for multilingual synthetic document
+rendering.
 
-* **Docker Base Images and System Packages**
-  Docker images and system packages are licensed under their respective licenses.
-  See the `docker/` directory and `THIRD_PARTY_LICENSES/docker/` for details.
+Bundled font files remain under their own respective font licenses. See:
 
-## Important
+- assets/fonts/LICENSES/
+- assets/fonts/README_FONT_MANIFEST.md
+- assets/fonts/FONT_MANIFEST.json
 
-This project’s own source code is licensed under Apache License 2.0.
-Third-party components are NOT covered by this project license.
+The fonts are included only as part of the DocSynthFab software package.
+They are not sold or distributed as a standalone font package.
+
+Generated documents, images, PDFs, and datasets are not required to be licensed
+under the bundled font licenses.
+
+2. Python Dependencies
+
+Runtime dependencies are listed in:
+
+- requirements.txt
+
+Development dependencies may be listed in:
+
+- requirements-dev.txt
+
+Web GUI dependencies may be listed in:
+
+- requirements-web.txt
+
+Each Python dependency remains under its own respective license.
+
+3. Docker and LaTeX Rendering
+
+DocSynthFab may use a separate Docker-based LaTeX renderer for math-heavy
+synthetic document generation.
+
+LaTeX distributions, TeX packages, Docker base images, and system packages
+remain under their own respective licenses.
+
+See the related Docker and third-party license documentation if included in
+the repository.
+
+Important Notice
+
+DocSynthFab's own source code is licensed under the Apache License 2.0.
+
+Third-party components are not relicensed by this project. They remain subject
+to their own license terms.
+

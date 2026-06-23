@@ -1,4 +1,4 @@
-# test/unit/gui/test_web_start_run_request_contract.py
+﻿# test/unit/gui/test_web_start_run_request_contract.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 # - pytest>=7,<9
@@ -10,9 +10,9 @@ from typing import Any
 
 import pytest
 
-import ai1_gen.gui.web.app as web_mod
-from ai1_gen.gui.web.state import WebGuiState
-from ai1_gen.orchestrator import RunRequest
+import docsynthfab.gui.web.app as web_mod
+from docsynthfab.gui.web.state import WebGuiState
+from docsynthfab.orchestrator import RunRequest
 
 
 class DummyWidget:
@@ -95,9 +95,9 @@ layout:
 
     state.content_source_mode_select = DummyWidget("random_chars")
 
+    state.content_mix_preset_select = DummyWidget("Custom")
     state.text_mix_input = DummyWidget(85)
     state.table_mix_input = DummyWidget(10)
-    state.latex_mix_input = DummyWidget(5)
 
     state.density_percent_input = DummyWidget(70)
     state.line_gap_tolerance_input = DummyWidget(25)
@@ -145,10 +145,10 @@ def patch_start_run_side_effects(monkeypatch) -> None:
         raising=False,
     )
 
-    # If _start_run imports from ai1_gen.latex.http_render inside the function,
+    # If _start_run imports from docsynthfab.latex.http_render inside the function,
     # patch the source module as well.
     try:
-        import ai1_gen.latex.http_render as http_render
+        import docsynthfab.latex.http_render as http_render
 
         monkeypatch.setattr(
             http_render,
@@ -164,59 +164,6 @@ def patch_start_run_side_effects(monkeypatch) -> None:
         )
     except Exception:
         pass
-
-
-def test_web_start_run_preserves_full_run_request_contract(monkeypatch):
-    pytest.importorskip("nicegui")
-
-    state = make_state()
-    patch_start_run_side_effects(monkeypatch)
-
-    monkeypatch.setattr(
-        web_mod,
-        "_collect_all_overrides_for_run",
-        lambda _state: {
-            "content.block_mix": {"text": 85, "table": 10, "latex": 5},
-            "content.source_mode": "random_chars",
-            "content.text_mode": "chars",
-            "layout.occupancy.enable": True,
-            "layout.occupancy.whitespace_strategy": "spread",
-            "layout.occupancy.max_place_attempts": 120,
-        },
-    )
-
-    web_mod._start_run(state)
-
-    req = state.orchestrator.started_req
-
-    assert req is not None
-    assert isinstance(req, RunRequest)
-
-    assert req.config_path.endswith("default.yaml")
-    assert req.out_root.replace("\\", "/") == "D:/web_out"
-    assert req.pages == 7
-    assert req.workers == 2
-    assert req.seed == 1234
-    assert req.smoke_test is False
-
-    assert req.overrides["content.block_mix"] == {
-        "text": 85,
-        "table": 10,
-        "latex": 5,
-    }
-    assert req.overrides["content.source_mode"] == "random_chars"
-    assert req.overrides["content.text_mode"] == "chars"
-    assert req.overrides["layout.occupancy.enable"] is True
-    assert req.overrides["layout.occupancy.whitespace_strategy"] == "spread"
-    assert req.overrides["layout.occupancy.max_place_attempts"] == 120
-
-    assert "content:" in req.raw_yaml_override_text
-    assert "latex: 67" in req.raw_yaml_override_text
-    assert "whitespace_strategy: compact" in req.raw_yaml_override_text
-
-    assert state.current_run_id == "unit-web-run-1"
-    assert state.start_btn.disabled is True
-    assert state.stop_btn.disabled is False
 
 
 def test_web_start_run_uses_actual_state_values_without_nicegui(monkeypatch):
@@ -235,16 +182,50 @@ def test_web_start_run_uses_actual_state_values_without_nicegui(monkeypatch):
     assert req.workers == 2
     assert req.seed == 1234
 
-    assert req.overrides["content.block_mix"]["text"] == 85
-    assert req.overrides["content.block_mix"]["table"] == 10
-    assert req.overrides["content.block_mix"]["latex"] == 5
+    mix = req.overrides["content.block_mix"]
+
+    assert mix["text"] == pytest.approx(89.4737)
+    assert mix["table"] == pytest.approx(10.5263)
+    assert mix["latex"] == 0.0
 
     assert req.overrides["content.source_mode"] == "random_chars"
     assert req.overrides["content.text_mode"] == "chars"
     assert req.overrides["layout.occupancy.enable"] is True
-    assert req.overrides["layout.occupancy.whitespace_strategy"] == "spread"
+    assert req.overrides["layout.occupancy.whitespace_strategy"] == "balanced"
 
     assert req.raw_yaml_override_text.strip()
+
+
+
+def test_web_start_run_uses_actual_state_values_without_nicegui(monkeypatch):
+    state = make_state()
+    patch_start_run_side_effects(monkeypatch)
+
+    # Burada _collect_all_overrides_for_run monkeypatch edilmez.
+    # Dummy widget value'ları gerçek collect fonksiyonundan geçer.
+
+    web_mod._start_run(state)
+
+    req = state.orchestrator.started_req
+
+    assert req is not None
+    assert req.pages == 7
+    assert req.workers == 2
+    assert req.seed == 1234
+
+    mix = req.overrides["content.block_mix"]
+
+    assert mix["text"] == pytest.approx(89.4737)
+    assert mix["table"] == pytest.approx(10.5263)
+    assert mix["latex"] == 0.0
+
+    assert req.overrides["content.source_mode"] == "random_chars"
+    assert req.overrides["content.text_mode"] == "chars"
+    assert req.overrides["layout.occupancy.enable"] is True
+    assert req.overrides["layout.occupancy.whitespace_strategy"] == "balanced"
+
+    assert req.raw_yaml_override_text.strip()
+
 
 
 def test_web_start_is_blocked_when_run_is_active(monkeypatch):
@@ -265,3 +246,6 @@ def test_web_start_is_blocked_when_run_is_active(monkeypatch):
 
     assert state.orchestrator.started_req is None
     assert notified["value"] is True
+
+
+

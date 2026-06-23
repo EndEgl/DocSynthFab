@@ -1,26 +1,26 @@
-__future__	stdlib	39 file(s)
-  - src\ai1_gen\__init__.py
-  - src\ai1_gen\__main__.py
-  - src\ai1_gen\augment\apply_augment.py
-  - src\ai1_gen\cli.py
-  - src\ai1_gen\config.py
-  - src\ai1_gen\content\bank_builder.py
-  - src\ai1_gen\content\bootstrap.py
-  - src\ai1_gen\content\text_provider.py
-  - src\ai1_gen\gui.py
-  - src\ai1_gen\io\exporter.py
-  - src\ai1_gen\latex\miktex_render.py
-  - src\ai1_gen\layout\layout_sampler.py
-  - src\ai1_gen\orchestrator\job_runner.py
-  - src\ai1_gen\orchestrator\models.py
-  - src\ai1_gen\orchestrator\param_schema.py
-  - src\ai1_gen\orchestrator\preset_manager.py
-  - src\ai1_gen\orchestrator\result_store.py
-  - src\ai1_gen\orchestrator\run_orchestrator.py
-  - src\ai1_gen\qc\validators.py
-  - src\ai1_gen\render\page_renderer.py
-  - src\ai1_gen\telemetry\progress.py
-  - src\ai1_gen\web_gui.py
+﻿__future__	stdlib	39 file(s)
+  - src\\docsynthfab\__init__.py
+  - src\\docsynthfab\__main__.py
+  - src\\docsynthfab\augment\apply_augment.py
+  - src\\docsynthfab\cli.py
+  - src\\docsynthfab\config.py
+  - src\\docsynthfab\content\bank_builder.py
+  - src\\docsynthfab\content\bootstrap.py
+  - src\\docsynthfab\content\text_provider.py
+  - src\\docsynthfab\gui.py
+  - src\\docsynthfab\io\exporter.py
+  - src\\docsynthfab\latex\miktex_render.py
+  - src\\docsynthfab\layout\layout_sampler.py
+  - src\\docsynthfab\orchestrator\job_runner.py
+  - src\\docsynthfab\orchestrator\models.py
+  - src\\docsynthfab\orchestrator\param_schema.py
+  - src\\docsynthfab\orchestrator\preset_manager.py
+  - src\\docsynthfab\orchestrator\result_store.py
+  - src\\docsynthfab\orchestrator\run_orchestrator.py
+  - src\\docsynthfab\qc\validators.py
+  - src\\docsynthfab\render\page_renderer.py
+  - src\\docsynthfab\telemetry\progress.py
+  - src\\docsynthfab\web_gui.py
   - test\conftest.py
   - test\e2e\test_cli_abort_on_fail_ratio.py
   - test\e2e\test_cli_outputs_consistency.py
@@ -39,12 +39,12 @@ __future__	stdlib	39 file(s)
   - test\unit\gui\test_web_gui_smoke.py
   - tests\benchmark\test_benchmark.py
 
-ai1_gen	local	44 file(s)
-  - src\ai1_gen\__main__.py
-  - src\ai1_gen\cli.py
-  - src\ai1_gen\gui.py
-  - src\ai1_gen\render\page_renderer.py
-  - src\ai1_gen\web_gui.py
+docsynthfab	local	44 file(s)
+  - src\\docsynthfab\__main__.py
+  - src\\docsynthfab\cli.py
+  - src\\docsynthfab\gui.py
+  - src\\docsynthfab\render\page_renderer.py
+  - src\\docsynthfab\web_gui.py
   - test\e2e\test_cli_abort_on_fail_ratio.py
   - test\e2e\test_cli_outputs_consistency.py
   - test\e2e\test_cli_reproducible_seed.py
@@ -86,66 +86,66 @@ ai1_gen	local	44 file(s)
   - tests\unit\test_validators.py
 
 apply_augment	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\augment\__init__.py
+  - src\\docsynthfab\augment\__init__.py
 
 argparse	stdlib	1 file(s)
-  - src\ai1_gen\cli.py
+  - src\\docsynthfab\cli.py
 
 bank_builder	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\content\bootstrap.py
+  - src\\docsynthfab\content\bootstrap.py
 
 base64	stdlib	1 file(s)
-  - src\ai1_gen\latex\miktex_render.py
+  - src\\docsynthfab\latex\miktex_render.py
 
 bootstrap	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\content\__init__.py
+  - src\\docsynthfab\content\__init__.py
 
 collections	stdlib	1 file(s)
   - tests\integration\test_distribution.py
 
 concurrent	stdlib	1 file(s)
-  - src\ai1_gen\cli.py
+  - src\\docsynthfab\cli.py
 
 copy	stdlib	2 file(s)
-  - src\ai1_gen\augment\apply_augment.py
-  - src\ai1_gen\orchestrator\run_orchestrator.py
+  - src\\docsynthfab\augment\apply_augment.py
+  - src\\docsynthfab\orchestrator\run_orchestrator.py
 
 csv	stdlib	2 file(s)
-  - src\ai1_gen\content\bank_builder.py
-  - src\ai1_gen\web_gui.py
+  - src\\docsynthfab\content\bank_builder.py
+  - src\\docsynthfab\web_gui.py
 
 cv2	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\augment\apply_augment.py
+  - src\\docsynthfab\augment\apply_augment.py
 
 dataclasses	stdlib	6 file(s)
-  - src\ai1_gen\augment\apply_augment.py
-  - src\ai1_gen\config.py
-  - src\ai1_gen\latex\miktex_render.py
-  - src\ai1_gen\layout\layout_sampler.py
-  - src\ai1_gen\orchestrator\models.py
-  - src\ai1_gen\telemetry\progress.py
+  - src\\docsynthfab\augment\apply_augment.py
+  - src\\docsynthfab\config.py
+  - src\\docsynthfab\latex\miktex_render.py
+  - src\\docsynthfab\layout\layout_sampler.py
+  - src\\docsynthfab\orchestrator\models.py
+  - src\\docsynthfab\telemetry\progress.py
 
 exporter	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\io\__init__.py
+  - src\\docsynthfab\io\__init__.py
 
 io	stdlib	4 file(s)
-  - src\ai1_gen\augment\apply_augment.py
-  - src\ai1_gen\latex\miktex_render.py
-  - src\ai1_gen\web_gui.py
+  - src\\docsynthfab\augment\apply_augment.py
+  - src\\docsynthfab\latex\miktex_render.py
+  - src\\docsynthfab\web_gui.py
   - tests\benchmark\test_benchmark.py
 
 job_runner	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\orchestrator\run_orchestrator.py
+  - src\\docsynthfab\orchestrator\run_orchestrator.py
 
 json	stdlib	18 file(s)
-  - src\ai1_gen\cli.py
-  - src\ai1_gen\content\bank_builder.py
-  - src\ai1_gen\content\text_provider.py
-  - src\ai1_gen\gui.py
-  - src\ai1_gen\io\exporter.py
-  - src\ai1_gen\latex\miktex_render.py
-  - src\ai1_gen\orchestrator\result_store.py
-  - src\ai1_gen\web_gui.py
+  - src\\docsynthfab\cli.py
+  - src\\docsynthfab\content\bank_builder.py
+  - src\\docsynthfab\content\text_provider.py
+  - src\\docsynthfab\gui.py
+  - src\\docsynthfab\io\exporter.py
+  - src\\docsynthfab\latex\miktex_render.py
+  - src\\docsynthfab\orchestrator\result_store.py
+  - src\\docsynthfab\web_gui.py
   - test\conftest.py
   - test\e2e\test_cli_outputs_consistency.py
   - test\e2e\test_cli_reproducible_seed.py
@@ -158,28 +158,28 @@ json	stdlib	18 file(s)
   - tests\integration\test_pipeline.py
 
 layout_sampler	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\layout\__init__.py
+  - src\\docsynthfab\layout\__init__.py
 
 miktex_render	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\latex\__init__.py
+  - src\\docsynthfab\latex\__init__.py
 
 models	third_party_or_unknown	6 file(s)
-  - src\ai1_gen\orchestrator\__init__.py
-  - src\ai1_gen\orchestrator\job_runner.py
-  - src\ai1_gen\orchestrator\param_schema.py
-  - src\ai1_gen\orchestrator\preset_manager.py
-  - src\ai1_gen\orchestrator\result_store.py
-  - src\ai1_gen\orchestrator\run_orchestrator.py
+  - src\\docsynthfab\orchestrator\__init__.py
+  - src\\docsynthfab\orchestrator\job_runner.py
+  - src\\docsynthfab\orchestrator\param_schema.py
+  - src\\docsynthfab\orchestrator\preset_manager.py
+  - src\\docsynthfab\orchestrator\result_store.py
+  - src\\docsynthfab\orchestrator\run_orchestrator.py
 
 nicegui	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\web_gui.py
+  - src\\docsynthfab\web_gui.py
 
 numpy	third_party_or_unknown	20 file(s)
-  - src\ai1_gen\augment\apply_augment.py
-  - src\ai1_gen\cli.py
-  - src\ai1_gen\io\exporter.py
-  - src\ai1_gen\qc\validators.py
-  - src\ai1_gen\render\page_renderer.py
+  - src\\docsynthfab\augment\apply_augment.py
+  - src\\docsynthfab\cli.py
+  - src\\docsynthfab\io\exporter.py
+  - src\\docsynthfab\qc\validators.py
+  - src\\docsynthfab\render\page_renderer.py
   - test\conftest.py
   - test\integration\test_render_validate_pipeline.py
   - test\integration\test_worker_generate_validate_save_fallback.py
@@ -197,35 +197,35 @@ numpy	third_party_or_unknown	20 file(s)
   - tests\unit\test_validators.py
 
 os	stdlib	6 file(s)
-  - src\ai1_gen\cli.py
-  - src\ai1_gen\gui.py
-  - src\ai1_gen\io\exporter.py
-  - src\ai1_gen\orchestrator\job_runner.py
-  - src\ai1_gen\web_gui.py
+  - src\\docsynthfab\cli.py
+  - src\\docsynthfab\gui.py
+  - src\\docsynthfab\io\exporter.py
+  - src\\docsynthfab\orchestrator\job_runner.py
+  - src\\docsynthfab\web_gui.py
   - tests\e2e\test_cli.py
 
 page_renderer	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\render\__init__.py
+  - src\\docsynthfab\render\__init__.py
 
 param_schema	third_party_or_unknown	2 file(s)
-  - src\ai1_gen\orchestrator\__init__.py
-  - src\ai1_gen\orchestrator\run_orchestrator.py
+  - src\\docsynthfab\orchestrator\__init__.py
+  - src\\docsynthfab\orchestrator\run_orchestrator.py
 
 pathlib	stdlib	28 file(s)
-  - src\ai1_gen\cli.py
-  - src\ai1_gen\config.py
-  - src\ai1_gen\content\bank_builder.py
-  - src\ai1_gen\content\bootstrap.py
-  - src\ai1_gen\content\text_provider.py
-  - src\ai1_gen\gui.py
-  - src\ai1_gen\io\exporter.py
-  - src\ai1_gen\latex\miktex_render.py
-  - src\ai1_gen\orchestrator\job_runner.py
-  - src\ai1_gen\orchestrator\preset_manager.py
-  - src\ai1_gen\orchestrator\result_store.py
-  - src\ai1_gen\orchestrator\run_orchestrator.py
-  - src\ai1_gen\render\page_renderer.py
-  - src\ai1_gen\web_gui.py
+  - src\\docsynthfab\cli.py
+  - src\\docsynthfab\config.py
+  - src\\docsynthfab\content\bank_builder.py
+  - src\\docsynthfab\content\bootstrap.py
+  - src\\docsynthfab\content\text_provider.py
+  - src\\docsynthfab\gui.py
+  - src\\docsynthfab\io\exporter.py
+  - src\\docsynthfab\latex\miktex_render.py
+  - src\\docsynthfab\orchestrator\job_runner.py
+  - src\\docsynthfab\orchestrator\preset_manager.py
+  - src\\docsynthfab\orchestrator\result_store.py
+  - src\\docsynthfab\orchestrator\run_orchestrator.py
+  - src\\docsynthfab\render\page_renderer.py
+  - src\\docsynthfab\web_gui.py
   - test\conftest.py
   - test\e2e\test_cli_abort_on_fail_ratio.py
   - test\e2e\test_cli_outputs_consistency.py
@@ -242,21 +242,21 @@ pathlib	stdlib	28 file(s)
   - tests\unit\test_latex_mock.py
 
 PIL	third_party_or_unknown	6 file(s)
-  - src\ai1_gen\augment\apply_augment.py
-  - src\ai1_gen\io\exporter.py
-  - src\ai1_gen\latex\miktex_render.py
-  - src\ai1_gen\render\page_renderer.py
+  - src\\docsynthfab\augment\apply_augment.py
+  - src\\docsynthfab\io\exporter.py
+  - src\\docsynthfab\latex\miktex_render.py
+  - src\\docsynthfab\render\page_renderer.py
   - test\unit\io\test_save_png_u8.py
   - tests\unit\test_latex_mock.py
 
 preset_manager	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\orchestrator\__init__.py
+  - src\\docsynthfab\orchestrator\__init__.py
 
 progress	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\telemetry\__init__.py
+  - src\\docsynthfab\telemetry\__init__.py
 
 PySide6	third_party_or_unknown	2 file(s)
-  - src\ai1_gen\gui.py
+  - src\\docsynthfab\gui.py
   - test\unit\gui\test_gui_smoke.py
 
 pytest	third_party_or_unknown	21 file(s)
@@ -283,12 +283,12 @@ pytest	third_party_or_unknown	21 file(s)
   - tests\unit\test_validators.py
 
 random	stdlib	15 file(s)
-  - src\ai1_gen\augment\apply_augment.py
-  - src\ai1_gen\cli.py
-  - src\ai1_gen\content\text_provider.py
-  - src\ai1_gen\latex\miktex_render.py
-  - src\ai1_gen\layout\layout_sampler.py
-  - src\ai1_gen\render\page_renderer.py
+  - src\\docsynthfab\augment\apply_augment.py
+  - src\\docsynthfab\cli.py
+  - src\\docsynthfab\content\text_provider.py
+  - src\\docsynthfab\latex\miktex_render.py
+  - src\\docsynthfab\layout\layout_sampler.py
+  - src\\docsynthfab\render\page_renderer.py
   - test\integration\test_render_augment_validate_pipeline.py
   - test\performance\test_augment_perf.py
   - test\unit\augment\test_apply_augment_basic.py
@@ -303,59 +303,59 @@ re	stdlib	1 file(s)
   - tests\e2e\test_cli.py
 
 requests	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\latex\miktex_render.py
+  - src\\docsynthfab\latex\miktex_render.py
 
 result_store	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\orchestrator\run_orchestrator.py
+  - src\\docsynthfab\orchestrator\run_orchestrator.py
 
 run_orchestrator	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\orchestrator\__init__.py
+  - src\\docsynthfab\orchestrator\__init__.py
 
 shutil	stdlib	1 file(s)
   - test\e2e\test_cli_small_run_relative_paths.py
 
 subprocess	stdlib	7 file(s)
-  - src\ai1_gen\gui.py
-  - src\ai1_gen\orchestrator\job_runner.py
-  - src\ai1_gen\telemetry\progress.py
-  - src\ai1_gen\web_gui.py
+  - src\\docsynthfab\gui.py
+  - src\\docsynthfab\orchestrator\job_runner.py
+  - src\\docsynthfab\telemetry\progress.py
+  - src\\docsynthfab\web_gui.py
   - test\e2e\test_cli_small_run_relative_paths.py
   - tests\e2e\test_cli.py
   - tests\performance\test_stress.py
 
 sys	stdlib	9 file(s)
-  - src\ai1_gen\__main__.py
-  - src\ai1_gen\cli.py
-  - src\ai1_gen\gui.py
-  - src\ai1_gen\orchestrator\job_runner.py
-  - src\ai1_gen\web_gui.py
+  - src\\docsynthfab\__main__.py
+  - src\\docsynthfab\cli.py
+  - src\\docsynthfab\gui.py
+  - src\\docsynthfab\orchestrator\job_runner.py
+  - src\\docsynthfab\web_gui.py
   - test\e2e\test_cli_abort_on_fail_ratio.py
   - test\e2e\test_cli_outputs_consistency.py
   - test\e2e\test_cli_reproducible_seed.py
   - test\e2e\test_cli_small_run_relative_paths.py
 
 tempfile	stdlib	3 file(s)
-  - src\ai1_gen\io\exporter.py
+  - src\\docsynthfab\io\exporter.py
   - tests\e2e\test_cli.py
   - tests\performance\test_stress.py
 
 text_provider	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\content\__init__.py
+  - src\\docsynthfab\content\__init__.py
 
 threading	stdlib	1 file(s)
-  - src\ai1_gen\web_gui.py
+  - src\\docsynthfab\web_gui.py
 
 time	stdlib	7 file(s)
-  - src\ai1_gen\cli.py
-  - src\ai1_gen\orchestrator\run_orchestrator.py
-  - src\ai1_gen\telemetry\progress.py
+  - src\\docsynthfab\cli.py
+  - src\\docsynthfab\orchestrator\run_orchestrator.py
+  - src\\docsynthfab\telemetry\progress.py
   - test\performance\test_augment_perf.py
   - test\performance\test_render_page_perf.py
   - test\performance\test_worker_perf.py
   - tests\performance\test_stress.py
 
 traceback	stdlib	1 file(s)
-  - src\ai1_gen\cli.py
+  - src\\docsynthfab\cli.py
 
 tracemalloc	stdlib	1 file(s)
   - tests\benchmark\test_benchmark.py
@@ -366,25 +366,25 @@ types	stdlib	3 file(s)
   - test\unit\gui\test_web_gui_smoke.py
 
 typing	stdlib	20 file(s)
-  - src\ai1_gen\augment\apply_augment.py
-  - src\ai1_gen\cli.py
-  - src\ai1_gen\config.py
-  - src\ai1_gen\content\bank_builder.py
-  - src\ai1_gen\content\bootstrap.py
-  - src\ai1_gen\content\text_provider.py
-  - src\ai1_gen\gui.py
-  - src\ai1_gen\io\exporter.py
-  - src\ai1_gen\latex\miktex_render.py
-  - src\ai1_gen\layout\layout_sampler.py
-  - src\ai1_gen\orchestrator\models.py
-  - src\ai1_gen\orchestrator\param_schema.py
-  - src\ai1_gen\orchestrator\preset_manager.py
-  - src\ai1_gen\orchestrator\result_store.py
-  - src\ai1_gen\orchestrator\run_orchestrator.py
-  - src\ai1_gen\qc\validators.py
-  - src\ai1_gen\render\page_renderer.py
-  - src\ai1_gen\telemetry\progress.py
-  - src\ai1_gen\web_gui.py
+  - src\\docsynthfab\augment\apply_augment.py
+  - src\\docsynthfab\cli.py
+  - src\\docsynthfab\config.py
+  - src\\docsynthfab\content\bank_builder.py
+  - src\\docsynthfab\content\bootstrap.py
+  - src\\docsynthfab\content\text_provider.py
+  - src\\docsynthfab\gui.py
+  - src\\docsynthfab\io\exporter.py
+  - src\\docsynthfab\latex\miktex_render.py
+  - src\\docsynthfab\layout\layout_sampler.py
+  - src\\docsynthfab\orchestrator\models.py
+  - src\\docsynthfab\orchestrator\param_schema.py
+  - src\\docsynthfab\orchestrator\preset_manager.py
+  - src\\docsynthfab\orchestrator\result_store.py
+  - src\\docsynthfab\orchestrator\run_orchestrator.py
+  - src\\docsynthfab\qc\validators.py
+  - src\\docsynthfab\render\page_renderer.py
+  - src\\docsynthfab\telemetry\progress.py
+  - src\\docsynthfab\web_gui.py
   - tests\benchmark\test_benchmark.py
 
 unittest	stdlib	2 file(s)
@@ -392,18 +392,20 @@ unittest	stdlib	2 file(s)
   - tests\unit\test_latex_mock.py
 
 uuid	stdlib	1 file(s)
-  - src\ai1_gen\orchestrator\run_orchestrator.py
+  - src\\docsynthfab\orchestrator\run_orchestrator.py
 
 validators	third_party_or_unknown	1 file(s)
-  - src\ai1_gen\qc\__init__.py
+  - src\\docsynthfab\qc\__init__.py
 
 yaml	third_party_or_unknown	8 file(s)
-  - src\ai1_gen\config.py
-  - src\ai1_gen\gui.py
-  - src\ai1_gen\orchestrator\preset_manager.py
-  - src\ai1_gen\orchestrator\run_orchestrator.py
-  - src\ai1_gen\web_gui.py
+  - src\\docsynthfab\config.py
+  - src\\docsynthfab\gui.py
+  - src\\docsynthfab\orchestrator\preset_manager.py
+  - src\\docsynthfab\orchestrator\run_orchestrator.py
+  - src\\docsynthfab\web_gui.py
   - tests\benchmark\test_benchmark.py
   - tests\e2e\test_cli.py
   - tests\performance\test_stress.py
+
+
 

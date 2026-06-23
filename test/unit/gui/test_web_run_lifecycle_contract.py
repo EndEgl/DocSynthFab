@@ -1,4 +1,4 @@
-# test/unit/gui/test_web_run_lifecycle_contract.py
+﻿# test/unit/gui/test_web_run_lifecycle_contract.py
 from __future__ import annotations
 
 from types import SimpleNamespace
@@ -6,8 +6,8 @@ from typing import Any
 
 import pytest
 
-import ai1_gen.gui.web.app as web_mod
-from ai1_gen.gui.web.state import WebGuiState
+import docsynthfab.gui.web.app as web_mod
+from docsynthfab.gui.web.state import WebGuiState
 
 
 class DummyWidget:
@@ -163,3 +163,6 @@ def test_web_can_start_after_terminal_cancelled_state(monkeypatch):
     assert state.orchestrator.started_req is not None
     assert state.start_btn.disabled is True
     assert state.stop_btn.disabled is False
+
+
+

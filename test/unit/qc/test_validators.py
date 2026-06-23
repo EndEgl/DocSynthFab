@@ -1,10 +1,10 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from typing import Any, Dict
 
 import numpy as np
 
-from ai1_gen.qc.validators import validate_page
+from docsynthfab.qc.validators import validate_page
 
 
 class PureModeCfg:
@@ -36,7 +36,7 @@ class PureModeCfg:
 
 def _base_ann() -> Dict[str, Any]:
     return {
-        "version": "ai1-ds-v1.3.2",
+        "version": "docsynthfab-ds-v0.1",
         "page_id": "000001",
         "size": {"w": 200, "h": 100, "dpi": 300},
         "meta": {
@@ -249,3 +249,6 @@ def test_validate_page_rejects_tofu_text_chars():
     assert ok is False
     assert code == "qc/text-tofu-char-detected"
     assert extra["bad_line_count"] == 1
+
+
+

@@ -1,0 +1,260 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000002",
+  "size": {
+    "w": 2481,
+    "h": 3507,
+    "dpi": 300,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "single_col",
+    "density_level": "sparse",
+    "scale_profile": "dpi300",
+    "noise_level": "clean",
+    "page_family": "notes",
+    "_fallback": false,
+    "_augment_disabled_by_retry": false,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": false,
+    "has_equation": false,
+    "has_equation_layout": false,
+    "has_figure": false,
+    "mask_text_nonzero": 24345,
+    "mask_math_nonzero": 0,
+    "math_line_count": 0,
+    "equation_block_count": 0,
+    "table_block_count": 0,
+    "figure_block_count": 0,
+    "rotation_deg": -1.6349929947138362,
+    "perspective": false,
+    "book_mode": false,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": []
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "title",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        198,
+        280,
+        2085,
+        124
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 1,
+      "bbox": [
+        557,
+        2642,
+        1401,
+        515
+      ]
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 1,
+      "bbox": [
+        416,
+        624,
+        1668,
+        1059
+      ]
+    },
+    {
+      "block_id": 3,
+      "block_type": "list",
+      "block_order": 3,
+      "column_id": 1,
+      "bbox": [
+        456,
+        2128,
+        1668,
+        433
+      ]
+    },
+    {
+      "block_id": 4,
+      "block_type": "list",
+      "block_order": 4,
+      "column_id": 1,
+      "bbox": [
+        422,
+        2605,
+        1668,
+        19
+      ]
+    },
+    {
+      "block_id": 5,
+      "block_type": "paragraph",
+      "block_order": 5,
+      "column_id": 0,
+      "bbox": [
+        198,
+        3208,
+        1668,
+        19
+      ]
+    },
+    {
+      "block_id": 6,
+      "block_type": "paragraph",
+      "block_order": 6,
+      "column_id": 0,
+      "bbox": [
+        260,
+        1794,
+        1668,
+        19
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 0,
+      "bbox": [
+        667,
+        2728,
+        1204,
+        21
+      ],
+      "text": "courriel commande département employé cellule unicode phrase gestionnaire unicode jeu_données conteneur écriture assurance volume paragraphe",
+      "script": "latin"
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 1,
+      "bbox": [
+        597,
+        2929,
+        744,
+        17
+      ],
+      "text": "moneda error registro importación semilla proyecto departamento contenedor campo calidad firma encabezado",
+      "script": "latin"
+    },
+    {
+      "line_id": 2,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 2,
+      "bbox": [
+        547,
+        763,
+        882,
+        18
+      ],
+      "text": "permiso contrato cliente licencia semilla altura plantilla categoría resumen teléfono cuenta palé advertencia distancia cuenta",
+      "script": "latin"
+    },
+    {
+      "line_id": 3,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 3,
+      "bbox": [
+        464,
+        970,
+        554,
+        16
+      ],
+      "text": "deadline inventory question invoice layout formula balance country title storage summary",
+      "script": "latin"
+    },
+    {
+      "line_id": 4,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 4,
+      "bbox": [
+        464,
+        1168,
+        449,
+        18
+      ],
+      "text": "row tax approval subtotal approval record task country product",
+      "script": "latin"
+    },
+    {
+      "line_id": 5,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 5,
+      "bbox": [
+        466,
+        1368,
+        1524,
+        143
+      ]
+    },
+    {
+      "line_id": 6,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 6,
+      "bbox": [
+        464,
+        1542,
+        553,
+        17
+      ],
+      "text": "файл команда отклик таблица столбец поле отчет ряд счет сводка материал итог риск",
+      "script": "ru"
+    },
+    {
+      "line_id": 7,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 7,
+      "bbox": [
+        572,
+        2201,
+        1332,
+        143
+      ]
+    },
+    {
+      "line_id": 8,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 8,
+      "bbox": [
+        572,
+        2405,
+        1363,
+        143
+      ]
+    }
+  ],
+  "page_text": "courriel commande département employé cellule unicode phrase gestionnaire unicode jeu_données conteneur écriture assurance volume paragraphe\nmoneda error registro importación semilla proyecto departamento contenedor campo calidad firma encabezado\npermiso contrato cliente licencia semilla altura plantilla categoría resumen teléfono cuenta palé advertencia distancia cuenta\ndeadline inventory question invoice layout formula balance country title storage summary\nrow tax approval subtotal approval record task country product\nфайл команда отклик таблица столбец поле отчет ряд счет сводка материал итог риск",
+  "gt_stats": {
+    "scripts_hist": {
+      "latin": 5,
+      "ru": 1
+    },
+    "has_gt_text_lines": 6,
+    "has_gt_math_lines": 0,
+    "book_mode_added_lines": 0
+  }
+}

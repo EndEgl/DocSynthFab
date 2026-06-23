@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 from pathlib import Path
@@ -6,10 +6,10 @@ from typing import Any
 
 import pytest
 
-import ai1_gen.gui.web.app as web_mod
-import ai1_gen.gui.web.run_state as run_state_mod
-from ai1_gen.gui.web.run_state import current_run_is_active
-from ai1_gen.gui.web.state import WebGuiState
+import docsynthfab.gui.web.app as web_mod
+import docsynthfab.gui.web.run_state as run_state_mod
+from docsynthfab.gui.web.run_state import current_run_is_active
+from docsynthfab.gui.web.state import WebGuiState
 
 
 class DummyWidget:
@@ -241,3 +241,6 @@ def test_unknown_run_cleanup_does_not_raise(
     assert not active_state_path.exists()
     assert state.state_label.text == "idle"
     assert state.progress_label.text == "lost run state cleared"
+
+
+

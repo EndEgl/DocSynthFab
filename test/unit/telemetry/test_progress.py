@@ -1,10 +1,10 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import time
 
 import pytest
 
-from ai1_gen.telemetry.progress import (
+from docsynthfab.telemetry.progress import (
     ProgressPrinter,
     TemperatureReader,
     TelemetryError,
@@ -160,3 +160,6 @@ def test_progress_printer_finish_no_extra_output_in_multi_line_mode(capsys):
     captured = capsys.readouterr()
 
     assert captured.out == ""
+
+
+

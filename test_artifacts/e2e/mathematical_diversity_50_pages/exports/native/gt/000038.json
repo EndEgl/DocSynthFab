@@ -1,0 +1,221 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000038",
+  "size": {
+    "w": 2481,
+    "h": 3507,
+    "dpi": 300,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "double_col",
+    "density_level": "sparse",
+    "scale_profile": "lowres_capture",
+    "noise_level": "clean",
+    "page_family": "notes",
+    "_fallback": false,
+    "_augment_disabled_by_retry": null,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": false,
+    "has_equation": true,
+    "has_equation_layout": true,
+    "has_figure": false,
+    "mask_text_nonzero": 23644,
+    "mask_math_nonzero": 55,
+    "math_line_count": 1,
+    "equation_block_count": 1,
+    "table_block_count": 0,
+    "figure_block_count": 0,
+    "rotation_deg": -0.3905907147894805,
+    "perspective": true,
+    "book_mode": false,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": [
+      {
+        "op": "capture_sim",
+        "downscale_factor": 0.7285134273527523,
+        "jpeg_quality": 55
+      },
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 23644.0,
+        "after_text_nz": 23644.0,
+        "before_math_nz": 55.0,
+        "after_math_nz": 55.0,
+        "accepted": true
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "equation",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        198,
+        280,
+        804,
+        554
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 1,
+      "bbox": [
+        843,
+        1528,
+        804,
+        1145
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "math",
+      "global_line_order": 0,
+      "bbox": [
+        257,
+        415,
+        711,
+        68
+      ],
+      "latex": "j^{n}"
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 1,
+      "bbox": [
+        867,
+        1647,
+        748,
+        22
+      ]
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 2,
+      "bbox": [
+        865,
+        1680,
+        700,
+        16
+      ],
+      "text": "code_barres graphique adresse inspection navire stockage matériel courriel carburant document pied fournisseur",
+      "script": "latin"
+    },
+    {
+      "line_id": 3,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 3,
+      "bbox": [
+        865,
+        1712,
+        704,
+        18
+      ],
+      "text": "αποθήκευση κατάσταση βάρος αλφάβητο έργο φόρος αρχείο επικύρωση έγκριση_άδειας υπογραφή",
+      "script": "el"
+    },
+    {
+      "line_id": 4,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 4,
+      "bbox": [
+        865,
+        1744,
+        700,
+        18
+      ],
+      "text": "маска шрифт документ подвал материал решение оплата счет поле_страницы хранение налог",
+      "script": "ru"
+    },
+    {
+      "line_id": 5,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 5,
+      "bbox": [
+        865,
+        1773,
+        711,
+        18
+      ],
+      "text": "παράδοση τμήμα μονάδα plazo επικύρωση ημερομηνία γλώσσα τηλέφωνο κοντέινερ προϊόν ενότητα",
+      "script": "el"
+    },
+    {
+      "line_id": 6,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 6,
+      "bbox": [
+        865,
+        1802,
+        315,
+        9
+      ],
+      "text": "единица пошлина отгрузка поставщик менеджер задача фигура كمية язык",
+      "script": "ru"
+    },
+    {
+      "line_id": 7,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 7,
+      "bbox": [
+        865,
+        1835,
+        588,
+        17
+      ],
+      "text": "набор_данных задача строка поле длина метка зерно ячейка таможня оборудование",
+      "script": "ru"
+    },
+    {
+      "line_id": 8,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 8,
+      "bbox": [
+        865,
+        1865,
+        471,
+        17
+      ],
+      "text": "Preis Abstand Fahrzeug Hafen Import Karton Gleichung Land Warnung",
+      "script": "latin"
+    }
+  ],
+  "page_text": "code_barres graphique adresse inspection navire stockage matériel courriel carburant document pied fournisseur\nαποθήκευση κατάσταση βάρος αλφάβητο έργο φόρος αρχείο επικύρωση έγκριση_άδειας υπογραφή\nмаска шрифт документ подвал материал решение оплата счет поле_страницы хранение налог\nπαράδοση τμήμα μονάδα plazo επικύρωση ημερομηνία γλώσσα τηλέφωνο κοντέινερ προϊόν ενότητα\nединица пошлина отгрузка поставщик менеджер задача фигура كمية язык\nнабор_данных задача строка поле длина метка зерно ячейка таможня оборудование\nPreis Abstand Fahrzeug Hafen Import Karton Gleichung Land Warnung",
+  "gt_stats": {
+    "scripts_hist": {
+      "math": 1,
+      "latin": 2,
+      "el": 2,
+      "ru": 3
+    },
+    "has_gt_text_lines": 7,
+    "has_gt_math_lines": 1,
+    "book_mode_added_lines": 0
+  }
+}

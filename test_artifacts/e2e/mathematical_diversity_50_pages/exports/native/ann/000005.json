@@ -1,0 +1,466 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000005",
+  "size": {
+    "w": 2550,
+    "h": 3300,
+    "dpi": 300,
+    "page_size_name": "letter_portrait",
+    "page_width_in": 8.5,
+    "page_height_in": 11.0,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "page_family": "academic",
+    "layout_type": "mixed_cols",
+    "noise_level": "heavy",
+    "density_level": "sparse",
+    "scale_profile": "dpi300",
+    "has_table": true,
+    "has_equation": true,
+    "has_figure": false,
+    "rotation_deg": 1.7668312091802725,
+    "perspective": false,
+    "book_mode": false,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_pure_mode": "mixed",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "latex_render_error_count": 3,
+    "latex_render_errors": [
+      {
+        "line_id": 5,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 6,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 11,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      }
+    ],
+    "latex_render_fallback_used": true,
+    "latex_render_backend": "http",
+    "latex_render_http_base_url": "http://127.0.0.1:8080",
+    "latex_render_enabled": false,
+    "mask_text_nonzero": 5628,
+    "mask_math_nonzero": 32,
+    "aug_trace": [
+      {
+        "op": "photometric",
+        "gamma": 0.8417783701414927,
+        "alpha": 1.0313078873074188,
+        "beta": -6.686056499854666
+      },
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 5628.0,
+        "after_text_nz": 5628.0,
+        "before_math_nz": 32.0,
+        "after_math_nz": 32.0,
+        "accepted": true
+      }
+    ],
+    "math_line_count": 1,
+    "equation_block_count": 1,
+    "table_block_count": 1,
+    "figure_block_count": 0,
+    "has_equation_layout": true,
+    "_worker_debug": {
+      "ps_equation_blocks": 1,
+      "ps_table_blocks": 1,
+      "ps_figure_blocks": 0,
+      "ps_math_lines": 1,
+      "ps_total_lines": 13,
+      "mask_text_nonzero_pre_qc": 5628,
+      "mask_math_nonzero_pre_qc": 32
+    }
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "equation",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        204,
+        1662,
+        2142,
+        655
+      ],
+      "style": {
+        "page_family": "academic",
+        "layout_type": "mixed_cols",
+        "page_size_name": "letter_portrait",
+        "orientation": "portrait",
+        "full_width": true
+      }
+    },
+    {
+      "block_id": 1,
+      "block_type": "table",
+      "block_order": 1,
+      "column_id": 0,
+      "bbox": [
+        209,
+        300,
+        826,
+        694
+      ],
+      "style": {
+        "page_family": "academic",
+        "layout_type": "mixed_cols",
+        "page_size_name": "letter_portrait",
+        "orientation": "portrait",
+        "table_cols": 4,
+        "table_rows": 3,
+        "table_kind": "booktabs_table",
+        "table_variant": "compact",
+        "header_rows": 1,
+        "header_cols": 0,
+        "compact": true,
+        "border_mode": "header_rule",
+        "zebra_rows": false,
+        "light_rules": false,
+        "col_width_mode": "numeric",
+        "row_height_mode": "header_tall",
+        "empty_cell_prob": 0.05272831662863317,
+        "merged_cells": false,
+        "cell_text_jitter": false,
+        "table_diversity_scale": 0.75,
+        "table_empty_cell_scale": 0.35,
+        "table_merge_cell_scale": 0.25,
+        "table_shape_cfg": {
+          "min_rows": 2,
+          "max_rows": 24,
+          "min_cols": 2,
+          "max_cols": 12
+        }
+      }
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 1,
+      "bbox": [
+        1432,
+        365,
+        826,
+        877
+      ],
+      "style": {
+        "page_family": "academic",
+        "layout_type": "mixed_cols",
+        "page_size_name": "letter_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": -3
+      }
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 0,
+      "global_line_order": 0,
+      "bbox": [
+        619,
+        1900,
+        1556,
+        304
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "\\frac{\\frac{t^{b}}{n^{2} \\cdot \\theta - 4}}{\\sqrt{x^{n}}}"
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 0,
+      "global_line_order": 1,
+      "bbox": [
+        219,
+        324,
+        31,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "test",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 1,
+      "global_line_order": 2,
+      "bbox": [
+        528,
+        323,
+        150,
+        20
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "örnek 00H   görsel",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 12
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 3,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 2,
+      "global_line_order": 3,
+      "bbox": [
+        689,
+        319,
+        86,
+        19
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "çözümiĞBvÇ",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 10
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 4,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 3,
+      "global_line_order": 4,
+      "bbox": [
+        830,
+        322,
+        82,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "elit  lorem_",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 10
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 5,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 4,
+      "global_line_order": 5,
+      "bbox": [
+        226,
+        607,
+        281,
+        175
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 6,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 5,
+      "global_line_order": 6,
+      "bbox": [
+        532,
+        607,
+        146,
+        175
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 7,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 6,
+      "global_line_order": 7,
+      "bbox": [
+        691,
+        611,
+        27,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "elit",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 8,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 7,
+      "global_line_order": 8,
+      "bbox": [
+        833,
+        611,
+        145,
+        15
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "WahrscheinlichkeitZ",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 19
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 9,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 8,
+      "global_line_order": 9,
+      "bbox": [
+        224,
+        820,
+        75,
+        20
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "YwXIVTjs",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 8
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 10,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 9,
+      "global_line_order": 10,
+      "bbox": [
+        530,
+        818,
+        56,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "test  elit",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 8
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 11,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 11,
+      "bbox": [
+        1497,
+        473,
+        740,
+        96
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 12,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 1,
+      "global_line_order": 12,
+      "bbox": [
+        1454,
+        611,
+        346,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Daten  Wahrscheinlichkeit  ölçek Ausgabe% Prüfung",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 42
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    }
+  ],
+  "gt_page_text": "test\nörnek 00H   görsel\nçözümiĞBvÇ\nelit  lorem_\nelit\nWahrscheinlichkeitZ\nYwXIVTjs\ntest  elit\nDaten  Wahrscheinlichkeit  ölçek Ausgabe% Prüfung",
+  "gt_stats": {
+    "scripts_hist": {
+      "math": 1,
+      "latin": 9
+    },
+    "has_gt_text_lines": 9,
+    "has_gt_math_lines": 1,
+    "book_mode_added_lines": 0
+  }
+}

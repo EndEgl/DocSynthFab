@@ -1,4 +1,4 @@
-version: ai1-ds-v1.3.2
+﻿version: docsynthfab-ds-v0.1
 
 io:
   out_root: out
@@ -23,3 +23,5 @@ telemetry:
   temperature:
     require_temp_sensor: false
     prefer_gpu: true
+
+

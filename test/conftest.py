@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 from pathlib import Path
@@ -21,7 +21,7 @@ class DummyCfg:
         pages: int = 4,
         workers: int = 1,
         seed: int = 123,
-        version: str = "ai1-ds-v1.3.2",
+        version: str = "docsynthfab-ds-v0.1",
     ) -> None:
         self.raw = raw or {}
         self._qc_cfg = qc_cfg or {}
@@ -87,7 +87,7 @@ def dummy_cfg() -> DummyCfg:
 @pytest.fixture
 def ann_minimal_dict() -> dict:
     return {
-        "version": "ai1-ds-v1.3.2",
+        "version": "docsynthfab-ds-v0.1",
         "page_id": "000001",
         "size": {"w": 200, "h": 100, "dpi": 300},
         "meta": {
@@ -127,7 +127,7 @@ def ann_minimal_dict() -> dict:
 @pytest.fixture
 def ann_math_dict() -> dict:
     return {
-        "version": "ai1-ds-v1.3.2",
+        "version": "docsynthfab-ds-v0.1",
         "page_id": "000002",
         "size": {"w": 200, "h": 100, "dpi": 300},
         "meta": {
@@ -193,3 +193,6 @@ def write_json_fixture(tmp_path: Path):
             path.write_text(str(data), encoding="utf-8")
         return path
     return _write
+
+
+

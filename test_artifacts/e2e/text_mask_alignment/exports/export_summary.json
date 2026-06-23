@@ -1,0 +1,50 @@
+{
+  "native": {
+    "target": "native",
+    "export_root": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\test_artifacts\\e2e\\text_mask_alignment\\exports\\native",
+    "copied_dirs": [
+      "images",
+      "masks",
+      "ann",
+      "gt",
+      "splits"
+    ]
+  },
+  "segformer": {
+    "target": "segformer",
+    "export_root": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\test_artifacts\\e2e\\text_mask_alignment\\exports\\segformer",
+    "copied": {
+      "images": 3,
+      "mask_text": 3,
+      "mask_math": 3
+    },
+    "missing": {
+      "images": 0,
+      "mask_text": 0,
+      "mask_math": 0
+    },
+    "splits": {
+      "train": 3,
+      "val": 0,
+      "test": 0
+    }
+  },
+  "coco": {
+    "target": "coco",
+    "export_root": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\test_artifacts\\e2e\\text_mask_alignment\\exports\\coco",
+    "summary": {
+      "train": {
+        "images": 3,
+        "annotations": 16
+      },
+      "val": {
+        "images": 0,
+        "annotations": 0
+      },
+      "test": {
+        "images": 0,
+        "annotations": 0
+      }
+    }
+  }
+}

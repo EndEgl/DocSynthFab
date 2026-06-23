@@ -1,4 +1,4 @@
-# test/unit/digital_twin/test_src_digital_twin.py
+﻿# test/unit/digital_twin/test_src_digital_twin.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 # - pytest>=7,<9
@@ -106,9 +106,9 @@ def test_every_safe_src_module_imports_without_error():
 def test_cli_package_contract():
     """
     CLI is now a package:
-      src/ai1_gen/cli/
+      src/docsynthfab/cli/
     Old top-level:
-      src/ai1_gen/cli.py
+      src/docsynthfab/cli.py
     should not exist anymore.
     """
     paths = resolve_paths()
@@ -123,17 +123,17 @@ def test_cli_package_contract():
     assert (cli_dir / "main.py").exists()
 
     assert not old_cli.exists(), (
-        "Old src/ai1_gen/cli.py still exists. "
-        "It conflicts with the new ai1_gen.cli package."
+        "Old src/docsynthfab/cli.py still exists. "
+        "It conflicts with the new docsynthfab.cli package."
     )
 
 def test_config_package_contract():
     """
     Config is now a package:
-      src/ai1_gen/config/
+      src/docsynthfab/config/
 
     Old top-level:
-      src/ai1_gen/config.py
+      src/docsynthfab/config.py
 
     should not exist anymore.
     """
@@ -150,19 +150,19 @@ def test_config_package_contract():
     assert (config_dir / "errors.py").exists()
 
     assert not old_config.exists(), (
-        "Old src/ai1_gen/config.py still exists. "
-        "It conflicts with the new ai1_gen.config package."
+        "Old src/docsynthfab/config.py still exists. "
+        "It conflicts with the new docsynthfab.config package."
     )
 
 
 def test_config_backward_compat_exports():
     """
     Existing code still depends on:
-      from ai1_gen.config import load_config, ConfigError
+      from docsynthfab.config import load_config, ConfigError
 
     Keep this public contract stable after modularization.
     """
-    import ai1_gen.config as config
+    import docsynthfab.config as config
 
     required = [
         "AppConfig",
@@ -175,7 +175,7 @@ def test_config_backward_compat_exports():
     ]
 
     for name in required:
-        assert hasattr(config, name), f"ai1_gen.config missing export: {name}"
+        assert hasattr(config, name), f"docsynthfab.config missing export: {name}"
 
     assert "load_config" in config.__all__
     assert "ConfigError" in config.__all__
@@ -184,9 +184,9 @@ def test_config_backward_compat_exports():
 def test_cli_backward_compat_exports():
     """
     Old unit tests and external users may still import private compatibility names
-    from ai1_gen.cli. Keep them until tests are fully migrated.
+    from docsynthfab.cli. Keep them until tests are fully migrated.
     """
-    import ai1_gen.cli as cli
+    import docsynthfab.cli as cli
 
     required = [
         "main",
@@ -198,7 +198,7 @@ def test_cli_backward_compat_exports():
     ]
 
     for name in required:
-        assert hasattr(cli, name), f"ai1_gen.cli missing compatibility export: {name}"
+        assert hasattr(cli, name), f"docsynthfab.cli missing compatibility export: {name}"
 
 
 def test_modular_gui_layout_contract():
@@ -223,8 +223,6 @@ def test_modular_gui_layout_contract():
         root / "gui" / "web" / "live_events.py",
         root / "gui" / "web" / "run_state.py",
         root / "gui" / "web" / "template_csv.py",
-        root / "gui" / "desktop" / "__init__.py",
-        root / "gui" / "desktop" / "app.py",
     ]
 
     missing = [str(path) for path in expected_files if not path.exists()]
@@ -234,7 +232,7 @@ def test_modular_gui_layout_contract():
 def test_old_web_gui_is_removed_or_launcher_only():
     """
     Final target:
-    - old src/ai1_gen/web_gui.py should be removed, OR
+    - old src/docsynthfab/web_gui.py should be removed, OR
     - if kept temporarily, it must be a tiny launcher only.
     """
     paths = resolve_paths()
@@ -248,7 +246,7 @@ def test_old_web_gui_is_removed_or_launcher_only():
     assert "from nicegui import ui" not in text
     assert "RunOrchestrator()" not in text
     assert (
-        "ai1_gen.gui.web.app" in text
+        "docsynthfab.gui.web.app" in text
         or "runpy.run_module" in text
     ), "web_gui.py exists but does not look like a clean launcher."
 
@@ -258,7 +256,7 @@ def test_no_duplicate_shared_runtime_state():
     Intermediate duplicate state file should not remain in the final target.
 
     Web runtime owner:
-      ai1_gen.gui.web.state.WEB_STATE
+      docsynthfab.gui.web.state.WEB_STATE
     """
     paths = resolve_paths()
     duplicate = paths.package_root / "gui" / "shared" / "runtime_state.py"
@@ -266,7 +264,7 @@ def test_no_duplicate_shared_runtime_state():
     assert not duplicate.exists(), (
         "Duplicate state file still exists: "
         f"{duplicate}\n"
-        "Final target should use ai1_gen.gui.web.state.WEB_STATE."
+        "Final target should use docsynthfab.gui.web.state.WEB_STATE."
     )
 
 
@@ -275,7 +273,7 @@ def test_latex_normalize_backward_compat_contract():
     Older render modules may still import normalize_latex_expr from miktex_render.
     Keep this compatibility unless every old import has been removed.
     """
-    from ai1_gen.latex.miktex_render import normalize_latex_expr
+    from docsynthfab.latex.miktex_render import normalize_latex_expr
 
     assert normalize_latex_expr("sum_{i=1}^{n} i") == r"\sum_{i=1}^{n} i"
     assert normalize_latex_expr("sqrt{x+1}") == r"\sqrt{x+1}"
@@ -286,7 +284,7 @@ def test_orchestrator_gui_contract():
     """
     GUI depends on these orchestrator methods.
     """
-    from ai1_gen.orchestrator import RunOrchestrator
+    from docsynthfab.orchestrator import RunOrchestrator
 
     orch = RunOrchestrator()
 
@@ -319,7 +317,8 @@ def test_gui_entrypoints_import_when_dependencies_are_available():
     On your local dev machine they should normally run.
     """
     pytest.importorskip("nicegui")
-    importlib.import_module("ai1_gen.gui.web.app")
+    importlib.import_module("docsynthfab.gui.web.app")
 
-    pytest.importorskip("PySide6")
-    importlib.import_module("ai1_gen.gui.desktop.app")
+
+
+

@@ -1,0 +1,317 @@
+{
+  "info": {
+    "description": "Synthetic Document AI COCO export",
+    "version": "coco-export-v1"
+  },
+  "licenses": [],
+  "images": [
+    {
+      "id": 1,
+      "file_name": "000000.png",
+      "width": 4200,
+      "height": 2550
+    },
+    {
+      "id": 2,
+      "file_name": "000001.png",
+      "width": 1654,
+      "height": 2338
+    },
+    {
+      "id": 3,
+      "file_name": "000002.png",
+      "width": 2481,
+      "height": 3507
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        336.0,
+        204.0,
+        3528.0,
+        81.0
+      ],
+      "area": 285768.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 0,
+        "block_type": "title",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 2,
+      "image_id": 1,
+      "category_id": 3,
+      "bbox": [
+        414.0,
+        1930.0,
+        2822.0,
+        374.0
+      ],
+      "area": 1055428.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 2,
+        "block_type": "equation",
+        "semantic_type": "math_latex"
+      }
+    },
+    {
+      "id": 3,
+      "image_id": 1,
+      "category_id": 2,
+      "bbox": [
+        1035.0,
+        1586.0,
+        2822.0,
+        286.0
+      ],
+      "area": 807092.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 3,
+        "block_type": "table",
+        "semantic_type": "table_region"
+      }
+    },
+    {
+      "id": 4,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        132.0,
+        1981.0,
+        1390.0,
+        115.0
+      ],
+      "area": 159850.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 0,
+        "block_type": "title",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 5,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        260.0,
+        1184.0,
+        1112.0,
+        583.0
+      ],
+      "area": 648296.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 1,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 6,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        247.0,
+        191.0,
+        1112.0,
+        388.0
+      ],
+      "area": 431456.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 2,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 7,
+      "image_id": 2,
+      "category_id": 3,
+      "bbox": [
+        357.0,
+        757.0,
+        1112.0,
+        364.0
+      ],
+      "area": 404768.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 3,
+        "block_type": "equation",
+        "semantic_type": "math_latex"
+      }
+    },
+    {
+      "id": 8,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        168.0,
+        681.0,
+        1112.0,
+        46.0
+      ],
+      "area": 51152.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 4,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 9,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        198.0,
+        1228.0,
+        2085.0,
+        124.0
+      ],
+      "area": 258540.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 0,
+        "block_type": "title",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 10,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        244.0,
+        287.0,
+        1668.0,
+        614.0
+      ],
+      "area": 1024152.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 1,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 11,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        398.0,
+        1497.0,
+        1668.0,
+        1059.0
+      ],
+      "area": 1766412.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 2,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 12,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        374.0,
+        2607.0,
+        1668.0,
+        19.0
+      ],
+      "area": 31692.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 4,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 13,
+      "image_id": 3,
+      "category_id": 3,
+      "bbox": [
+        198.0,
+        3208.0,
+        1668.0,
+        19.0
+      ],
+      "area": 31692.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 5,
+        "block_type": "equation",
+        "semantic_type": "math_latex"
+      }
+    },
+    {
+      "id": 14,
+      "image_id": 3,
+      "category_id": 3,
+      "bbox": [
+        484.0,
+        952.0,
+        1668.0,
+        19.0
+      ],
+      "area": 31692.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 6,
+        "block_type": "equation",
+        "semantic_type": "math_latex"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "plain_text",
+      "supercategory": "document"
+    },
+    {
+      "id": 2,
+      "name": "table_region",
+      "supercategory": "document"
+    },
+    {
+      "id": 3,
+      "name": "math_latex",
+      "supercategory": "document"
+    },
+    {
+      "id": 4,
+      "name": "figure",
+      "supercategory": "document"
+    }
+  ]
+}

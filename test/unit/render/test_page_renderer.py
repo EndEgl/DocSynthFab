@@ -1,6 +1,6 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
-from ai1_gen.render.page_renderer import _content_pure_mode_from_cfg
+from docsynthfab.render.page_renderer import _content_pure_mode_from_cfg
 
 
 def test_content_pure_mode_detects_table_only():
@@ -35,3 +35,6 @@ def test_content_pure_mode_zero_total_is_mixed():
 
 def test_content_pure_mode_missing_block_mix_is_mixed():
     assert _content_pure_mode_from_cfg({}) == "mixed"
+
+
+

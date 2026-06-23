@@ -1,0 +1,26 @@
+﻿C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\digital_twin\test_src_digital_twin.py:324: pytest.importorskip("PySide6")
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:6: # - PySide6>=6.5,<7.0
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:7: # - pytest-qt>=4.4,<5.0
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:398: def test_desktop_gui_app_imports_when_pyside6_is_available():
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:399: pytest.importorskip("PySide6")
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:403: assert hasattr(mod, "DesktopMainWindow")
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:408: def test_desktop_window_constructs(qtbot, monkeypatch):
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:409: pytest.importorskip("PySide6")
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:415: win = desktop_app.DesktopMainWindow()
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:416: qtbot.addWidget(win)
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:422: def test_desktop_build_run_input(qtbot, monkeypatch):
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:423: pytest.importorskip("PySide6")
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:429: win = desktop_app.DesktopMainWindow()
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:430: qtbot.addWidget(win)
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:448: def test_desktop_start_run_updates_state(qtbot, monkeypatch):
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:449: pytest.importorskip("PySide6")
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:455: win = desktop_app.DesktopMainWindow()
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:456: qtbot.addWidget(win)
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:484: def test_desktop_stop_run_calls_orchestrator(qtbot, monkeypatch):
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:485: pytest.importorskip("PySide6")
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:491: win = desktop_app.DesktopMainWindow()
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:492: qtbot.addWidget(win)
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:512: def test_desktop_refresh_status_updates_labels(qtbot, monkeypatch):
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:513: pytest.importorskip("PySide6")
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:519: win = desktop_app.DesktopMainWindow()
+C:\Users\AG Zaferi\Desktop\LLM_tabanlı_projeler\DocSynthFab\test\unit\gui\test_modular_gui_contract.py:520: qtbot.addWidget(win)

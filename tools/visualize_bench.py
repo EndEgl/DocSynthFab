@@ -1,4 +1,4 @@
-import json
+﻿import json
 import sys
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -55,3 +55,5 @@ if __name__ == "__main__":
         print("Kullanım: python tools/visualize_bench.py bench.json")
     else:
         visualize(sys.argv[1])
+
+

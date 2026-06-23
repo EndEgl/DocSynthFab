@@ -1,0 +1,285 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000024",
+  "size": {
+    "w": 2481,
+    "h": 3507,
+    "dpi": 300,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "double_col",
+    "density_level": "sparse",
+    "scale_profile": "dpi300",
+    "noise_level": "medium",
+    "page_family": "report",
+    "_fallback": false,
+    "_augment_disabled_by_retry": false,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": true,
+    "has_equation": false,
+    "has_equation_layout": false,
+    "has_figure": false,
+    "mask_text_nonzero": 3778,
+    "mask_math_nonzero": 0,
+    "math_line_count": 0,
+    "equation_block_count": 0,
+    "table_block_count": 1,
+    "figure_block_count": 0,
+    "rotation_deg": -0.13909873894458968,
+    "perspective": true,
+    "book_mode": false,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": []
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "table",
+      "block_order": 0,
+      "column_id": 1,
+      "bbox": [
+        899,
+        1939,
+        804,
+        616
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "list",
+      "block_order": 1,
+      "column_id": 0,
+      "bbox": [
+        308,
+        298,
+        804,
+        557
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 0,
+      "bbox": [
+        911,
+        1951,
+        273,
+        173
+      ]
+    },
+    {
+      "line_id": 1,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 1,
+      "bbox": [
+        1200,
+        1955,
+        137,
+        15
+      ],
+      "text": "Wahrscheinlichkeit",
+      "script": "latin"
+    },
+    {
+      "line_id": 2,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 2,
+      "bbox": [
+        1369,
+        1951,
+        140,
+        173
+      ]
+    },
+    {
+      "line_id": 3,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 3,
+      "bbox": [
+        1520,
+        1955,
+        126,
+        18
+      ],
+      "text": "Lösung Ausgabe(",
+      "script": "latin"
+    },
+    {
+      "line_id": 4,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 4,
+      "bbox": [
+        911,
+        2145,
+        273,
+        132
+      ]
+    },
+    {
+      "line_id": 5,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 5,
+      "bbox": [
+        1203,
+        2151,
+        42,
+        14
+      ],
+      "text": "metin",
+      "script": "latin"
+    },
+    {
+      "line_id": 6,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 6,
+      "bbox": [
+        1369,
+        2151,
+        92,
+        14
+      ],
+      "text": "LOREM  amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 7,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 7,
+      "bbox": [
+        1523,
+        2151,
+        89,
+        14
+      ],
+      "text": "kalite   metin",
+      "script": "latin"
+    },
+    {
+      "line_id": 8,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 8,
+      "bbox": [
+        911,
+        2293,
+        273,
+        115
+      ]
+    },
+    {
+      "line_id": 9,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 9,
+      "bbox": [
+        1205,
+        2296,
+        149,
+        109
+      ]
+    },
+    {
+      "line_id": 10,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 10,
+      "bbox": [
+        1369,
+        2299,
+        93,
+        16
+      ],
+      "text": "Daten Lösung,",
+      "script": "latin"
+    },
+    {
+      "line_id": 11,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 11,
+      "bbox": [
+        1525,
+        2296,
+        168,
+        109
+      ]
+    },
+    {
+      "line_id": 12,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 12,
+      "bbox": [
+        911,
+        2423,
+        273,
+        124
+      ]
+    },
+    {
+      "line_id": 13,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 13,
+      "bbox": [
+        1203,
+        2430,
+        112,
+        18
+      ],
+      "text": "yoğunluk kalite",
+      "script": "latin"
+    },
+    {
+      "line_id": 14,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 14,
+      "bbox": [
+        364,
+        363,
+        670,
+        54
+      ]
+    },
+    {
+      "line_id": 15,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 15,
+      "bbox": [
+        364,
+        441,
+        623,
+        54
+      ]
+    }
+  ],
+  "page_text": "Wahrscheinlichkeit\nLösung Ausgabe(\nmetin\nLOREM  amet\nkalite   metin\nDaten Lösung,\nyoğunluk kalite",
+  "gt_stats": {
+    "scripts_hist": {
+      "latin": 7
+    },
+    "has_gt_text_lines": 7,
+    "has_gt_math_lines": 0,
+    "book_mode_added_lines": 0
+  }
+}

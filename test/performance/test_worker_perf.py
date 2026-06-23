@@ -1,9 +1,9 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import numpy as np
 import time
 
-import ai1_gen.cli as cli_mod
+import docsynthfab.cli as cli_mod
 
 
 class CfgStub:
@@ -13,7 +13,7 @@ class CfgStub:
     def augment(self):
         return {"enable": False}
 
-    version = "ai1-ds-v1.3.2"
+    version = "docsynthfab-ds-v0.1"
 
 
 def test_worker_perf_smoke(tmp_path, monkeypatch):
@@ -27,7 +27,7 @@ def test_worker_perf_smoke(tmp_path, monkeypatch):
 
     def fake_render_page_layers(_ps, _cfg, _rng):
         ann = {
-            "version": "ai1-ds-v1.3.2",
+            "version": "docsynthfab-ds-v0.1",
             "page_id": "000001",
             "size": {"w": 128, "h": 64, "dpi": 300},
             "meta": {
@@ -100,3 +100,6 @@ def test_worker_perf_smoke(tmp_path, monkeypatch):
     elapsed = time.perf_counter() - t0
 
     assert elapsed < 8.0
+
+
+

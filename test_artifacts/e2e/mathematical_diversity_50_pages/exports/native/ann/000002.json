@@ -1,0 +1,1126 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000002",
+  "size": {
+    "w": 2481,
+    "h": 3507,
+    "dpi": 300,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "page_family": "notes",
+    "layout_type": "single_col",
+    "noise_level": "medium",
+    "density_level": "sparse",
+    "scale_profile": "dpi300",
+    "has_table": false,
+    "has_equation": false,
+    "has_figure": false,
+    "rotation_deg": -1.692538509678894,
+    "perspective": true,
+    "book_mode": false,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_pure_mode": "mixed",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "latex_render_error_count": 19,
+    "latex_render_errors": [
+      {
+        "line_id": 0,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "title",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 3,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 4,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "tr",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 7,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 10,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 11,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "ru",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 15,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 16,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 21,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "tr",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 23,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "ru",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 24,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "ru",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 25,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "list",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 26,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "list",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 27,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "list",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 28,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "tr",
+        "line_kind": "list",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 30,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "list",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 33,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 35,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "de",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 37,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      }
+    ],
+    "latex_render_fallback_used": true,
+    "latex_render_backend": "http",
+    "latex_render_http_base_url": "http://127.0.0.1:8080",
+    "latex_render_enabled": false,
+    "mask_text_nonzero": 67413,
+    "mask_math_nonzero": 0,
+    "aug_trace": [
+      {
+        "op": "photometric",
+        "gamma": 0.8631448277761676,
+        "alpha": 0.9247596258662759,
+        "beta": 0.21847841479312002
+      },
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 67413.0,
+        "after_text_nz": 67413.0,
+        "before_math_nz": 0.0,
+        "after_math_nz": 0.0,
+        "accepted": true
+      }
+    ],
+    "math_line_count": 0,
+    "equation_block_count": 1,
+    "table_block_count": 0,
+    "figure_block_count": 0,
+    "has_equation_layout": true,
+    "_worker_debug": {
+      "ps_equation_blocks": 1,
+      "ps_table_blocks": 0,
+      "ps_figure_blocks": 0,
+      "ps_math_lines": 0,
+      "ps_total_lines": 38,
+      "mask_text_nonzero_pre_qc": 67413,
+      "mask_math_nonzero_pre_qc": 0
+    }
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "title",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        198,
+        1056,
+        2085,
+        117
+      ],
+      "style": {
+        "page_family": "notes",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "full_width": true
+      }
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 0,
+      "bbox": [
+        363,
+        2517,
+        1668,
+        584
+      ],
+      "style": {
+        "page_family": "notes",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": -13
+      }
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 0,
+      "bbox": [
+        398,
+        1285,
+        1668,
+        775
+      ],
+      "style": {
+        "page_family": "notes",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": 3
+      }
+    },
+    {
+      "block_id": 3,
+      "block_type": "list",
+      "block_order": 3,
+      "column_id": 0,
+      "bbox": [
+        205,
+        2120,
+        1668,
+        349
+      ],
+      "style": {
+        "page_family": "notes",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": -2
+      }
+    },
+    {
+      "block_id": 4,
+      "block_type": "paragraph",
+      "block_order": 4,
+      "column_id": 0,
+      "bbox": [
+        247,
+        319,
+        1668,
+        418
+      ],
+      "style": {
+        "page_family": "notes",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": -1
+      }
+    },
+    {
+      "block_id": 5,
+      "block_type": "equation",
+      "block_order": 5,
+      "column_id": 0,
+      "bbox": [
+        198,
+        3208,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "notes",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "block_id": 6,
+      "block_type": "paragraph",
+      "block_order": 6,
+      "column_id": 1,
+      "bbox": [
+        467,
+        792,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "notes",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "_downgraded_from_table": true,
+        "_downgrade_reason": "table-bbox-too-short",
+        "_original_table_bbox": [
+          467,
+          792,
+          1668,
+          19
+        ],
+        "_required_min_table_h": 112
+      }
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 0,
+      "bbox": [
+        239,
+        1070,
+        1461,
+        56
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 1,
+      "bbox": [
+        411,
+        2587,
+        807,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Fehler Prüfung Menge Schema Diagramm Fahrzeug Fracht Ordner Titel Datei Rand Kopie анализ Klasse Abteilung",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 86,
+        "ru": 6
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 1,
+      "global_line_order": 2,
+      "bbox": [
+        411,
+        2642,
+        464,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "denklem ağırlık konteyner satır iletişim görsel parti proje özet teslimat",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 64
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 3,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 2,
+      "global_line_order": 3,
+      "bbox": [
+        413,
+        2692,
+        1589,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 4,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 3,
+      "global_line_order": 4,
+      "bbox": [
+        413,
+        2748,
+        1490,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 5,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 4,
+      "global_line_order": 5,
+      "bbox": [
+        411,
+        2807,
+        462,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "müşteri boşluk gemi alan license boşluk saklama satır revizyon maske",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 59
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 6,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 5,
+      "global_line_order": 6,
+      "bbox": [
+        411,
+        2862,
+        956,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "cliente pie descuento ancho producto palé estado conductor espaciado comentario columna gerente contenedor archivo referencia equipo plazo",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 122
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 7,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 6,
+      "global_line_order": 7,
+      "bbox": [
+        413,
+        2913,
+        1481,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 8,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 7,
+      "global_line_order": 8,
+      "bbox": [
+        411,
+        2971,
+        748,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "height warning department reference date comment template weight batch box container script font stamp filtre",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 95
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 9,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 8,
+      "global_line_order": 9,
+      "bbox": [
+        411,
+        3023,
+        490,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Datei Problem E-Mail Kraftstoff Zeile Hafen Zeile şehir Terminal Inventar Rand Land 许可 Lagerung Einheit",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 86,
+        "zh": 2
+      },
+      "render_font_path": "__PIL_DEFAULT__",
+      "render_font_index": -1,
+      "render_font_name": "Aileron / Regular"
+    },
+    {
+      "line_id": 10,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 9,
+      "global_line_order": 10,
+      "bbox": [
+        413,
+        3062,
+        724,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 11,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 11,
+      "bbox": [
+        448,
+        1369,
+        1458,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 12,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 1,
+      "global_line_order": 12,
+      "bbox": [
+        446,
+        1434,
+        528,
+        19
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "محطة رسوم ارتفاع دولة درجة_حرارة مادة عرض محطة ميناء وحدة يونيكود note دفع حمولة",
+      "gt_script": "ar",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "ar": 62,
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\arabic\\NotoSansArabic-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans Arabic / Regular"
+    },
+    {
+      "line_id": 13,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 2,
+      "global_line_order": 13,
+      "bbox": [
+        446,
+        1484,
+        992,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "контейнер шаблон отдел отклик материал партия копия палета встреча товар расстояние ячейка штрихкод решение маршрут вопрос",
+      "gt_script": "ru",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "ru": 107
+      },
+      "render_font_path": "assets\\fonts\\cyrillic\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 14,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 3,
+      "global_line_order": 14,
+      "bbox": [
+        446,
+        1539,
+        495,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "schema groundtruth class class tax encoding length analysis decision cell permit",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 70
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 15,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 4,
+      "global_line_order": 15,
+      "bbox": [
+        448,
+        1589,
+        1432,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 16,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 5,
+      "global_line_order": 16,
+      "bbox": [
+        448,
+        1644,
+        1459,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 17,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 6,
+      "global_line_order": 17,
+      "bbox": [
+        446,
+        1706,
+        486,
+        19
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Projekt Ordner Vertrag Schiff Lager Export Vertrag Stapel Export",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 56
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 18,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 7,
+      "global_line_order": 18,
+      "bbox": [
+        446,
+        1758,
+        389,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "contenedor nota seguro unicode trabajador almacén palé línea",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 53
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 19,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 8,
+      "global_line_order": 19,
+      "bbox": [
+        446,
+        1809,
+        287,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "स्कीमा स्तंभ मात्रा ईमेल चालान टर्मिनल प्रमाणपत्र आयतन",
+      "gt_script": "hi",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "hi": 47
+      },
+      "render_font_path": "assets\\fonts\\devanagari\\NotoSansDevanagari-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans Devanagari / Regular"
+    },
+    {
+      "line_id": 20,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 9,
+      "global_line_order": 20,
+      "bbox": [
+        446,
+        1870,
+        1017,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "description contract supplier request insurance mask question figure border склад subtotal number spacing license machine category payment",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 117,
+        "ru": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 21,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 10,
+      "global_line_order": 21,
+      "bbox": [
+        448,
+        1920,
+        1437,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 22,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 11,
+      "global_line_order": 22,
+      "bbox": [
+        446,
+        1978,
+        798,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "şablon gümrük sorun dışa_aktarım koli tohum risk dosya tedarikçi sembol rastgele yönetici paket stok analiz dosya kenar",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 103
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 23,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 12,
+      "global_line_order": 23,
+      "bbox": [
+        448,
+        2021,
+        1602,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 24,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 13,
+      "global_line_order": 24,
+      "bbox": [
+        448,
+        2021,
+        1004,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 25,
+      "block_id": 3,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 25,
+      "bbox": [
+        321,
+        2163,
+        1347,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 26,
+      "block_id": 3,
+      "line_type": "text",
+      "line_order_in_block": 1,
+      "global_line_order": 26,
+      "bbox": [
+        321,
+        2218,
+        1277,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 27,
+      "block_id": 3,
+      "line_type": "text",
+      "line_order_in_block": 2,
+      "global_line_order": 27,
+      "bbox": [
+        321,
+        2273,
+        1390,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 28,
+      "block_id": 3,
+      "line_type": "text",
+      "line_order_in_block": 3,
+      "global_line_order": 28,
+      "bbox": [
+        321,
+        2327,
+        1359,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 29,
+      "block_id": 3,
+      "line_type": "text",
+      "line_order_in_block": 4,
+      "global_line_order": 29,
+      "bbox": [
+        319,
+        2381,
+        843,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "– παράδειγμα  ΕεάΜΰΛΣΩεΙΗ'  παράδειγμα  – ςΟψΛ΢΢παράδειγμα μοντέλομοντέλο  μοντέλο  μοντέλο  ψεασΦςλ΢ΫεΨ) δεδομένα μοντέλοπαράδειγμαξξσΔίι~ δεδομένα λύσηδεδομένα λύση μοντέλο μοντέλο",
+      "gt_script": "el",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "el": 155
+      },
+      "render_font_path": "__PIL_DEFAULT__",
+      "render_font_index": -1,
+      "render_font_name": "Aileron / Regular"
+    },
+    {
+      "line_id": 30,
+      "block_id": 3,
+      "line_type": "text",
+      "line_order_in_block": 5,
+      "global_line_order": 30,
+      "bbox": [
+        321,
+        2430,
+        1304,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 31,
+      "block_id": 4,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 31,
+      "bbox": [
+        378,
+        373,
+        793,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "etiketleme konteyner Kopie talep filtre iletişim barkod kategori saklama referans çalışan karar revizyon malzeme",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 99
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 32,
+      "block_id": 4,
+      "line_type": "text",
+      "line_order_in_block": 1,
+      "global_line_order": 32,
+      "bbox": [
+        295,
+        425,
+        699,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "weight format symbole equipment batch chart supplier symbol warehouse layout account cargo seed risk",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 87
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 33,
+      "block_id": 4,
+      "line_type": "text",
+      "line_order_in_block": 2,
+      "global_line_order": 33,
+      "bbox": [
+        297,
+        477,
+        1586,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 34,
+      "block_id": 4,
+      "line_type": "text",
+      "line_order_in_block": 3,
+      "global_line_order": 34,
+      "bbox": [
+        295,
+        533,
+        582,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "hücre uyarı liman saklama müşteri sorun yazı_tipi maske yakıt terminal אלפבית hücre klasör vergi unicode liman yazı_sistemi",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 101,
+        "he": 6
+      },
+      "render_font_path": "__PIL_DEFAULT__",
+      "render_font_index": -1,
+      "render_font_name": "Aileron / Regular"
+    },
+    {
+      "line_id": 35,
+      "block_id": 4,
+      "line_type": "text",
+      "line_order_in_block": 4,
+      "global_line_order": 35,
+      "bbox": [
+        297,
+        589,
+        1562,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 36,
+      "block_id": 4,
+      "line_type": "text",
+      "line_order_in_block": 5,
+      "global_line_order": 36,
+      "bbox": [
+        295,
+        646,
+        732,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "sütun başlık eposta onay formül özet cümle sütun issue sigorta formül dosya telefon paragraf rapor grafik özet",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 94
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 37,
+      "block_id": 4,
+      "line_type": "text",
+      "line_order_in_block": 6,
+      "global_line_order": 37,
+      "bbox": [
+        297,
+        697,
+        640,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    }
+  ],
+  "gt_page_text": "Fehler Prüfung Menge Schema Diagramm Fahrzeug Fracht Ordner Titel Datei Rand Kopie анализ Klasse Abteilung\ndenklem ağırlık konteyner satır iletişim görsel parti proje özet teslimat\nmüşteri boşluk gemi alan license boşluk saklama satır revizyon maske\ncliente pie descuento ancho producto palé estado conductor espaciado comentario columna gerente contenedor archivo referencia equipo plazo\nheight warning department reference date comment template weight batch box container script font stamp filtre\nDatei Problem E-Mail Kraftstoff Zeile Hafen Zeile şehir Terminal Inventar Rand Land 许可 Lagerung Einheit\nمحطة رسوم ارتفاع دولة درجة_حرارة مادة عرض محطة ميناء وحدة يونيكود note دفع حمولة\nконтейнер шаблон отдел отклик материал партия копия палета встреча товар расстояние ячейка штрихкод решение маршрут вопрос\nschema groundtruth class class tax encoding length analysis decision cell permit\nProjekt Ordner Vertrag Schiff Lager Export Vertrag Stapel Export\ncontenedor nota seguro unicode trabajador almacén palé línea\nस्कीमा स्तंभ मात्रा ईमेल चालान टर्मिनल प्रमाणपत्र आयतन\ndescription contract supplier request insurance mask question figure border склад subtotal number spacing license machine category payment\nşablon gümrük sorun dışa_aktarım koli tohum risk dosya tedarikçi sembol rastgele yönetici paket stok analiz dosya kenar\n– παράδειγμα  ΕεάΜΰΛΣΩεΙΗ'  παράδειγμα  – ςΟψΛ΢΢παράδειγμα μοντέλομοντέλο  μοντέλο  μοντέλο  ψεασΦςλ΢ΫεΨ) δεδομένα μοντέλοπαράδειγμαξξσΔίι~ δεδομένα λύσηδεδομένα λύση μοντέλο μοντέλο\netiketleme konteyner Kopie talep filtre iletişim barkod kategori saklama referans çalışan karar revizyon malzeme\nweight format symbole equipment batch chart supplier symbol warehouse layout account cargo seed risk\nhücre uyarı liman saklama müşteri sorun yazı_tipi maske yakıt terminal אלפבית hücre klasör vergi unicode liman yazı_sistemi\nsütun başlık eposta onay formül özet cümle sütun issue sigorta formül dosya telefon paragraf rapor grafik özet",
+  "gt_stats": {
+    "scripts_hist": {
+      "latin": 15,
+      "ar": 1,
+      "ru": 1,
+      "hi": 1,
+      "el": 1
+    },
+    "has_gt_text_lines": 19,
+    "has_gt_math_lines": 0,
+    "book_mode_added_lines": 0
+  }
+}

@@ -1,0 +1,2050 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000018",
+  "size": {
+    "w": 2481,
+    "h": 3507,
+    "dpi": 300,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "page_family": "report",
+    "layout_type": "single_col",
+    "noise_level": "medium",
+    "density_level": "sparse",
+    "scale_profile": "dpi300",
+    "has_table": false,
+    "has_equation": false,
+    "has_figure": false,
+    "rotation_deg": 1.8310738740666417,
+    "perspective": false,
+    "book_mode": false,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_pure_mode": "mixed",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "latex_render_error_count": 23,
+    "latex_render_errors": [
+      {
+        "line_id": 8,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "tr",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 9,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "tr",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 11,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "de",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 14,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 18,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 19,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 25,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 28,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 32,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 35,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "de",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 37,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 39,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 42,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 47,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 49,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 50,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "de",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 64,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "tr",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 67,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 70,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 74,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "list",
+        "safe_ocr_line_guard": true
+      }
+    ],
+    "latex_render_fallback_used": true,
+    "latex_render_backend": "http",
+    "latex_render_http_base_url": "http://127.0.0.1:8080",
+    "latex_render_enabled": false,
+    "aug_trace": [],
+    "_augment_disabled_by_retry": false,
+    "mask_text_nonzero": 90110,
+    "mask_math_nonzero": 0,
+    "math_line_count": 0,
+    "equation_block_count": 0,
+    "table_block_count": 0,
+    "figure_block_count": 0,
+    "has_equation_layout": false,
+    "_worker_debug": {
+      "ps_equation_blocks": 0,
+      "ps_table_blocks": 0,
+      "ps_figure_blocks": 0,
+      "ps_math_lines": 0,
+      "ps_total_lines": 78,
+      "mask_text_nonzero_pre_qc": 90110,
+      "mask_math_nonzero_pre_qc": 0
+    }
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "title",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        198,
+        3015,
+        2085,
+        161
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "full_width": true
+      }
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 1,
+      "bbox": [
+        604,
+        310,
+        1668,
+        992
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": -11
+      }
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 0,
+      "bbox": [
+        136,
+        1480,
+        1668,
+        1125
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": -11
+      }
+    },
+    {
+      "block_id": 3,
+      "block_type": "list",
+      "block_order": 3,
+      "column_id": 0,
+      "bbox": [
+        217,
+        2713,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": 3
+      }
+    },
+    {
+      "block_id": 4,
+      "block_type": "paragraph",
+      "block_order": 4,
+      "column_id": 0,
+      "bbox": [
+        403,
+        2771,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": 13
+      }
+    },
+    {
+      "block_id": 5,
+      "block_type": "paragraph",
+      "block_order": 5,
+      "column_id": 0,
+      "bbox": [
+        211,
+        2943,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": -11
+      }
+    },
+    {
+      "block_id": 6,
+      "block_type": "paragraph",
+      "block_order": 6,
+      "column_id": 0,
+      "bbox": [
+        224,
+        2627,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "_downgraded_from_table": true,
+        "_downgrade_reason": "table-bbox-too-short",
+        "_original_table_bbox": [
+          224,
+          2627,
+          1668,
+          19
+        ],
+        "_required_min_table_h": 112
+      }
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 0,
+      "bbox": [
+        237,
+        3037,
+        205,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "MERHABA veri doğrulama çıktı",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 25
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 1,
+      "bbox": [
+        652,
+        412,
+        47,
+        9
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "metin METIN",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 10
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 1,
+      "global_line_order": 2,
+      "bbox": [
+        652,
+        461,
+        507,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "kalite= merhaba doğrulamaçıktı metin yoğunluk örnek, merhaba dünya kalitedünya merhaba satır ÖRNEK kalite çözüm",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 96
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 3,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 2,
+      "global_line_order": 3,
+      "bbox": [
+        652,
+        441,
+        261,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "gümrük departman program sorun kenar iskonto ödeme işçi",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 48
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 4,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 3,
+      "global_line_order": 4,
+      "bbox": [
+        652,
+        517,
+        273,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "para hacim bölüm rapor paket departman şablon telefon başarı",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 52
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 5,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 4,
+      "global_line_order": 5,
+      "bbox": [
+        652,
+        571,
+        548,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "dosya mesafe dil referans hata durum geçiş toplam kelime пример içe_aktarım işçi alan parti onay program açıklama doğrulama",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 100,
+        "ru": 6
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 6,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 5,
+      "global_line_order": 6,
+      "bbox": [
+        652,
+        483,
+        483,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Kalender Maske Abbildung Rechnung Material Risiko Abschnitt Wort Schrift Wort Annotation Hafen inventory Bild",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 96
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 7,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 6,
+      "global_line_order": 7,
+      "bbox": [
+        652,
+        537,
+        231,
+        11
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "分析 证书 价格 批准 原件 港口 单位 计划 统一码 印章 邮件",
+      "gt_script": "zh",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "zh": 23
+      },
+      "render_font_path": "assets\\fonts\\cjk\\NotoSansSC-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans SC / Regular"
+    },
+    {
+      "line_id": 8,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 7,
+      "global_line_order": 8,
+      "bbox": [
+        654,
+        623,
+        1591,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 9,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 8,
+      "global_line_order": 9,
+      "bbox": [
+        654,
+        588,
+        1525,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 10,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 9,
+      "global_line_order": 10,
+      "bbox": [
+        652,
+        590,
+        311,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "koli genişlik gemi kategori risk barkod malzeme saklama toplantı mesafe",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 62
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 11,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 10,
+      "global_line_order": 11,
+      "bbox": [
+        654,
+        642,
+        1522,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 12,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 11,
+      "global_line_order": 12,
+      "bbox": [
+        652,
+        625,
+        304,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "fichier filtre question distance adresse bordure équipe tableau réponse",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 63
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 13,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 12,
+      "global_line_order": 13,
+      "bbox": [
+        652,
+        642,
+        711,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ciudad alfabeto estado unidad departamento impuesto encabezado ancho riesgo imagen alfabeto خصم conjunto_datos inspección verdad_base temperatura",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 127,
+        "ar": 3
+      },
+      "render_font_path": "__PIL_DEFAULT__",
+      "render_font_index": -1,
+      "render_font_name": "Aileron / Regular"
+    },
+    {
+      "line_id": 14,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 13,
+      "global_line_order": 14,
+      "bbox": [
+        654,
+        695,
+        1561,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 15,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 14,
+      "global_line_order": 15,
+      "bbox": [
+        652,
+        609,
+        371,
+        11
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "印章 付款 印章 余额 船舶 字母 长度 图表 模板 运输 响应 长度 价格 答案 字体 会议 描述 问题项",
+      "gt_script": "zh",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "zh": 37
+      },
+      "render_font_path": "assets\\fonts\\cjk\\NotoSansSC-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans SC / Regular"
+    },
+    {
+      "line_id": 16,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 15,
+      "global_line_order": 16,
+      "bbox": [
+        652,
+        678,
+        339,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ค่าจริง ตัวกรอง ขอบ ข้อผิดพลาด ตู้คอนเทนเนอร์ หมายเหตุ ความสูง โฟลเดอร์ ยอดคงเหลือ สุ่ม",
+      "gt_script": "th",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "th": 78
+      },
+      "render_font_path": "assets\\fonts\\thai\\NotoSansThai-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans Thai / Regular"
+    },
+    {
+      "line_id": 17,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 16,
+      "global_line_order": 17,
+      "bbox": [
+        652,
+        733,
+        559,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "revisión gerente distancia borde cantidad peso caja formato entrega conjunto_datos precio celda anotación análisis número equipo",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 113
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 18,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 17,
+      "global_line_order": 18,
+      "bbox": [
+        654,
+        785,
+        1563,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 19,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 18,
+      "global_line_order": 19,
+      "bbox": [
+        654,
+        663,
+        1506,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 20,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 19,
+      "global_line_order": 20,
+      "bbox": [
+        652,
+        786,
+        478,
+        11
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Arbeiter Nummer Fußzeile Import Rahmen Etikett Titel paket Kopie Zufall Seite Wort Abbildung Steuer Problem Telefon Export",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 106
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 21,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 20,
+      "global_line_order": 21,
+      "bbox": [
+        652,
+        839,
+        264,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "görev iskonto adres çerçeve iletişim makine adres analiz depo",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 53
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 22,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 21,
+      "global_line_order": 22,
+      "bbox": [
+        652,
+        707,
+        654,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Ordner Material Kontakt Sprache Barcode Temperatur Entfernung Fracht Layout Antwort Lagerung Versicherung Währung Volumen Formel Datei Schema",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 125
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 23,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 22,
+      "global_line_order": 23,
+      "bbox": [
+        652,
+        893,
+        389,
+        11
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "间距 任务 报告 字母 批准 存储 截止期 记录 真实值 字段 字母 余额 材料 日历 机器 高度 发票 通行费",
+      "gt_script": "zh",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "zh": 39
+      },
+      "render_font_path": "assets\\fonts\\cjk\\NotoSansSC-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans SC / Regular"
+    },
+    {
+      "line_id": 24,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 23,
+      "global_line_order": 24,
+      "bbox": [
+        652,
+        946,
+        390,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "koli uyarı ürün takvim telefon depo uyarı şema parti grafik yükseklik veri hesap talep maske",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 78
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 25,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 24,
+      "global_line_order": 25,
+      "bbox": [
+        654,
+        998,
+        1585,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 26,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 25,
+      "global_line_order": 26,
+      "bbox": [
+        652,
+        763,
+        676,
+        12
+      ],
+      "quad": null,
+      "is_hard": true,
+      "gt_text": "σχήμα_δεδομένων προμηθευτής κλάση ενότητα γράφημα ερώτηση αναθεώρηση κοντέινερ διάταξη τμήμα εγγραφή πίνακας τιμολόγιο πρόγραμμα λογαριασμός",
+      "gt_script": "el",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "el": 125,
+        "latin": 1
+      },
+      "render_font_path": "assets\\fonts\\greek\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 27,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 26,
+      "global_line_order": 27,
+      "bbox": [
+        652,
+        1000,
+        297,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "sous-total stockage dossier formule livraison projet en-tête carburant",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 61
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 28,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 27,
+      "global_line_order": 28,
+      "bbox": [
+        654,
+        1052,
+        1473,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 29,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 28,
+      "global_line_order": 29,
+      "bbox": [
+        652,
+        803,
+        611,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "champ étiquette mot chauffeur péage palette erreur 交付 volume exportation employé 托盘 facture avertissement poids colonne terminal",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 108,
+        "zh": 4
+      },
+      "render_font_path": "__PIL_DEFAULT__",
+      "render_font_index": -1,
+      "render_font_name": "Aileron / Regular"
+    },
+    {
+      "line_id": 30,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 29,
+      "global_line_order": 30,
+      "bbox": [
+        652,
+        859,
+        21,
+        9
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "test",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 31,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 30,
+      "global_line_order": 31,
+      "bbox": [
+        652,
+        1057,
+        333,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "جواب موظف وزن لغة معدات مدينة كلمة تخزين اتصال تقويم دولة كمية تفتيش حساب رخصة",
+      "gt_script": "ar",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "ar": 64
+      },
+      "render_font_path": "assets\\fonts\\arabic\\NotoSansArabic-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans Arabic / Regular"
+    },
+    {
+      "line_id": 32,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 31,
+      "global_line_order": 32,
+      "bbox": [
+        654,
+        1110,
+        1480,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 33,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 32,
+      "global_line_order": 33,
+      "bbox": [
+        652,
+        1112,
+        300,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "permiso teléfono idioma carga peso saldo palé trabajador correo sello",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 60
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 34,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 33,
+      "global_line_order": 34,
+      "bbox": [
+        652,
+        875,
+        38,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "μοντέλο",
+      "gt_script": "el",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "el": 7
+      },
+      "render_font_path": "assets\\fonts\\greek\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 35,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 34,
+      "global_line_order": 35,
+      "bbox": [
+        654,
+        1164,
+        1602,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 36,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 35,
+      "global_line_order": 36,
+      "bbox": [
+        652,
+        1166,
+        428,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "véhicule fichier chauffeur analyse catégorie tampon chauffeur tableau police solde bordure symbole",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 87
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 37,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 36,
+      "global_line_order": 37,
+      "bbox": [
+        654,
+        915,
+        1607,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 38,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 37,
+      "global_line_order": 38,
+      "bbox": [
+        652,
+        932,
+        21,
+        9
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "test",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 39,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 38,
+      "global_line_order": 39,
+      "bbox": [
+        654,
+        1218,
+        1487,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 40,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 39,
+      "global_line_order": 40,
+      "bbox": [
+        652,
+        1217,
+        494,
+        15
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ตารางเวลา น้ำหนัก การอนุมัติ ย่อหน้า น้ำหนัก สินค้าเรือ Zeile การตัดสินใจ บรรจุภัณฑ์ ข้อผิดพลาด ค่าผ่านทาง ชุดงาน ตัวกรอง อีเมล ปฏิทิน",
+      "gt_script": "th",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "th": 115,
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\thai\\NotoSansThai-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans Thai / Regular"
+    },
+    {
+      "line_id": 41,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 40,
+      "global_line_order": 41,
+      "bbox": [
+        652,
+        973,
+        435,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "şekil terminal iskonto geçiş veri_seti birim not kayıt sembol tablo bakiye takvim eposta formül unicode",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 89
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 42,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 42,
+      "bbox": [
+        269,
+        1594,
+        1387,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 43,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 1,
+      "global_line_order": 43,
+      "bbox": [
+        184,
+        1611,
+        350,
+        15
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "جمارك صيغة عميل رصيد فقرة تحقق ضريبة كلمة مسار تحذير تعليق تأمين شكل صيغة فاتورة منتج",
+      "gt_script": "ar",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "ar": 70
+      },
+      "render_font_path": "assets\\fonts\\arabic\\NotoSansArabic-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans Arabic / Regular"
+    },
+    {
+      "line_id": 44,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 2,
+      "global_line_order": 44,
+      "bbox": [
+        184,
+        1666,
+        756,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ÖRNEK  ipsum  çıktığw   çıktı   veri satır  veri  yoğunluk  решение?   satır   HiwçGD  dünya   süreç ölçek satır;   çözüm   satır  süreç görsel   kalite) çözüm   dünya   SÜREÇ  ölçek  ölçek",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 126,
+        "ru": 7
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 45,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 3,
+      "global_line_order": 45,
+      "bbox": [
+        184,
+        1637,
+        310,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "insurance approval خصم barcode audit page request summary cargo",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 52,
+        "ar": 3
+      },
+      "render_font_path": "__PIL_DEFAULT__",
+      "render_font_index": -1,
+      "render_font_name": "Aileron / Regular"
+    },
+    {
+      "line_id": 46,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 4,
+      "global_line_order": 46,
+      "bbox": [
+        184,
+        1691,
+        239,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "içe_aktarım ürün kaşe kalite son_tarih karar çalışan rota",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 50
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 47,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 5,
+      "global_line_order": 47,
+      "bbox": [
+        186,
+        1720,
+        1496,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 48,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 6,
+      "global_line_order": 48,
+      "bbox": [
+        184,
+        1745,
+        108,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "merhabağhd satır  süreç",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 20
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 49,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 7,
+      "global_line_order": 49,
+      "bbox": [
+        186,
+        1797,
+        1459,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 50,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 8,
+      "global_line_order": 50,
+      "bbox": [
+        186,
+        1797,
+        1495,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 51,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 9,
+      "global_line_order": 51,
+      "bbox": [
+        184,
+        1721,
+        434,
+        11
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Antwortsatz Wort Erlaubnis Projekt Import Export Datensatz Kategorie Frist Lizenz Grundwahrheit Seite Diagramm",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 98
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 52,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 10,
+      "global_line_order": 52,
+      "bbox": [
+        184,
+        1799,
+        531,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "altura cuenta empleado símbolo solicitud material exportación esquema encabezado paquete seguro cliente éxito espaciado",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 106
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 53,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 11,
+      "global_line_order": 53,
+      "bbox": [
+        184,
+        1853,
+        411,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "iskonto yanıt talep toplantı genişlik örnek sıcaklık terminal program ağırlık ekipman ağırlık etiket",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 88
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 54,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 12,
+      "global_line_order": 54,
+      "bbox": [
+        184,
+        1764,
+        379,
+        9
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "παραγγελία μήνυμα φάκελος فئة αναφορά αριθμός υλικό πακέτο πόλη πλοίο θερμοκρασία",
+      "gt_script": "el",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "el": 68,
+        "ar": 3
+      },
+      "render_font_path": "__PIL_DEFAULT__",
+      "render_font_index": -1,
+      "render_font_name": "Aileron / Regular"
+    },
+    {
+      "line_id": 55,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 13,
+      "global_line_order": 55,
+      "bbox": [
+        184,
+        1907,
+        233,
+        11
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "이메일 열 회의 문제 범주 여백 선박 회의 보고서 도장 승인 장비",
+      "gt_script": "ko",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "ko": 25
+      },
+      "render_font_path": "assets\\fonts\\hangul\\NotoSansKR-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans KR / Regular"
+    },
+    {
+      "line_id": 56,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 14,
+      "global_line_order": 56,
+      "bbox": [
+        184,
+        1959,
+        227,
+        10
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "imza sorun şablon klasör altbilgi izin tohum ürün yük uyarı parti not",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 58
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 57,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 15,
+      "global_line_order": 57,
+      "bbox": [
+        184,
+        2011,
+        275,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Bestellung Titel Barcode Schiff Rahmen Beispiel Entfernung Feld",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 56
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 58,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 16,
+      "global_line_order": 58,
+      "bbox": [
+        184,
+        1819,
+        494,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "malzeme kontrol veri_seti özet soru cevap ライセンス hacim teslimat çalışan terminal sözleşme şekil doğrulama",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 86,
+        "ja": 5
+      },
+      "render_font_path": "__PIL_DEFAULT__",
+      "render_font_index": -1,
+      "render_font_name": "Aileron / Regular"
+    },
+    {
+      "line_id": 59,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 17,
+      "global_line_order": 59,
+      "bbox": [
+        184,
+        1873,
+        26,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ölçek",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 60,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 18,
+      "global_line_order": 60,
+      "bbox": [
+        184,
+        2065,
+        504,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Maut Team Entfernung revizyon Zertifikat Route Prüfung Maschine Rahmen Kommentar Palette Zeile Zwischensumme",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 96
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 61,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 19,
+      "global_line_order": 61,
+      "bbox": [
+        184,
+        1927,
+        455,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "εργάτης καύσιμο απάντηση γραμματοσειρά κωδικοποίηση πεδίο σχόλιο πρωτότυπο προϊόν κωδικοποίηση",
+      "gt_script": "el",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "el": 85
+      },
+      "render_font_path": "assets\\fonts\\greek\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 62,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 20,
+      "global_line_order": 62,
+      "bbox": [
+        184,
+        1981,
+        344,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "stamp employé material contract weight storage balance margin cargo note row",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 66
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 63,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 21,
+      "global_line_order": 63,
+      "bbox": [
+        184,
+        2035,
+        552,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "éxito buque figura departamento codificación auditoría contacto muestra plazo advertencia trabajador buque pie moneda idioma",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 110
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 64,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 22,
+      "global_line_order": 64,
+      "bbox": [
+        186,
+        2117,
+        1555,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 65,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 23,
+      "global_line_order": 65,
+      "bbox": [
+        184,
+        2086,
+        339,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "मूल अनुसूची समयसीमा वर्कर निर्णय गोदाम निर्यात निरीक्षण वितरण परियोजना एन्कोडिंग लिपि उत्तर वाहन",
+      "gt_script": "hi",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "hi": 83
+      },
+      "render_font_path": "assets\\fonts\\devanagari\\NotoSansDevanagari-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans Devanagari / Regular"
+    },
+    {
+      "line_id": 66,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 24,
+      "global_line_order": 66,
+      "bbox": [
+        184,
+        2142,
+        548,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "şablon revizyon kalite departman ekip geçiş hata sıcaklık son_tarih denetim proje ürün hücre içe_aktarım sıcaklık para dil unicode",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 113
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 67,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 25,
+      "global_line_order": 67,
+      "bbox": [
+        186,
+        1944,
+        1532,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 68,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 26,
+      "global_line_order": 68,
+      "bbox": [
+        184,
+        2119,
+        406,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "etiketleme proje envanter uzunluk aratoplam program tedarikçi izin geçiş yükseklik depo analiz",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 83
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 69,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 27,
+      "global_line_order": 69,
+      "bbox": [
+        184,
+        2196,
+        457,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Zeitplan Diagramm Zwischensumme Maut Kraftstoff Produkt Produkt Klasse Kodierung Material Kodierung",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 89
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 70,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 28,
+      "global_line_order": 70,
+      "bbox": [
+        186,
+        2248,
+        1574,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 71,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 29,
+      "global_line_order": 71,
+      "bbox": [
+        184,
+        2173,
+        335,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "λύση παράδειγμα λύση λύση  ΔΕΔΟΜΈΝΑπαράδειγμα+ΕλθμΜΜΩΙΓνΓε μοντέλο",
+      "gt_script": "el",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "el": 59
+      },
+      "render_font_path": "assets\\fonts\\greek\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 72,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 30,
+      "global_line_order": 72,
+      "bbox": [
+        184,
+        2227,
+        287,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "метка маршрут метка хранение формат подвал качество ячейка",
+      "gt_script": "ru",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "ru": 51
+      },
+      "render_font_path": "assets\\fonts\\cyrillic\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 73,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 31,
+      "global_line_order": 73,
+      "bbox": [
+        184,
+        2250,
+        618,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Produkt Schrift Material Besprechung Startwert Zeile Maske Reihe Symbol Sprache Genehmigung Filter Material Team Land Abstand Seite Projekt",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 122
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 74,
+      "block_id": 3,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 74,
+      "bbox": [
+        333,
+        2716,
+        1293,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 75,
+      "block_id": 4,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 75,
+      "bbox": [
+        536,
+        2774,
+        1412,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 76,
+      "block_id": 5,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 76,
+      "bbox": [
+        344,
+        2946,
+        1528,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 77,
+      "block_id": 6,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 77,
+      "bbox": [
+        357,
+        2630,
+        1368,
+        10
+      ],
+      "quad": null,
+      "is_hard": false
+    }
+  ],
+  "gt_page_text": "MERHABA veri doğrulama çıktı\nmetin METIN\nkalite= merhaba doğrulamaçıktı metin yoğunluk örnek, merhaba dünya kalitedünya merhaba satır ÖRNEK kalite çözüm\ngümrük departman program sorun kenar iskonto ödeme işçi\npara hacim bölüm rapor paket departman şablon telefon başarı\ndosya mesafe dil referans hata durum geçiş toplam kelime пример içe_aktarım işçi alan parti onay program açıklama doğrulama\nKalender Maske Abbildung Rechnung Material Risiko Abschnitt Wort Schrift Wort Annotation Hafen inventory Bild\n分析 证书 价格 批准 原件 港口 单位 计划 统一码 印章 邮件\nkoli genişlik gemi kategori risk barkod malzeme saklama toplantı mesafe\nfichier filtre question distance adresse bordure équipe tableau réponse\nciudad alfabeto estado unidad departamento impuesto encabezado ancho riesgo imagen alfabeto خصم conjunto_datos inspección verdad_base temperatura\n印章 付款 印章 余额 船舶 字母 长度 图表 模板 运输 响应 长度 价格 答案 字体 会议 描述 问题项\nค่าจริง ตัวกรอง ขอบ ข้อผิดพลาด ตู้คอนเทนเนอร์ หมายเหตุ ความสูง โฟลเดอร์ ยอดคงเหลือ สุ่ม\nrevisión gerente distancia borde cantidad peso caja formato entrega conjunto_datos precio celda anotación análisis número equipo\nArbeiter Nummer Fußzeile Import Rahmen Etikett Titel paket Kopie Zufall Seite Wort Abbildung Steuer Problem Telefon Export\ngörev iskonto adres çerçeve iletişim makine adres analiz depo\nOrdner Material Kontakt Sprache Barcode Temperatur Entfernung Fracht Layout Antwort Lagerung Versicherung Währung Volumen Formel Datei Schema\n间距 任务 报告 字母 批准 存储 截止期 记录 真实值 字段 字母 余额 材料 日历 机器 高度 发票 通行费\nkoli uyarı ürün takvim telefon depo uyarı şema parti grafik yükseklik veri hesap talep maske\nσχήμα_δεδομένων προμηθευτής κλάση ενότητα γράφημα ερώτηση αναθεώρηση κοντέινερ διάταξη τμήμα εγγραφή πίνακας τιμολόγιο πρόγραμμα λογαριασμός\nsous-total stockage dossier formule livraison projet en-tête carburant\nchamp étiquette mot chauffeur péage palette erreur 交付 volume exportation employé 托盘 facture avertissement poids colonne terminal\ntest\nجواب موظف وزن لغة معدات مدينة كلمة تخزين اتصال تقويم دولة كمية تفتيش حساب رخصة\npermiso teléfono idioma carga peso saldo palé trabajador correo sello\nμοντέλο\nvéhicule fichier chauffeur analyse catégorie tampon chauffeur tableau police solde bordure symbole\ntest\nตารางเวลา น้ำหนัก การอนุมัติ ย่อหน้า น้ำหนัก สินค้าเรือ Zeile การตัดสินใจ บรรจุภัณฑ์ ข้อผิดพลาด ค่าผ่านทาง ชุดงาน ตัวกรอง อีเมล ปฏิทิน\nşekil terminal iskonto geçiş veri_seti birim not kayıt sembol tablo bakiye takvim eposta formül unicode\nجمارك صيغة عميل رصيد فقرة تحقق ضريبة كلمة مسار تحذير تعليق تأمين شكل صيغة فاتورة منتج\nÖRNEK  ipsum  çıktığw   çıktı   veri satır  veri  yoğunluk  решение?   satır   HiwçGD  dünya   süreç ölçek satır;   çözüm   satır  süreç görsel   kalite) çözüm   dünya   SÜREÇ  ölçek  ölçek\ninsurance approval خصم barcode audit page request summary cargo\niçe_aktarım ürün kaşe kalite son_tarih karar çalışan rota\nmerhabağhd satır  süreç\nAntwortsatz Wort Erlaubnis Projekt Import Export Datensatz Kategorie Frist Lizenz Grundwahrheit Seite Diagramm\naltura cuenta empleado símbolo solicitud material exportación esquema encabezado paquete seguro cliente éxito espaciado\niskonto yanıt talep toplantı genişlik örnek sıcaklık terminal program ağırlık ekipman ağırlık etiket\nπαραγγελία μήνυμα φάκελος فئة αναφορά αριθμός υλικό πακέτο πόλη πλοίο θερμοκρασία\n이메일 열 회의 문제 범주 여백 선박 회의 보고서 도장 승인 장비\nimza sorun şablon klasör altbilgi izin tohum ürün yük uyarı parti not\nBestellung Titel Barcode Schiff Rahmen Beispiel Entfernung Feld\nmalzeme kontrol veri_seti özet soru cevap ライセンス hacim teslimat çalışan terminal sözleşme şekil doğrulama\nölçek\nMaut Team Entfernung revizyon Zertifikat Route Prüfung Maschine Rahmen Kommentar Palette Zeile Zwischensumme\nεργάτης καύσιμο απάντηση γραμματοσειρά κωδικοποίηση πεδίο σχόλιο πρωτότυπο προϊόν κωδικοποίηση\nstamp employé material contract weight storage balance margin cargo note row\néxito buque figura departamento codificación auditoría contacto muestra plazo advertencia trabajador buque pie moneda idioma\nमूल अनुसूची समयसीमा वर्कर निर्णय गोदाम निर्यात निरीक्षण वितरण परियोजना एन्कोडिंग लिपि उत्तर वाहन\nşablon revizyon kalite departman ekip geçiş hata sıcaklık son_tarih denetim proje ürün hücre içe_aktarım sıcaklık para dil unicode\netiketleme proje envanter uzunluk aratoplam program tedarikçi izin geçiş yükseklik depo analiz\nZeitplan Diagramm Zwischensumme Maut Kraftstoff Produkt Produkt Klasse Kodierung Material Kodierung\nλύση παράδειγμα λύση λύση  ΔΕΔΟΜΈΝΑπαράδειγμα+ΕλθμΜΜΩΙΓνΓε μοντέλο\nметка маршрут метка хранение формат подвал качество ячейка\nProdukt Schrift Material Besprechung Startwert Zeile Maske Reihe Symbol Sprache Genehmigung Filter Material Team Land Abstand Seite Projekt",
+  "gt_stats": {
+    "scripts_hist": {
+      "latin": 40,
+      "zh": 3,
+      "th": 2,
+      "el": 5,
+      "ar": 2,
+      "ko": 1,
+      "hi": 1,
+      "ru": 1
+    },
+    "has_gt_text_lines": 55,
+    "has_gt_math_lines": 0,
+    "book_mode_added_lines": 0
+  }
+}

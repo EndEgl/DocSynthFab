@@ -1,0 +1,2573 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000003",
+  "size": {
+    "w": 1654,
+    "h": 2338,
+    "dpi": 200,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "page_family": "book",
+    "layout_type": "double_col",
+    "noise_level": "clean",
+    "density_level": "sparse",
+    "scale_profile": "dpi200",
+    "has_table": true,
+    "has_equation": false,
+    "has_figure": false,
+    "rotation_deg": 0.7610018273894976,
+    "perspective": true,
+    "book_mode": true,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_pure_mode": "mixed",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "latex_render_error_count": 19,
+    "latex_render_errors": [
+      {
+        "line_id": 19,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 24,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 25,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 27,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 31,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 53,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 57,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "tr",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 59,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 61,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 69,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 72,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 73,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 76,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 80,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 85,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 89,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 92,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "table_cell",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 94,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "list",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 95,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      }
+    ],
+    "latex_render_fallback_used": true,
+    "latex_render_backend": "http",
+    "latex_render_http_base_url": "http://127.0.0.1:8080",
+    "latex_render_enabled": false,
+    "mask_text_nonzero": 28485,
+    "mask_math_nonzero": 0,
+    "aug_trace": [
+      {
+        "op": "photometric",
+        "gamma": 0.8683240034687514,
+        "alpha": 1.068073080535199,
+        "beta": 8.858723714178794
+      },
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 28485.0,
+        "after_text_nz": 28485.0,
+        "before_math_nz": 0.0,
+        "after_math_nz": 0.0,
+        "accepted": true
+      }
+    ],
+    "math_line_count": 0,
+    "equation_block_count": 1,
+    "table_block_count": 2,
+    "figure_block_count": 0,
+    "has_equation_layout": true,
+    "_worker_debug": {
+      "ps_equation_blocks": 1,
+      "ps_table_blocks": 2,
+      "ps_figure_blocks": 0,
+      "ps_math_lines": 0,
+      "ps_total_lines": 97,
+      "mask_text_nonzero_pre_qc": 28485,
+      "mask_math_nonzero_pre_qc": 0
+    }
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "title",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        132,
+        2024,
+        1390,
+        71
+      ],
+      "style": {
+        "page_family": "book",
+        "layout_type": "double_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "full_width": true
+      }
+    },
+    {
+      "block_id": 1,
+      "block_type": "table",
+      "block_order": 1,
+      "column_id": 1,
+      "bbox": [
+        962,
+        208,
+        536,
+        650
+      ],
+      "style": {
+        "page_family": "book",
+        "layout_type": "double_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "table_cols": 6,
+        "table_rows": 11,
+        "table_kind": "comparison_table",
+        "table_variant": "open",
+        "header_rows": 1,
+        "header_cols": 0,
+        "compact": true,
+        "border_mode": "header_rule",
+        "zebra_rows": true,
+        "light_rules": true,
+        "col_width_mode": "numeric",
+        "row_height_mode": "header_tall",
+        "empty_cell_prob": 0.02544014802652746,
+        "merged_cells": false,
+        "cell_text_jitter": true,
+        "table_diversity_scale": 0.75,
+        "table_empty_cell_scale": 0.35,
+        "table_merge_cell_scale": 0.25,
+        "table_shape_cfg": {
+          "min_rows": 2,
+          "max_rows": 24,
+          "min_cols": 2,
+          "max_cols": 12
+        }
+      }
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 0,
+      "bbox": [
+        204,
+        240,
+        536,
+        662
+      ],
+      "style": {
+        "page_family": "book",
+        "layout_type": "double_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": 7
+      }
+    },
+    {
+      "block_id": 3,
+      "block_type": "table",
+      "block_order": 3,
+      "column_id": 0,
+      "bbox": [
+        553,
+        1058,
+        536,
+        737
+      ],
+      "style": {
+        "page_family": "book",
+        "layout_type": "double_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "table_cols": 3,
+        "table_rows": 13,
+        "table_kind": "glossary_table",
+        "table_variant": "tall",
+        "header_rows": 1,
+        "header_cols": 0,
+        "compact": true,
+        "border_mode": "full_grid",
+        "zebra_rows": false,
+        "light_rules": true,
+        "col_width_mode": "first_wide",
+        "row_height_mode": "compact",
+        "empty_cell_prob": 0.01639241414296758,
+        "merged_cells": false,
+        "cell_text_jitter": false,
+        "table_diversity_scale": 0.75,
+        "table_empty_cell_scale": 0.35,
+        "table_merge_cell_scale": 0.25,
+        "table_shape_cfg": {
+          "min_rows": 2,
+          "max_rows": 24,
+          "min_cols": 2,
+          "max_cols": 12
+        }
+      }
+    },
+    {
+      "block_id": 4,
+      "block_type": "list",
+      "block_order": 4,
+      "column_id": 0,
+      "bbox": [
+        119,
+        1564,
+        407,
+        254
+      ],
+      "style": {
+        "page_family": "book",
+        "layout_type": "double_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": -4
+      }
+    },
+    {
+      "block_id": 5,
+      "block_type": "paragraph",
+      "block_order": 5,
+      "column_id": 0,
+      "bbox": [
+        101,
+        1210,
+        407,
+        256
+      ],
+      "style": {
+        "page_family": "book",
+        "layout_type": "double_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": 1
+      }
+    },
+    {
+      "block_id": 6,
+      "block_type": "equation",
+      "block_order": 6,
+      "column_id": 1,
+      "bbox": [
+        800,
+        1846,
+        536,
+        19
+      ],
+      "style": {
+        "page_family": "book",
+        "layout_type": "double_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait"
+      }
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 0,
+      "bbox": [
+        157,
+        2034,
+        322,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ПРИМЕРрешение качество решение модельпример упцОЭшжэЫ",
+      "gt_script": "ru",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "ru": 49
+      },
+      "render_font_path": "assets\\fonts\\cyrillic\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 0,
+      "global_line_order": 1,
+      "bbox": [
+        966,
+        218,
+        31,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "test",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 1,
+      "global_line_order": 2,
+      "bbox": [
+        1111,
+        215,
+        42,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ipsum",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 3,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 2,
+      "global_line_order": 3,
+      "bbox": [
+        1190,
+        216,
+        48,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "METIN",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 4,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 3,
+      "global_line_order": 4,
+      "bbox": [
+        1266,
+        218,
+        32,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "test",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 5,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 4,
+      "global_line_order": 5,
+      "bbox": [
+        1337,
+        215,
+        47,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "çözüm",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 6,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 5,
+      "global_line_order": 6,
+      "bbox": [
+        1401,
+        215,
+        70,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ipsumrsd:",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 8
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 7,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 6,
+      "global_line_order": 7,
+      "bbox": [
+        971,
+        297,
+        45,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ipsum",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 8,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 7,
+      "global_line_order": 8,
+      "bbox": [
+        1115,
+        296,
+        41,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Daten",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 9,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 8,
+      "global_line_order": 9,
+      "bbox": [
+        1194,
+        298,
+        54,
+        20
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "dünya",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 10,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 9,
+      "global_line_order": 10,
+      "bbox": [
+        1269,
+        297,
+        45,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "kalite",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 6
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 11,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 10,
+      "global_line_order": 11,
+      "bbox": [
+        1339,
+        296,
+        55,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Beispiel",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 8
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 12,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 11,
+      "global_line_order": 12,
+      "bbox": [
+        1403,
+        297,
+        27,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "elit",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 13,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 12,
+      "global_line_order": 13,
+      "bbox": [
+        973,
+        353,
+        92,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "merhaba veri",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 11
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 14,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 13,
+      "global_line_order": 14,
+      "bbox": [
+        1112,
+        353,
+        47,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "kalite",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 6
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 15,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 14,
+      "global_line_order": 15,
+      "bbox": [
+        1192,
+        353,
+        57,
+        20
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "çözüm",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 16,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 15,
+      "global_line_order": 16,
+      "bbox": [
+        1269,
+        352,
+        29,
+        11
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "satır",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 17,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 16,
+      "global_line_order": 17,
+      "bbox": [
+        1338,
+        351,
+        22,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "elit",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 18,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 17,
+      "global_line_order": 18,
+      "bbox": [
+        1405,
+        351,
+        22,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "elit",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 19,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 18,
+      "global_line_order": 19,
+      "bbox": [
+        971,
+        411,
+        130,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 20,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 19,
+      "global_line_order": 20,
+      "bbox": [
+        1115,
+        415,
+        41,
+        19
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "λύση",
+      "gt_script": "el",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "el": 4
+      },
+      "render_font_path": "assets\\fonts\\greek\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 21,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 20,
+      "global_line_order": 21,
+      "bbox": [
+        1192,
+        414,
+        63,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "elitçözüm",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 9
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 22,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 21,
+      "global_line_order": 22,
+      "bbox": [
+        1268,
+        412,
+        36,
+        11
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "AMET",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 23,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 22,
+      "global_line_order": 23,
+      "bbox": [
+        1340,
+        414,
+        24,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "elit",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 24,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 23,
+      "global_line_order": 24,
+      "bbox": [
+        1407,
+        411,
+        84,
+        39
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 25,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 24,
+      "global_line_order": 25,
+      "bbox": [
+        971,
+        462,
+        130,
+        48
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 26,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 25,
+      "global_line_order": 26,
+      "bbox": [
+        1114,
+        467,
+        43,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "örnek",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 27,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 26,
+      "global_line_order": 27,
+      "bbox": [
+        1195,
+        464,
+        65,
+        44
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 28,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 27,
+      "global_line_order": 28,
+      "bbox": [
+        1268,
+        468,
+        38,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "TEST",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 29,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 28,
+      "global_line_order": 29,
+      "bbox": [
+        1338,
+        466,
+        57,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "9WwdAF",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 30,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 29,
+      "global_line_order": 30,
+      "bbox": [
+        1404,
+        468,
+        45,
+        15
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "lorem",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 31,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 30,
+      "global_line_order": 31,
+      "bbox": [
+        973,
+        521,
+        126,
+        48
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 32,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 31,
+      "global_line_order": 32,
+      "bbox": [
+        1191,
+        523,
+        45,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "IPSUM",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 33,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 32,
+      "global_line_order": 33,
+      "bbox": [
+        1269,
+        525,
+        56,
+        10
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "качество",
+      "gt_script": "ru",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "ru": 8
+      },
+      "render_font_path": "assets\\fonts\\cyrillic\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 34,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 33,
+      "global_line_order": 34,
+      "bbox": [
+        1339,
+        528,
+        31,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "test",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 35,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 34,
+      "global_line_order": 35,
+      "bbox": [
+        1403,
+        524,
+        71,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "δεδομένα",
+      "gt_script": "el",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "el": 8
+      },
+      "render_font_path": "assets\\fonts\\greek\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 36,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 35,
+      "global_line_order": 36,
+      "bbox": [
+        972,
+        586,
+        63,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "данные",
+      "gt_script": "ru",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "ru": 6
+      },
+      "render_font_path": "assets\\fonts\\cyrillic\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 37,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 36,
+      "global_line_order": 37,
+      "bbox": [
+        1112,
+        583,
+        66,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "çıktısüreç",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 10
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 38,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 37,
+      "global_line_order": 38,
+      "bbox": [
+        1194,
+        583,
+        26,
+        15
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "elit",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 39,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 38,
+      "global_line_order": 39,
+      "bbox": [
+        1268,
+        582,
+        63,
+        19
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "doğrula",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 7
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 40,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 39,
+      "global_line_order": 40,
+      "bbox": [
+        1340,
+        582,
+        39,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ölçek",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 41,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 40,
+      "global_line_order": 41,
+      "bbox": [
+        1404,
+        582,
+        71,
+        15
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "loremtest;",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 9
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 42,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 41,
+      "global_line_order": 42,
+      "bbox": [
+        1112,
+        641,
+        37,
+        16
+      ],
+      "quad": null,
+      "is_hard": true,
+      "gt_text": "süreç",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 43,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 42,
+      "global_line_order": 43,
+      "bbox": [
+        1191,
+        641,
+        70,
+        15
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "elit  amet",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 8
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 44,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 43,
+      "global_line_order": 44,
+      "bbox": [
+        1267,
+        639,
+        46,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "test! qin",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 7
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 45,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 44,
+      "global_line_order": 45,
+      "bbox": [
+        1339,
+        641,
+        54,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "çözüm",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 46,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 45,
+      "global_line_order": 46,
+      "bbox": [
+        1406,
+        638,
+        81,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "loremlorem",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 10
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 47,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 46,
+      "global_line_order": 47,
+      "bbox": [
+        971,
+        702,
+        123,
+        17
+      ],
+      "quad": null,
+      "is_hard": true,
+      "gt_text": "süreçnMERHABA",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 13
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 48,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 47,
+      "global_line_order": 48,
+      "bbox": [
+        1114,
+        701,
+        67,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Beispiel=",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 8
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 49,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 48,
+      "global_line_order": 49,
+      "bbox": [
+        1194,
+        702,
+        48,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ipsum",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 50,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 49,
+      "global_line_order": 50,
+      "bbox": [
+        1267,
+        702,
+        43,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "amet",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 51,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 50,
+      "global_line_order": 51,
+      "bbox": [
+        1338,
+        700,
+        34,
+        12
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "lorem",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 52,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 51,
+      "global_line_order": 52,
+      "bbox": [
+        1406,
+        699,
+        40,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "süreç",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 53,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 52,
+      "global_line_order": 53,
+      "bbox": [
+        970,
+        753,
+        132,
+        45
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 54,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 53,
+      "global_line_order": 54,
+      "bbox": [
+        1114,
+        755,
+        57,
+        15
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "yoğunluk",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 8
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 55,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 54,
+      "global_line_order": 55,
+      "bbox": [
+        1191,
+        755,
+        73,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "çıktı   çıktı",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 10
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 56,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "line_order_in_block": 55,
+      "global_line_order": 56,
+      "bbox": [
+        1267,
+        755,
+        37,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "süreç",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 57,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 57,
+      "bbox": [
+        246,
+        310,
+        481,
+        21
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 58,
+      "block_id": 2,
+      "line_type": "text",
+      "line_order_in_block": 1,
+      "global_line_order": 58,
+      "bbox": [
+        218,
+        342,
+        313,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "gümrük yük alan address genişlik Währung formül",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 41
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 59,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 0,
+      "global_line_order": 59,
+      "bbox": [
+        562,
+        1061,
+        235,
+        51
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 60,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 1,
+      "global_line_order": 60,
+      "bbox": [
+        810,
+        1064,
+        85,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "lorem?  süreç",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 10
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 61,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 2,
+      "global_line_order": 61,
+      "bbox": [
+        977,
+        1061,
+        108,
+        51
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 62,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 3,
+      "global_line_order": 62,
+      "bbox": [
+        564,
+        1124,
+        46,
+        20
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ölçek",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 63,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 4,
+      "global_line_order": 63,
+      "bbox": [
+        813,
+        1122,
+        76,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ametlorem",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 9
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 64,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 5,
+      "global_line_order": 64,
+      "bbox": [
+        977,
+        1122,
+        79,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ametipsum",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 9
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 65,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 6,
+      "global_line_order": 65,
+      "bbox": [
+        564,
+        1182,
+        32,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "test",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 66,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 7,
+      "global_line_order": 66,
+      "bbox": [
+        813,
+        1179,
+        40,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "örnek",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 67,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 8,
+      "global_line_order": 67,
+      "bbox": [
+        977,
+        1181,
+        53,
+        20
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ipsum",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 68,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 9,
+      "global_line_order": 68,
+      "bbox": [
+        564,
+        1236,
+        24,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "elit",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 69,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 10,
+      "global_line_order": 69,
+      "bbox": [
+        815,
+        1233,
+        149,
+        49
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 70,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 11,
+      "global_line_order": 70,
+      "bbox": [
+        977,
+        1238,
+        50,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ipsum",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 71,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 12,
+      "global_line_order": 71,
+      "bbox": [
+        564,
+        1293,
+        177,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Zufall= Prüfung-Gleichung",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 22
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 72,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 13,
+      "global_line_order": 72,
+      "bbox": [
+        815,
+        1290,
+        149,
+        49
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 73,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 14,
+      "global_line_order": 73,
+      "bbox": [
+        979,
+        1290,
+        104,
+        49
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 74,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 15,
+      "global_line_order": 74,
+      "bbox": [
+        564,
+        1350,
+        74,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "satır  lorem",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 10
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 75,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 16,
+      "global_line_order": 75,
+      "bbox": [
+        813,
+        1353,
+        31,
+        13
+      ],
+      "quad": null,
+      "is_hard": true,
+      "gt_text": "test",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 76,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 17,
+      "global_line_order": 76,
+      "bbox": [
+        979,
+        1347,
+        104,
+        49
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 77,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 18,
+      "global_line_order": 77,
+      "bbox": [
+        564,
+        1408,
+        132,
+        18
+      ],
+      "quad": null,
+      "is_hard": true,
+      "gt_text": "satır kalite,  ipsum",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 16
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 78,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 19,
+      "global_line_order": 78,
+      "bbox": [
+        813,
+        1408,
+        38,
+        13
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "amet",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 79,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 20,
+      "global_line_order": 79,
+      "bbox": [
+        977,
+        1406,
+        103,
+        15
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "doğrulama örnek",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 14
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 80,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 21,
+      "global_line_order": 80,
+      "bbox": [
+        566,
+        1461,
+        227,
+        49
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 81,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 22,
+      "global_line_order": 81,
+      "bbox": [
+        813,
+        1466,
+        51,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "IPSUM",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 82,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 23,
+      "global_line_order": 82,
+      "bbox": [
+        977,
+        1466,
+        51,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "lorem",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 83,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 24,
+      "global_line_order": 83,
+      "bbox": [
+        564,
+        1522,
+        175,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "XoRBQüvx   veri  örnek",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 17
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 84,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 25,
+      "global_line_order": 84,
+      "bbox": [
+        813,
+        1522,
+        48,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ipsum",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 85,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 26,
+      "global_line_order": 85,
+      "bbox": [
+        979,
+        1518,
+        104,
+        49
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 86,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 27,
+      "global_line_order": 86,
+      "bbox": [
+        564,
+        1579,
+        103,
+        19
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "dHNEPYJtvqZ",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 11
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 87,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 28,
+      "global_line_order": 87,
+      "bbox": [
+        813,
+        1579,
+        99,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "çözüm  örnek",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 10
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 88,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 29,
+      "global_line_order": 88,
+      "bbox": [
+        977,
+        1578,
+        29,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "çıktı",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 89,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 30,
+      "global_line_order": 89,
+      "bbox": [
+        566,
+        1632,
+        227,
+        49
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 90,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 31,
+      "global_line_order": 90,
+      "bbox": [
+        813,
+        1635,
+        61,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "yoğunluk",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 8
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 91,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 32,
+      "global_line_order": 91,
+      "bbox": [
+        977,
+        1635,
+        45,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ipsum",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 92,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "line_order_in_block": 33,
+      "global_line_order": 92,
+      "bbox": [
+        566,
+        1689,
+        227,
+        49
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 93,
+      "block_id": 4,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 93,
+      "bbox": [
+        145,
+        1594,
+        363,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "süreçsüreç(  görsel≈20√  ÇÖZÜM yoğunluk  çıktı",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 34
+      },
+      "render_font_path": "assets\\fonts\\mono\\NotoSansMono-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans Mono / Regular"
+    },
+    {
+      "line_id": 94,
+      "block_id": 4,
+      "line_type": "text",
+      "line_order_in_block": 1,
+      "global_line_order": 94,
+      "bbox": [
+        147,
+        1622,
+        315,
+        21
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 95,
+      "block_id": 5,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 95,
+      "bbox": [
+        113,
+        1239,
+        391,
+        21
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 96,
+      "block_id": 5,
+      "line_type": "text",
+      "line_order_in_block": 1,
+      "global_line_order": 96,
+      "bbox": [
+        111,
+        1271,
+        223,
+        14
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "columna auditoría licencia correo",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 30
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    }
+  ],
+  "gt_page_text": "ПРИМЕРрешение качество решение модельпример упцОЭшжэЫ\ntest\nipsum\nMETIN\ntest\nçözüm\nipsumrsd:\nipsum\nDaten\ndünya\nkalite\nBeispiel\nelit\nmerhaba veri\nkalite\nçözüm\nsatır\nelit\nelit\nλύση\nelitçözüm\nAMET\nelit\nörnek\nTEST\n9WwdAF\nlorem\nIPSUM\nкачество\ntest\nδεδομένα\nданные\nçıktısüreç\nelit\ndoğrula\nölçek\nloremtest;\nsüreç\nelit  amet\ntest! qin\nçözüm\nloremlorem\nsüreçnMERHABA\nBeispiel=\nipsum\namet\nlorem\nsüreç\nyoğunluk\nçıktı   çıktı\nsüreç\ngümrük yük alan address genişlik Währung formül\nlorem?  süreç\nölçek\nametlorem\nametipsum\ntest\nörnek\nipsum\nelit\nipsum\nZufall= Prüfung-Gleichung\nsatır  lorem\ntest\nsatır kalite,  ipsum\namet\ndoğrulama örnek\nIPSUM\nlorem\nXoRBQüvx   veri  örnek\nipsum\ndHNEPYJtvqZ\nçözüm  örnek\nçıktı\nyoğunluk\nipsum\nsüreçsüreç(  görsel≈20√  ÇÖZÜM yoğunluk  çıktı\ncolumna auditoría licencia correo",
+  "gt_stats": {
+    "scripts_hist": {
+      "ru": 3,
+      "latin": 73,
+      "el": 2
+    },
+    "has_gt_text_lines": 78,
+    "has_gt_math_lines": 0,
+    "book_mode_added_lines": 0
+  }
+}

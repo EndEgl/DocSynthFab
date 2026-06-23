@@ -1,4 +1,4 @@
-# test/e2e/acceptance_report.py
+﻿# test/e2e/acceptance_report.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 
@@ -59,7 +59,7 @@ def write_acceptance_report(
     )
 
     md = [
-        "# AI1 Gen Acceptance Quality Report",
+        "# DocSynthFab Acceptance Quality Report",
         "",
         f"- Suite: `{suite_name}`",
         f"- Decision: **{report['decision']}**",
@@ -86,3 +86,6 @@ def write_acceptance_report(
     md_path.write_text("\n".join(md) + "\n", encoding="utf-8")
 
     return report
+
+
+

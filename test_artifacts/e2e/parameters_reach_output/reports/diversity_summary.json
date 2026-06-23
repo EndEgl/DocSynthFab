@@ -1,0 +1,600 @@
+{
+  "version": "diversity-summary-v1",
+  "created_at": "2026-06-23T17:24:36+00:00",
+  "page_count": 2,
+  "numeric": {
+    "line_count": {
+      "count": 2,
+      "mean": 27.5,
+      "std": 6.5,
+      "variance": 42.25,
+      "min": 21.0,
+      "max": 34.0,
+      "p05": 21.65,
+      "p50": 27.5,
+      "p95": 33.35
+    },
+    "block_count": {
+      "count": 2,
+      "mean": 8.0,
+      "std": 1.0,
+      "variance": 1.0,
+      "min": 7.0,
+      "max": 9.0,
+      "p05": 7.1,
+      "p50": 8.0,
+      "p95": 8.899999999999999
+    },
+    "math_line_count": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "variance": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p05": 0.0,
+      "p50": 0.0,
+      "p95": 0.0
+    },
+    "table_block_count": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "variance": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p05": 0.0,
+      "p50": 0.0,
+      "p95": 0.0
+    },
+    "equation_block_count": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "variance": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p05": 0.0,
+      "p50": 0.0,
+      "p95": 0.0
+    },
+    "figure_block_count": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "variance": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p05": 0.0,
+      "p50": 0.0,
+      "p95": 0.0
+    },
+    "text_mask_ratio": {
+      "count": 2,
+      "mean": 0.008305724015779118,
+      "std": 0.002247477176699747,
+      "variance": 5.0511536597862665e-06,
+      "min": 0.00605824683907937,
+      "max": 0.010553201192478864,
+      "p05": 0.006282994556749345,
+      "p50": 0.008305724015779118,
+      "p95": 0.01032845347480889
+    },
+    "math_mask_ratio": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "variance": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p05": 0.0,
+      "p50": 0.0,
+      "p95": 0.0
+    },
+    "table_area_ratio": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "variance": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p05": 0.0,
+      "p50": 0.0,
+      "p95": 0.0
+    },
+    "equation_area_ratio": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "variance": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p05": 0.0,
+      "p50": 0.0,
+      "p95": 0.0
+    },
+    "figure_area_ratio": {
+      "count": 2,
+      "mean": 0.0,
+      "std": 0.0,
+      "variance": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p05": 0.0,
+      "p50": 0.0,
+      "p95": 0.0
+    },
+    "rotation_deg": {
+      "count": 2,
+      "mean": -0.5012287171706211,
+      "std": 0.44787638647863903,
+      "variance": 0.20059325756516325,
+      "min": -0.9491051036492602,
+      "max": -0.053352330691982086,
+      "p05": -0.9043174650013962,
+      "p50": -0.5012287171706211,
+      "p95": -0.09813996933984603
+    }
+  },
+  "categorical": {
+    "layout_type": {
+      "field": "layout_type",
+      "count": 2,
+      "unique": 1,
+      "entropy_bits": 0.0,
+      "counts": {
+        "single_col": 2
+      },
+      "distribution": {
+        "single_col": 1.0
+      }
+    },
+    "density_level": {
+      "field": "density_level",
+      "count": 2,
+      "unique": 1,
+      "entropy_bits": 0.0,
+      "counts": {
+        "sparse": 2
+      },
+      "distribution": {
+        "sparse": 1.0
+      }
+    },
+    "noise_level": {
+      "field": "noise_level",
+      "count": 2,
+      "unique": 1,
+      "entropy_bits": 0.0,
+      "counts": {
+        "medium": 2
+      },
+      "distribution": {
+        "medium": 1.0
+      }
+    },
+    "scale_profile": {
+      "field": "scale_profile",
+      "count": 2,
+      "unique": 1,
+      "entropy_bits": 0.0,
+      "counts": {
+        "dpi300": 2
+      },
+      "distribution": {
+        "dpi300": 1.0
+      }
+    },
+    "page_family": {
+      "field": "page_family",
+      "count": 2,
+      "unique": 2,
+      "entropy_bits": 1.0,
+      "counts": {
+        "book": 1,
+        "notes": 1
+      },
+      "distribution": {
+        "book": 0.5,
+        "notes": 0.5
+      }
+    },
+    "dominant_script": {
+      "field": "dominant_script",
+      "count": 2,
+      "unique": 1,
+      "entropy_bits": 0.0,
+      "counts": {
+        "latin": 2
+      },
+      "distribution": {
+        "latin": 1.0
+      }
+    },
+    "has_table": {
+      "field": "has_table",
+      "count": 2,
+      "unique": 1,
+      "entropy_bits": 0.0,
+      "counts": {
+        "0": 2
+      },
+      "distribution": {
+        "0": 1.0
+      }
+    },
+    "has_equation": {
+      "field": "has_equation",
+      "count": 2,
+      "unique": 1,
+      "entropy_bits": 0.0,
+      "counts": {
+        "0": 2
+      },
+      "distribution": {
+        "0": 1.0
+      }
+    },
+    "has_figure": {
+      "field": "has_figure",
+      "count": 2,
+      "unique": 1,
+      "entropy_bits": 0.0,
+      "counts": {
+        "0": 2
+      },
+      "distribution": {
+        "0": 1.0
+      }
+    },
+    "fallback_used": {
+      "field": "fallback_used",
+      "count": 2,
+      "unique": 1,
+      "entropy_bits": 0.0,
+      "counts": {
+        "0": 2
+      },
+      "distribution": {
+        "0": 1.0
+      }
+    }
+  },
+  "joint_coverage": {
+    "layout_type × noise_level": {
+      "fields": [
+        "layout_type",
+        "noise_level"
+      ],
+      "unique_combinations": 1,
+      "top_combinations": {
+        "single_col × medium": 2
+      },
+      "entropy_bits": 0.0
+    },
+    "density_level × has_table": {
+      "fields": [
+        "density_level",
+        "has_table"
+      ],
+      "unique_combinations": 1,
+      "top_combinations": {
+        "sparse × 0": 2
+      },
+      "entropy_bits": 0.0
+    },
+    "density_level × has_equation": {
+      "fields": [
+        "density_level",
+        "has_equation"
+      ],
+      "unique_combinations": 1,
+      "top_combinations": {
+        "sparse × 0": 2
+      },
+      "entropy_bits": 0.0
+    },
+    "layout_type × has_table": {
+      "fields": [
+        "layout_type",
+        "has_table"
+      ],
+      "unique_combinations": 1,
+      "top_combinations": {
+        "single_col × 0": 2
+      },
+      "entropy_bits": 0.0
+    },
+    "has_table × has_equation": {
+      "fields": [
+        "has_table",
+        "has_equation"
+      ],
+      "unique_combinations": 1,
+      "top_combinations": {
+        "0 × 0": 2
+      },
+      "entropy_bits": 0.0
+    },
+    "dominant_script × has_equation": {
+      "fields": [
+        "dominant_script",
+        "has_equation"
+      ],
+      "unique_combinations": 1,
+      "top_combinations": {
+        "latin × 0": 2
+      },
+      "entropy_bits": 0.0
+    }
+  },
+  "target_vs_observed": {
+    "layout_type": {
+      "target": {
+        "single_col": 0.36,
+        "double_col": 0.26,
+        "mixed_cols": 0.2,
+        "academic": 0.1,
+        "report_like": 0.08
+      },
+      "observed": {
+        "academic": 0.0,
+        "double_col": 0.0,
+        "mixed_cols": 0.0,
+        "report_like": 0.0,
+        "single_col": 1.0
+      },
+      "abs_gap": {
+        "academic": 0.1,
+        "double_col": 0.26,
+        "mixed_cols": 0.2,
+        "report_like": 0.08,
+        "single_col": 0.64
+      },
+      "signed_gap": {
+        "academic": -0.1,
+        "double_col": -0.26,
+        "mixed_cols": -0.2,
+        "report_like": -0.08,
+        "single_col": 0.64
+      }
+    },
+    "density_level": {
+      "target": {
+        "sparse": 0.25,
+        "normal": 0.5,
+        "dense": 0.18,
+        "mixed": 0.07
+      },
+      "observed": {
+        "dense": 0.0,
+        "mixed": 0.0,
+        "normal": 0.0,
+        "sparse": 1.0
+      },
+      "abs_gap": {
+        "dense": 0.18,
+        "mixed": 0.07,
+        "normal": 0.5,
+        "sparse": 0.75
+      },
+      "signed_gap": {
+        "dense": -0.18,
+        "mixed": -0.07,
+        "normal": -0.5,
+        "sparse": 0.75
+      }
+    },
+    "noise_level": {
+      "target": {
+        "clean": 0.55,
+        "medium": 0.35,
+        "heavy": 0.1
+      },
+      "observed": {
+        "clean": 0.0,
+        "heavy": 0.0,
+        "medium": 1.0
+      },
+      "abs_gap": {
+        "clean": 0.55,
+        "heavy": 0.1,
+        "medium": 0.65
+      },
+      "signed_gap": {
+        "clean": -0.55,
+        "heavy": -0.1,
+        "medium": 0.65
+      }
+    },
+    "scale_profile": {
+      "target": {
+        "dpi300": 0.7,
+        "dpi200": 0.22,
+        "lowres_capture": 0.06,
+        "hires_crop": 0.02
+      },
+      "observed": {
+        "dpi200": 0.0,
+        "dpi300": 1.0,
+        "hires_crop": 0.0,
+        "lowres_capture": 0.0
+      },
+      "abs_gap": {
+        "dpi200": 0.22,
+        "dpi300": 0.30000000000000004,
+        "hires_crop": 0.02,
+        "lowres_capture": 0.06
+      },
+      "signed_gap": {
+        "dpi200": -0.22,
+        "dpi300": 0.30000000000000004,
+        "hires_crop": -0.02,
+        "lowres_capture": -0.06
+      }
+    },
+    "page_size_name": {
+      "target": {
+        "a4_portrait": 0.5,
+        "letter_portrait": 0.18,
+        "a4_landscape": 0.08,
+        "letter_landscape": 0.05,
+        "legal_portrait": 0.05,
+        "legal_landscape": 0.02,
+        "a5_portrait": 0.04,
+        "a5_landscape": 0.02,
+        "b5_portrait": 0.04,
+        "b5_landscape": 0.02
+      },
+      "observed": {
+        "a4_landscape": 0.0,
+        "a4_portrait": 0.0,
+        "a5_landscape": 0.0,
+        "a5_portrait": 0.0,
+        "b5_landscape": 0.0,
+        "b5_portrait": 0.0,
+        "legal_landscape": 0.0,
+        "legal_portrait": 0.0,
+        "letter_landscape": 0.0,
+        "letter_portrait": 0.0,
+        "unknown": 1.0
+      },
+      "abs_gap": {
+        "a4_landscape": 0.08,
+        "a4_portrait": 0.5,
+        "a5_landscape": 0.02,
+        "a5_portrait": 0.04,
+        "b5_landscape": 0.02,
+        "b5_portrait": 0.04,
+        "legal_landscape": 0.02,
+        "legal_portrait": 0.05,
+        "letter_landscape": 0.05,
+        "letter_portrait": 0.18,
+        "unknown": 1.0
+      },
+      "signed_gap": {
+        "a4_landscape": -0.08,
+        "a4_portrait": -0.5,
+        "a5_landscape": -0.02,
+        "a5_portrait": -0.04,
+        "b5_landscape": -0.02,
+        "b5_portrait": -0.04,
+        "legal_landscape": -0.02,
+        "legal_portrait": -0.05,
+        "letter_landscape": -0.05,
+        "letter_portrait": -0.18,
+        "unknown": 1.0
+      }
+    }
+  },
+  "recommendations": [
+    {
+      "level": "warning",
+      "area": "tables",
+      "finding": "Observed table page ratio is low: 0.000.",
+      "recommendation": "Increase content.has_table_prob and inspect table QC/layout failures."
+    },
+    {
+      "level": "info",
+      "area": "latex",
+      "finding": "Observed equation page ratio is low: 0.000.",
+      "recommendation": "Increase content.has_equation_prob or equation block placement diversity."
+    },
+    {
+      "level": "info",
+      "area": "math_mask_variance",
+      "finding": "math_mask_ratio variance is very low.",
+      "recommendation": "Increase LaTeX expression size, equation count, or formula layout variation."
+    },
+    {
+      "level": "info",
+      "area": "layout_diversity",
+      "finding": "layout_type entropy is low: 0.000 bits.",
+      "recommendation": "Balance layout.layout_type_dist or add more page families."
+    },
+    {
+      "level": "info",
+      "area": "script_diversity",
+      "finding": "dominant_script entropy is low: 0.000 bits.",
+      "recommendation": "Balance render.text.scripts_dist or add more multilingual content bank entries."
+    },
+    {
+      "level": "info",
+      "area": "target_vs_observed:layout_type",
+      "finding": "`double_col` is under-produced; signed gap=-0.260.",
+      "recommendation": "Adjust the config distribution for `layout_type` or inspect generation/QC constraints."
+    },
+    {
+      "level": "info",
+      "area": "target_vs_observed:layout_type",
+      "finding": "`mixed_cols` is under-produced; signed gap=-0.200.",
+      "recommendation": "Adjust the config distribution for `layout_type` or inspect generation/QC constraints."
+    },
+    {
+      "level": "info",
+      "area": "target_vs_observed:layout_type",
+      "finding": "`single_col` is over-produced; signed gap=0.640.",
+      "recommendation": "Adjust the config distribution for `layout_type` or inspect generation/QC constraints."
+    },
+    {
+      "level": "info",
+      "area": "target_vs_observed:density_level",
+      "finding": "`dense` is under-produced; signed gap=-0.180.",
+      "recommendation": "Adjust the config distribution for `density_level` or inspect generation/QC constraints."
+    },
+    {
+      "level": "info",
+      "area": "target_vs_observed:density_level",
+      "finding": "`normal` is under-produced; signed gap=-0.500.",
+      "recommendation": "Adjust the config distribution for `density_level` or inspect generation/QC constraints."
+    },
+    {
+      "level": "info",
+      "area": "target_vs_observed:density_level",
+      "finding": "`sparse` is over-produced; signed gap=0.750.",
+      "recommendation": "Adjust the config distribution for `density_level` or inspect generation/QC constraints."
+    },
+    {
+      "level": "info",
+      "area": "target_vs_observed:noise_level",
+      "finding": "`clean` is under-produced; signed gap=-0.550.",
+      "recommendation": "Adjust the config distribution for `noise_level` or inspect generation/QC constraints."
+    },
+    {
+      "level": "info",
+      "area": "target_vs_observed:noise_level",
+      "finding": "`medium` is over-produced; signed gap=0.650.",
+      "recommendation": "Adjust the config distribution for `noise_level` or inspect generation/QC constraints."
+    },
+    {
+      "level": "info",
+      "area": "target_vs_observed:scale_profile",
+      "finding": "`dpi200` is under-produced; signed gap=-0.220.",
+      "recommendation": "Adjust the config distribution for `scale_profile` or inspect generation/QC constraints."
+    },
+    {
+      "level": "info",
+      "area": "target_vs_observed:scale_profile",
+      "finding": "`dpi300` is over-produced; signed gap=0.300.",
+      "recommendation": "Adjust the config distribution for `scale_profile` or inspect generation/QC constraints."
+    },
+    {
+      "level": "info",
+      "area": "target_vs_observed:page_size_name",
+      "finding": "`a4_portrait` is under-produced; signed gap=-0.500.",
+      "recommendation": "Adjust the config distribution for `page_size_name` or inspect generation/QC constraints."
+    },
+    {
+      "level": "info",
+      "area": "target_vs_observed:page_size_name",
+      "finding": "`letter_portrait` is under-produced; signed gap=-0.180.",
+      "recommendation": "Adjust the config distribution for `page_size_name` or inspect generation/QC constraints."
+    },
+    {
+      "level": "info",
+      "area": "target_vs_observed:page_size_name",
+      "finding": "`unknown` is over-produced; signed gap=1.000.",
+      "recommendation": "Adjust the config distribution for `page_size_name` or inspect generation/QC constraints."
+    }
+  ]
+}

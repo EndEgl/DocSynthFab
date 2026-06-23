@@ -1,0 +1,355 @@
+{
+  "info": {
+    "description": "Synthetic Document AI COCO export",
+    "version": "coco-export-v1"
+  },
+  "licenses": [],
+  "images": [
+    {
+      "id": 1,
+      "file_name": "000000.png",
+      "width": 2079,
+      "height": 2952
+    },
+    {
+      "id": 2,
+      "file_name": "000001.png",
+      "width": 2481,
+      "height": 3507
+    },
+    {
+      "id": 3,
+      "file_name": "000002.png",
+      "width": 2550,
+      "height": 3300
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 2,
+      "bbox": [
+        166.0,
+        236.0,
+        1398.0,
+        437.0
+      ],
+      "area": 610926.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 0,
+        "block_type": "table",
+        "semantic_type": "table_region"
+      }
+    },
+    {
+      "id": 2,
+      "image_id": 1,
+      "category_id": 2,
+      "bbox": [
+        203.0,
+        1599.0,
+        1398.0,
+        349.0
+      ],
+      "area": 487902.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 1,
+        "block_type": "table",
+        "semantic_type": "table_region"
+      }
+    },
+    {
+      "id": 3,
+      "image_id": 1,
+      "category_id": 2,
+      "bbox": [
+        402.0,
+        1084.0,
+        1398.0,
+        427.0
+      ],
+      "area": 596946.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 2,
+        "block_type": "table",
+        "semantic_type": "table_region"
+      }
+    },
+    {
+      "id": 4,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        342.0,
+        2003.0,
+        1398.0,
+        520.0
+      ],
+      "area": 726960.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 3,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 5,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        198.0,
+        3128.0,
+        2085.0,
+        98.0
+      ],
+      "area": 204330.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 0,
+        "block_type": "title",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 6,
+      "image_id": 2,
+      "category_id": 3,
+      "bbox": [
+        1384.0,
+        441.0,
+        804.0,
+        359.0
+      ],
+      "area": 288636.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 1,
+        "block_type": "equation",
+        "semantic_type": "math_latex"
+      }
+    },
+    {
+      "id": 7,
+      "image_id": 2,
+      "category_id": 2,
+      "bbox": [
+        198.0,
+        1573.0,
+        2085.0,
+        613.0
+      ],
+      "area": 1278105.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 3,
+        "block_type": "table",
+        "semantic_type": "table_region"
+      }
+    },
+    {
+      "id": 8,
+      "image_id": 3,
+      "category_id": 2,
+      "bbox": [
+        377.0,
+        2145.0,
+        826.0,
+        638.0
+      ],
+      "area": 526988.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 0,
+        "block_type": "table",
+        "semantic_type": "table_region"
+      }
+    },
+    {
+      "id": 9,
+      "image_id": 3,
+      "category_id": 3,
+      "bbox": [
+        1304.0,
+        338.0,
+        826.0,
+        354.0
+      ],
+      "area": 292404.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 1,
+        "block_type": "equation",
+        "semantic_type": "math_latex"
+      }
+    },
+    {
+      "id": 10,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        1488.0,
+        2187.0,
+        826.0,
+        728.0
+      ],
+      "area": 601328.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 2,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 11,
+      "image_id": 3,
+      "category_id": 2,
+      "bbox": [
+        204.0,
+        1078.0,
+        2142.0,
+        427.0
+      ],
+      "area": 914634.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 3,
+        "block_type": "table",
+        "semantic_type": "table_region"
+      }
+    },
+    {
+      "id": 12,
+      "image_id": 3,
+      "category_id": 3,
+      "bbox": [
+        298.0,
+        379.0,
+        826.0,
+        19.0
+      ],
+      "area": 15694.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 4,
+        "block_type": "equation",
+        "semantic_type": "math_latex"
+      }
+    },
+    {
+      "id": 13,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        1097.0,
+        1902.0,
+        826.0,
+        19.0
+      ],
+      "area": 15694.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 5,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 14,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        212.0,
+        1758.0,
+        826.0,
+        19.0
+      ],
+      "area": 15694.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 6,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 15,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        855.0,
+        821.0,
+        826.0,
+        19.0
+      ],
+      "area": 15694.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 7,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 16,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        204.0,
+        3017.0,
+        2142.0,
+        19.0
+      ],
+      "area": 40698.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 8,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "plain_text",
+      "supercategory": "document"
+    },
+    {
+      "id": 2,
+      "name": "table_region",
+      "supercategory": "document"
+    },
+    {
+      "id": 3,
+      "name": "math_latex",
+      "supercategory": "document"
+    },
+    {
+      "id": 4,
+      "name": "figure",
+      "supercategory": "document"
+    }
+  ]
+}

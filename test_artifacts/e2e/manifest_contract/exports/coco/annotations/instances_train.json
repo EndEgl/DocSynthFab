@@ -1,0 +1,235 @@
+{
+  "info": {
+    "description": "Synthetic Document AI COCO export",
+    "version": "coco-export-v1"
+  },
+  "licenses": [],
+  "images": [
+    {
+      "id": 1,
+      "file_name": "000000.png",
+      "width": 2481,
+      "height": 3507
+    },
+    {
+      "id": 2,
+      "file_name": "000001.png",
+      "width": 2550,
+      "height": 3300
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        198.0,
+        280.0,
+        2085.0,
+        142.0
+      ],
+      "area": 296070.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 0,
+        "block_type": "title",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 2,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        1405.0,
+        445.0,
+        804.0,
+        1237.0
+      ],
+      "area": 994548.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 3,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 3,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        198.0,
+        3208.0,
+        2085.0,
+        19.0
+      ],
+      "area": 39615.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 5,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 4,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        1458.0,
+        2674.0,
+        804.0,
+        19.0
+      ],
+      "area": 15276.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 6,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 5,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        221.0,
+        633.0,
+        804.0,
+        19.0
+      ],
+      "area": 15276.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 7,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 6,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        204.0,
+        2097.0,
+        2142.0,
+        102.0
+      ],
+      "area": 218484.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 0,
+        "block_type": "title",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 7,
+      "image_id": 2,
+      "category_id": 2,
+      "bbox": [
+        596.0,
+        2316.0,
+        1714.0,
+        652.0
+      ],
+      "area": 1117528.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 1,
+        "block_type": "table",
+        "semantic_type": "table_region"
+      }
+    },
+    {
+      "id": 8,
+      "image_id": 2,
+      "category_id": 2,
+      "bbox": [
+        421.0,
+        1181.0,
+        1714.0,
+        713.0
+      ],
+      "area": 1222082.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 3,
+        "block_type": "table",
+        "semantic_type": "table_region"
+      }
+    },
+    {
+      "id": 9,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        231.0,
+        1055.0,
+        1714.0,
+        19.0
+      ],
+      "area": 32566.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 5,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 10,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        630.0,
+        1110.0,
+        1714.0,
+        19.0
+      ],
+      "area": 32566.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 6,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "plain_text",
+      "supercategory": "document"
+    },
+    {
+      "id": 2,
+      "name": "table_region",
+      "supercategory": "document"
+    },
+    {
+      "id": 3,
+      "name": "math_latex",
+      "supercategory": "document"
+    },
+    {
+      "id": 4,
+      "name": "figure",
+      "supercategory": "document"
+    }
+  ]
+}

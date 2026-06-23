@@ -1,4 +1,4 @@
-# Font License Notice
+﻿# Font License Notice
 
 This project may include or use third-party fonts, including Google Fonts.
 
@@ -12,3 +12,5 @@ Fonts may be licensed under:
 Each font remains licensed under its own license terms.
 
 When possible, the original license file should be kept next to the font files.
+
+

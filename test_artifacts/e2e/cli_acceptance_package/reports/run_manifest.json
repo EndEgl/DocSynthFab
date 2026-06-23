@@ -1,0 +1,52 @@
+{
+  "manifest_version": "run-manifest-v1",
+  "version": "20260623-172427",
+  "run_id": "run-20260623-172427",
+  "project_name": "DocSynthFab",
+  "generator_version": "docsynthfab-ds-v0.1-clean-train",
+  "label_schema_version": "document-ai-label-schema-v1",
+  "created_at": "2026-06-23T17:24:27+00:00",
+  "config_path": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\test_artifacts\\e2e_safe_config.yaml",
+  "out_root": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\test_artifacts\\e2e\\cli_acceptance_package",
+  "pages_requested": 2,
+  "pages_ok": 2,
+  "pages_fail": 0,
+  "seed": 321,
+  "workers": 1,
+  "splits": {
+    "train": 2,
+    "val": 0,
+    "test": 0
+  },
+  "export_targets": [
+    "native"
+  ],
+  "outputs": {
+    "images": "images/",
+    "masks": "masks/",
+    "annotations": "ann/",
+    "ground_truth": "gt/",
+    "splits": "splits/",
+    "reports": "reports/",
+    "exports": "exports/"
+  },
+  "qc_summary": {
+    "version": "docsynthfab-ds-v0.1-clean-train",
+    "total": 2,
+    "ok": 2,
+    "fail": 0,
+    "errors": {},
+    "density": {
+      "sparse": 2
+    },
+    "scale": {
+      "dpi200": 1,
+      "dpi300": 1
+    },
+    "recovered": 0,
+    "fallback_used": 0,
+    "math_pages": 0,
+    "math_layout_pages": 0,
+    "math_mask_nonempty_pages": 0
+  }
+}

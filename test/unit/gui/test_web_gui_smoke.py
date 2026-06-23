@@ -1,10 +1,10 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from types import SimpleNamespace
 from typing import Any
 
-import ai1_gen.gui.web.app as web_mod
-from ai1_gen.gui.web.state import WebGuiState
+import docsynthfab.gui.web.app as web_mod
+from docsynthfab.gui.web.state import WebGuiState
 
 
 class DummyWidget:
@@ -156,3 +156,6 @@ def test_web_refresh_status_updates_panels(monkeypatch):
     assert state.progress_label.text == "finished"
     assert state.start_btn.disabled is False
     assert state.stop_btn.disabled is True
+
+
+

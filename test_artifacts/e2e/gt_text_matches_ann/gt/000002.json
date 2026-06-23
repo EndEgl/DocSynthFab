@@ -1,0 +1,489 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000002",
+  "size": {
+    "w": 2481,
+    "h": 3507,
+    "dpi": 300,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "double_col",
+    "density_level": "sparse",
+    "scale_profile": "dpi300",
+    "noise_level": "clean",
+    "page_family": "academic",
+    "_fallback": false,
+    "_augment_disabled_by_retry": null,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": true,
+    "has_equation": true,
+    "has_equation_layout": true,
+    "has_figure": false,
+    "mask_text_nonzero": 11339,
+    "mask_math_nonzero": 92,
+    "math_line_count": 1,
+    "equation_block_count": 1,
+    "table_block_count": 1,
+    "figure_block_count": 0,
+    "rotation_deg": 1.938893545061981,
+    "perspective": false,
+    "book_mode": false,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": [
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 11339.0,
+        "after_text_nz": 11339.0,
+        "before_math_nz": 92.0,
+        "after_math_nz": 92.0,
+        "accepted": true
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "title",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        198,
+        1293,
+        2085,
+        114
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 1,
+      "bbox": [
+        857,
+        1587,
+        804,
+        1006
+      ]
+    },
+    {
+      "block_id": 2,
+      "block_type": "list",
+      "block_order": 2,
+      "column_id": 0,
+      "bbox": [
+        322,
+        294,
+        804,
+        652
+      ]
+    },
+    {
+      "block_id": 3,
+      "block_type": "table",
+      "block_order": 3,
+      "column_id": 1,
+      "bbox": [
+        1206,
+        2679,
+        804,
+        478
+      ]
+    },
+    {
+      "block_id": 4,
+      "block_type": "equation",
+      "block_order": 4,
+      "column_id": 1,
+      "bbox": [
+        1391,
+        589,
+        804,
+        594
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "text",
+      "global_line_order": 0,
+      "bbox": [
+        239,
+        1306,
+        1650,
+        67
+      ]
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 1,
+      "bbox": [
+        919,
+        1698,
+        688,
+        15
+      ],
+      "text": "header chart annotation team subtotal vehicle weight date seed sample total project schema table record note document",
+      "script": "latin"
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 2,
+      "bbox": [
+        881,
+        1763,
+        374,
+        47
+      ]
+    },
+    {
+      "line_id": 3,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 3,
+      "bbox": [
+        376,
+        372,
+        557,
+        18
+      ],
+      "text": "Wahrscheinlichkeit  Wahrscheinlichkeit   Lösung   Prüfung+  Zufall Daten metin",
+      "script": "latin"
+    },
+    {
+      "line_id": 4,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 4,
+      "bbox": [
+        378,
+        435,
+        669,
+        47
+      ]
+    },
+    {
+      "line_id": 5,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 5,
+      "bbox": [
+        1209,
+        2693,
+        120,
+        18
+      ],
+      "text": "- yRAamet  ELIT",
+      "script": "latin"
+    },
+    {
+      "line_id": 6,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 6,
+      "bbox": [
+        1350,
+        2690,
+        78,
+        15
+      ],
+      "text": "dünya  metin",
+      "script": "latin"
+    },
+    {
+      "line_id": 7,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 7,
+      "bbox": [
+        1512,
+        2688,
+        119,
+        133
+      ]
+    },
+    {
+      "line_id": 8,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 8,
+      "bbox": [
+        1638,
+        2690,
+        55,
+        14
+      ],
+      "text": "elit görsel",
+      "script": "latin"
+    },
+    {
+      "line_id": 9,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 9,
+      "bbox": [
+        1784,
+        2688,
+        134,
+        133
+      ]
+    },
+    {
+      "line_id": 10,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 10,
+      "bbox": [
+        1925,
+        2691,
+        42,
+        16
+      ],
+      "text": "görsel",
+      "script": "latin"
+    },
+    {
+      "line_id": 11,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 11,
+      "bbox": [
+        1216,
+        2847,
+        75,
+        14
+      ],
+      "text": "amet test",
+      "script": "latin"
+    },
+    {
+      "line_id": 12,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 12,
+      "bbox": [
+        1356,
+        2839,
+        142,
+        89
+      ]
+    },
+    {
+      "line_id": 13,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 13,
+      "bbox": [
+        1514,
+        2846,
+        110,
+        15
+      ],
+      "text": "– örnek-  metin",
+      "script": "latin"
+    },
+    {
+      "line_id": 14,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 14,
+      "bbox": [
+        1643,
+        2843,
+        127,
+        81
+      ]
+    },
+    {
+      "line_id": 15,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 15,
+      "bbox": [
+        1784,
+        2847,
+        51,
+        16
+      ],
+      "text": "AMET_",
+      "script": "latin"
+    },
+    {
+      "line_id": 16,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 16,
+      "bbox": [
+        1928,
+        2844,
+        43,
+        12
+      ],
+      "text": "строка",
+      "script": "ru"
+    },
+    {
+      "line_id": 17,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 17,
+      "bbox": [
+        1216,
+        2950,
+        26,
+        15
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 18,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 18,
+      "bbox": [
+        1358,
+        2952,
+        68,
+        15
+      ],
+      "text": "merhaba",
+      "script": "latin"
+    },
+    {
+      "line_id": 19,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 19,
+      "bbox": [
+        1517,
+        2952,
+        45,
+        15
+      ],
+      "text": "lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 20,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 20,
+      "bbox": [
+        1644,
+        2946,
+        125,
+        90
+      ]
+    },
+    {
+      "line_id": 21,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 21,
+      "bbox": [
+        1786,
+        2950,
+        31,
+        11
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 22,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 22,
+      "bbox": [
+        1926,
+        2953,
+        48,
+        16
+      ],
+      "text": "lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 23,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 23,
+      "bbox": [
+        1211,
+        3061,
+        62,
+        16
+      ],
+      "text": "elit  elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 24,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 24,
+      "bbox": [
+        1358,
+        3061,
+        85,
+        15
+      ],
+      "text": "yoğunluk satır",
+      "script": "latin"
+    },
+    {
+      "line_id": 25,
+      "block_id": 3,
+      "line_type": "table_cell",
+      "global_line_order": 25,
+      "bbox": [
+        1514,
+        3061,
+        29,
+        16
+      ],
+      "text": "çıktı",
+      "script": "latin"
+    },
+    {
+      "line_id": 26,
+      "block_id": 4,
+      "line_type": "math",
+      "global_line_order": 26,
+      "bbox": [
+        1524,
+        833,
+        631,
+        147
+      ],
+      "latex": "t^{\\lambda} \\cdot \\frac{\\sqrt{\\phi} \\cdot \\sqrt[4]{c}}{\\sqrt[4]{\\alpha \\cdot \\phi}}"
+    }
+  ],
+  "page_text": "header chart annotation team subtotal vehicle weight date seed sample total project schema table record note document\nWahrscheinlichkeit  Wahrscheinlichkeit   Lösung   Prüfung+  Zufall Daten metin\n- yRAamet  ELIT\ndünya  metin\nelit görsel\ngörsel\namet test\n– örnek-  metin\nAMET_\nстрока\nelit\nmerhaba\nlorem\namet\nlorem\nelit  elit\nyoğunluk satır\nçıktı",
+  "gt_stats": {
+    "scripts_hist": {
+      "latin": 17,
+      "ru": 1,
+      "math": 1
+    },
+    "has_gt_text_lines": 18,
+    "has_gt_math_lines": 1,
+    "book_mode_added_lines": 0
+  }
+}

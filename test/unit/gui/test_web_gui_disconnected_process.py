@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 from dataclasses import dataclass
@@ -7,13 +7,13 @@ from typing import Any
 
 import pytest
 
-import ai1_gen.gui.web.app as web_mod
-import ai1_gen.gui.web.run_state as run_state_mod
-from ai1_gen.gui.web.run_state import (
+import docsynthfab.gui.web.app as web_mod
+import docsynthfab.gui.web.run_state as run_state_mod
+from docsynthfab.gui.web.run_state import (
     current_run_is_active,
     restore_active_run_from_disk,
 )
-from ai1_gen.gui.web.state import WebGuiState
+from docsynthfab.gui.web.state import WebGuiState
 
 
 class DummyWidget:
@@ -315,3 +315,6 @@ def test_process_lost_cancel_does_not_crash_gui(
     assert state.progress_label.text == "lost run state cleared"
     assert state.start_btn.disabled is False
     assert state.stop_btn.disabled is True
+
+
+

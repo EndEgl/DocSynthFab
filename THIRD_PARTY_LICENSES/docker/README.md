@@ -1,4 +1,4 @@
-# Docker Components License Notice
+﻿# Docker Components License Notice
 
 This project includes a Docker-based LaTeX rendering environment.
 
@@ -45,3 +45,6 @@ Each Python package is licensed under its respective license.
 
 This Docker environment bundles third-party software.
 Third-party components are not covered by this project’s Apache License 2.0 and remain subject to their own license terms.
+
+
+

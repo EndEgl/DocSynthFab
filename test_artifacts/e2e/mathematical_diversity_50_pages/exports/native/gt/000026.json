@@ -1,0 +1,1004 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000026",
+  "size": {
+    "w": 2481,
+    "h": 3507,
+    "dpi": 300,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "single_col",
+    "density_level": "mixed",
+    "scale_profile": "dpi300",
+    "noise_level": "clean",
+    "page_family": "book",
+    "_fallback": false,
+    "_augment_disabled_by_retry": null,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": false,
+    "has_equation": true,
+    "has_equation_layout": true,
+    "has_figure": false,
+    "mask_text_nonzero": 67358,
+    "mask_math_nonzero": 32,
+    "math_line_count": 1,
+    "equation_block_count": 1,
+    "table_block_count": 0,
+    "figure_block_count": 0,
+    "rotation_deg": -1.9010198573591741,
+    "perspective": false,
+    "book_mode": true,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": [
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 67358.0,
+        "after_text_nz": 67358.0,
+        "before_math_nz": 32.0,
+        "after_math_nz": 32.0,
+        "accepted": true
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "equation",
+      "block_order": 0,
+      "column_id": 1,
+      "bbox": [
+        419,
+        1565,
+        1668,
+        722
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "list",
+      "block_order": 1,
+      "column_id": 0,
+      "bbox": [
+        200,
+        2565,
+        1668,
+        651
+      ]
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 1,
+      "bbox": [
+        556,
+        292,
+        1668,
+        711
+      ]
+    },
+    {
+      "block_id": 3,
+      "block_type": "paragraph",
+      "block_order": 3,
+      "column_id": 0,
+      "bbox": [
+        212,
+        1248,
+        1668,
+        208
+      ]
+    },
+    {
+      "block_id": 4,
+      "block_type": "paragraph",
+      "block_order": 4,
+      "column_id": 1,
+      "bbox": [
+        570,
+        2496,
+        1668,
+        19
+      ]
+    },
+    {
+      "block_id": 5,
+      "block_type": "paragraph",
+      "block_order": 5,
+      "column_id": 0,
+      "bbox": [
+        242,
+        2342,
+        1668,
+        19
+      ]
+    },
+    {
+      "block_id": 6,
+      "block_type": "paragraph",
+      "block_order": 6,
+      "column_id": 1,
+      "bbox": [
+        498,
+        1498,
+        1668,
+        19
+      ]
+    },
+    {
+      "block_id": 7,
+      "block_type": "list",
+      "block_order": 7,
+      "column_id": 1,
+      "bbox": [
+        597,
+        1126,
+        1668,
+        19
+      ]
+    },
+    {
+      "block_id": 8,
+      "block_type": "paragraph",
+      "block_order": 8,
+      "column_id": 0,
+      "bbox": [
+        316,
+        1068,
+        1668,
+        19
+      ]
+    },
+    {
+      "block_id": 9,
+      "block_type": "paragraph",
+      "block_order": 9,
+      "column_id": 1,
+      "bbox": [
+        428,
+        2432,
+        1668,
+        19
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "math",
+      "global_line_order": 0,
+      "bbox": [
+        670,
+        1947,
+        1249,
+        40
+      ],
+      "latex": "\\sqrt{k^{\\delta}} - \\cos(z)^{3}"
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 1,
+      "bbox": [
+        316,
+        2632,
+        1349,
+        13
+      ]
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 2,
+      "bbox": [
+        316,
+        2650,
+        1359,
+        13
+      ]
+    },
+    {
+      "line_id": 3,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 3,
+      "bbox": [
+        316,
+        2667,
+        1285,
+        13
+      ]
+    },
+    {
+      "line_id": 4,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 4,
+      "bbox": [
+        316,
+        2685,
+        1465,
+        13
+      ]
+    },
+    {
+      "line_id": 5,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 5,
+      "bbox": [
+        316,
+        2704,
+        1376,
+        13
+      ]
+    },
+    {
+      "line_id": 6,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 6,
+      "bbox": [
+        316,
+        2722,
+        1457,
+        13
+      ]
+    },
+    {
+      "line_id": 7,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 7,
+      "bbox": [
+        316,
+        2740,
+        1283,
+        13
+      ]
+    },
+    {
+      "line_id": 8,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 8,
+      "bbox": [
+        316,
+        2758,
+        1473,
+        13
+      ]
+    },
+    {
+      "line_id": 9,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 9,
+      "bbox": [
+        316,
+        2777,
+        1336,
+        13
+      ]
+    },
+    {
+      "line_id": 10,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 10,
+      "bbox": [
+        316,
+        2795,
+        1471,
+        13
+      ]
+    },
+    {
+      "line_id": 11,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 11,
+      "bbox": [
+        316,
+        2811,
+        1370,
+        13
+      ]
+    },
+    {
+      "line_id": 12,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 12,
+      "bbox": [
+        316,
+        2829,
+        1397,
+        13
+      ]
+    },
+    {
+      "line_id": 13,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 13,
+      "bbox": [
+        316,
+        2849,
+        1373,
+        13
+      ]
+    },
+    {
+      "line_id": 14,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 14,
+      "bbox": [
+        316,
+        2865,
+        1431,
+        13
+      ]
+    },
+    {
+      "line_id": 15,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 15,
+      "bbox": [
+        316,
+        2884,
+        1436,
+        13
+      ]
+    },
+    {
+      "line_id": 16,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 16,
+      "bbox": [
+        316,
+        2902,
+        1376,
+        13
+      ]
+    },
+    {
+      "line_id": 17,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 17,
+      "bbox": [
+        316,
+        2920,
+        1281,
+        13
+      ]
+    },
+    {
+      "line_id": 18,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 18,
+      "bbox": [
+        316,
+        2938,
+        1403,
+        13
+      ]
+    },
+    {
+      "line_id": 19,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 19,
+      "bbox": [
+        316,
+        2955,
+        1458,
+        13
+      ]
+    },
+    {
+      "line_id": 20,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 20,
+      "bbox": [
+        316,
+        2974,
+        1418,
+        13
+      ]
+    },
+    {
+      "line_id": 21,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 21,
+      "bbox": [
+        316,
+        2993,
+        1320,
+        13
+      ]
+    },
+    {
+      "line_id": 22,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 22,
+      "bbox": [
+        316,
+        3009,
+        1461,
+        13
+      ]
+    },
+    {
+      "line_id": 23,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 23,
+      "bbox": [
+        316,
+        3028,
+        1284,
+        13
+      ]
+    },
+    {
+      "line_id": 24,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 24,
+      "bbox": [
+        316,
+        3047,
+        1388,
+        13
+      ]
+    },
+    {
+      "line_id": 25,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 25,
+      "bbox": [
+        687,
+        367,
+        615,
+        15
+      ],
+      "text": "Menge Länge Formel Arbeiter Entfernung Revision Zertifikat Karton Terminal Beispiel Vorlage Zeitplan Risiko",
+      "script": "latin"
+    },
+    {
+      "line_id": 26,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 26,
+      "bbox": [
+        604,
+        424,
+        695,
+        15
+      ],
+      "text": "Zeile Prüfung Nummer Container Fehler conductor Barcode Kategorie Erlaubnis Schema Versand Frage Symbol Höhe Seite",
+      "script": "latin"
+    },
+    {
+      "line_id": 27,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 27,
+      "bbox": [
+        604,
+        408,
+        554,
+        17
+      ],
+      "text": "حاوية تخزين فريق حساب حقيقة_مرجعية كمية تباعد فئة تنسيق تاريخ سؤال موافقة خط جودة حقل عنوان صف إجمالي",
+      "script": "ar"
+    },
+    {
+      "line_id": 28,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 28,
+      "bbox": [
+        604,
+        481,
+        474,
+        15
+      ],
+      "text": "departamento encabezado precio caja registro paquete terminal respuesta símbolo",
+      "script": "latin"
+    },
+    {
+      "line_id": 29,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 29,
+      "bbox": [
+        604,
+        538,
+        594,
+        15
+      ],
+      "text": "штрихкод клиент клиент пакет подвал интервал топливо зерно случайный шрифт клиент календарь",
+      "script": "ru"
+    },
+    {
+      "line_id": 30,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 30,
+      "bbox": [
+        604,
+        458,
+        737,
+        15
+      ],
+      "text": "Versicherung işçi Sprache Sprache Mitarbeiter Versicherung Vorlage Maut Land Besprechung Bestand Filter Annotation Kodierung",
+      "script": "latin"
+    },
+    {
+      "line_id": 31,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 31,
+      "bbox": [
+        604,
+        595,
+        304,
+        15
+      ],
+      "text": "soru dil sözleşme kelime sıcaklık malzeme grafik soru",
+      "script": "latin"
+    },
+    {
+      "line_id": 32,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 32,
+      "bbox": [
+        604,
+        652,
+        597,
+        15
+      ],
+      "text": "calendar port invoice supplier batch revision vehicle length template license template team subtotal page",
+      "script": "latin"
+    },
+    {
+      "line_id": 33,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 33,
+      "bbox": [
+        604,
+        511,
+        481,
+        15
+      ],
+      "text": "терминал товар оригинал расписание формат терминал поле_страницы подытог",
+      "script": "ru"
+    },
+    {
+      "line_id": 34,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 34,
+      "bbox": [
+        604,
+        709,
+        711,
+        15
+      ],
+      "text": "sentence vessel comment department margin unit deadline port vehicle unit paragraph employee volume employee calendar",
+      "script": "latin"
+    },
+    {
+      "line_id": 35,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 35,
+      "bbox": [
+        604,
+        766,
+        625,
+        15
+      ],
+      "text": "palet başarı liman çerçeve tablo takvim hata grafik durum sorun rapor yerleşim program tarih yanıt onay onay",
+      "script": "latin"
+    },
+    {
+      "line_id": 36,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 36,
+      "bbox": [
+        604,
+        564,
+        562,
+        15
+      ],
+      "text": "carburant paiement poids description Symbol encodage alphabet chauffeur code_barres sous-total",
+      "script": "latin"
+    },
+    {
+      "line_id": 37,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 37,
+      "bbox": [
+        606,
+        821,
+        1468,
+        13
+      ]
+    },
+    {
+      "line_id": 38,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 38,
+      "bbox": [
+        606,
+        821,
+        1465,
+        13
+      ]
+    },
+    {
+      "line_id": 39,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 39,
+      "bbox": [
+        604,
+        619,
+        354,
+        15
+      ],
+      "text": "karar işçi gümrük iskonto tarih belge şablon görsel kaşe hücre",
+      "script": "latin"
+    },
+    {
+      "line_id": 40,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 40,
+      "bbox": [
+        603,
+        826,
+        410,
+        18
+      ],
+      "text": "جودة هاتف موافقة معدات جدول تحقق قناع توقيع هامش عينة آلة آلة عميل مجلد خطر",
+      "script": "ar"
+    },
+    {
+      "line_id": 41,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 41,
+      "bbox": [
+        604,
+        886,
+        648,
+        15
+      ],
+      "text": "not kalite dil envanter işçi hata telefon yazı_sistemi denetim yerleşim hata dosya sevkiyat fournisseur takvim dosya",
+      "script": "latin"
+    },
+    {
+      "line_id": 42,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 42,
+      "bbox": [
+        604,
+        945,
+        434,
+        19
+      ],
+      "text": "حجم تقويم وثيقة فريق أبجدية منصة حاوية Land جدول صنف شحنة تخزين نظام_كتابة مركبة",
+      "script": "ar"
+    },
+    {
+      "line_id": 43,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 43,
+      "bbox": [
+        604,
+        692,
+        571,
+        15
+      ],
+      "text": "Import Kopie Bestellung Zusammenfassung Nummer Bericht Paket Entscheidung Kategorie Gewicht",
+      "script": "latin"
+    },
+    {
+      "line_id": 44,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 44,
+      "bbox": [
+        604,
+        1006,
+        522,
+        15
+      ],
+      "text": "storage risk stamp equation copy quantity note Zusammenfassung package insurance issue",
+      "script": "latin"
+    },
+    {
+      "line_id": 45,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 45,
+      "bbox": [
+        604,
+        1061,
+        393,
+        13
+      ],
+      "text": "material subtotal storage container subtotal formula storage subtotal table タイトル quality",
+      "script": "latin"
+    },
+    {
+      "line_id": 46,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 46,
+      "bbox": [
+        606,
+        743,
+        1578,
+        13
+      ]
+    },
+    {
+      "line_id": 47,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 47,
+      "bbox": [
+        604,
+        1116,
+        384,
+        13
+      ],
+      "text": "λιμάνι περιθώριο κατηγορία πιστοποιητικό παλέτα βάρος λέξη γραμμή γράφημα",
+      "script": "el"
+    },
+    {
+      "line_id": 48,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 48,
+      "bbox": [
+        604,
+        1171,
+        451,
+        12
+      ],
+      "text": "קופסה עדכון hücre לקוח טלפון ציוד הזמנה מרחק פורמט דלק עמוד ריווח פריסה מילה אימות ברקוד חותמת",
+      "script": "he"
+    },
+    {
+      "line_id": 49,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 49,
+      "bbox": [
+        604,
+        799,
+        406,
+        15
+      ],
+      "text": "klasör etiket sorun kayıt malzeme parti dil program sözleşme yakıt para",
+      "script": "latin"
+    },
+    {
+      "line_id": 50,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 50,
+      "bbox": [
+        606,
+        1223,
+        1601,
+        13
+      ]
+    },
+    {
+      "line_id": 51,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 51,
+      "bbox": [
+        606,
+        1223,
+        775,
+        13
+      ]
+    },
+    {
+      "line_id": 52,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 52,
+      "bbox": [
+        345,
+        1270,
+        1406,
+        13
+      ]
+    },
+    {
+      "line_id": 53,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 53,
+      "bbox": [
+        262,
+        1287,
+        1463,
+        13
+      ]
+    },
+    {
+      "line_id": 54,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 54,
+      "bbox": [
+        260,
+        1307,
+        607,
+        13
+      ],
+      "text": "machine warehouse insurance issue paragraph format question stamp country height department مدير product quality equipment",
+      "script": "latin"
+    },
+    {
+      "line_id": 55,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 55,
+      "bbox": [
+        260,
+        1364,
+        279,
+        13
+      ],
+      "text": "ניתוח בקשה צוות דוגמה חתימה נוסחה שגיאה גופן שדה",
+      "script": "he"
+    },
+    {
+      "line_id": 56,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 56,
+      "bbox": [
+        262,
+        1343,
+        875,
+        13
+      ]
+    },
+    {
+      "line_id": 57,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 57,
+      "bbox": [
+        618,
+        2501,
+        304,
+        14
+      ],
+      "text": "hesap malzeme ülke dışa_aktarım toplantı fiyat yanıt depo",
+      "script": "latin"
+    },
+    {
+      "line_id": 58,
+      "block_id": 5,
+      "line_type": "text",
+      "global_line_order": 58,
+      "bbox": [
+        290,
+        2347,
+        482,
+        15
+      ],
+      "text": "Arbeiter Problem Seite Lager Terminal Breite Datei Lieferung Steuer Zertifikat Formel",
+      "script": "latin"
+    },
+    {
+      "line_id": 59,
+      "block_id": 6,
+      "line_type": "text",
+      "global_line_order": 59,
+      "bbox": [
+        628,
+        1505,
+        460,
+        19
+      ],
+      "text": "شحنة طول وصف تاريخ عمود قالب قسم_عمل مسافة طول ميناء خط رأس مجموعة_بيانات تحذير",
+      "script": "ar"
+    },
+    {
+      "line_id": 60,
+      "block_id": 7,
+      "line_type": "text",
+      "global_line_order": 60,
+      "bbox": [
+        713,
+        1223,
+        1324,
+        13
+      ]
+    },
+    {
+      "line_id": 61,
+      "block_id": 8,
+      "line_type": "text",
+      "global_line_order": 61,
+      "bbox": [
+        447,
+        1225,
+        428,
+        15
+      ],
+      "text": "tohum rastgele sorun barkod ödeme biçim dışa_aktarım hata ekip kodlama",
+      "script": "latin"
+    },
+    {
+      "line_id": 62,
+      "block_id": 9,
+      "line_type": "text",
+      "global_line_order": 62,
+      "bbox": [
+        561,
+        2435,
+        1483,
+        13
+      ]
+    }
+  ],
+  "page_text": "Menge Länge Formel Arbeiter Entfernung Revision Zertifikat Karton Terminal Beispiel Vorlage Zeitplan Risiko\nZeile Prüfung Nummer Container Fehler conductor Barcode Kategorie Erlaubnis Schema Versand Frage Symbol Höhe Seite\nحاوية تخزين فريق حساب حقيقة_مرجعية كمية تباعد فئة تنسيق تاريخ سؤال موافقة خط جودة حقل عنوان صف إجمالي\ndepartamento encabezado precio caja registro paquete terminal respuesta símbolo\nштрихкод клиент клиент пакет подвал интервал топливо зерно случайный шрифт клиент календарь\nVersicherung işçi Sprache Sprache Mitarbeiter Versicherung Vorlage Maut Land Besprechung Bestand Filter Annotation Kodierung\nsoru dil sözleşme kelime sıcaklık malzeme grafik soru\ncalendar port invoice supplier batch revision vehicle length template license template team subtotal page\nтерминал товар оригинал расписание формат терминал поле_страницы подытог\nsentence vessel comment department margin unit deadline port vehicle unit paragraph employee volume employee calendar\npalet başarı liman çerçeve tablo takvim hata grafik durum sorun rapor yerleşim program tarih yanıt onay onay\ncarburant paiement poids description Symbol encodage alphabet chauffeur code_barres sous-total\nkarar işçi gümrük iskonto tarih belge şablon görsel kaşe hücre\nجودة هاتف موافقة معدات جدول تحقق قناع توقيع هامش عينة آلة آلة عميل مجلد خطر\nnot kalite dil envanter işçi hata telefon yazı_sistemi denetim yerleşim hata dosya sevkiyat fournisseur takvim dosya\nحجم تقويم وثيقة فريق أبجدية منصة حاوية Land جدول صنف شحنة تخزين نظام_كتابة مركبة\nImport Kopie Bestellung Zusammenfassung Nummer Bericht Paket Entscheidung Kategorie Gewicht\nstorage risk stamp equation copy quantity note Zusammenfassung package insurance issue\nmaterial subtotal storage container subtotal formula storage subtotal table タイトル quality\nλιμάνι περιθώριο κατηγορία πιστοποιητικό παλέτα βάρος λέξη γραμμή γράφημα\nקופסה עדכון hücre לקוח טלפון ציוד הזמנה מרחק פורמט דלק עמוד ריווח פריסה מילה אימות ברקוד חותמת\nklasör etiket sorun kayıt malzeme parti dil program sözleşme yakıt para\nmachine warehouse insurance issue paragraph format question stamp country height department مدير product quality equipment\nניתוח בקשה צוות דוגמה חתימה נוסחה שגיאה גופן שדה\nhesap malzeme ülke dışa_aktarım toplantı fiyat yanıt depo\nArbeiter Problem Seite Lager Terminal Breite Datei Lieferung Steuer Zertifikat Formel\nشحنة طول وصف تاريخ عمود قالب قسم_عمل مسافة طول ميناء خط رأس مجموعة_بيانات تحذير\ntohum rastgele sorun barkod ödeme biçim dışa_aktarım hata ekip kodlama",
+  "gt_stats": {
+    "scripts_hist": {
+      "math": 1,
+      "latin": 19,
+      "ar": 4,
+      "ru": 2,
+      "el": 1,
+      "he": 2
+    },
+    "has_gt_text_lines": 28,
+    "has_gt_math_lines": 1,
+    "book_mode_added_lines": 0
+  }
+}

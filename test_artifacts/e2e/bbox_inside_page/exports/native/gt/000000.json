@@ -1,0 +1,1688 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000000",
+  "size": {
+    "w": 2079,
+    "h": 2952,
+    "dpi": 300,
+    "page_size_name": "b5_portrait",
+    "page_width_in": 6.93,
+    "page_height_in": 9.84,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "single_col",
+    "density_level": "sparse",
+    "scale_profile": "dpi300",
+    "noise_level": "heavy",
+    "page_family": "book",
+    "_fallback": false,
+    "_augment_disabled_by_retry": null,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": true,
+    "has_equation": false,
+    "has_equation_layout": false,
+    "has_figure": false,
+    "mask_text_nonzero": 41386,
+    "mask_math_nonzero": 0,
+    "math_line_count": 0,
+    "equation_block_count": 0,
+    "table_block_count": 3,
+    "figure_block_count": 0,
+    "rotation_deg": -1.951569158822854,
+    "perspective": false,
+    "book_mode": true,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": [
+      {
+        "op": "blur",
+        "type": "gaussian",
+        "k": 5
+      },
+      {
+        "op": "lowfreq_illumination",
+        "drop": 0.16621616871845996
+      },
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 41386.0,
+        "after_text_nz": 41386.0,
+        "before_math_nz": 0.0,
+        "after_math_nz": 0.0,
+        "accepted": true
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "table",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        166,
+        236,
+        1398,
+        437
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "table",
+      "block_order": 1,
+      "column_id": 0,
+      "bbox": [
+        203,
+        1599,
+        1398,
+        349
+      ]
+    },
+    {
+      "block_id": 2,
+      "block_type": "table",
+      "block_order": 2,
+      "column_id": 1,
+      "bbox": [
+        402,
+        1084,
+        1398,
+        427
+      ]
+    },
+    {
+      "block_id": 3,
+      "block_type": "paragraph",
+      "block_order": 3,
+      "column_id": 1,
+      "bbox": [
+        342,
+        2003,
+        1398,
+        520
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 0,
+      "bbox": [
+        197,
+        263,
+        112,
+        17
+      ],
+      "text": "кПкУмЗвБцЪЗ",
+      "script": "ru"
+    },
+    {
+      "line_id": 1,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 1,
+      "bbox": [
+        528,
+        263,
+        96,
+        16
+      ],
+      "text": "lorem amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 2,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 2,
+      "bbox": [
+        704,
+        260,
+        104,
+        14
+      ],
+      "text": "veri  lorem(  amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 3,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 3,
+      "bbox": [
+        864,
+        258,
+        129,
+        102
+      ]
+    },
+    {
+      "line_id": 4,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 4,
+      "bbox": [
+        1021,
+        260,
+        70,
+        15
+      ],
+      "text": "süreçgörsel",
+      "script": "latin"
+    },
+    {
+      "line_id": 5,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 5,
+      "bbox": [
+        1185,
+        261,
+        83,
+        14
+      ],
+      "text": "ΔΕΔΟΜΈΝΑ",
+      "script": "el"
+    },
+    {
+      "line_id": 6,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 6,
+      "bbox": [
+        1354,
+        258,
+        188,
+        102
+      ]
+    },
+    {
+      "line_id": 7,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 7,
+      "bbox": [
+        530,
+        404,
+        146,
+        102
+      ]
+    },
+    {
+      "line_id": 8,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 8,
+      "bbox": [
+        706,
+        404,
+        129,
+        102
+      ]
+    },
+    {
+      "line_id": 9,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 9,
+      "bbox": [
+        862,
+        411,
+        105,
+        15
+      ],
+      "text": "строка строка",
+      "script": "ru"
+    },
+    {
+      "line_id": 10,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 10,
+      "bbox": [
+        1023,
+        404,
+        134,
+        102
+      ]
+    },
+    {
+      "line_id": 11,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 11,
+      "bbox": [
+        1185,
+        406,
+        104,
+        15
+      ],
+      "text": "yoğunluk= çözüm",
+      "script": "latin"
+    },
+    {
+      "line_id": 12,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 12,
+      "bbox": [
+        1354,
+        404,
+        188,
+        102
+      ]
+    },
+    {
+      "line_id": 13,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 13,
+      "bbox": [
+        199,
+        550,
+        282,
+        101
+      ]
+    },
+    {
+      "line_id": 14,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 14,
+      "bbox": [
+        528,
+        554,
+        26,
+        15
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 15,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 15,
+      "bbox": [
+        704,
+        553,
+        85,
+        17
+      ],
+      "text": "ipsumipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 16,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 16,
+      "bbox": [
+        862,
+        554,
+        26,
+        15
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 17,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 17,
+      "bbox": [
+        1023,
+        550,
+        134,
+        101
+      ]
+    },
+    {
+      "line_id": 18,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 18,
+      "bbox": [
+        1187,
+        550,
+        130,
+        101
+      ]
+    },
+    {
+      "line_id": 19,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 19,
+      "bbox": [
+        210,
+        1608,
+        51,
+        16
+      ],
+      "text": "lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 20,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 20,
+      "bbox": [
+        442,
+        1605,
+        95,
+        17
+      ],
+      "text": "μοντέλοΒδυφΔ",
+      "script": "el"
+    },
+    {
+      "line_id": 21,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 21,
+      "bbox": [
+        567,
+        1607,
+        69,
+        19
+      ],
+      "text": "Ausgabe",
+      "script": "latin"
+    },
+    {
+      "line_id": 22,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 22,
+      "bbox": [
+        670,
+        1608,
+        100,
+        14
+      ],
+      "text": "модель  строка",
+      "script": "ru"
+    },
+    {
+      "line_id": 23,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 23,
+      "bbox": [
+        798,
+        1607,
+        38,
+        13
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 24,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 24,
+      "bbox": [
+        933,
+        1608,
+        60,
+        21
+      ],
+      "text": "çözüm",
+      "script": "latin"
+    },
+    {
+      "line_id": 25,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 25,
+      "bbox": [
+        1053,
+        1603,
+        123,
+        71
+      ]
+    },
+    {
+      "line_id": 26,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 26,
+      "bbox": [
+        1183,
+        1607,
+        99,
+        19
+      ],
+      "text": "test, koAjSec",
+      "script": "latin"
+    },
+    {
+      "line_id": 27,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 27,
+      "bbox": [
+        1311,
+        1606,
+        64,
+        14
+      ],
+      "text": "merhaba",
+      "script": "latin"
+    },
+    {
+      "line_id": 28,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 28,
+      "bbox": [
+        1446,
+        1611,
+        136,
+        14
+      ],
+      "text": "качество модель",
+      "script": "ru"
+    },
+    {
+      "line_id": 29,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 29,
+      "bbox": [
+        212,
+        1681,
+        219,
+        47
+      ]
+    },
+    {
+      "line_id": 30,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 30,
+      "bbox": [
+        444,
+        1686,
+        100,
+        15
+      ],
+      "text": "LOREM.lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 31,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 31,
+      "bbox": [
+        569,
+        1687,
+        50,
+        18
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 32,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 32,
+      "bbox": [
+        672,
+        1685,
+        81,
+        17
+      ],
+      "text": "satır  görsel",
+      "script": "latin"
+    },
+    {
+      "line_id": 33,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 33,
+      "bbox": [
+        800,
+        1688,
+        39,
+        15
+      ],
+      "text": "test.",
+      "script": "latin"
+    },
+    {
+      "line_id": 34,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 34,
+      "bbox": [
+        935,
+        1685,
+        84,
+        17
+      ],
+      "text": "dünya süreç",
+      "script": "latin"
+    },
+    {
+      "line_id": 35,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 35,
+      "bbox": [
+        1053,
+        1685,
+        61,
+        15
+      ],
+      "text": "veri satır)",
+      "script": "latin"
+    },
+    {
+      "line_id": 36,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 36,
+      "bbox": [
+        1185,
+        1685,
+        115,
+        17
+      ],
+      "text": "süreç)örnek satır",
+      "script": "latin"
+    },
+    {
+      "line_id": 37,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 37,
+      "bbox": [
+        1313,
+        1687,
+        81,
+        12
+      ],
+      "text": "строкастрока",
+      "script": "ru"
+    },
+    {
+      "line_id": 38,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 38,
+      "bbox": [
+        1448,
+        1687,
+        61,
+        16
+      ],
+      "text": "LOREM",
+      "script": "latin"
+    },
+    {
+      "line_id": 39,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 39,
+      "bbox": [
+        212,
+        1734,
+        219,
+        47
+      ]
+    },
+    {
+      "line_id": 40,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 40,
+      "bbox": [
+        444,
+        1740,
+        29,
+        16
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 41,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 41,
+      "bbox": [
+        568,
+        1744,
+        96,
+        16
+      ],
+      "text": "نموذجمثال سطر",
+      "script": "ar"
+    },
+    {
+      "line_id": 42,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 42,
+      "bbox": [
+        674,
+        1735,
+        114,
+        45
+      ]
+    },
+    {
+      "line_id": 43,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 43,
+      "bbox": [
+        802,
+        1735,
+        122,
+        45
+      ]
+    },
+    {
+      "line_id": 44,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 44,
+      "bbox": [
+        935,
+        1739,
+        38,
+        13
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 45,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 45,
+      "bbox": [
+        1053,
+        1738,
+        57,
+        16
+      ],
+      "text": "Prüfung!",
+      "script": "latin"
+    },
+    {
+      "line_id": 46,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 46,
+      "bbox": [
+        1185,
+        1740,
+        107,
+        18
+      ],
+      "text": "ipsum  metin:",
+      "script": "latin"
+    },
+    {
+      "line_id": 47,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 47,
+      "bbox": [
+        1315,
+        1735,
+        120,
+        45
+      ]
+    },
+    {
+      "line_id": 48,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 48,
+      "bbox": [
+        1450,
+        1735,
+        143,
+        45
+      ]
+    },
+    {
+      "line_id": 49,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 49,
+      "bbox": [
+        210,
+        1790,
+        63,
+        16
+      ],
+      "text": "veri süreç",
+      "script": "latin"
+    },
+    {
+      "line_id": 50,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 50,
+      "bbox": [
+        444,
+        1792,
+        71,
+        16
+      ],
+      "text": "ÇIKTI ölçek",
+      "script": "latin"
+    },
+    {
+      "line_id": 51,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 51,
+      "bbox": [
+        571,
+        1789,
+        91,
+        51
+      ]
+    },
+    {
+      "line_id": 52,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 52,
+      "bbox": [
+        674,
+        1789,
+        114,
+        51
+      ]
+    },
+    {
+      "line_id": 53,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 53,
+      "bbox": [
+        800,
+        1792,
+        45,
+        17
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 54,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 54,
+      "bbox": [
+        935,
+        1792,
+        80,
+        14
+      ],
+      "text": "amet lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 55,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 55,
+      "bbox": [
+        1053,
+        1793,
+        69,
+        19
+      ],
+      "text": "Ausgabe",
+      "script": "latin"
+    },
+    {
+      "line_id": 56,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 56,
+      "bbox": [
+        1185,
+        1793,
+        71,
+        12
+      ],
+      "text": "РЕШЕНИЕ",
+      "script": "ru"
+    },
+    {
+      "line_id": 57,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 57,
+      "bbox": [
+        1313,
+        1792,
+        45,
+        17
+      ],
+      "text": "görsel",
+      "script": "latin"
+    },
+    {
+      "line_id": 58,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 58,
+      "bbox": [
+        1450,
+        1789,
+        143,
+        51
+      ]
+    },
+    {
+      "line_id": 59,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 59,
+      "bbox": [
+        212,
+        1848,
+        219,
+        46
+      ]
+    },
+    {
+      "line_id": 60,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 60,
+      "bbox": [
+        569,
+        1854,
+        82,
+        16
+      ],
+      "text": "ЮЕШЗЦТО",
+      "script": "ru"
+    },
+    {
+      "line_id": 61,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 61,
+      "bbox": [
+        672,
+        1852,
+        23,
+        13
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 62,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 62,
+      "bbox": [
+        800,
+        1853,
+        48,
+        16
+      ],
+      "text": "lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 63,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 63,
+      "bbox": [
+        933,
+        1852,
+        35,
+        16
+      ],
+      "text": "JJUO",
+      "script": "latin"
+    },
+    {
+      "line_id": 64,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 64,
+      "bbox": [
+        1053,
+        1853,
+        95,
+        18
+      ],
+      "text": "ipsum ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 65,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 65,
+      "bbox": [
+        1185,
+        1853,
+        96,
+        18
+      ],
+      "text": "Ausgabetest)",
+      "script": "latin"
+    },
+    {
+      "line_id": 66,
+      "block_id": 1,
+      "line_type": "table_cell",
+      "global_line_order": 66,
+      "bbox": [
+        1313,
+        1853,
+        50,
+        17
+      ],
+      "text": "lorem(",
+      "script": "latin"
+    },
+    {
+      "line_id": 67,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 67,
+      "bbox": [
+        408,
+        1087,
+        152,
+        55
+      ]
+    },
+    {
+      "line_id": 68,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 68,
+      "bbox": [
+        572,
+        1088,
+        163,
+        19
+      ],
+      "text": "ÖLÇEKmerhaba\" görsel\"",
+      "script": "latin"
+    },
+    {
+      "line_id": 69,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 69,
+      "bbox": [
+        776,
+        1089,
+        62,
+        15
+      ],
+      "text": "elit çözüm",
+      "script": "latin"
+    },
+    {
+      "line_id": 70,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 70,
+      "bbox": [
+        967,
+        1090,
+        39,
+        17
+      ],
+      "text": "ölçek",
+      "script": "latin"
+    },
+    {
+      "line_id": 71,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 71,
+      "bbox": [
+        1157,
+        1091,
+        38,
+        13
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 72,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 72,
+      "bbox": [
+        1321,
+        1090,
+        70,
+        14
+      ],
+      "text": "elit  lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 73,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 73,
+      "bbox": [
+        1513,
+        1093,
+        31,
+        13
+      ],
+      "text": "test",
+      "script": "latin"
+    },
+    {
+      "line_id": 74,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 74,
+      "bbox": [
+        1692,
+        1089,
+        19,
+        11
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 75,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 75,
+      "bbox": [
+        406,
+        1152,
+        124,
+        15
+      ],
+      "text": "kalitekalite SATIR",
+      "script": "latin"
+    },
+    {
+      "line_id": 76,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 76,
+      "bbox": [
+        578,
+        1155,
+        124,
+        14
+      ],
+      "text": "данные  – пример_",
+      "script": "ru"
+    },
+    {
+      "line_id": 77,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 77,
+      "bbox": [
+        785,
+        1156,
+        127,
+        14
+      ],
+      "text": "metin/örnek SATIR",
+      "script": "latin"
+    },
+    {
+      "line_id": 78,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 78,
+      "bbox": [
+        972,
+        1153,
+        171,
+        45
+      ]
+    },
+    {
+      "line_id": 79,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 79,
+      "bbox": [
+        1164,
+        1154,
+        71,
+        17
+      ],
+      "text": "Gleichung",
+      "script": "latin"
+    },
+    {
+      "line_id": 80,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 80,
+      "bbox": [
+        1329,
+        1157,
+        162,
+        16
+      ],
+      "text": "metin.  örnek+  satır?",
+      "script": "latin"
+    },
+    {
+      "line_id": 81,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 81,
+      "bbox": [
+        1520,
+        1150,
+        158,
+        51
+      ]
+    },
+    {
+      "line_id": 82,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 82,
+      "bbox": [
+        1698,
+        1163,
+        41,
+        18
+      ],
+      "text": "نموذج",
+      "script": "ar"
+    },
+    {
+      "line_id": 83,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 83,
+      "bbox": [
+        406,
+        1212,
+        156,
+        17
+      ],
+      "text": "veriçözüm metin örnek",
+      "script": "latin"
+    },
+    {
+      "line_id": 84,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 84,
+      "bbox": [
+        580,
+        1214,
+        177,
+        45
+      ]
+    },
+    {
+      "line_id": 85,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 85,
+      "bbox": [
+        786,
+        1213,
+        161,
+        47
+      ]
+    },
+    {
+      "line_id": 86,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 86,
+      "bbox": [
+        971,
+        1218,
+        39,
+        12
+      ],
+      "text": "amet:",
+      "script": "latin"
+    },
+    {
+      "line_id": 87,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 87,
+      "bbox": [
+        1164,
+        1216,
+        74,
+        20
+      ],
+      "text": "Ausgabe",
+      "script": "latin"
+    },
+    {
+      "line_id": 88,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 88,
+      "bbox": [
+        1327,
+        1217,
+        149,
+        17
+      ],
+      "text": "çıktıdoğrulama  örnek",
+      "script": "latin"
+    },
+    {
+      "line_id": 89,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 89,
+      "bbox": [
+        1520,
+        1219,
+        60,
+        14
+      ],
+      "text": "данные",
+      "script": "ru"
+    },
+    {
+      "line_id": 90,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 90,
+      "bbox": [
+        1696,
+        1216,
+        55,
+        14
+      ],
+      "text": "IPSUML",
+      "script": "latin"
+    },
+    {
+      "line_id": 91,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 91,
+      "bbox": [
+        408,
+        1270,
+        152,
+        55
+      ]
+    },
+    {
+      "line_id": 92,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 92,
+      "bbox": [
+        575,
+        1278,
+        129,
+        18
+      ],
+      "text": "doğrulamaörnek/",
+      "script": "latin"
+    },
+    {
+      "line_id": 93,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 93,
+      "bbox": [
+        782,
+        1272,
+        169,
+        51
+      ]
+    },
+    {
+      "line_id": 94,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 94,
+      "bbox": [
+        972,
+        1279,
+        48,
+        18
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 95,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 95,
+      "bbox": [
+        1162,
+        1274,
+        145,
+        47
+      ]
+    },
+    {
+      "line_id": 96,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 96,
+      "bbox": [
+        1328,
+        1276,
+        67,
+        17
+      ],
+      "text": "δεδομένα",
+      "script": "el"
+    },
+    {
+      "line_id": 97,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 97,
+      "bbox": [
+        1518,
+        1277,
+        157,
+        17
+      ],
+      "text": "veri merhaba yoğunluk",
+      "script": "latin"
+    },
+    {
+      "line_id": 98,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 98,
+      "bbox": [
+        1698,
+        1281,
+        90,
+        15
+      ],
+      "text": "• amet test",
+      "script": "latin"
+    },
+    {
+      "line_id": 99,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 99,
+      "bbox": [
+        406,
+        1335,
+        87,
+        18
+      ],
+      "text": "örnek süreç",
+      "script": "latin"
+    },
+    {
+      "line_id": 100,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 100,
+      "bbox": [
+        580,
+        1338,
+        105,
+        16
+      ],
+      "text": "doğrulama veri+",
+      "script": "latin"
+    },
+    {
+      "line_id": 101,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 101,
+      "bbox": [
+        781,
+        1337,
+        96,
+        18
+      ],
+      "text": "metin-çözüm",
+      "script": "latin"
+    },
+    {
+      "line_id": 102,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 102,
+      "bbox": [
+        976,
+        1340,
+        138,
+        18
+      ],
+      "text": "görsel+ veri  kalite-",
+      "script": "latin"
+    },
+    {
+      "line_id": 103,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 103,
+      "bbox": [
+        1166,
+        1334,
+        137,
+        49
+      ]
+    },
+    {
+      "line_id": 104,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 104,
+      "bbox": [
+        1328,
+        1337,
+        158,
+        16
+      ],
+      "text": "BeispieloUW\"  Gleichung,",
+      "script": "latin"
+    },
+    {
+      "line_id": 105,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 105,
+      "bbox": [
+        1518,
+        1338,
+        159,
+        18
+      ],
+      "text": "test ipsum!amet amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 106,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 106,
+      "bbox": [
+        1694,
+        1339,
+        91,
+        15
+      ],
+      "text": "lorem lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 107,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 107,
+      "bbox": [
+        406,
+        1397,
+        57,
+        20
+      ],
+      "text": "çözüm",
+      "script": "latin"
+    },
+    {
+      "line_id": 108,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 108,
+      "bbox": [
+        583,
+        1399,
+        165,
+        19
+      ],
+      "text": "merhabaSHşR-  kalite",
+      "script": "latin"
+    },
+    {
+      "line_id": 109,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 109,
+      "bbox": [
+        786,
+        1399,
+        125,
+        15
+      ],
+      "text": "Lösung Zufall Lösung",
+      "script": "latin"
+    },
+    {
+      "line_id": 110,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 110,
+      "bbox": [
+        973,
+        1399,
+        42,
+        14
+      ],
+      "text": "amet;",
+      "script": "latin"
+    },
+    {
+      "line_id": 111,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 111,
+      "bbox": [
+        1164,
+        1402,
+        45,
+        18
+      ],
+      "text": "süreç",
+      "script": "latin"
+    },
+    {
+      "line_id": 112,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 112,
+      "bbox": [
+        1325,
+        1399,
+        101,
+        16
+      ],
+      "text": "veri doğrulama:",
+      "script": "latin"
+    },
+    {
+      "line_id": 113,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 113,
+      "bbox": [
+        1520,
+        1396,
+        158,
+        47
+      ]
+    },
+    {
+      "line_id": 114,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 114,
+      "bbox": [
+        450,
+        2071,
+        877,
+        16
+      ],
+      "text": "warehouse script summary format seed approval header country volume distance inspection date mask unicode decision city sample shipment",
+      "script": "latin"
+    },
+    {
+      "line_id": 115,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 115,
+      "bbox": [
+        383,
+        2168,
+        831,
+        70
+      ]
+    }
+  ],
+  "page_text": "кПкУмЗвБцЪЗ\nlorem amet\nveri  lorem(  amet\nsüreçgörsel\nΔΕΔΟΜΈΝΑ\nстрока строка\nyoğunluk= çözüm\nelit\nipsumipsum\nelit\nlorem\nμοντέλοΒδυφΔ\nAusgabe\nмодель  строка\namet\nçözüm\ntest, koAjSec\nmerhaba\nкачество модель\nLOREM.lorem\nipsum\nsatır  görsel\ntest.\ndünya süreç\nveri satır)\nsüreç)örnek satır\nстрокастрока\nLOREM\nelit\nنموذجمثال سطر\namet\nPrüfung!\nipsum  metin:\nveri süreç\nÇIKTI ölçek\nipsum\namet lorem\nAusgabe\nРЕШЕНИЕ\ngörsel\nЮЕШЗЦТО\nelit\nlorem\nJJUO\nipsum ipsum\nAusgabetest)\nlorem(\nÖLÇEKmerhaba\" görsel\"\nelit çözüm\nölçek\namet\nelit  lorem\ntest\nelit\nkalitekalite SATIR\nданные  – пример_\nmetin/örnek SATIR\nGleichung\nmetin.  örnek+  satır?\nنموذج\nveriçözüm metin örnek\namet:\nAusgabe\nçıktıdoğrulama  örnek\nданные\nIPSUML\ndoğrulamaörnek/\nipsum\nδεδομένα\nveri merhaba yoğunluk\n• amet test\nörnek süreç\ndoğrulama veri+\nmetin-çözüm\ngörsel+ veri  kalite-\nBeispieloUW\"  Gleichung,\ntest ipsum!amet amet\nlorem lorem\nçözüm\nmerhabaSHşR-  kalite\nLösung Zufall Lösung\namet;\nsüreç\nveri doğrulama:\nwarehouse script summary format seed approval header country volume distance inspection date mask unicode decision city sample shipment",
+  "gt_stats": {
+    "scripts_hist": {
+      "ru": 9,
+      "latin": 71,
+      "el": 3,
+      "ar": 2
+    },
+    "has_gt_text_lines": 85,
+    "has_gt_math_lines": 0,
+    "book_mode_added_lines": 0
+  }
+}

@@ -1,0 +1,527 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000001",
+  "size": {
+    "w": 1654,
+    "h": 2338,
+    "dpi": 200,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "single_col",
+    "density_level": "mixed",
+    "scale_profile": "dpi200",
+    "noise_level": "clean",
+    "page_family": "report",
+    "_fallback": false,
+    "_augment_disabled_by_retry": null,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": false,
+    "has_equation": true,
+    "has_equation_layout": true,
+    "has_figure": false,
+    "mask_text_nonzero": 45930,
+    "mask_math_nonzero": 309,
+    "math_line_count": 6,
+    "equation_block_count": 1,
+    "table_block_count": 0,
+    "figure_block_count": 0,
+    "rotation_deg": 0.19769661593252286,
+    "perspective": false,
+    "book_mode": false,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": [
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 45930.0,
+        "after_text_nz": 45930.0,
+        "before_math_nz": 309.0,
+        "after_math_nz": 309.0,
+        "accepted": true
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "title",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        132,
+        1981,
+        1390,
+        115
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 0,
+      "bbox": [
+        260,
+        1184,
+        1112,
+        583
+      ]
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 0,
+      "bbox": [
+        247,
+        191,
+        1112,
+        388
+      ]
+    },
+    {
+      "block_id": 3,
+      "block_type": "equation",
+      "block_order": 3,
+      "column_id": 1,
+      "bbox": [
+        357,
+        757,
+        1112,
+        364
+      ]
+    },
+    {
+      "block_id": 4,
+      "block_type": "paragraph",
+      "block_order": 4,
+      "column_id": 0,
+      "bbox": [
+        168,
+        681,
+        1112,
+        46
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "text",
+      "global_line_order": 0,
+      "bbox": [
+        159,
+        1994,
+        659,
+        43
+      ]
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 1,
+      "bbox": [
+        346,
+        1251,
+        530,
+        18
+      ],
+      "text": "aleatorio palabra teléfono proveedor contestación esquema unidad fuente",
+      "script": "latin"
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 2,
+      "bbox": [
+        293,
+        1292,
+        997,
+        31
+      ]
+    },
+    {
+      "line_id": 3,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 3,
+      "bbox": [
+        291,
+        1338,
+        547,
+        21
+      ],
+      "text": "importación puerto registro éxito calidad moneda carga descripción",
+      "script": "latin"
+    },
+    {
+      "line_id": 4,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 4,
+      "bbox": [
+        293,
+        1378,
+        1014,
+        31
+      ]
+    },
+    {
+      "line_id": 5,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 5,
+      "bbox": [
+        293,
+        1419,
+        1023,
+        31
+      ]
+    },
+    {
+      "line_id": 6,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 6,
+      "bbox": [
+        291,
+        1465,
+        691,
+        17
+      ],
+      "text": "Entscheidung Warnung başarı Material Karton Karton Arbeiter Lieferant Bestellung Maschine Layout Zoll",
+      "script": "latin"
+    },
+    {
+      "line_id": 7,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 7,
+      "bbox": [
+        291,
+        1507,
+        710,
+        15
+      ],
+      "text": "alfabeto palé figura ruta caja paquete caja semilla esquema figura etiqueta longitud análisis ancho fecha verdad_base seguro",
+      "script": "latin"
+    },
+    {
+      "line_id": 8,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 8,
+      "bbox": [
+        293,
+        1548,
+        1073,
+        31
+      ]
+    },
+    {
+      "line_id": 9,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 9,
+      "bbox": [
+        291,
+        1597,
+        459,
+        19
+      ],
+      "text": "doğrulama örnek adres biçim klasör aratoplam barkod karar",
+      "script": "latin"
+    },
+    {
+      "line_id": 10,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 10,
+      "bbox": [
+        291,
+        1636,
+        650,
+        15
+      ],
+      "text": "unicode program toplantı görsel fatura gerçek_veri barkod altbilgi denklem kenar proje sınıf sertifika sembol adres",
+      "script": "latin"
+    },
+    {
+      "line_id": 11,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 11,
+      "bbox": [
+        293,
+        1680,
+        1067,
+        31
+      ]
+    },
+    {
+      "line_id": 12,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 12,
+      "bbox": [
+        291,
+        1724,
+        645,
+        16
+      ],
+      "text": "audit task employee stamp lisans Formel total country certificate certificate email status message margin",
+      "script": "latin"
+    },
+    {
+      "line_id": 13,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 13,
+      "bbox": [
+        291,
+        1783,
+        451,
+        16
+      ],
+      "text": "summary unit layout worker invoice annotation category terminal vehicle",
+      "script": "latin"
+    },
+    {
+      "line_id": 14,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 14,
+      "bbox": [
+        333,
+        243,
+        628,
+        19
+      ],
+      "text": "تحذير عملة فريق خطر صفحة صندوق تباعد تقويم حساب موافقة تعليق سعر عنوان مركبة ملف حقيقة_مرجعية عينة",
+      "script": "ar"
+    },
+    {
+      "line_id": 15,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 15,
+      "bbox": [
+        278,
+        282,
+        606,
+        18
+      ],
+      "text": "καύσιμο παραγγελία εργάτης έκπτωση σχόλιο γράφημα σειρά προειδοποίηση ετικέτα",
+      "script": "el"
+    },
+    {
+      "line_id": 16,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 16,
+      "bbox": [
+        278,
+        323,
+        557,
+        17
+      ],
+      "text": "figura calidad ancho mensaje ruta problema contestación unicode material almacén",
+      "script": "latin"
+    },
+    {
+      "line_id": 17,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 17,
+      "bbox": [
+        278,
+        363,
+        353,
+        13
+      ],
+      "text": "program hesap genişlik fiyat factura yazı_tipi ביטוח bakiye telefon not klasör",
+      "script": "latin"
+    },
+    {
+      "line_id": 18,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 18,
+      "bbox": [
+        278,
+        406,
+        306,
+        19
+      ],
+      "text": "वर्कर स्कीमा गुणवत्ता हस्ताक्षर निर्यात मुद्रा फ़ॉन्ट विभाग पंक्ति",
+      "script": "hi"
+    },
+    {
+      "line_id": 19,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 19,
+      "bbox": [
+        280,
+        449,
+        1007,
+        31
+      ]
+    },
+    {
+      "line_id": 20,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 20,
+      "bbox": [
+        278,
+        498,
+        454,
+        16
+      ],
+      "text": "列 成功 总计 部门 模板 布局 合同 证书 印章 编码 包裹 存货 余额 种子 字段",
+      "script": "zh"
+    },
+    {
+      "line_id": 21,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 21,
+      "bbox": [
+        280,
+        536,
+        952,
+        31
+      ]
+    },
+    {
+      "line_id": 22,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 22,
+      "bbox": [
+        280,
+        548,
+        659,
+        31
+      ]
+    },
+    {
+      "line_id": 23,
+      "block_id": 3,
+      "line_type": "math",
+      "global_line_order": 23,
+      "bbox": [
+        423,
+        758,
+        896,
+        53
+      ],
+      "latex": "\\cos(a)^{\\theta} - \\frac{z}{\\exp(y)} - \\ln(x)^{\\sigma} + \\frac{9}{z} \\cdot \\sqrt{n}"
+    },
+    {
+      "line_id": 24,
+      "block_id": 3,
+      "line_type": "math",
+      "global_line_order": 24,
+      "bbox": [
+        744,
+        827,
+        690,
+        50
+      ],
+      "latex": "\\det(A)=\\begin{vmatrix} \\delta^{c} & 8 + \\exp(z)\\\\k^{\\alpha} & x + i \\end{vmatrix}"
+    },
+    {
+      "line_id": 25,
+      "block_id": 3,
+      "line_type": "math",
+      "global_line_order": 25,
+      "bbox": [
+        591,
+        917,
+        641,
+        43
+      ],
+      "latex": "7^{z}"
+    },
+    {
+      "line_id": 26,
+      "block_id": 3,
+      "line_type": "math",
+      "global_line_order": 26,
+      "bbox": [
+        437,
+        1000,
+        952,
+        48
+      ],
+      "latex": "\\frac{\\sqrt[3]{\\sqrt{3 + c}}}{6^{5} \\cdot \\frac{8}{\\cos(c)} \\cdot \\tan(z)^{\\sigma}}"
+    },
+    {
+      "line_id": 27,
+      "block_id": 3,
+      "line_type": "math",
+      "global_line_order": 27,
+      "bbox": [
+        441,
+        1088,
+        976,
+        48
+      ],
+      "latex": "\\frac{\\frac{4 \\cdot \\gamma}{\\sqrt{\\theta}} \\cdot \\frac{\\tan(a) \\cdot 7}{\\frac{\\phi}{6}}}{n^{4}}"
+    },
+    {
+      "line_id": 28,
+      "block_id": 3,
+      "line_type": "math",
+      "global_line_order": 28,
+      "bbox": [
+        523,
+        1176,
+        837,
+        46
+      ],
+      "latex": "\\frac{j + b \\cdot \\exp(b)^{\\delta}}{\\sqrt{j^{\\sigma}}} \\cdot \\sqrt[4]{\\sqrt{j} - 6 - \\ln(x)}"
+    },
+    {
+      "line_id": 29,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 29,
+      "bbox": [
+        254,
+        694,
+        796,
+        17
+      ],
+      "text": "width paragraph issue machine note description table column risk date signature pallet toll signature customs insurance",
+      "script": "latin"
+    }
+  ],
+  "page_text": "aleatorio palabra teléfono proveedor contestación esquema unidad fuente\nimportación puerto registro éxito calidad moneda carga descripción\nEntscheidung Warnung başarı Material Karton Karton Arbeiter Lieferant Bestellung Maschine Layout Zoll\nalfabeto palé figura ruta caja paquete caja semilla esquema figura etiqueta longitud análisis ancho fecha verdad_base seguro\ndoğrulama örnek adres biçim klasör aratoplam barkod karar\nunicode program toplantı görsel fatura gerçek_veri barkod altbilgi denklem kenar proje sınıf sertifika sembol adres\naudit task employee stamp lisans Formel total country certificate certificate email status message margin\nsummary unit layout worker invoice annotation category terminal vehicle\nتحذير عملة فريق خطر صفحة صندوق تباعد تقويم حساب موافقة تعليق سعر عنوان مركبة ملف حقيقة_مرجعية عينة\nκαύσιμο παραγγελία εργάτης έκπτωση σχόλιο γράφημα σειρά προειδοποίηση ετικέτα\nfigura calidad ancho mensaje ruta problema contestación unicode material almacén\nprogram hesap genişlik fiyat factura yazı_tipi ביטוח bakiye telefon not klasör\nवर्कर स्कीमा गुणवत्ता हस्ताक्षर निर्यात मुद्रा फ़ॉन्ट विभाग पंक्ति\n列 成功 总计 部门 模板 布局 合同 证书 印章 编码 包裹 存货 余额 种子 字段\nwidth paragraph issue machine note description table column risk date signature pallet toll signature customs insurance",
+  "gt_stats": {
+    "scripts_hist": {
+      "latin": 11,
+      "ar": 1,
+      "el": 1,
+      "hi": 1,
+      "zh": 1,
+      "math": 6
+    },
+    "has_gt_text_lines": 15,
+    "has_gt_math_lines": 6,
+    "book_mode_added_lines": 0
+  }
+}

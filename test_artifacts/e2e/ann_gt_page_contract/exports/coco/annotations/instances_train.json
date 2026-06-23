@@ -1,0 +1,241 @@
+{
+  "info": {
+    "description": "Synthetic Document AI COCO export",
+    "version": "coco-export-v1"
+  },
+  "licenses": [],
+  "images": [
+    {
+      "id": 1,
+      "file_name": "000000.png",
+      "width": 2481,
+      "height": 3507
+    },
+    {
+      "id": 2,
+      "file_name": "000001.png",
+      "width": 2481,
+      "height": 3507
+    },
+    {
+      "id": 3,
+      "file_name": "000002.png",
+      "width": 2200,
+      "height": 1700
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 2,
+      "bbox": [
+        198.0,
+        2488.0,
+        2085.0,
+        610.0
+      ],
+      "area": 1271850.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 0,
+        "block_type": "table",
+        "semantic_type": "table_region"
+      }
+    },
+    {
+      "id": 2,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        495.0,
+        296.0,
+        1668.0,
+        578.0
+      ],
+      "area": 964104.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 1,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 3,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        198.0,
+        280.0,
+        2085.0,
+        120.0
+      ],
+      "area": 250200.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 0,
+        "block_type": "title",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 4,
+      "image_id": 2,
+      "category_id": 3,
+      "bbox": [
+        198.0,
+        2626.0,
+        2085.0,
+        585.0
+      ],
+      "area": 1219725.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 1,
+        "block_type": "equation",
+        "semantic_type": "math_latex"
+      }
+    },
+    {
+      "id": 5,
+      "image_id": 2,
+      "category_id": 2,
+      "bbox": [
+        407.0,
+        1137.0,
+        1668.0,
+        604.0
+      ],
+      "area": 1007472.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 2,
+        "block_type": "table",
+        "semantic_type": "table_region"
+      }
+    },
+    {
+      "id": 6,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        176.0,
+        1497.0,
+        1848.0,
+        41.0
+      ],
+      "area": 75768.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 0,
+        "block_type": "title",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 7,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        1276.0,
+        169.0,
+        713.0,
+        372.0
+      ],
+      "area": 265236.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 1,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 8,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        227.0,
+        184.0,
+        713.0,
+        379.0
+      ],
+      "area": 270227.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 2,
+        "block_type": "paragraph",
+        "semantic_type": "plain_text"
+      }
+    },
+    {
+      "id": 9,
+      "image_id": 3,
+      "category_id": 2,
+      "bbox": [
+        176.0,
+        794.0,
+        1848.0,
+        300.0
+      ],
+      "area": 554400.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 3,
+        "block_type": "table",
+        "semantic_type": "table_region"
+      }
+    },
+    {
+      "id": 10,
+      "image_id": 3,
+      "category_id": 3,
+      "bbox": [
+        179.0,
+        1116.0,
+        713.0,
+        19.0
+      ],
+      "area": 13547.0,
+      "iscrowd": 0,
+      "segmentation": [],
+      "metadata": {
+        "block_id": 4,
+        "block_type": "equation",
+        "semantic_type": "math_latex"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "plain_text",
+      "supercategory": "document"
+    },
+    {
+      "id": 2,
+      "name": "table_region",
+      "supercategory": "document"
+    },
+    {
+      "id": 3,
+      "name": "math_latex",
+      "supercategory": "document"
+    },
+    {
+      "id": 4,
+      "name": "figure",
+      "supercategory": "document"
+    }
+  ]
+}

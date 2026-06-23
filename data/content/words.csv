@@ -1,0 +1,11 @@
+﻿word,lang,script,alphabet_profile,weight,category,enabled
+sample,en,latin,latin_en,1.0,general,1
+document,en,latin,latin_en,1.0,general,1
+layout,en,latin,latin_en,1.0,general,1
+analysis,en,latin,latin_en,1.0,general,1
+table,en,latin,latin_en,1.0,general,1
+veri,tr,latin,latin_tr,1.0,general,1
+rapor,tr,latin,latin_tr,1.0,general,1
+sayfa,tr,latin,latin_tr,1.0,general,1
+satır,tr,latin,latin_tr,1.0,general,1
+tablo,tr,latin,latin_tr,1.0,general,1

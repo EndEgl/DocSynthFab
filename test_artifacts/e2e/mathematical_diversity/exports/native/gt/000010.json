@@ -1,0 +1,754 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000010",
+  "size": {
+    "w": 1654,
+    "h": 2338,
+    "dpi": 200,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "single_col",
+    "density_level": "normal",
+    "scale_profile": "dpi200",
+    "noise_level": "clean",
+    "page_family": "book",
+    "_fallback": false,
+    "_augment_disabled_by_retry": false,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": true,
+    "has_equation": false,
+    "has_equation_layout": false,
+    "has_figure": false,
+    "mask_text_nonzero": 56974,
+    "mask_math_nonzero": 0,
+    "math_line_count": 0,
+    "equation_block_count": 0,
+    "table_block_count": 1,
+    "figure_block_count": 0,
+    "rotation_deg": -0.8310438876643658,
+    "perspective": false,
+    "book_mode": true,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": []
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "table",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        261,
+        929,
+        1112,
+        408
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 1,
+      "bbox": [
+        307,
+        275,
+        1112,
+        462
+      ]
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 0,
+      "bbox": [
+        263,
+        1440,
+        1112,
+        599
+      ]
+    },
+    {
+      "block_id": 3,
+      "block_type": "paragraph",
+      "block_order": 3,
+      "column_id": 0,
+      "bbox": [
+        134,
+        2082,
+        1112,
+        55
+      ]
+    },
+    {
+      "block_id": 4,
+      "block_type": "paragraph",
+      "block_order": 4,
+      "column_id": 0,
+      "bbox": [
+        168,
+        801,
+        1112,
+        19
+      ]
+    },
+    {
+      "block_id": 5,
+      "block_type": "paragraph",
+      "block_order": 5,
+      "column_id": 0,
+      "bbox": [
+        259,
+        1397,
+        1112,
+        19
+      ]
+    },
+    {
+      "block_id": 6,
+      "block_type": "paragraph",
+      "block_order": 6,
+      "column_id": 0,
+      "bbox": [
+        251,
+        220,
+        1112,
+        19
+      ]
+    },
+    {
+      "block_id": 7,
+      "block_type": "paragraph",
+      "block_order": 7,
+      "column_id": 1,
+      "bbox": [
+        358,
+        888,
+        1112,
+        19
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 0,
+      "bbox": [
+        271,
+        949,
+        146,
+        15
+      ],
+      "text": "μοντέλο μοντέλο μοντέλο",
+      "script": "el"
+    },
+    {
+      "line_id": 1,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 1,
+      "bbox": [
+        456,
+        952,
+        115,
+        16
+      ],
+      "text": "amet ametelit",
+      "script": "latin"
+    },
+    {
+      "line_id": 2,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 2,
+      "bbox": [
+        583,
+        953,
+        41,
+        13
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 3,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 3,
+      "bbox": [
+        684,
+        951,
+        27,
+        16
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 4,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 4,
+      "bbox": [
+        795,
+        950,
+        90,
+        17
+      ],
+      "text": "kaliteçıktıveri",
+      "script": "latin"
+    },
+    {
+      "line_id": 5,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 5,
+      "bbox": [
+        926,
+        950,
+        78,
+        14
+      ],
+      "text": "lorem!  test",
+      "script": "latin"
+    },
+    {
+      "line_id": 6,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 6,
+      "bbox": [
+        1119,
+        951,
+        74,
+        16
+      ],
+      "text": "amet  elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 7,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 7,
+      "bbox": [
+        1272,
+        951,
+        96,
+        18
+      ],
+      "text": "ipsum  örnek",
+      "script": "latin"
+    },
+    {
+      "line_id": 8,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 8,
+      "bbox": [
+        276,
+        1116,
+        26,
+        15
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 9,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 9,
+      "bbox": [
+        459,
+        1116,
+        99,
+        18
+      ],
+      "text": "metin! çözüm",
+      "script": "latin"
+    },
+    {
+      "line_id": 10,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 10,
+      "bbox": [
+        586,
+        1114,
+        34,
+        17
+      ],
+      "text": "λύση",
+      "script": "el"
+    },
+    {
+      "line_id": 11,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 11,
+      "bbox": [
+        687,
+        1117,
+        55,
+        16
+      ],
+      "text": "örnek.",
+      "script": "latin"
+    },
+    {
+      "line_id": 12,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 12,
+      "bbox": [
+        798,
+        1115,
+        75,
+        16
+      ],
+      "text": "ipsum  - elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 13,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 13,
+      "bbox": [
+        931,
+        1118,
+        45,
+        15
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 14,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 14,
+      "bbox": [
+        1275,
+        1117,
+        54,
+        18
+      ],
+      "text": "çözüm",
+      "script": "latin"
+    },
+    {
+      "line_id": 15,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 15,
+      "bbox": [
+        276,
+        1235,
+        69,
+        20
+      ],
+      "text": "Prüfung",
+      "script": "latin"
+    },
+    {
+      "line_id": 16,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 16,
+      "bbox": [
+        461,
+        1230,
+        106,
+        88
+      ]
+    },
+    {
+      "line_id": 17,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 17,
+      "bbox": [
+        586,
+        1235,
+        42,
+        17
+      ],
+      "text": "süreç",
+      "script": "latin"
+    },
+    {
+      "line_id": 18,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 18,
+      "bbox": [
+        687,
+        1235,
+        78,
+        20
+      ],
+      "text": "yoğunluk",
+      "script": "latin"
+    },
+    {
+      "line_id": 19,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 19,
+      "bbox": [
+        798,
+        1232,
+        65,
+        13
+      ],
+      "text": "elit LOREM",
+      "script": "latin"
+    },
+    {
+      "line_id": 20,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 20,
+      "bbox": [
+        931,
+        1233,
+        82,
+        14
+      ],
+      "text": "kalite  kalite",
+      "script": "latin"
+    },
+    {
+      "line_id": 21,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 21,
+      "bbox": [
+        338,
+        335,
+        518,
+        25
+      ],
+      "text": "عقد عامل معدات دفعة استيراد خط عقد طلب رصيد موظف خلية آلة قناع",
+      "script": "ar"
+    },
+    {
+      "line_id": 22,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 22,
+      "bbox": [
+        338,
+        403,
+        506,
+        17
+      ],
+      "text": "karar sıcaklık paket sembol filtre yerleşim yanıt yerleşim kopya altbilgi alfabe",
+      "script": "latin"
+    },
+    {
+      "line_id": 23,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 23,
+      "bbox": [
+        340,
+        460,
+        1054,
+        26
+      ]
+    },
+    {
+      "line_id": 24,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 24,
+      "bbox": [
+        338,
+        442,
+        578,
+        19
+      ],
+      "text": "filter permit delivery reference payment title order paragraph price message",
+      "script": "latin"
+    },
+    {
+      "line_id": 25,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 25,
+      "bbox": [
+        340,
+        474,
+        1071,
+        26
+      ]
+    },
+    {
+      "line_id": 26,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 26,
+      "bbox": [
+        338,
+        515,
+        400,
+        20
+      ],
+      "text": "lisans yakıt revizyon fiyat uzunluk yük sorun şema",
+      "script": "latin"
+    },
+    {
+      "line_id": 27,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 27,
+      "bbox": [
+        340,
+        549,
+        1016,
+        26
+      ]
+    },
+    {
+      "line_id": 28,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 28,
+      "bbox": [
+        340,
+        585,
+        958,
+        26
+      ]
+    },
+    {
+      "line_id": 29,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 29,
+      "bbox": [
+        338,
+        625,
+        505,
+        18
+      ],
+      "text": "kayıt şema yük veri bakiye unicode klasör klasör mesaj envanter şablon",
+      "script": "latin"
+    },
+    {
+      "line_id": 30,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 30,
+      "bbox": [
+        338,
+        663,
+        835,
+        18
+      ],
+      "text": "satır doğrulama– dünyaçözümmerhaba( çıktıörnekkalite yoğunluk doğrulama ölçek METIN süreç örnek  satır\"  çıktıveri",
+      "script": "latin"
+    },
+    {
+      "line_id": 31,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 31,
+      "bbox": [
+        338,
+        700,
+        313,
+        16
+      ],
+      "text": "형식 행 데이터세트 프로젝트 개정 여백 번호 필터 연료",
+      "script": "ko"
+    },
+    {
+      "line_id": 32,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 32,
+      "bbox": [
+        338,
+        759,
+        485,
+        16
+      ],
+      "text": "sorun sembol boşluk sıcaklık şema tedarikçi sıcaklık yük fiyat proje stok mesafe",
+      "script": "latin"
+    },
+    {
+      "line_id": 33,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 33,
+      "bbox": [
+        351,
+        1504,
+        966,
+        26
+      ]
+    },
+    {
+      "line_id": 34,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 34,
+      "bbox": [
+        294,
+        1545,
+        551,
+        17
+      ],
+      "text": "셀 무게 경고 보고서 일정 컨테이너 클래스 항구 시드 바코드 보험 세금 댓글 주석 장비 연료",
+      "script": "ko"
+    },
+    {
+      "line_id": 35,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 35,
+      "bbox": [
+        294,
+        1580,
+        522,
+        17
+      ],
+      "text": "πλοίο πλοίο σύμβολο διευθυντής εισαγωγή έκπτωση τίτλος σύνολο_δεδομένων",
+      "script": "el"
+    },
+    {
+      "line_id": 36,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 36,
+      "bbox": [
+        294,
+        1620,
+        676,
+        18
+      ],
+      "text": "fuente categoría unicode precio problema ancho contenedor campo contenedor anotación caja",
+      "script": "latin"
+    },
+    {
+      "line_id": 37,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 37,
+      "bbox": [
+        296,
+        1655,
+        1015,
+        26
+      ]
+    },
+    {
+      "line_id": 38,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 38,
+      "bbox": [
+        294,
+        1692,
+        957,
+        17
+      ],
+      "text": "température véhicule marge entrepôt travailleur lot sous-total statut approbation certificat volume cargaison approbation paiement gestionnaire",
+      "script": "latin"
+    },
+    {
+      "line_id": 39,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 39,
+      "bbox": [
+        294,
+        1730,
+        941,
+        19
+      ],
+      "text": "cantidad departamento registro almacén plazo proyecto pregunta codificación filtro solicitud envío gerente pregunta archivo",
+      "script": "latin"
+    },
+    {
+      "line_id": 40,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 40,
+      "bbox": [
+        296,
+        1762,
+        987,
+        26
+      ]
+    },
+    {
+      "line_id": 41,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 41,
+      "bbox": [
+        294,
+        1803,
+        364,
+        16
+      ],
+      "text": "税费 错误 日期 边框 行 批次 条码 船舶 批准 距离 字体 部门 港口",
+      "script": "zh"
+    },
+    {
+      "line_id": 42,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 42,
+      "bbox": [
+        294,
+        1840,
+        557,
+        17
+      ],
+      "text": "класс пример ошибка файл решение отклик склад шаблон цена таможня запрос отчет",
+      "script": "ru"
+    },
+    {
+      "line_id": 43,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 43,
+      "bbox": [
+        222,
+        2092,
+        1014,
+        26
+      ]
+    }
+  ],
+  "page_text": "μοντέλο μοντέλο μοντέλο\namet ametelit\namet\nelit\nkaliteçıktıveri\nlorem!  test\namet  elit\nipsum  örnek\nelit\nmetin! çözüm\nλύση\nörnek.\nipsum  - elit\namet\nçözüm\nPrüfung\nsüreç\nyoğunluk\nelit LOREM\nkalite  kalite\nعقد عامل معدات دفعة استيراد خط عقد طلب رصيد موظف خلية آلة قناع\nkarar sıcaklık paket sembol filtre yerleşim yanıt yerleşim kopya altbilgi alfabe\nfilter permit delivery reference payment title order paragraph price message\nlisans yakıt revizyon fiyat uzunluk yük sorun şema\nkayıt şema yük veri bakiye unicode klasör klasör mesaj envanter şablon\nsatır doğrulama– dünyaçözümmerhaba( çıktıörnekkalite yoğunluk doğrulama ölçek METIN süreç örnek  satır\"  çıktıveri\n형식 행 데이터세트 프로젝트 개정 여백 번호 필터 연료\nsorun sembol boşluk sıcaklık şema tedarikçi sıcaklık yük fiyat proje stok mesafe\n셀 무게 경고 보고서 일정 컨테이너 클래스 항구 시드 바코드 보험 세금 댓글 주석 장비 연료\nπλοίο πλοίο σύμβολο διευθυντής εισαγωγή έκπτωση τίτλος σύνολο_δεδομένων\nfuente categoría unicode precio problema ancho contenedor campo contenedor anotación caja\ntempérature véhicule marge entrepôt travailleur lot sous-total statut approbation certificat volume cargaison approbation paiement gestionnaire\ncantidad departamento registro almacén plazo proyecto pregunta codificación filtro solicitud envío gerente pregunta archivo\n税费 错误 日期 边框 行 批次 条码 船舶 批准 距离 字体 部门 港口\nкласс пример ошибка файл решение отклик склад шаблон цена таможня запрос отчет",
+  "gt_stats": {
+    "scripts_hist": {
+      "el": 3,
+      "latin": 27,
+      "ar": 1,
+      "ko": 2,
+      "zh": 1,
+      "ru": 1
+    },
+    "has_gt_text_lines": 35,
+    "has_gt_math_lines": 0,
+    "book_mode_added_lines": 0
+  }
+}

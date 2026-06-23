@@ -1,15 +1,16 @@
-# test/e2e/conftest.py
-# Recommended version ranges:
-# - Python>=3.10,<3.14
-# - pytest>=7,<9
-
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from pathlib import Path
 
 import pytest
 
 from e2e_support import default_config_path
+
+
+def pytest_configure(config):
+    config.addinivalue_line("markers", "e2e: end-to-end acceptance tests")
+    config.addinivalue_line("markers", "slow: slow end-to-end tests")
+    config.addinivalue_line("markers", "diversity: mathematical diversity acceptance tests")
 
 
 @pytest.fixture
@@ -23,13 +24,7 @@ def e2e_default_config(project_root: Path) -> Path:
 
 
 @pytest.fixture
-def e2e_out_root() -> Path:
-    """
-    Persistent E2E output root.
-
-    E2E tests write generated datasets here so outputs can be inspected
-    manually after test execution.
-    """
-    out = Path(r"D:\ai1_test_2_100")
+def e2e_out_root(project_root: Path) -> Path:
+    out = project_root / "test_artifacts" / "e2e"
     out.mkdir(parents=True, exist_ok=True)
     return out

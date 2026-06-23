@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 from pathlib import Path
@@ -7,7 +7,7 @@ import numpy as np
 import pytest
 from PIL import Image
 
-from ai1_gen.io.exporter import (
+from docsynthfab.io.exporter import (
     _atomic_write_bytes,
     _to_pil_image,
     ensure_dataset_dirs,
@@ -254,3 +254,79 @@ def test_save_png_u8_rejects_invalid_shape(tmp_path):
 
     with pytest.raises(ValueError):
         save_png_u8(target, bad, tmp_dir)
+
+
+# ======================================================================================
+# package/export contract
+# ======================================================================================
+
+def test_io_package_public_exports_contract():
+    import docsynthfab.io as io_pkg
+
+    assert set(io_pkg.__all__) == {
+        "ensure_dataset_dirs",
+        "save_png_u8",
+        "save_json",
+    }
+
+    assert hasattr(io_pkg, "ensure_dataset_dirs")
+    assert hasattr(io_pkg, "save_png_u8")
+    assert hasattr(io_pkg, "save_json")
+
+
+# ======================================================================================
+# atomic failure behavior
+# ======================================================================================
+
+def test_atomic_write_bytes_preserves_existing_target_if_replace_fails(
+    tmp_path,
+    monkeypatch,
+):
+    import docsynthfab.io.exporter as mod
+
+    target = tmp_path / "file.bin"
+    tmp_dir = tmp_path / "_tmp"
+
+    target.write_bytes(b"original")
+
+    def fake_replace(src, dst):
+        raise RuntimeError("replace failed intentionally")
+
+    monkeypatch.setattr(mod.os, "replace", fake_replace)
+
+    with pytest.raises(RuntimeError, match="replace failed intentionally"):
+        _atomic_write_bytes(target, b"new-data", tmp_dir)
+
+    assert target.read_bytes() == b"original"
+    assert list(tmp_dir.glob("*.tmp")) == []
+
+
+def test_save_png_u8_creates_nested_parent_dirs(tmp_path):
+    target = tmp_path / "deep" / "images" / "page.png"
+    tmp_dir = tmp_path / "_tmp"
+
+    img = np.zeros((12, 20, 3), dtype=np.uint8)
+
+    save_png_u8(target, img, tmp_dir)
+
+    assert target.exists()
+
+    with Image.open(target) as loaded:
+        assert loaded.size == (20, 12)
+        assert loaded.mode == "RGB"
+
+
+def test_save_png_u8_grayscale_mode_is_l(tmp_path):
+    target = tmp_path / "deep" / "masks" / "mask.png"
+    tmp_dir = tmp_path / "_tmp"
+
+    mask = np.zeros((12, 20), dtype=np.uint8)
+    mask[2:5, 3:7] = 255
+
+    save_png_u8(target, mask, tmp_dir)
+
+    assert target.exists()
+
+    with Image.open(target) as loaded:
+        assert loaded.size == (20, 12)
+        assert loaded.mode == "L"

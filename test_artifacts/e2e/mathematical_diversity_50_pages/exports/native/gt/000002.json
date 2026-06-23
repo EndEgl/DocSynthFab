@@ -1,0 +1,654 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000002",
+  "size": {
+    "w": 2481,
+    "h": 3507,
+    "dpi": 300,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "single_col",
+    "density_level": "sparse",
+    "scale_profile": "dpi300",
+    "noise_level": "medium",
+    "page_family": "notes",
+    "_fallback": false,
+    "_augment_disabled_by_retry": null,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": false,
+    "has_equation": false,
+    "has_equation_layout": true,
+    "has_figure": false,
+    "mask_text_nonzero": 67413,
+    "mask_math_nonzero": 0,
+    "math_line_count": 0,
+    "equation_block_count": 1,
+    "table_block_count": 0,
+    "figure_block_count": 0,
+    "rotation_deg": -1.692538509678894,
+    "perspective": true,
+    "book_mode": false,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": [
+      {
+        "op": "photometric",
+        "gamma": 0.8631448277761676,
+        "alpha": 0.9247596258662759,
+        "beta": 0.21847841479312002
+      },
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 67413.0,
+        "after_text_nz": 67413.0,
+        "before_math_nz": 0.0,
+        "after_math_nz": 0.0,
+        "accepted": true
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "title",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        198,
+        1056,
+        2085,
+        117
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 0,
+      "bbox": [
+        363,
+        2517,
+        1668,
+        584
+      ]
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 0,
+      "bbox": [
+        398,
+        1285,
+        1668,
+        775
+      ]
+    },
+    {
+      "block_id": 3,
+      "block_type": "list",
+      "block_order": 3,
+      "column_id": 0,
+      "bbox": [
+        205,
+        2120,
+        1668,
+        349
+      ]
+    },
+    {
+      "block_id": 4,
+      "block_type": "paragraph",
+      "block_order": 4,
+      "column_id": 0,
+      "bbox": [
+        247,
+        319,
+        1668,
+        418
+      ]
+    },
+    {
+      "block_id": 5,
+      "block_type": "equation",
+      "block_order": 5,
+      "column_id": 0,
+      "bbox": [
+        198,
+        3208,
+        1668,
+        19
+      ]
+    },
+    {
+      "block_id": 6,
+      "block_type": "paragraph",
+      "block_order": 6,
+      "column_id": 1,
+      "bbox": [
+        467,
+        792,
+        1668,
+        19
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "text",
+      "global_line_order": 0,
+      "bbox": [
+        239,
+        1070,
+        1461,
+        56
+      ]
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 1,
+      "bbox": [
+        411,
+        2587,
+        807,
+        18
+      ],
+      "text": "Fehler Prüfung Menge Schema Diagramm Fahrzeug Fracht Ordner Titel Datei Rand Kopie анализ Klasse Abteilung",
+      "script": "latin"
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 2,
+      "bbox": [
+        411,
+        2642,
+        464,
+        17
+      ],
+      "text": "denklem ağırlık konteyner satır iletişim görsel parti proje özet teslimat",
+      "script": "latin"
+    },
+    {
+      "line_id": 3,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 3,
+      "bbox": [
+        413,
+        2692,
+        1589,
+        39
+      ]
+    },
+    {
+      "line_id": 4,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 4,
+      "bbox": [
+        413,
+        2748,
+        1490,
+        39
+      ]
+    },
+    {
+      "line_id": 5,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 5,
+      "bbox": [
+        411,
+        2807,
+        462,
+        17
+      ],
+      "text": "müşteri boşluk gemi alan license boşluk saklama satır revizyon maske",
+      "script": "latin"
+    },
+    {
+      "line_id": 6,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 6,
+      "bbox": [
+        411,
+        2862,
+        956,
+        17
+      ],
+      "text": "cliente pie descuento ancho producto palé estado conductor espaciado comentario columna gerente contenedor archivo referencia equipo plazo",
+      "script": "latin"
+    },
+    {
+      "line_id": 7,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 7,
+      "bbox": [
+        413,
+        2913,
+        1481,
+        39
+      ]
+    },
+    {
+      "line_id": 8,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 8,
+      "bbox": [
+        411,
+        2971,
+        748,
+        17
+      ],
+      "text": "height warning department reference date comment template weight batch box container script font stamp filtre",
+      "script": "latin"
+    },
+    {
+      "line_id": 9,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 9,
+      "bbox": [
+        411,
+        3023,
+        490,
+        13
+      ],
+      "text": "Datei Problem E-Mail Kraftstoff Zeile Hafen Zeile şehir Terminal Inventar Rand Land 许可 Lagerung Einheit",
+      "script": "latin"
+    },
+    {
+      "line_id": 10,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 10,
+      "bbox": [
+        413,
+        3062,
+        724,
+        39
+      ]
+    },
+    {
+      "line_id": 11,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 11,
+      "bbox": [
+        448,
+        1369,
+        1458,
+        39
+      ]
+    },
+    {
+      "line_id": 12,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 12,
+      "bbox": [
+        446,
+        1434,
+        528,
+        19
+      ],
+      "text": "محطة رسوم ارتفاع دولة درجة_حرارة مادة عرض محطة ميناء وحدة يونيكود note دفع حمولة",
+      "script": "ar"
+    },
+    {
+      "line_id": 13,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 13,
+      "bbox": [
+        446,
+        1484,
+        992,
+        18
+      ],
+      "text": "контейнер шаблон отдел отклик материал партия копия палета встреча товар расстояние ячейка штрихкод решение маршрут вопрос",
+      "script": "ru"
+    },
+    {
+      "line_id": 14,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 14,
+      "bbox": [
+        446,
+        1539,
+        495,
+        16
+      ],
+      "text": "schema groundtruth class class tax encoding length analysis decision cell permit",
+      "script": "latin"
+    },
+    {
+      "line_id": 15,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 15,
+      "bbox": [
+        448,
+        1589,
+        1432,
+        39
+      ]
+    },
+    {
+      "line_id": 16,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 16,
+      "bbox": [
+        448,
+        1644,
+        1459,
+        39
+      ]
+    },
+    {
+      "line_id": 17,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 17,
+      "bbox": [
+        446,
+        1706,
+        486,
+        19
+      ],
+      "text": "Projekt Ordner Vertrag Schiff Lager Export Vertrag Stapel Export",
+      "script": "latin"
+    },
+    {
+      "line_id": 18,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 18,
+      "bbox": [
+        446,
+        1758,
+        389,
+        16
+      ],
+      "text": "contenedor nota seguro unicode trabajador almacén palé línea",
+      "script": "latin"
+    },
+    {
+      "line_id": 19,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 19,
+      "bbox": [
+        446,
+        1809,
+        287,
+        18
+      ],
+      "text": "स्कीमा स्तंभ मात्रा ईमेल चालान टर्मिनल प्रमाणपत्र आयतन",
+      "script": "hi"
+    },
+    {
+      "line_id": 20,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 20,
+      "bbox": [
+        446,
+        1870,
+        1017,
+        18
+      ],
+      "text": "description contract supplier request insurance mask question figure border склад subtotal number spacing license machine category payment",
+      "script": "latin"
+    },
+    {
+      "line_id": 21,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 21,
+      "bbox": [
+        448,
+        1920,
+        1437,
+        39
+      ]
+    },
+    {
+      "line_id": 22,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 22,
+      "bbox": [
+        446,
+        1978,
+        798,
+        17
+      ],
+      "text": "şablon gümrük sorun dışa_aktarım koli tohum risk dosya tedarikçi sembol rastgele yönetici paket stok analiz dosya kenar",
+      "script": "latin"
+    },
+    {
+      "line_id": 23,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 23,
+      "bbox": [
+        448,
+        2021,
+        1602,
+        39
+      ]
+    },
+    {
+      "line_id": 24,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 24,
+      "bbox": [
+        448,
+        2021,
+        1004,
+        39
+      ]
+    },
+    {
+      "line_id": 25,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 25,
+      "bbox": [
+        321,
+        2163,
+        1347,
+        39
+      ]
+    },
+    {
+      "line_id": 26,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 26,
+      "bbox": [
+        321,
+        2218,
+        1277,
+        39
+      ]
+    },
+    {
+      "line_id": 27,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 27,
+      "bbox": [
+        321,
+        2273,
+        1390,
+        39
+      ]
+    },
+    {
+      "line_id": 28,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 28,
+      "bbox": [
+        321,
+        2327,
+        1359,
+        39
+      ]
+    },
+    {
+      "line_id": 29,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 29,
+      "bbox": [
+        319,
+        2381,
+        843,
+        12
+      ],
+      "text": "– παράδειγμα  ΕεάΜΰΛΣΩεΙΗ'  παράδειγμα  – ςΟψΛ΢΢παράδειγμα μοντέλομοντέλο  μοντέλο  μοντέλο  ψεασΦςλ΢ΫεΨ) δεδομένα μοντέλοπαράδειγμαξξσΔίι~ δεδομένα λύσηδεδομένα λύση μοντέλο μοντέλο",
+      "script": "el"
+    },
+    {
+      "line_id": 30,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 30,
+      "bbox": [
+        321,
+        2430,
+        1304,
+        39
+      ]
+    },
+    {
+      "line_id": 31,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 31,
+      "bbox": [
+        378,
+        373,
+        793,
+        18
+      ],
+      "text": "etiketleme konteyner Kopie talep filtre iletişim barkod kategori saklama referans çalışan karar revizyon malzeme",
+      "script": "latin"
+    },
+    {
+      "line_id": 32,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 32,
+      "bbox": [
+        295,
+        425,
+        699,
+        17
+      ],
+      "text": "weight format symbole equipment batch chart supplier symbol warehouse layout account cargo seed risk",
+      "script": "latin"
+    },
+    {
+      "line_id": 33,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 33,
+      "bbox": [
+        297,
+        477,
+        1586,
+        39
+      ]
+    },
+    {
+      "line_id": 34,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 34,
+      "bbox": [
+        295,
+        533,
+        582,
+        12
+      ],
+      "text": "hücre uyarı liman saklama müşteri sorun yazı_tipi maske yakıt terminal אלפבית hücre klasör vergi unicode liman yazı_sistemi",
+      "script": "latin"
+    },
+    {
+      "line_id": 35,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 35,
+      "bbox": [
+        297,
+        589,
+        1562,
+        39
+      ]
+    },
+    {
+      "line_id": 36,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 36,
+      "bbox": [
+        295,
+        646,
+        732,
+        17
+      ],
+      "text": "sütun başlık eposta onay formül özet cümle sütun issue sigorta formül dosya telefon paragraf rapor grafik özet",
+      "script": "latin"
+    },
+    {
+      "line_id": 37,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 37,
+      "bbox": [
+        297,
+        697,
+        640,
+        39
+      ]
+    }
+  ],
+  "page_text": "Fehler Prüfung Menge Schema Diagramm Fahrzeug Fracht Ordner Titel Datei Rand Kopie анализ Klasse Abteilung\ndenklem ağırlık konteyner satır iletişim görsel parti proje özet teslimat\nmüşteri boşluk gemi alan license boşluk saklama satır revizyon maske\ncliente pie descuento ancho producto palé estado conductor espaciado comentario columna gerente contenedor archivo referencia equipo plazo\nheight warning department reference date comment template weight batch box container script font stamp filtre\nDatei Problem E-Mail Kraftstoff Zeile Hafen Zeile şehir Terminal Inventar Rand Land 许可 Lagerung Einheit\nمحطة رسوم ارتفاع دولة درجة_حرارة مادة عرض محطة ميناء وحدة يونيكود note دفع حمولة\nконтейнер шаблон отдел отклик материал партия копия палета встреча товар расстояние ячейка штрихкод решение маршрут вопрос\nschema groundtruth class class tax encoding length analysis decision cell permit\nProjekt Ordner Vertrag Schiff Lager Export Vertrag Stapel Export\ncontenedor nota seguro unicode trabajador almacén palé línea\nस्कीमा स्तंभ मात्रा ईमेल चालान टर्मिनल प्रमाणपत्र आयतन\ndescription contract supplier request insurance mask question figure border склад subtotal number spacing license machine category payment\nşablon gümrük sorun dışa_aktarım koli tohum risk dosya tedarikçi sembol rastgele yönetici paket stok analiz dosya kenar\n– παράδειγμα  ΕεάΜΰΛΣΩεΙΗ'  παράδειγμα  – ςΟψΛ΢΢παράδειγμα μοντέλομοντέλο  μοντέλο  μοντέλο  ψεασΦςλ΢ΫεΨ) δεδομένα μοντέλοπαράδειγμαξξσΔίι~ δεδομένα λύσηδεδομένα λύση μοντέλο μοντέλο\netiketleme konteyner Kopie talep filtre iletişim barkod kategori saklama referans çalışan karar revizyon malzeme\nweight format symbole equipment batch chart supplier symbol warehouse layout account cargo seed risk\nhücre uyarı liman saklama müşteri sorun yazı_tipi maske yakıt terminal אלפבית hücre klasör vergi unicode liman yazı_sistemi\nsütun başlık eposta onay formül özet cümle sütun issue sigorta formül dosya telefon paragraf rapor grafik özet",
+  "gt_stats": {
+    "scripts_hist": {
+      "latin": 15,
+      "ar": 1,
+      "ru": 1,
+      "hi": 1,
+      "el": 1
+    },
+    "has_gt_text_lines": 19,
+    "has_gt_math_lines": 0,
+    "book_mode_added_lines": 0
+  }
+}

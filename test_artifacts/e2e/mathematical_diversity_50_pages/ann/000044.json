@@ -1,0 +1,1342 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000044",
+  "size": {
+    "w": 2481,
+    "h": 3507,
+    "dpi": 300,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "page_family": "report",
+    "layout_type": "single_col",
+    "noise_level": "medium",
+    "density_level": "sparse",
+    "scale_profile": "dpi300",
+    "has_table": false,
+    "has_equation": true,
+    "has_figure": false,
+    "rotation_deg": 0.461178382936688,
+    "perspective": false,
+    "book_mode": false,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_pure_mode": "mixed",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "latex_render_error_count": 11,
+    "latex_render_errors": [
+      {
+        "line_id": 19,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 21,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 22,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 23,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 24,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 25,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "el",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 28,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "tr",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 33,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 35,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "ar",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 45,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      },
+      {
+        "line_id": 46,
+        "expr": "",
+        "error": "text-generation-unsafe-after-retries",
+        "script": "latin",
+        "line_kind": "text",
+        "safe_ocr_line_guard": true
+      }
+    ],
+    "latex_render_fallback_used": true,
+    "latex_render_backend": "http",
+    "latex_render_http_base_url": "http://127.0.0.1:8080",
+    "latex_render_enabled": false,
+    "mask_text_nonzero": 67822,
+    "mask_math_nonzero": 779,
+    "aug_trace": [
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 67822.0,
+        "after_text_nz": 67822.0,
+        "before_math_nz": 779.0,
+        "after_math_nz": 779.0,
+        "accepted": true
+      }
+    ],
+    "math_line_count": 15,
+    "equation_block_count": 1,
+    "table_block_count": 0,
+    "figure_block_count": 0,
+    "has_equation_layout": true,
+    "_worker_debug": {
+      "ps_equation_blocks": 1,
+      "ps_table_blocks": 0,
+      "ps_figure_blocks": 0,
+      "ps_math_lines": 15,
+      "ps_total_lines": 48,
+      "mask_text_nonzero_pre_qc": 67822,
+      "mask_math_nonzero_pre_qc": 779
+    }
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "equation",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        198,
+        280,
+        1668,
+        849
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 1,
+      "bbox": [
+        417,
+        1340,
+        1668,
+        1488
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": 6
+      }
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 0,
+      "bbox": [
+        198,
+        3208,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "_downgraded_from_table": true,
+        "_downgrade_reason": "table-bbox-too-short",
+        "_original_table_bbox": [
+          198,
+          3208,
+          1668,
+          19
+        ],
+        "_required_min_table_h": 112
+      }
+    },
+    {
+      "block_id": 3,
+      "block_type": "list",
+      "block_order": 3,
+      "column_id": 0,
+      "bbox": [
+        350,
+        1298,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": 0
+      }
+    },
+    {
+      "block_id": 4,
+      "block_type": "paragraph",
+      "block_order": 4,
+      "column_id": 1,
+      "bbox": [
+        510,
+        3091,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": 12
+      }
+    },
+    {
+      "block_id": 5,
+      "block_type": "paragraph",
+      "block_order": 5,
+      "column_id": 1,
+      "bbox": [
+        536,
+        1159,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": 8
+      }
+    },
+    {
+      "block_id": 6,
+      "block_type": "paragraph",
+      "block_order": 6,
+      "column_id": 0,
+      "bbox": [
+        226,
+        2873,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": 3
+      }
+    },
+    {
+      "block_id": 7,
+      "block_type": "list",
+      "block_order": 7,
+      "column_id": 1,
+      "bbox": [
+        562,
+        2947,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": -4
+      }
+    },
+    {
+      "block_id": 8,
+      "block_type": "paragraph",
+      "block_order": 8,
+      "column_id": 0,
+      "bbox": [
+        344,
+        2992,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "_downgraded_from_table": true,
+        "_downgrade_reason": "table-bbox-too-short",
+        "_original_table_bbox": [
+          344,
+          2992,
+          1668,
+          19
+        ],
+        "_required_min_table_h": 112
+      }
+    },
+    {
+      "block_id": 9,
+      "block_type": "paragraph",
+      "block_order": 9,
+      "column_id": 1,
+      "bbox": [
+        541,
+        209,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "_downgraded_from_table": true,
+        "_downgrade_reason": "table-bbox-too-short",
+        "_original_table_bbox": [
+          541,
+          209,
+          1668,
+          19
+        ],
+        "_required_min_table_h": 112
+      }
+    },
+    {
+      "block_id": 10,
+      "block_type": "list",
+      "block_order": 10,
+      "column_id": 0,
+      "bbox": [
+        256,
+        3287,
+        1668,
+        19
+      ],
+      "style": {
+        "page_family": "report",
+        "layout_type": "single_col",
+        "page_size_name": "a4_portrait",
+        "orientation": "portrait",
+        "natural_x_jitter_px": -12
+      }
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 0,
+      "global_line_order": 0,
+      "bbox": [
+        350,
+        284,
+        1423,
+        39
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "z^{4}"
+    },
+    {
+      "line_id": 1,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 1,
+      "global_line_order": 1,
+      "bbox": [
+        405,
+        342,
+        1328,
+        47
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "\\frac{\\sqrt{\\sqrt{2}}}{\\frac{j}{\\theta} \\cdot j - y} \\cdot i \\cdot \\cos(n) \\cdot \\frac{\\delta}{\\omega} \\cdot \\cos(n) \\cdot \\ln(a) \\cdot \\frac{y}{8}"
+    },
+    {
+      "line_id": 2,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 2,
+      "global_line_order": 2,
+      "bbox": [
+        507,
+        398,
+        1125,
+        48
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "\\cos x = \\sum_{n=0}^{\\infty} (-1)^n \\frac{x^{2n}}{(2n)!}"
+    },
+    {
+      "line_id": 3,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 3,
+      "global_line_order": 3,
+      "bbox": [
+        411,
+        459,
+        993,
+        42
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "\\frac{b^{3}}{\\sqrt{\\sin(a)^{5}}}"
+    },
+    {
+      "line_id": 4,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 4,
+      "global_line_order": 4,
+      "bbox": [
+        467,
+        512,
+        1345,
+        50
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "\\frac{b^{\\omega}}{y + 7 \\cdot y^{4}} \\cdot \\sqrt{\\log(b)^{5}}"
+    },
+    {
+      "line_id": 5,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 5,
+      "global_line_order": 5,
+      "bbox": [
+        410,
+        602,
+        1050,
+        41
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "a^{k}"
+    },
+    {
+      "line_id": 6,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 6,
+      "global_line_order": 6,
+      "bbox": [
+        690,
+        683,
+        1023,
+        43
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "\\frac{\\sqrt[3]{\\exp(b) \\cdot 3}}{\\tan(t) \\cdot t - \\log(n) - \\exp(n)} \\cdot 4^{\\beta} + \\frac{9^{n}}{9 \\cdot 2}"
+    },
+    {
+      "line_id": 7,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 7,
+      "global_line_order": 7,
+      "bbox": [
+        259,
+        766,
+        1269,
+        49
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "\\cos t = \\sum_{n=0}^{\\infty} (-1)^n \\frac{t^{2n}}{(2n)!}"
+    },
+    {
+      "line_id": 8,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 8,
+      "global_line_order": 8,
+      "bbox": [
+        432,
+        855,
+        1191,
+        48
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "\\frac{\\mu^{4} + y^{x}}{5 - a - \\frac{n}{\\sin(b)} + \\phi^{\\sigma}}"
+    },
+    {
+      "line_id": 9,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 9,
+      "global_line_order": 9,
+      "bbox": [
+        548,
+        943,
+        1225,
+        47
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "\\frac{7^{2}}{\\frac{\\sqrt[4]{\\frac{2}{\\phi}}}{\\sqrt{2 \\cdot y}}}"
+    },
+    {
+      "line_id": 10,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 10,
+      "global_line_order": 10,
+      "bbox": [
+        287,
+        1030,
+        1244,
+        45
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "\\mathbf{v}=\\begin{bmatrix} \\sqrt[4]{\\sin(x)} \\\\ 5 \\cdot \\sigma \\\\ \\sqrt[3]{y} \\end{bmatrix}"
+    },
+    {
+      "line_id": 11,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 11,
+      "global_line_order": 11,
+      "bbox": [
+        251,
+        1115,
+        1136,
+        43
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "\\sqrt[4]{\\tan(i) \\cdot \\sin(c) \\cdot k \\cdot 3 + \\frac{9}{\\exp(n)} - \\frac{j}{\\beta}}"
+    },
+    {
+      "line_id": 12,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 12,
+      "global_line_order": 12,
+      "bbox": [
+        401,
+        1198,
+        1391,
+        45
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "e^{t} = \\sum_{n=0}^{\\infty} \\frac{t^n}{n!}"
+    },
+    {
+      "line_id": 13,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 13,
+      "global_line_order": 13,
+      "bbox": [
+        481,
+        1283,
+        971,
+        51
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "1^{a} \\cdot 3^{c} - n^{t}"
+    },
+    {
+      "line_id": 14,
+      "block_id": 0,
+      "line_type": "math",
+      "line_order_in_block": 14,
+      "global_line_order": 14,
+      "bbox": [
+        609,
+        1374,
+        1157,
+        44
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_latex": "\\sqrt{\\sqrt{c \\cdot t}} \\cdot \\frac{n + i}{\\frac{6}{\\delta}} \\cdot \\sqrt[3]{8} \\cdot \\tan(n) \\cdot \\exp(a)"
+    },
+    {
+      "line_id": 15,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 0,
+      "global_line_order": 15,
+      "bbox": [
+        465,
+        1499,
+        141,
+        20
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "METIN=yoğunluk",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 13
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 16,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 1,
+      "global_line_order": 16,
+      "bbox": [
+        465,
+        1542,
+        277,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "risk certificate word tax cell risk page header",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 40
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 17,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 2,
+      "global_line_order": 17,
+      "bbox": [
+        465,
+        1586,
+        719,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "document payment approval width seed license distance certificate port script response footer note discount",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 94
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 18,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 3,
+      "global_line_order": 18,
+      "bbox": [
+        465,
+        1627,
+        319,
+        21
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "SÜREÇörnek metin' örnek kalite hrJnİXCjTVs~",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 37
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 19,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 4,
+      "global_line_order": 19,
+      "bbox": [
+        467,
+        1670,
+        1612,
+        31
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 20,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 5,
+      "global_line_order": 20,
+      "bbox": [
+        465,
+        1718,
+        110,
+        21
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "çözüm kalite",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 11
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 21,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 6,
+      "global_line_order": 21,
+      "bbox": [
+        467,
+        1758,
+        1484,
+        31
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 22,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 7,
+      "global_line_order": 22,
+      "bbox": [
+        467,
+        1801,
+        1557,
+        31
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 23,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 8,
+      "global_line_order": 23,
+      "bbox": [
+        467,
+        1847,
+        1571,
+        31
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 24,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 9,
+      "global_line_order": 24,
+      "bbox": [
+        467,
+        1891,
+        1494,
+        31
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 25,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 10,
+      "global_line_order": 25,
+      "bbox": [
+        467,
+        1933,
+        1445,
+        31
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 26,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 11,
+      "global_line_order": 26,
+      "bbox": [
+        465,
+        1983,
+        829,
+        22
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "mesaj kopya teslimat tohum takvim rastgele talep kelime izin envanter şema toplam yönetici",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 78
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 27,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 12,
+      "global_line_order": 27,
+      "bbox": [
+        465,
+        2025,
+        904,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "gráfico esquema contacto tabla contacto máquina semilla calidad correo problema plazo fórmula anotación certificado almacén",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 109
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 28,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 13,
+      "global_line_order": 28,
+      "bbox": [
+        467,
+        2067,
+        1595,
+        31
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 29,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 14,
+      "global_line_order": 29,
+      "bbox": [
+        465,
+        2115,
+        665,
+        19
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "Vertrag Steuer Datensatzsammlung Zufall Maske Container Beschreibung Beschreibung",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 74
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 30,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 15,
+      "global_line_order": 30,
+      "bbox": [
+        465,
+        2155,
+        863,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "cargo toll balance contact label delivery calendar annotation συνάντηση request driver page supplier alphabet подытог para vehicle meeting",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 105,
+        "el": 9,
+        "ru": 7
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 31,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 16,
+      "global_line_order": 31,
+      "bbox": [
+        465,
+        2201,
+        507,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "schéma remise message tâche enregistrement champ employé douane stock total",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 66
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 32,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 17,
+      "global_line_order": 32,
+      "bbox": [
+        465,
+        2247,
+        526,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "solde date poids demande account statut livraison terminal véhicule poids",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 64
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 33,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 18,
+      "global_line_order": 33,
+      "bbox": [
+        467,
+        2286,
+        1577,
+        31
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 34,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 19,
+      "global_line_order": 34,
+      "bbox": [
+        465,
+        2333,
+        778,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "аудит статус фильтр рабочий маршрут хранение экспорт ширина груз запись страна материал кодировка",
+      "gt_script": "ru",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "ru": 85
+      },
+      "render_font_path": "assets\\fonts\\cyrillic\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 35,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 20,
+      "global_line_order": 35,
+      "bbox": [
+        467,
+        2374,
+        1485,
+        31
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 36,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 21,
+      "global_line_order": 36,
+      "bbox": [
+        465,
+        2426,
+        376,
+        19
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "مرجع إجمالي تنسيق قرار تاريخ عرض سعر عنوان عقد مورد طلب",
+      "gt_script": "ar",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "ar": 45
+      },
+      "render_font_path": "assets\\fonts\\arabic\\NotoSansArabic-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans Arabic / Regular"
+    },
+    {
+      "line_id": 37,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 22,
+      "global_line_order": 37,
+      "bbox": [
+        465,
+        2465,
+        474,
+        16
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "RwDVAMxO yoğunluk görsel% dünyamerhabadoğrulama süreç merhaba veri",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 59
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 38,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 23,
+      "global_line_order": 38,
+      "bbox": [
+        464,
+        2510,
+        662,
+        22
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "تحليل بريد اجتماع تحذير طلب ملف tampon دفع حالة مجموع_فرعي يونيكود تحذير شحنة عامل تقويم معدات أبجدية رمز",
+      "gt_script": "ar",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "ar": 81,
+        "latin": 7
+      },
+      "render_font_path": "assets\\fonts\\arabic\\NotoSansArabic-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans Arabic / Regular"
+    },
+    {
+      "line_id": 39,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 24,
+      "global_line_order": 39,
+      "bbox": [
+        465,
+        2553,
+        527,
+        18
+      ],
+      "quad": null,
+      "is_hard": true,
+      "gt_text": "kenar filtre total iletişim yakıt dışa_aktarım son_tarih satır tohum geçiş risk",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 69
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 40,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 25,
+      "global_line_order": 40,
+      "bbox": [
+        465,
+        2597,
+        584,
+        15
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "importation Steuer modèle alphabet titre vérité_terrain taxe message employé cargaison Breite format",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 89
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 41,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 26,
+      "global_line_order": 41,
+      "bbox": [
+        465,
+        2640,
+        467,
+        10
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "ברקוד כותרת_עליונה תיקייה עובד סך_הכול פריסה مستودع שליחה כתובת משטח חתימה מחסן ייצוא עובד_תהליך יתרה",
+      "gt_script": "he",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "he": 78,
+        "latin": 3,
+        "ar": 6
+      },
+      "render_font_path": "__PIL_DEFAULT__",
+      "render_font_index": -1,
+      "render_font_name": "Aileron / Regular"
+    },
+    {
+      "line_id": 42,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 27,
+      "global_line_order": 42,
+      "bbox": [
+        465,
+        2683,
+        896,
+        19
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "carga aprobación conductor biçim kodlama distancia fuente envío बीमा contrato descripción descuento resumen etiqueta riesgo entrega",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 112,
+        "hi": 4
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 43,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 28,
+      "global_line_order": 43,
+      "bbox": [
+        465,
+        2729,
+        45,
+        15
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "lorem",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 5
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 44,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 29,
+      "global_line_order": 44,
+      "bbox": [
+        465,
+        2774,
+        799,
+        18
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "проверка эталон слово ürün диаграмма задача поле почта юникод ячейка единица инвентарь высота почта",
+      "gt_script": "ru",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "ru": 82,
+        "latin": 4
+      },
+      "render_font_path": "assets\\fonts\\cyrillic\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    },
+    {
+      "line_id": 45,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 30,
+      "global_line_order": 45,
+      "bbox": [
+        467,
+        2797,
+        1559,
+        31
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 46,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 31,
+      "global_line_order": 46,
+      "bbox": [
+        467,
+        2797,
+        1525,
+        31
+      ],
+      "quad": null,
+      "is_hard": false
+    },
+    {
+      "line_id": 47,
+      "block_id": 1,
+      "line_type": "text",
+      "line_order_in_block": 32,
+      "global_line_order": 47,
+      "bbox": [
+        465,
+        2800,
+        758,
+        17
+      ],
+      "quad": null,
+      "is_hard": false,
+      "gt_text": "palet son_tarih formül ağırlık fatura weight veri_seti formül özet alfabe sözleşme toplantı hacim depo sınıf onay işçi",
+      "gt_script": "latin",
+      "render_font_supports_text": true,
+      "render_text_script_families": {
+        "latin": 102
+      },
+      "render_font_path": "assets\\fonts\\latin\\NotoSans-Regular.ttf",
+      "render_font_index": 0,
+      "render_font_name": "Noto Sans / Regular"
+    }
+  ],
+  "gt_page_text": "METIN=yoğunluk\nrisk certificate word tax cell risk page header\ndocument payment approval width seed license distance certificate port script response footer note discount\nSÜREÇörnek metin' örnek kalite hrJnİXCjTVs~\nçözüm kalite\nmesaj kopya teslimat tohum takvim rastgele talep kelime izin envanter şema toplam yönetici\ngráfico esquema contacto tabla contacto máquina semilla calidad correo problema plazo fórmula anotación certificado almacén\nVertrag Steuer Datensatzsammlung Zufall Maske Container Beschreibung Beschreibung\ncargo toll balance contact label delivery calendar annotation συνάντηση request driver page supplier alphabet подытог para vehicle meeting\nschéma remise message tâche enregistrement champ employé douane stock total\nsolde date poids demande account statut livraison terminal véhicule poids\nаудит статус фильтр рабочий маршрут хранение экспорт ширина груз запись страна материал кодировка\nمرجع إجمالي تنسيق قرار تاريخ عرض سعر عنوان عقد مورد طلب\nRwDVAMxO yoğunluk görsel% dünyamerhabadoğrulama süreç merhaba veri\nتحليل بريد اجتماع تحذير طلب ملف tampon دفع حالة مجموع_فرعي يونيكود تحذير شحنة عامل تقويم معدات أبجدية رمز\nkenar filtre total iletişim yakıt dışa_aktarım son_tarih satır tohum geçiş risk\nimportation Steuer modèle alphabet titre vérité_terrain taxe message employé cargaison Breite format\nברקוד כותרת_עליונה תיקייה עובד סך_הכול פריסה مستودع שליחה כתובת משטח חתימה מחסן ייצוא עובד_תהליך יתרה\ncarga aprobación conductor biçim kodlama distancia fuente envío बीमा contrato descripción descuento resumen etiqueta riesgo entrega\nlorem\nпроверка эталон слово ürün диаграмма задача поле почта юникод ячейка единица инвентарь высота почта\npalet son_tarih formül ağırlık fatura weight veri_seti formül özet alfabe sözleşme toplantı hacim depo sınıf onay işçi",
+  "gt_stats": {
+    "scripts_hist": {
+      "math": 15,
+      "latin": 17,
+      "ru": 2,
+      "ar": 2,
+      "he": 1
+    },
+    "has_gt_text_lines": 22,
+    "has_gt_math_lines": 15,
+    "book_mode_added_lines": 0
+  }
+}

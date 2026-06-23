@@ -1,13 +1,13 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import time
 
-from ai1_gen.cli import _make_fallback_render
+from docsynthfab.cli import _make_fallback_render
 
 
 class CfgStub:
     raw = {"page": {"bg_color_rgb": [255, 255, 255]}}
-    version = "ai1-ds-v1.3.2"
+    version = "docsynthfab-ds-v0.1"
 
 
 def test_render_page_perf_smoke():
@@ -19,3 +19,6 @@ def test_render_page_perf_smoke():
     elapsed = time.perf_counter() - t0
 
     assert elapsed < 5.0
+
+
+

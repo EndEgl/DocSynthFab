@@ -1,4 +1,4 @@
-# test/unit/gui/test_web_error_visibility_contract.py
+﻿# test/unit/gui/test_web_error_visibility_contract.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 # - pytest>=7,<9
@@ -9,8 +9,8 @@ from pathlib import Path
 from types import SimpleNamespace
 from typing import Any
 
-import ai1_gen.gui.web.app as web_mod
-from ai1_gen.gui.web.state import WebGuiState
+import docsynthfab.gui.web.app as web_mod
+from docsynthfab.gui.web.state import WebGuiState
 
 
 class DummyWidget:
@@ -139,3 +139,6 @@ def test_web_refresh_status_surfaces_failed_run_error_details(tmp_path, monkeypa
 
     assert "synthetic failure" in combined
     assert "000003" in combined or "ValueError" in combined
+
+
+

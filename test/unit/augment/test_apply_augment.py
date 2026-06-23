@@ -1,8 +1,8 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import random
 
-from ai1_gen.augment.apply_augment import _clip_bbox_xywh, apply_augment
+from docsynthfab.augment.apply_augment import _clip_bbox_xywh, apply_augment
 
 
 def _no_aug_cfg() -> dict:
@@ -146,3 +146,6 @@ def test_apply_augment_can_fallback_to_light_plan_when_masks_degrade(
     # Fallback her seed'de garanti değil; bu yüzden trace varsa davranışı kontrol ediyoruz.
     if "fallback_to_light_plan" in ops:
         assert out.geom_M is None
+
+
+

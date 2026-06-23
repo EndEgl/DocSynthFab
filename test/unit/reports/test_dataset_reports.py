@@ -1,10 +1,10 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import csv
 import json
 from pathlib import Path
 
-from ai1_gen.reports.dataset_reports import (
+from docsynthfab.reports.dataset_reports import (
     LABEL_SCHEMA_VERSION,
     build_dataset_card,
     build_diversity_summary,
@@ -22,7 +22,7 @@ from ai1_gen.reports.dataset_reports import (
 
 def _sample_ann(page_id: str = "000001") -> dict:
     return {
-        "version": "ai1-ds-v1.3.2",
+        "version": "docsynthfab-ds-v0.1",
         "page_id": page_id,
         "size": {
             "w": 200,
@@ -269,7 +269,7 @@ def test_diversity_report_markdown_contains_main_sections():
 
 def test_build_dataset_card_contains_run_and_output_sections(tmp_path):
     card = build_dataset_card(
-        project_name="AI1 Gen",
+        project_name="DocSynthFab",
         version="0.1.0",
         cfg_path="configs/default.yaml",
         out_root=tmp_path / "out",
@@ -283,7 +283,7 @@ def test_build_dataset_card_contains_run_and_output_sections(tmp_path):
     )
 
     assert "# Generated Dataset Card" in card
-    assert "- Project: `AI1 Gen`" in card
+    assert "- Project: `DocSynthFab`" in card
     assert "- Pages requested: `10`" in card
     assert "- Export targets: `native, coco`" in card
     assert "## Output folders" in card
@@ -295,7 +295,7 @@ def test_write_run_manifest_writes_manifest_json(tmp_path):
 
     manifest = write_run_manifest(
         path,
-        project_name="AI1 Gen",
+        project_name="DocSynthFab",
         version="0.1.0",
         cfg_path="configs/default.yaml",
         out_root=tmp_path / "out",
@@ -315,7 +315,7 @@ def test_write_run_manifest_writes_manifest_json(tmp_path):
 
     assert loaded == manifest
     assert loaded["manifest_version"] == "run-manifest-v1"
-    assert loaded["project_name"] == "AI1 Gen"
+    assert loaded["project_name"] == "DocSynthFab"
     assert loaded["label_schema_version"] == LABEL_SCHEMA_VERSION
     assert loaded["qc_summary"] == {"ok": 9, "fail": 1}
 
@@ -346,7 +346,7 @@ def test_write_dataset_reports_writes_all_report_outputs(tmp_path):
         workers=1,
         splits={"train": 1, "val": 1, "test": 0},
         qc_summary={"ok": 2, "fail": 0},
-        project_name="AI1 Gen",
+        project_name="DocSynthFab",
         export_targets=["native", "coco"],
     )
 
@@ -378,3 +378,6 @@ def test_write_dataset_reports_writes_all_report_outputs(tmp_path):
 
     diversity = json.loads((reports_dir / "diversity_summary.json").read_text(encoding="utf-8"))
     assert diversity["page_count"] == 2
+
+
+

@@ -1,0 +1,624 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000000",
+  "size": {
+    "w": 2481,
+    "h": 3507,
+    "dpi": 300,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "single_col",
+    "density_level": "sparse",
+    "scale_profile": "dpi300",
+    "noise_level": "medium",
+    "page_family": "book",
+    "_fallback": false,
+    "_augment_disabled_by_retry": false,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": false,
+    "has_equation": false,
+    "has_equation_layout": false,
+    "has_figure": false,
+    "mask_text_nonzero": 91822,
+    "mask_math_nonzero": 0,
+    "math_line_count": 0,
+    "equation_block_count": 0,
+    "table_block_count": 0,
+    "figure_block_count": 0,
+    "rotation_deg": -0.9491051036492602,
+    "perspective": true,
+    "book_mode": true,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": []
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "title",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        198,
+        2152,
+        2085,
+        132
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 0,
+      "bbox": [
+        396,
+        2785,
+        1688,
+        564
+      ]
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 1,
+      "bbox": [
+        325,
+        969,
+        1835,
+        1138
+      ]
+    },
+    {
+      "block_id": 3,
+      "block_type": "paragraph",
+      "block_order": 3,
+      "column_id": 1,
+      "bbox": [
+        408,
+        293,
+        1835,
+        574
+      ]
+    },
+    {
+      "block_id": 4,
+      "block_type": "paragraph",
+      "block_order": 4,
+      "column_id": 0,
+      "bbox": [
+        317,
+        922,
+        1835,
+        21
+      ]
+    },
+    {
+      "block_id": 5,
+      "block_type": "paragraph",
+      "block_order": 5,
+      "column_id": 0,
+      "bbox": [
+        234,
+        2572,
+        1835,
+        21
+      ]
+    },
+    {
+      "block_id": 6,
+      "block_type": "paragraph",
+      "block_order": 6,
+      "column_id": 1,
+      "bbox": [
+        352,
+        2401,
+        1835,
+        21
+      ]
+    },
+    {
+      "block_id": 7,
+      "block_type": "paragraph",
+      "block_order": 7,
+      "column_id": 0,
+      "bbox": [
+        322,
+        2734,
+        1835,
+        21
+      ]
+    },
+    {
+      "block_id": 8,
+      "block_type": "paragraph",
+      "block_order": 8,
+      "column_id": 0,
+      "bbox": [
+        196,
+        2315,
+        1835,
+        21
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "text",
+      "global_line_order": 0,
+      "bbox": [
+        239,
+        2167,
+        923,
+        66
+      ]
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 1,
+      "bbox": [
+        530,
+        2851,
+        1369,
+        46
+      ]
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 2,
+      "bbox": [
+        444,
+        2915,
+        472,
+        13
+      ],
+      "text": "başlık satır gümrük referans durum belge kelime çerçeve şablon analiz dil talep durum תשלום altbilgi",
+      "script": "latin"
+    },
+    {
+      "line_id": 3,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 3,
+      "bbox": [
+        444,
+        2985,
+        807,
+        21
+      ],
+      "text": "tarea fila teléfono etiqueta riesgo decisión almacenamiento párrafo tarea mensaje vehículo máquina",
+      "script": "latin"
+    },
+    {
+      "line_id": 4,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 4,
+      "bbox": [
+        446,
+        3045,
+        1548,
+        46
+      ]
+    },
+    {
+      "line_id": 5,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 5,
+      "bbox": [
+        444,
+        3115,
+        721,
+        18
+      ],
+      "text": "Projekt Inspektion Land mesafe Alphabet Fahrzeug Datum Prüfung Abteilung Analyse Einheit Prüfung",
+      "script": "latin"
+    },
+    {
+      "line_id": 6,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 6,
+      "bbox": [
+        444,
+        3173,
+        414,
+        20
+      ],
+      "text": "ภาษี แถว หัวกระดาษ เครื่องจักร ตัวอักษร ลายเซ็น ตู้คอนเทนเนอร์ ปริมาตร หน่วย",
+      "script": "th"
+    },
+    {
+      "line_id": 7,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 7,
+      "bbox": [
+        446,
+        3240,
+        1634,
+        46
+      ]
+    },
+    {
+      "line_id": 8,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 8,
+      "bbox": [
+        444,
+        3307,
+        801,
+        18
+      ],
+      "text": "table copy shipment border file permit filter экспорт storage equation calendar machine chart annotation invoice",
+      "script": "latin"
+    },
+    {
+      "line_id": 9,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 9,
+      "bbox": [
+        471,
+        1090,
+        1640,
+        46
+      ]
+    },
+    {
+      "line_id": 10,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 10,
+      "bbox": [
+        378,
+        1155,
+        570,
+        13
+      ],
+      "text": "celda 产品 subtotal aleatorio esquema volumen tabla seguro distancia unidad conjunto_datos problema buque país certificado",
+      "script": "latin"
+    },
+    {
+      "line_id": 11,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 11,
+      "bbox": [
+        378,
+        1225,
+        912,
+        19
+      ],
+      "text": "схема количество проблема расстояние количество метка доставка вес счет пример длина граница интервал аудит",
+      "script": "ru"
+    },
+    {
+      "line_id": 12,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 12,
+      "bbox": [
+        378,
+        1291,
+        1081,
+        20
+      ],
+      "text": "reference sentence footer page country payment paragraph border paragraph note border issue document inventory account distance",
+      "script": "latin"
+    },
+    {
+      "line_id": 13,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 13,
+      "bbox": [
+        378,
+        1355,
+        632,
+        17
+      ],
+      "text": "ширина телефон терминал склад вопрос слово раздел класс слово описание юникод маска",
+      "script": "ru"
+    },
+    {
+      "line_id": 14,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 14,
+      "bbox": [
+        380,
+        1416,
+        1759,
+        46
+      ]
+    },
+    {
+      "line_id": 15,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 15,
+      "bbox": [
+        378,
+        1481,
+        248,
+        13
+      ],
+      "text": "dışa_aktarım 形式 müşteri gemi izin sayfa toplantı alan",
+      "script": "latin"
+    },
+    {
+      "line_id": 16,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 16,
+      "bbox": [
+        378,
+        1546,
+        488,
+        13
+      ],
+      "text": "inspection alphabet équipement distance prix horaire référence erreur 日历 sous-total vérité_terrain section",
+      "script": "latin"
+    },
+    {
+      "line_id": 17,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 17,
+      "bbox": [
+        378,
+        1615,
+        940,
+        19
+      ],
+      "text": "Anfrage Temperatur Prüfung Abstand Sprache Warnung Abbildung Team Team Saldo Kopfzeile modèle Preis Nachricht Team",
+      "script": "latin"
+    },
+    {
+      "line_id": 18,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 18,
+      "bbox": [
+        378,
+        1684,
+        621,
+        19
+      ],
+      "text": "طلب حساب منصة معادلة مجموع_فرعي مرجع قرار يونيكود درجة_حرارة خط مورد حقيقة_مرجعية جدول نظام_كتابة",
+      "script": "ar"
+    },
+    {
+      "line_id": 19,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 19,
+      "bbox": [
+        378,
+        1744,
+        826,
+        17
+      ],
+      "text": "качество отгрузка телефон сертификат шапка поле_страницы язык одобрение штрихкод аудит файл запас оплата слово",
+      "script": "ru"
+    },
+    {
+      "line_id": 20,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 20,
+      "bbox": [
+        380,
+        1806,
+        1621,
+        46
+      ]
+    },
+    {
+      "line_id": 21,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 21,
+      "bbox": [
+        378,
+        1877,
+        573,
+        16
+      ],
+      "text": "מסנן משטח מילה קופסה כותרת כותרת_עליונה כתובת פריסה כותרת_תחתונה לוח_זמנים שדה גופן",
+      "script": "he"
+    },
+    {
+      "line_id": 22,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 22,
+      "bbox": [
+        378,
+        1939,
+        819,
+        18
+      ],
+      "text": "biçim envanter hücre durum kelime envanter заметка boşluk cevap miktar rota liman liman kalite kayıt bakiye karar",
+      "script": "latin"
+    },
+    {
+      "line_id": 23,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 23,
+      "bbox": [
+        378,
+        2005,
+        736,
+        17
+      ],
+      "text": "graine péage avertissement résumé douane paquet conteneur courriel carburant poids paiement vérité_terrain",
+      "script": "latin"
+    },
+    {
+      "line_id": 24,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 24,
+      "bbox": [
+        378,
+        2065,
+        750,
+        19
+      ],
+      "text": "Material Fahrzeug Datei Länge Stempel Import Versand Temperatur Status Telefon Lieferung Hafen",
+      "script": "latin"
+    },
+    {
+      "line_id": 25,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 25,
+      "bbox": [
+        380,
+        2124,
+        1316,
+        46
+      ]
+    },
+    {
+      "line_id": 26,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 26,
+      "bbox": [
+        552,
+        363,
+        789,
+        19
+      ],
+      "text": "оплата ревизия груз импорт договор баланс предупреждение одобрение аннотация файл документ",
+      "script": "ru"
+    },
+    {
+      "line_id": 27,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 27,
+      "bbox": [
+        461,
+        428,
+        643,
+        17
+      ],
+      "text": "καύσιμο θερμοκρασία τμήμα τίτλος ομάδα αριθμός απόφαση αντίγραφο φόρος απόσταση τμήμα",
+      "script": "el"
+    },
+    {
+      "line_id": 28,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 28,
+      "bbox": [
+        463,
+        489,
+        1750,
+        46
+      ]
+    },
+    {
+      "line_id": 29,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 29,
+      "bbox": [
+        461,
+        559,
+        453,
+        20
+      ],
+      "text": "Fehler Paket Status Notiz Steuer Bild Menge Klasse Preis",
+      "script": "latin"
+    },
+    {
+      "line_id": 30,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 30,
+      "bbox": [
+        461,
+        624,
+        1216,
+        19
+      ],
+      "text": "поле_страницы баланс заметка адрес аннотация склад счет_учета номер высота подытог ответ температура качество судно ошибка цена фильтр маршрут",
+      "script": "ru"
+    },
+    {
+      "line_id": 31,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 31,
+      "bbox": [
+        463,
+        684,
+        1642,
+        46
+      ]
+    },
+    {
+      "line_id": 32,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 32,
+      "bbox": [
+        461,
+        752,
+        675,
+        17
+      ],
+      "text": "ödeme yorum σύνολο genişlik formül veri_seti kaşe başarı hacim takvim filtre yönetici tedarikçi sigorta",
+      "script": "latin"
+    },
+    {
+      "line_id": 33,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 33,
+      "bbox": [
+        461,
+        817,
+        693,
+        21
+      ],
+      "text": "dünya kalite/Hİz süreç  süreç çözüm  merhabaxXİdoğrulama— çözüm.ipsumsatır  yoğunluk(",
+      "script": "latin"
+    }
+  ],
+  "page_text": "başlık satır gümrük referans durum belge kelime çerçeve şablon analiz dil talep durum תשלום altbilgi\ntarea fila teléfono etiqueta riesgo decisión almacenamiento párrafo tarea mensaje vehículo máquina\nProjekt Inspektion Land mesafe Alphabet Fahrzeug Datum Prüfung Abteilung Analyse Einheit Prüfung\nภาษี แถว หัวกระดาษ เครื่องจักร ตัวอักษร ลายเซ็น ตู้คอนเทนเนอร์ ปริมาตร หน่วย\ntable copy shipment border file permit filter экспорт storage equation calendar machine chart annotation invoice\ncelda 产品 subtotal aleatorio esquema volumen tabla seguro distancia unidad conjunto_datos problema buque país certificado\nсхема количество проблема расстояние количество метка доставка вес счет пример длина граница интервал аудит\nreference sentence footer page country payment paragraph border paragraph note border issue document inventory account distance\nширина телефон терминал склад вопрос слово раздел класс слово описание юникод маска\ndışa_aktarım 形式 müşteri gemi izin sayfa toplantı alan\ninspection alphabet équipement distance prix horaire référence erreur 日历 sous-total vérité_terrain section\nAnfrage Temperatur Prüfung Abstand Sprache Warnung Abbildung Team Team Saldo Kopfzeile modèle Preis Nachricht Team\nطلب حساب منصة معادلة مجموع_فرعي مرجع قرار يونيكود درجة_حرارة خط مورد حقيقة_مرجعية جدول نظام_كتابة\nкачество отгрузка телефон сертификат шапка поле_страницы язык одобрение штрихкод аудит файл запас оплата слово\nמסנן משטח מילה קופסה כותרת כותרת_עליונה כתובת פריסה כותרת_תחתונה לוח_זמנים שדה גופן\nbiçim envanter hücre durum kelime envanter заметка boşluk cevap miktar rota liman liman kalite kayıt bakiye karar\ngraine péage avertissement résumé douane paquet conteneur courriel carburant poids paiement vérité_terrain\nMaterial Fahrzeug Datei Länge Stempel Import Versand Temperatur Status Telefon Lieferung Hafen\nоплата ревизия груз импорт договор баланс предупреждение одобрение аннотация файл документ\nκαύσιμο θερμοκρασία τμήμα τίτλος ομάδα αριθμός απόφαση αντίγραφο φόρος απόσταση τμήμα\nFehler Paket Status Notiz Steuer Bild Menge Klasse Preis\nполе_страницы баланс заметка адрес аннотация склад счет_учета номер высота подытог ответ температура качество судно ошибка цена фильтр маршрут\nödeme yorum σύνολο genişlik formül veri_seti kaşe başarı hacim takvim filtre yönetici tedarikçi sigorta\ndünya kalite/Hİz süreç  süreç çözüm  merhabaxXİdoğrulama— çözüm.ipsumsatır  yoğunluk(",
+  "gt_stats": {
+    "scripts_hist": {
+      "latin": 15,
+      "th": 1,
+      "ru": 5,
+      "ar": 1,
+      "he": 1,
+      "el": 1
+    },
+    "has_gt_text_lines": 24,
+    "has_gt_math_lines": 0,
+    "book_mode_added_lines": 0
+  }
+}

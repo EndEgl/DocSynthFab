@@ -1,0 +1,6 @@
+﻿fastapi>=0.110,<1.0
+uvicorn[standard]>=0.27,<1.0
+pypdfium2>=4,<5
+Pillow>=10,<12
+
+

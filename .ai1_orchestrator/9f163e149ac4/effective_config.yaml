@@ -1,0 +1,611 @@
+version: docsynthfab-ds-v0.1
+project:
+  name: DocSynthFab
+  version: docsynthfab-ds-v0.1-clean-train
+  code_root: .
+diversity_preset: balanced_document_ai_diverse
+io:
+  out_root: D:\ai1_gen_tes4\batch_pages_v2\text_table_balanced\pages_0050
+  images_dir: images
+  masks_dir: masks
+  ann_dir: ann
+  gt_dir: gt
+  splits_dir: splits
+  reports_dir: reports
+  exports_dir: exports
+  tmp_dir: _tmp
+  atomic_write: true
+  overwrite: false
+run:
+  pages: 50
+  seed: 71308
+  workers: 1
+  fail_fast: false
+  max_fail_ratio: 0.05
+  jsonl_flush_batch_size: 50
+  max_pending_mult: 2.0
+  max_pending_min: 8
+  export_targets:
+  - native
+  splits:
+    train: 0.8
+    val: 0.1
+    test: 0.1
+  worker:
+    max_tries: 5
+    disable_augment_on_try: 3
+    jitter_seed_step: 10000019
+    fallback_dpi: 300
+page:
+  size_name: A4
+  default_size: a4_portrait
+  dpi_choices:
+  - 200
+  - 300
+  bg_color_rgb:
+  - 255
+  - 255
+  - 255
+  size_dist:
+    a4_portrait: 0.5
+    letter_portrait: 0.18
+    a4_landscape: 0.08
+    letter_landscape: 0.05
+    legal_portrait: 0.05
+    legal_landscape: 0.02
+    a5_portrait: 0.04
+    a5_landscape: 0.02
+    b5_portrait: 0.04
+    b5_landscape: 0.02
+dist:
+  density_dist:
+    sparse: 0.0299
+    normal: 0.4229
+    dense: 0.4478
+    mixed: 0.0995
+  scale_dist:
+    dpi300: 0.7
+    dpi200: 0.22
+    lowres_capture: 0.06
+    hires_crop: 0.02
+  noise_level_dist:
+    clean: 0.6
+    medium: 0.35
+    heavy: 0.05
+content:
+  source_mode: content_bank
+  block_mix:
+    text: 70.0
+    table: 30.0
+    latex: 0.0
+  text_mode: words
+  text_order: random
+  source:
+    words_csv: data/content/words.csv
+    sentences_csv: data/content/sentences.csv
+    word_banks_dir: data/content/word_banks
+    generated_json: data/content/content_bank.json
+    label_registry_csv: data/content/label_registry.csv
+  generate_json_if_missing: true
+  regenerate_json_on_start: true
+  words:
+    min_words: 18
+    max_words: 32
+    separator: ' '
+  word_bank_policy:
+    enable: true
+    primary: alphabet
+    mix_strategy: dominant_sentence
+    group_multilingual: false
+    min_alphabets_per_group: 1
+    sentence_language_mode: dominant
+    sentence_language_switch_prob: 0.0
+    table_cell_sentence_prob: 0.15
+    table_cell_sentence_min_words: 2
+    table_cell_sentence_max_words: 6
+    alphabet_mix:
+      latin_tr: 22
+      latin_en: 20
+      latin_de: 14
+      latin_es: 9
+      latin_fr: 9
+      cyrillic_ru: 8
+      arabic_ar: 7
+      greek_el: 6
+      hebrew_he: 5
+      devanagari_hi: 5
+      han_zh: 5
+      kana_ja: 4
+      hangul_ko: 4
+      thai_th: 3
+  sentences:
+    min_sentences: 2
+    max_sentences: 4
+    separator: ' '
+  hard_negative_page_prob: 0.0
+layout:
+  line_gap:
+    distribution: gaussian
+    randomness_percent: 55.0
+    min_scale: 0.854
+    max_scale: 1.245
+    mean_ratio: 0.55
+    std_ratio: 0.1405
+    exponential_lambda: 2.5
+  line_gap_random_scale: 1.65
+  table_diversity_scale: 0.75
+  table_empty_cell_scale: 0.0
+  table_merge_cell_scale: 0.15
+  occupancy:
+    enable: true
+    whitespace_strategy: balanced
+    spread_percent: 74.0
+    min_gap_px: 10
+    max_place_attempts: 180
+    target_fill_ratio:
+      sparse:
+      - 0.16
+      - 0.28
+      normal:
+      - 0.32
+      - 0.48
+      dense:
+      - 0.48
+      - 0.66
+      mixed:
+      - 0.36
+      - 0.58
+  layout_type_dist:
+    single_col: 0.28
+    double_col: 0.24
+    mixed_cols: 0.28
+    academic: 0.12
+    report_like: 0.08
+  targets:
+    sparse:
+      line_count_range:
+      - 22
+      - 42
+      block_count_range:
+      - 5
+      - 9
+    normal:
+      line_count_range:
+      - 44
+      - 82
+      block_count_range:
+      - 8
+      - 15
+    dense:
+      line_count_range:
+      - 72
+      - 122
+      block_count_range:
+      - 12
+      - 22
+    mixed:
+      line_count_range:
+      - 52
+      - 102
+      block_count_range:
+      - 9
+      - 18
+style:
+  font_size_pt_dist:
+    small: 0.34
+    normal: 0.56
+    large: 0.1
+  weight_dist:
+    regular: 0.78
+    bold: 0.18
+    light: 0.04
+  contrast_class_dist:
+    low: 0.1
+    medium: 0.25
+    high: 0.65
+  local_scale_mode_prob: 0.25
+density_thresholds:
+  ink_ratio_text_ranges:
+    sparse:
+    - 0.001
+    - 0.22
+    normal:
+    - 0.02
+    - 0.65
+    dense:
+    - 0.05
+    - 0.9
+    mixed:
+    - 0.012
+    - 0.78
+  mixed:
+    bands: 8
+    variance_thr: 0.0001
+render:
+  text:
+    enable: true
+    lang_mode: utf8
+    fonts_dir: assets/fonts
+    font_size:
+      min_px: 20
+      max_px: 32
+      distribution: gaussian
+      mean_ratio: 0.68
+      std_ratio: 0.13
+    font_script_dirs:
+      latin: latin
+      en: latin
+      tr: latin
+      de: latin
+      es: latin
+      fr: latin
+      cyrillic: cyrillic
+      ru: cyrillic
+      greek: greek
+      el: greek
+      arabic: arabic
+      ar: arabic
+      hebrew: hebrew
+      he: hebrew
+      devanagari: devanagari
+      hi: devanagari
+      han: cjk
+      zh: cjk
+      cjk: cjk
+      ja: cjk
+      kana_han: cjk
+      hangul: hangul
+      ko: hangul
+      thai: thai
+      th: thai
+      symbols: symbols
+      mono: mono
+    font_style_dirs:
+      normal: latin
+      mono: mono
+      handwriting: handwriting
+      decorative: decorative
+    disabled_font_dir: disabled
+    meaningful_prob: 0.88
+    gibberish_prob: 0.06
+    code_switch_prob: 0.0
+    space_profile_dist:
+      tight: 0.2
+      normal: 0.65
+      loose: 0.15
+    tab_prob: 0.006
+    very_short_line_prob: 0.04
+    very_full_line_prob: 0.1
+    scripts_dist:
+      latin: 0.314
+      tr: 0.1818
+      de: 0.1157
+      ru: 0.0661
+      ar: 0.0579
+      el: 0.0496
+      he: 0.0413
+      hi: 0.0413
+      zh: 0.0413
+      ja: 0.0331
+      ko: 0.0331
+      th: 0.0248
+      symbols: 0.0
+    line_style_dist:
+      prose: 1.0
+      mixed: 0.0
+      code: 0.0
+      mathish: 0.0
+      bars: 0.0
+      noisy: 0.0
+    book_mode:
+      enable: true
+      base_font_pt: 10
+      margin_left: 0.085
+      margin_right: 0.085
+      margin_top: 0.07
+      margin_bottom: 0.07
+      dense_two_columns: true
+      gutter_ratio: 0.05
+      line_spacing: 1.12
+      paragraph_indent_ratio: 0.03
+      paragraph_gap_mult: 0.45
+      body_layout_dist:
+        single: 0.48
+        double: 0.42
+        triple: 0.1
+      ultra_dense_prob: 0.08
+      block_gap:
+        ratio_min: 0.012
+        ratio_max: 0.055
+    babel_mode_prob: 0.0
+    safe_ocr_line_guard: true
+    max_text_generation_attempts: 8
+    unsafe_retry_policy: safe_fallback
+    safe_fallback_after_retries: true
+    reject_pil_default_font: true
+    reject_overlapping_text: false
+  latex:
+    enable: false
+    backend: http
+    http_base_url: http://127.0.0.1:8080
+    compiler: pdflatex
+    timeout_s: 18
+    raster_dpi: 300
+    level: heavy
+    health_check: false
+    draw_fallback_expr: true
+    allowed_ops:
+    - add_sub
+    - multiply
+    - fraction
+    - power
+    - root
+    - trig
+    - log_exp
+    - integral
+    - derivative
+    - limit
+    - taylor_series
+    - sum_product
+    - matrix
+    - determinant
+    - cases
+    - probability
+    - set
+    - piecewise
+    complexity_mix:
+      simple: 0.3
+      medium: 0.45
+      complex: 0.25
+    position_mix:
+      inline_like: 0.1
+      centered_block: 0.68
+      side_block: 0.06
+      mixed_with_text: 0.16
+    type_mix:
+      fraction: 0.14
+      sqrt: 0.08
+      superscript_subscript: 0.12
+      sum_integral: 0.16
+      matrix_or_cases: 0.14
+      derivative_limit: 0.16
+      taylor_series: 0.1
+      simple_algebra: 0.1
+  non_text:
+    enable: true
+    watermark_prob: 0.04
+    qr_like_prob: 0.02
+    table_line_prob: 0.34
+    figure_shape_prob: 0.1
+    force_table: false
+    force_figure: false
+    figure_w_ratio: 0.26
+    figure_h_ratio: 0.16
+    table_w_ratio: 0.72
+    table_h_ratio: 0.16
+    table_cols: 5
+    table_rows: 6
+    table_size_mix:
+      small: 0.35
+      medium: 0.5
+      large: 0.15
+    table_position_mix:
+      top: 0.2
+      middle: 0.45
+      bottom: 0.3
+      side_or_mixed: 0.05
+    table_style_mix:
+      bordered: 0.36
+      light_grid: 0.28
+      no_outer_border: 0.14
+      zebra: 0.14
+      compact: 0.08
+    table_shape:
+      min_rows: 2
+      max_rows: 5
+      min_cols: 2
+      max_cols: 4
+augment:
+  enable: true
+  min_area_px: 25
+  selection_policy:
+    clean:
+      p_photometric: 0.25
+      p_blur_noise: 0.1
+      p_capture: 0.04
+      p_geometry: 0.1
+      p_edge: 0.02
+      p_elastic: 0.0
+    medium:
+      p_photometric: 0.48
+      p_blur_noise: 0.26
+      p_capture: 0.14
+      p_geometry: 0.2
+      p_edge: 0.04
+      p_elastic: 0.02
+    heavy:
+      p_photometric: 0.62
+      p_blur_noise: 0.42
+      p_capture: 0.35
+      p_geometry: 0.3
+      p_edge: 0.08
+      p_elastic: 0.03
+  photometric:
+    gamma:
+    - 0.84
+    - 1.16
+    brightness:
+    - -12
+    - 12
+    contrast:
+    - 0.9
+    - 1.12
+    shadow_opacity:
+    - 0.05
+    - 0.22
+    vignette:
+    - 0.02
+    - 0.12
+  blur_noise:
+    gaussian_kernel_choices:
+    - 3
+    - 5
+    motion_length:
+    - 3
+    - 11
+    motion_angle_deg:
+    - 0
+    - 180
+    gaussian_sigma:
+    - 1
+    - 8
+    speckle:
+    - 0.004
+    - 0.03
+  capture_sim:
+    downscale_factor:
+    - 0.68
+    - 0.94
+    jpeg_quality_clean_medium:
+    - 60
+    - 94
+    jpeg_quality_heavy:
+    - 42
+    - 78
+    enforce_size_invariant: true
+  geometry:
+    rotation_deg:
+    - -3.5
+    - 3.5
+    perspective_jitter_ratio:
+    - 0.0
+    - 0.02
+    crop_ratio:
+    - 0.0
+    - 0.015
+    border_fill_rgb:
+    - 255
+    - 255
+    - 255
+    mask_interp: nearest
+  edge_degredation:
+    prob: 0.3
+    num_erasures:
+    - 1
+    - 3
+    size_ratio:
+    - 0.025
+    - 0.08
+    protect_math: true
+    math_guard_px: 12
+    skip_if_remaining_area_lt: 64
+  elastic_distortion:
+    prob: 0.18
+    alpha:
+    - 8.0
+    - 16.0
+    sigma:
+    - 5.0
+    - 9.0
+qc:
+  mask_binary_required: true
+  overlap_text_over_math_max_ratio: 0.01
+  require_global_line_order_contiguous: true
+  require_content_purity_contract: true
+  reject_tofu_text_chars: true
+  reject_render_font_errors: true
+  require_title_near_top: false
+  require_caption_near_target: false
+  use_page_family_rules: false
+  soft_reading_order_check: false
+  max_block_overlap_ratio_min_area: 0.26
+  dist_tolerance_abs: 0.04
+  density:
+    use_eligible_area_excluding_figures: true
+    eligible_pad_px: 6
+    exclude_block_types:
+    - auto_figure
+    - figure
+    use_content_union_if_equation: true
+    density_soft_margin_abs: 0.003
+    allow_density_remap: true
+    figure_lo_scale: 0.75
+    table_lo_scale: 0.85
+    equation_lo_scale: 0.85
+    excluded_area_lo_scale: 0.8
+    lo_floor_by_density:
+      sparse: 0.0008
+      normal: 0.012
+      dense: 0.035
+      mixed: 0.01
+    mixed_variance_soft_scale: 0.85
+  visual_coverage:
+    enable: true
+    min_content_ratio_by_density:
+      sparse: 0.00045
+      normal: 0.00085
+      dense: 0.00125
+      mixed: 0.00085
+    min_bbox_extent_ratio_by_density:
+      sparse: 0.0045
+      normal: 0.0085
+      dense: 0.013
+      mixed: 0.0085
+    equation_content_ratio_relax: 0.55
+    equation_extent_ratio_relax: 0.9
+    table_content_ratio_boost: 1.15
+    table_extent_ratio_boost: 1.1
+  profile: controlled
+  reject_code_token_leakage: true
+  max_code_token_leak_count: 0
+  reject_solid_black_regions: true
+  max_solid_black_region_count: 0
+thresholds: {}
+diversity_targets:
+  has_table_ratio:
+    min: 0.2
+    ideal: 0.32
+    max: 0.45
+  has_equation_ratio:
+    min: 0.12
+    ideal: 0.22
+    max: 0.35
+  has_table_and_equation_ratio:
+    min: 0.04
+    ideal: 0.1
+    max: 0.2
+  fallback_ratio:
+    max: 0.02
+  layout_entropy_bits:
+    min: 1.35
+  density_entropy_bits:
+    min: 1.2
+  noise_entropy_bits:
+    min: 1.0
+  dominant_script_entropy_bits:
+    min: 0.9
+  text_mask_ratio_variance:
+    min: 1.0e-06
+  math_mask_ratio_variance:
+    min: 1.0e-08
+  table_area_ratio_variance:
+    min: 1.0e-07
+telemetry:
+  enable: true
+  mode: single_line
+  update_interval_s: 1.2
+  ascii_only: true
+  show_eta: true
+  show_rate: true
+  worker_stdout_forbidden: true
+  temperature:
+    require_temp_sensor: false
+    prefer_gpu: true
+    gpu_source: nvidia_smi
+    cpu_source: auto
+ui:
+  yaml_manager:
+    enable_raw_override: false
+    allow_export: true
+    allow_reset_to_baseline: true
+    show_effective_preview: true

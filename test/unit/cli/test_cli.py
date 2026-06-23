@@ -1,8 +1,8 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import numpy as np
 
-from ai1_gen.cli import (
+from docsynthfab.cli import (
     _build_gt_export,
     _make_fallback_render,
     _normalized_split_ratios,
@@ -117,3 +117,6 @@ def test_split_of_assigns_train_val_test_ranges():
     assert _split_of(7, 10, run_cfg) == "val"
     assert _split_of(8, 10, run_cfg) == "test"
     assert _split_of(9, 10, run_cfg) == "test"
+
+
+

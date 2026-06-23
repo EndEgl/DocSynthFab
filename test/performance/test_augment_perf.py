@@ -1,11 +1,11 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import random
 import time
 
 import numpy as np
 
-from ai1_gen.augment.apply_augment import apply_augment
+from docsynthfab.augment.apply_augment import apply_augment
 
 
 def test_augment_perf_smoke():
@@ -15,7 +15,7 @@ def test_augment_perf_smoke():
     mt[50:200, 50:300] = 255
 
     ann = {
-        "version": "ai1-ds-v1.3.2",
+        "version": "docsynthfab-ds-v0.1",
         "page_id": "000001",
         "size": {"w": 512, "h": 512, "dpi": 300},
         "meta": {
@@ -72,3 +72,6 @@ def test_augment_perf_smoke():
     elapsed = time.perf_counter() - t0
 
     assert elapsed < 5.0
+
+
+

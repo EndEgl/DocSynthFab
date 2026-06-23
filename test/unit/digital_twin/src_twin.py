@@ -1,8 +1,8 @@
-# test/unit/digital_twin/src_twin.py
+﻿# test/unit/digital_twin/src_twin.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 #
-# Source digital twin for src/ai1_gen.
+# Source digital twin for src/docsynthfab.
 #
 # This module builds a structural snapshot of the source tree:
 # - Python file list
@@ -42,10 +42,10 @@ IGNORED_DIR_NAMES = {
 # These modules are intentionally not imported in the broad import smoke test.
 # They are entrypoints or GUI entrypoints and are tested separately.
 SKIP_BROAD_IMPORT_MODULES = {
-    "ai1_gen.cli.__main__",
-    "ai1_gen.cli.cli",
-    "ai1_gen.gui.web.app",
-    "ai1_gen.gui.desktop.app",
+    "docsynthfab.cli.__main__",
+    "docsynthfab.cli.cli",
+    "docsynthfab.gui.web.app",
+    "docsynthfab.gui.desktop.app",
 }
 
 
@@ -66,7 +66,7 @@ def resolve_paths() -> TwinPaths:
 
     project_root = this_file.parents[3]
     src_root = project_root / "src"
-    package_root = src_root / "ai1_gen"
+    package_root = src_root / "docsynthfab"
     snapshot_path = (
         project_root
         / "test"
@@ -327,7 +327,7 @@ def extract_classes(tree: ast.Module) -> dict[str, dict[str, Any]]:
 
 
 def analyze_file(path: Path, *, project_root: Path, src_root: Path) -> dict[str, Any]:
-    text = path.read_text(encoding="utf-8")
+    text = path.read_text(encoding="utf-8-sig")
     tree = ast.parse(text, filename=str(path))
 
     return {
@@ -370,7 +370,7 @@ def build_src_twin_manifest() -> dict[str, Any]:
 
     return {
         "schema_version": SNAPSHOT_SCHEMA_VERSION,
-        "package": "ai1_gen",
+        "package": "docsynthfab",
         "python_files_count": len(files),
         "package_dirs": package_dirs,
         "modules": dict(sorted(modules.items())),
@@ -388,7 +388,7 @@ def write_snapshot(manifest: dict[str, Any]) -> None:
 
 def read_snapshot() -> dict[str, Any]:
     paths = resolve_paths()
-    return json.loads(paths.snapshot_path.read_text(encoding="utf-8"))
+    return json.loads(paths.snapshot_path.read_text(encoding="utf-8-sig"))
 
 
 def compare_manifests(expected: dict[str, Any], current: dict[str, Any]) -> list[str]:
@@ -472,21 +472,25 @@ def import_all_manifest_modules() -> list[str]:
 
 def iter_pkgutil_module_names() -> list[str]:
     """
-    Cross-check modules via pkgutil after importing ai1_gen.
+    Cross-check modules via pkgutil after importing docsynthfab.
 
     Note:
-    pkgutil.walk_packages(ai1_gen.__path__, prefix="ai1_gen.")
+    pkgutil.walk_packages(docsynthfab.__path__, prefix="docsynthfab.")
     discovers submodules/packages, but it does not include the root package
-    itself. The AST/path manifest includes src/ai1_gen/__init__.py as
-    ai1_gen, so we add it explicitly.
+    itself. The AST/path manifest includes src/docsynthfab/__init__.py as
+    docsynthfab, so we add it explicitly.
     """
     ensure_src_on_path()
 
-    import ai1_gen
+    import docsynthfab
 
-    names: list[str] = ["ai1_gen"]
+    names: list[str] = ["docsynthfab"]
 
-    for mod in pkgutil.walk_packages(ai1_gen.__path__, prefix="ai1_gen."):
+    for mod in pkgutil.walk_packages(docsynthfab.__path__, prefix="docsynthfab."):
         names.append(mod.name)
 
     return sorted(set(names))
+
+
+
+

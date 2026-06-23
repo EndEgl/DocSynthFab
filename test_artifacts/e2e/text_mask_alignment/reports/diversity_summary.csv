@@ -1,0 +1,23 @@
+kind,field,count,mean,std,variance,min,max,p05,p50,p95,unique,entropy_bits,counts_json
+numeric,line_count,3,22.333333333333332,13.424687043734846,180.22222222222223,10.0,41.0,10.6,16.0,38.5,,,
+numeric,block_count,3,6.333333333333333,4.784233364802441,22.88888888888889,2.0,13.0,2.2,4.0,12.1,,,
+numeric,math_line_count,3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,table_block_count,3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,equation_block_count,3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,figure_block_count,3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,text_mask_ratio,3,0.006466066453856149,0.003068802668502495,9.417549818208033e-06,0.0029124683781512808,0.010400475341651812,0.0032297471045126883,0.006085255641765355,0.009968953371663166,,,
+numeric,math_mask_ratio,3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,table_area_ratio,3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,equation_area_ratio,3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,figure_area_ratio,3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+numeric,rotation_deg,3,0.6076484022561219,0.8473365829912274,0.7179792848752491,-0.3432172117905439,1.7146347425057495,-0.2637427230061735,0.45152767605316013,1.5883240358604904,,,
+categorical,layout_type,3,,,,,,,,,2,0.9182958340544896,"{""double_col"": 2, ""single_col"": 1}"
+categorical,density_level,3,,,,,,,,,1,0.0,"{""sparse"": 3}"
+categorical,noise_level,3,,,,,,,,,2,0.9182958340544896,"{""clean"": 2, ""medium"": 1}"
+categorical,scale_profile,3,,,,,,,,,2,0.9182958340544896,"{""dpi200"": 1, ""dpi300"": 2}"
+categorical,page_family,3,,,,,,,,,2,0.9182958340544896,"{""academic"": 1, ""report"": 2}"
+categorical,dominant_script,3,,,,,,,,,2,0.9182958340544896,"{""latin"": 1, ""unknown"": 2}"
+categorical,has_table,3,,,,,,,,,1,0.0,"{""0"": 3}"
+categorical,has_equation,3,,,,,,,,,1,0.0,"{""0"": 3}"
+categorical,has_figure,3,,,,,,,,,1,0.0,"{""0"": 3}"
+categorical,fallback_used,3,,,,,,,,,1,0.0,"{""0"": 3}"

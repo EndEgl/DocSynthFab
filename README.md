@@ -1,119 +1,350 @@
-# <PROJECT_NAME>
-**Open-source synthetic data generator for Document AI**
+﻿<p align="center">
+  <img src="assets/images/docsynthfab-logo.png" alt="DocSynthFab logo" width="420">
+</p>
 
-<PROJECT_NAME> is a CPU-friendly synthetic data generator for building richly annotated document datasets for Document AI workflows.
+<h1 align="center">DocSynthFab</h1>
 
-It is designed for teams and researchers who need scalable, controllable, and diverse synthetic document data without locking themselves into a single narrow task. Instead of targeting only OCR or only layout analysis, the project supports broader Document AI use cases through structured page generation, annotation export, masks, and dataset splits. The current pipeline produces page-level metadata, block and line annotations, bounding boxes, text masks, math masks, and train/val/test split files. It also supports multiple page families and layout patterns such as notes, academic pages, books, single-column, double-column, and mixed-column layouts. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1} :contentReference[oaicite:2]{index=2} :contentReference[oaicite:3]{index=3} :contentReference[oaicite:4]{index=4}
+<p align="center">
+  One-click synthetic labeled document dataset generation for OCR, layout analysis, segmentation, and Document AI experiments.
+</p>
 
-## Why this project exists
+<p align="center">
+  <strong>Generate document images, annotations, masks, ground truth files, train/validation/test splits, reports, and export-ready dataset packages.</strong>
+</p>
 
-High-quality labeled document data is expensive to collect, slow to annotate, and often too narrow for real-world experimentation.
+---
 
-<PROJECT_NAME> exists to make synthetic document dataset generation more accessible and more flexible. It can be used for:
-- research and experimentation
-- internal dataset generation
-- prototyping Document AI systems
-- stress-testing training pipelines
-- generating large volumes of labeled samples on demand
+## What is DocSynthFab?
 
-The generator is built to scale by count as well: the pipeline can generate large numbered datasets and export predefined split files for training, validation, and testing. :contentReference[oaicite:5]{index=5} :contentReference[oaicite:6]{index=6} :contentReference[oaicite:7]{index=7}
+DocSynthFab is an open-source synthetic document dataset generator.
 
-## What it generates
+It creates document-like page images together with structured labels, annotation JSON files, segmentation masks, ground truth files, train/validation/test splits, reports, and export-ready dataset formats.
 
-The project generates synthetic document pages together with structured supervision outputs.
+The main idea is simple:
 
-### Core outputs
-- rendered page images
-- text masks
-- math masks
-- JSON annotations
-- ground-truth page text exports
-- train / val / test split files
+> Generate labeled document datasets automatically instead of manually collecting documents and drawing annotations.
 
-### Annotation richness
-Depending on the generated sample, annotations can include:
-- page metadata
-- page family and layout type
-- block-level annotations
-- line-level annotations
-- bounding boxes
-- line order
-- script metadata
-- equation presence
-- text and math mask coverage
-- augmentation trace metadata
+DocSynthFab is designed for experiments in:
 
-Example metadata in the current outputs includes fields such as `page_family`, `layout_type`, `noise_level`, `density_level`, `scale_profile`, `has_equation`, `mask_text_nonzero`, `mask_math_nonzero`, block definitions, and line-level text/script annotations. :contentReference[oaicite:8]{index=8} :contentReference[oaicite:9]{index=9} :contentReference[oaicite:10]{index=10}
+* OCR
+* Document AI
+* layout analysis
+* text/table detection
+* segmentation
+* synthetic dataset prototyping
+* annotation pipeline testing
 
-## Supported generation characteristics
+---
 
-<PROJECT_NAME> is intended as a **multi-purpose Document AI data generator**, not a single-task tool.
+## Why DocSynthFab?
 
-Current sample outputs show support for:
-- single-column layouts
-- double-column layouts
-- mixed-column layouts
-- notes-style pages
-- academic-style pages
-- book-like pages
-- multilingual / mixed-script text content
-- text-heavy pages
-- equation-aware pages
-- augmentation and degradation traces
+Labeled document data is expensive and slow to create.
 
-This gives users room to adapt the data to OCR, layout analysis, text segmentation, math-aware parsing, or broader document understanding experiments without reducing the project to only one benchmark task. :contentReference[oaicite:11]{index=11} :contentReference[oaicite:12]{index=12} :contentReference[oaicite:13]{index=13} :contentReference[oaicite:14]{index=14}
+A typical Document AI dataset workflow may require:
 
-## Key strengths
+* collecting document samples
+* checking privacy and copyright risks
+* manually drawing bounding boxes
+* creating segmentation masks
+* preparing train/validation/test splits
+* converting annotations into training formats
+* validating output quality
 
-### 1. Multi-purpose positioning
-The project is intentionally not restricted to a single narrow use case. It is better understood as a synthetic data generator for Document AI rather than an OCR-only tool.
+DocSynthFab automates a large part of this workflow by generating synthetic labeled document samples directly.
 
-### 2. Rich annotations
-The output is not limited to plain rendered images. The pipeline also emits masks, structured JSON annotations, metadata, and dataset split files. :contentReference[oaicite:15]{index=15}
+---
 
-### 3. Scalable generation
-The generator is designed to produce datasets at user-defined scale, making it useful for both small experiments and large synthetic corpora.
+## Key Features
 
-### 4. CPU-friendly workflow
-The project is designed to be usable without requiring a GPU-first environment, making synthetic dataset generation more accessible for laptops, standard workstations, and lightweight experimentation flows.
+* Synthetic document page generation
+* Annotation JSON output
+* Ground truth text output
+* Text/table/math-aware masks
+* Train/validation/test split generation
+* Dataset reports
+* Export-ready dataset package structure
+* Text and table-heavy layout support
+* Multilingual font support through a Noto-based font pack
+* Optional LaTeX/math rendering through a separate Docker renderer
+* CLI-first workflow
+* Optional NiceGUI-based Web GUI
+* End-to-end tests for output package, annotation, mask, and export validation
 
-### 5. Useful for both research and practical workflows
-The project can support academic exploration, open-source experimentation, and internal commercial data generation pipelines.
+---
 
-## Who this is for
+## Output Structure
 
-<PROJECT_NAME> is built for:
-- ML engineers working on Document AI
-- computer vision practitioners
-- OCR and parsing researchers
-- product teams needing synthetic training data
-- builders who want controllable labeled data generation without depending entirely on manually collected corpora
-
-## Example use cases
-
-- Generate synthetic pages for Document AI model pretraining
-- Build labeled datasets for layout-aware vision systems
-- Produce text and math masks for segmentation experiments
-- Create controllable benchmark-like corpora for internal evaluation
-- Stress-test annotation, ingestion, or training pipelines
-- Prototype multilingual or mixed-layout document models
-
-## Output structure
-
-A typical dataset run can include folders and files such as:
+A generated dataset contains folders similar to:
 
 ```text
-output/
+out/demo/
   images/
   masks/
   ann/
   gt/
   splits/
-    train.txt
-    val.txt
-    test.txt
-  gt_pages.jsonl
-  qc_summary.json
-  errors.jsonl
-  failed_pages.log
-  run.log
+  reports/
+  exports/
+```
+
+Typical generated files include:
+
+```text
+images/000001.png
+ann/000001.json
+gt/000001.json
+masks/000001_text.png
+reports/run_manifest.json
+reports/dataset_card.md
+reports/label_schema.json
+reports/features.csv
+splits/train.txt
+splits/val.txt
+splits/test.txt
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/EndEgl/DocSynthFab.git
+cd DocSynthFab
+```
+
+Create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+On Windows PowerShell:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+On Linux/macOS:
+
+```bash
+source .venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+If the project supports editable installation:
+
+```bash
+pip install -e .
+```
+
+---
+
+## Quickstart: CLI
+
+Generate a small demo dataset:
+
+```bash
+python -m docsynthfab.cli --config configs/default.yaml --out out/demo --pages 5 --workers 1 --seed 123
+```
+
+Generate a dataset with export targets:
+
+```bash
+python -m docsynthfab.cli --config configs/default.yaml --out out/demo --pages 10 --workers 2 --seed 123 --export native,segformer,coco
+```
+
+The output will be written to:
+
+```text
+out/demo/
+```
+
+---
+
+## Web GUI
+
+DocSynthFab includes an optional NiceGUI-based Web GUI.
+
+Run:
+
+```bash
+python -m docsynthfab.gui.web.app
+```
+
+The Web GUI provides:
+
+* dataset preset selection
+* text/table mix controls
+* layout randomness controls
+* font setup status
+* LaTeX renderer status
+* effective YAML preview
+* run monitor
+* output folder access
+
+---
+
+## LaTeX Renderer
+
+The main generator is text/table-oriented by default.
+
+LaTeX/math-heavy generation is separated into a Docker-based renderer so that LaTeX dependencies remain isolated.
+
+Renderer location:
+
+```text
+docker/latex-renderer/
+```
+
+Example Docker usage:
+
+```bash
+cd docker/latex-renderer
+docker build -t docsynthfab-latex-renderer .
+docker run --rm -p 8765:8765 docsynthfab-latex-renderer
+```
+
+Then use the LaTeX Renderer tab in the Web GUI or enable the related config options.
+
+---
+
+## Fonts
+
+DocSynthFab includes a minimal Noto-based font pack for multilingual synthetic document rendering.
+
+Font manifest:
+
+```text
+assets/fonts/FONT_MANIFEST.json
+```
+
+Font documentation:
+
+```text
+assets/fonts/README_FONT_MANIFEST.md
+```
+
+Font license files:
+
+```text
+assets/fonts/LICENSES/
+```
+
+The bundled fonts are included only as part of the DocSynthFab software package. They are not sold or distributed as a standalone font package.
+
+Generated documents, images, PDFs, and datasets are not required to be licensed under the font license.
+
+See the full font license files under `assets/fonts/LICENSES/`.
+
+---
+
+## Testing
+
+Run syntax checks:
+
+```bash
+python -m compileall src
+```
+
+Run unit tests:
+
+```bash
+pytest test/unit -q
+```
+
+Run E2E tests:
+
+```bash
+pytest test/e2e -q
+```
+
+Some E2E tests may be marked as slow because they generate actual dataset outputs.
+
+---
+
+## Project Status
+
+DocSynthFab is currently an early open-source project.
+
+The current public version focuses on generic multilingual synthetic document dataset generation.
+
+It does not bundle invoice, receipt, contract, or business-specific templates by default. Users may create their own custom region templates if needed.
+
+---
+
+## Intended Use
+
+DocSynthFab is intended for researchers, students, developers, and engineers who need synthetic labeled document data for experimentation.
+
+It can be useful when real documents are difficult to collect because of:
+
+* privacy constraints
+* copyright restrictions
+* manual annotation cost
+* lack of labeled layout data
+* need for controlled synthetic variation
+
+---
+
+## Limitations
+
+DocSynthFab generates synthetic data.
+
+Synthetic data is useful for prototyping, pretraining, testing, and controlled experiments, but it may not fully represent real-world document distributions.
+
+For production-grade model training, synthetic data should usually be combined with carefully validated real-world samples.
+
+---
+
+## Roadmap
+
+Possible future improvements:
+
+* More document layout templates
+* Better table diversity
+* More export formats
+* Larger multilingual content banks
+* Better visual degradation simulation
+* Improved browser-based preview
+* Optional benchmark datasets
+* More automated quality reports
+
+---
+
+## License
+
+DocSynthFab is licensed under the Apache License 2.0.
+
+See [LICENSE](LICENSE) for the full license text.
+
+Additional attribution and third-party component information is available in [NOTICE](NOTICE).
+
+Bundled fonts, Python dependencies, Docker images, system packages, LaTeX distributions, TeX packages, and Docker base images remain under their own respective licenses.
+
+Font-specific license information is available under:
+
+- `assets/fonts/LICENSES/`
+- `assets/fonts/FONT_MANIFEST.json`
+- `assets/fonts/README_FONT_MANIFEST.md`
+
+
+---
+
+## Maintainer
+
+Maintained by [EndEgl](https://github.com/EndEgl).
+
+---
+
+## Short Description
+
+DocSynthFab generates synthetic document images with labels, masks, annotations, ground truth files, splits, reports, and export-ready dataset formats for OCR and Document AI experiments.
+
+

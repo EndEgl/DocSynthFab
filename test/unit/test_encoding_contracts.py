@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from pathlib import Path
 
@@ -130,3 +130,6 @@ def test_utf8_turkish_roundtrip_contract(tmp_path):
     loaded = path.read_text(encoding="utf-8")
 
     assert loaded == sample
+
+
+
