@@ -3,23 +3,19 @@ requires = ["setuptools>=68,<76", "wheel>=0.41,<1.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ai1-gen"
-version = "0.1.0"
-description = "AI-1 Synthetic Dataset Generator (ai1-ds-v1.3.2)"
+name = "docsynthfab"
+version = "0.1.0a0"
+description = "Experimental synthetic document dataset generator for OCR and Document AI prototyping."
 readme = "README.md"
 requires-python = ">=3.10,<3.14"
-license = { text = "Proprietary" }
-authors = [{ name = "AG Zaferi" }]
+license = { text = "Apache-2.0" }
+authors = [{ name = "Ender Emre Hayırlıoğlu" }]
 dependencies = [
   "numpy>=1.24,<3.0",
   "Pillow>=10,<12",
   "opencv-python>=4.8,<5.0",
   "PyYAML>=6.0,<7.0",
   "tqdm>=4.66,<5.0",
-  # opsiyonelleri buraya koymadım; istersen ekleriz:
-  # "reportlab>=4.0,<5.0",
-  # "PyMuPDF>=1.23,<1.25",
-  # "pydantic>=2.5,<3.0",
 ]
 
 [project.optional-dependencies]
@@ -30,24 +26,25 @@ dev = [
   "pytest-timeout>=2.2,<3.0",
   "pytest-randomly>=3.15,<4.0",
 ]
+web = [
+  "nicegui>=1.4,<3.0",
+]
 
-# İstersen "pip install -e .[dev]" ile test ortamını kurarsın.
-# CLI entrypoint: (cli.py içinde main() fonksiyonunu yazacağız)
 [project.scripts]
-ai1-gen = "ai1_gen.cli:main"
+docsynthfab = "docsynthfab.cli:main"
 
 [tool.setuptools]
 package-dir = { "" = "src" }
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["ai1_gen*"]
+include = ["docsynthfab*"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["test"]
 addopts = "-q"
 markers = [
-    "fast: 1 saniyeden kısa süren hızlı testler",
-    "medium: 1-5 saniye arası süren orta seviye testler",
-    "slow: 5 saniyeden uzun süren ağır performans testleri"
+    "e2e: end-to-end tests that generate real output packages",
+    "slow: slow tests that may take multiple seconds",
+    "diversity: optional mathematical/layout diversity checks"
 ]

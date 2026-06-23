@@ -324,7 +324,7 @@ DocSynthFab is licensed under the Apache License 2.0.
 
 See [LICENSE](LICENSE) for the full license text.
 
-Additional attribution and third-party component information is available in [NOTICE](NOTICE).
+Additional attribution and third-party component information is available in [NOTICE.md](NOTICE.md).
 
 Bundled fonts, Python dependencies, Docker images, system packages, LaTeX distributions, TeX packages, and Docker base images remain under their own respective licenses.
 
