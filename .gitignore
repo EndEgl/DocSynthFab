@@ -1,4 +1,4 @@
-# === Python caches ===
+﻿# === Python caches ===
 __pycache__/
 *.py[cod]
 *$py.class
@@ -12,7 +12,7 @@ htmlcov/
 .pytype/
 .pyre/
 
-# === Virtual env ===
+# === Virtual environments ===
 .venv/
 venv/
 ENV/
@@ -40,7 +40,7 @@ pip-wheel-metadata/
 Thumbs.db
 Desktop.ini
 
-# === Logs / run outputs ===
+# === Logs / runtime reports ===
 *.log
 logs/
 run.log
@@ -54,7 +54,7 @@ _tmp/
 tmp/
 *.tmp
 
-# === Dataset outputs ===
+# === Generated dataset outputs ===
 out/
 out*/
 out_*/
@@ -67,20 +67,22 @@ datasets/
 _latex_test/
 ai1_latex_test/
 
-# === Local configs ===
+# === Local configs / secrets ===
 configs/local*.yaml
 configs/*_local.yaml
-
-# === Optional local secrets / environment files ===
 .env
 .env.*
 !.env.example
-
 
 # === DocSynthFab generated/runtime ===
 .ai1_orchestrator/
 test_artifacts/
 _archived_tests/
+
+# === Wrong/local legacy launchers ===
+check.bat
+run_a1_gen.cmd
+python
 
 # === Local inspection / cleanup reports ===
 cleanup_refs.txt
@@ -92,11 +94,3 @@ texput.log
 
 # === Backup files ===
 *.bak
-
-# === Generated Data, Images and Texts ===
-*.json
-*.jsonl
-*.png
-*.jpg
-*.jpeg
-*.txt

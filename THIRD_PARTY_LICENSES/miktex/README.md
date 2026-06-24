@@ -1,11 +1,9 @@
-﻿# MiKTeX License Notice
+﻿# LaTeX / TeX Package License Notice
 
-This project may use MiKTeX inside a Docker-based LaTeX rendering environment.
+DocSynthFab may use optional LaTeX rendering workflows for math-heavy synthetic document generation.
 
-MiKTeX and the LaTeX packages installed through MiKTeX are third-party components and are licensed under their respective licenses.
+These workflows may rely on LaTeX distributions, TeX packages, fonts, renderer dependencies, Docker base images, and system packages.
 
-This project does not claim ownership over MiKTeX or any MiKTeX package.
+All third-party LaTeX, TeX, font, renderer, Docker, and system components remain under their own respective licenses.
 
-For exact license terms, refer to the official MiKTeX license/copying information and the license files of the installed LaTeX packages.
-
-
+This file is informational and does not relicense LaTeX distributions, TeX packages, fonts, Docker images, or system packages.
