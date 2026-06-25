@@ -1,4 +1,4 @@
-# scripts/smoke.ps1
+﻿# scripts/smoke.ps1
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
@@ -13,8 +13,8 @@ param(
   [string]$OutRoot = "D:\ai1_dataset_smoke"
 )
 
-if (-not (Test-Path $PYEXE)) { throw ".venv python.exe bulunamadı. Önce scripts\setup_venv.ps1 çalıştır." }
-if (-not (Test-Path $CFG))   { throw "Config bulunamadı: $CFG" }
+if (-not (Test-Path $PYEXE)) { throw ".venv python.exe bulunamadÄ±. Ã–nce scripts\setup_venv.ps1 Ã§alÄ±ÅŸtÄ±r." }
+if (-not (Test-Path $CFG))   { throw "Config bulunamadÄ±: $CFG" }
 
 $env:PYTHONUTF8 = "1"
 
@@ -23,4 +23,4 @@ $out = Join-Path $OutRoot ("run_" + $ts)
 New-Item -ItemType Directory -Force -Path $out | Out-Null
 
 Write-Host "Smoke OUT: $out"
-& $PYEXE -m ai1_gen.cli --config $CFG --out $out --pages $Pages --workers $Workers --seed $Seed
+& $PYEXE -m docsynthfab.cli --config $CFG --out $out --pages $Pages --workers $Workers --seed $Seed
