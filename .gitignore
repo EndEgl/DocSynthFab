@@ -94,3 +94,9 @@ texput.log
 
 # === Backup files ===
 *.bak
+
+# === Local developer / generated helper folders ===
+tools/
+.benchmarks/
+diversity_report_markdown*/
+label_schema_markdown*/
