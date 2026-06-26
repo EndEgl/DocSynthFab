@@ -450,9 +450,41 @@ def collect_simple_overrides(state: WebGuiState) -> Dict[str, Any]:
 
     # Density-conditioned noise:
     # dense/small-text pages should not receive too much heavy noise.
-    overrides["dist.noise_level_dist"] = _density_conditioned_noise_dist(
-        density_percent
+    #
+    # However, the visual-character preset should not be erased completely.
+    # Example: "Stress Test" intentionally requests heavy noise. Density may
+    # cap it for readability, but it should still remain visibly stronger.
+    density_noise_dist = _density_conditioned_noise_dist(density_percent)
+    character_noise_dist = DATASET_CHARACTER_PRESETS.get(character, {}).get(
+        "dist.noise_level_dist"
     )
+
+    if isinstance(character_noise_dist, dict):
+        character_heavy = float(character_noise_dist.get("heavy", 0.0) or 0.0)
+        density_heavy = float(density_noise_dist.get("heavy", 0.0) or 0.0)
+
+        if character_heavy >= 0.40 and character_heavy > density_heavy:
+            effective_heavy = min(character_heavy, 0.35)
+            remaining = max(0.0, 1.0 - effective_heavy)
+
+            clean = float(density_noise_dist.get("clean", 0.0) or 0.0)
+            medium = float(density_noise_dist.get("medium", 0.0) or 0.0)
+            base = clean + medium
+
+            if base > 0.0:
+                density_noise_dist = {
+                    "clean": remaining * clean / base,
+                    "medium": remaining * medium / base,
+                    "heavy": effective_heavy,
+                }
+            else:
+                density_noise_dist = {
+                    "clean": remaining,
+                    "medium": 0.0,
+                    "heavy": effective_heavy,
+                }
+
+    overrides["dist.noise_level_dist"] = density_noise_dist
 
     # ---------------------------------------------------------
     # User-controlled text length.

@@ -239,3 +239,20 @@ def test_gui_density_word_bank_and_whitespace_are_visible_in_report():
     print("\n\n=== GUI GENERATION CONTROLS VISIBLE REPORT ===")
     print(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True))
     print("=== END GUI GENERATION CONTROLS VISIBLE REPORT ===\n")
+def test_stress_visual_character_preserves_heavy_noise_intent():
+    state = make_visible_state()
+
+    state.dataset_character_select = DummyWidget("Stress Test")
+    state.diversity_strength_select = DummyWidget("Balanced diversity")
+    state.density_percent_input = DummyWidget(90)
+
+    overrides = collect_simple_overrides(state)
+    noise_dist = overrides["dist.noise_level_dist"]
+
+    assert set(noise_dist) == {"clean", "medium", "heavy"}
+    assert abs(sum(noise_dist.values()) - 1.0) < 1e-6
+
+    # Stress Test should remain visibly stronger than balanced diversity.
+    # Density may reduce heavy noise for dense pages, but it should not erase
+    # the visual-character preset intent completely.
+    assert noise_dist["heavy"] >= 0.30
