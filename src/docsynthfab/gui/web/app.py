@@ -117,6 +117,7 @@ from docsynthfab.gui.web.run_state import (
     write_active_run_state,
 )
 from docsynthfab.gui.web.state import WEB_STATE, WebGuiState
+from docsynthfab.gui.web.quick_guide_panel import build_quick_guide_panel
 from docsynthfab.gui.web.template_csv import (
     active_template_rows,
     available_template_names,
@@ -2171,6 +2172,7 @@ def build_ui() -> None:
 
     with ui.column().classes("ai-page gap-4"):
         _build_top_run_bar(state)
+        build_quick_guide_panel()
 
         with ui.tabs().classes("w-full") as main_tabs:
             tab_create = ui.tab("Create Dataset", icon="dashboard_customize")
@@ -2222,6 +2224,4 @@ def main() -> None:
 
 if __name__ in {"__main__", "__mp_main__"}:
     main()
-
-
 
