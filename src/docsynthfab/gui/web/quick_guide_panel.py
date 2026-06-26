@@ -1,4 +1,4 @@
-﻿"""NiceGUI Quick Guide panel for the Web GUI."""
+"""NiceGUI Quick Guide panel for the Web GUI."""
 
 from __future__ import annotations
 

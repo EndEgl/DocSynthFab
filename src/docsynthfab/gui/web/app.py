@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/gui/web/app.py
+# src/docsynthfab/gui/web/app.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 # - nicegui>=2.0,<3.0
@@ -2224,4 +2224,3 @@ def main() -> None:
 
 if __name__ in {"__main__", "__mp_main__"}:
     main()
-

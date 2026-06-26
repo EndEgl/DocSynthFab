@@ -1,4 +1,4 @@
-﻿# DocSynthFab
+# DocSynthFab
 
 Experimental synthetic document generation toolkit for OCR and Document AI dataset prototyping.
 
@@ -229,4 +229,3 @@ See:
 ~~~text
 examples/sample_outputs/dataset_sample/SAMPLE_INDEX.md
 ~~~
-

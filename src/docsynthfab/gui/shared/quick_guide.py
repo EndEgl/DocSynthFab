@@ -1,4 +1,4 @@
-﻿"""Shared Quick Guide content for the DocSynthFab GUI."""
+"""Shared Quick Guide content for the DocSynthFab GUI."""
 
 from __future__ import annotations
 
