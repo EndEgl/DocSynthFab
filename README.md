@@ -12,7 +12,9 @@ The current `v0.1.0-alpha` release focuses on generation correctness, annotation
 
 ## Key Capability: Labeled Multilingual Synthetic Data
 
-DocSynthFab can generate labeled synthetic document datasets from either the CLI or the Web GUI. A configured run can produce page images together with ground-truth text, annotation JSON files, segmentation masks, bbox overlay previews, train/validation/test splits, reports, and export-ready dataset folders.
+DocSynthFab can generate labeled synthetic document datasets from either the CLI or the Web GUI. A configured run can produce page images together with ground-truth text, annotation JSON files, segmentation masks, visual mask overlays, train/validation/test splits, reports, and export-ready dataset folders.
+
+Supported export targets include the native DocSynthFab package, COCO-style datasets with JSON annotations, and SegFormer-style image/mask datasets. The current SegFormer-style export uses split binary masks for text and math regions; full multi-class semantic mask export is planned for a later milestone.
 
 The Web GUI is designed to make this workflow accessible: users can configure the dataset character, page count, density, diversity, output folder, and worker count, then start generation from a single interface.
 
