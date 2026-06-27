@@ -10,6 +10,16 @@ It creates document-like page images together with structured labels, annotation
 
 The current `v0.1.0-alpha` release focuses on generation correctness, annotation consistency, QC validation, exports, and acceptance testing. Real-world model performance benchmarking is planned for a later milestone.
 
+## Key Capability: Labeled Multilingual Synthetic Data
+
+DocSynthFab can generate labeled synthetic document datasets from either the CLI or the Web GUI. A configured run can produce page images together with ground-truth text, annotation JSON files, segmentation masks, bbox overlay previews, train/validation/test splits, reports, and export-ready dataset folders.
+
+The Web GUI is designed to make this workflow accessible: users can configure the dataset character, page count, density, diversity, output folder, and worker count, then start generation from a single interface.
+
+Depending on configuration and font coverage, generated documents can include multiple writing systems such as Latin, Greek, Cyrillic, Devanagari, Japanese, Arabic, Chinese, Hebrew, Thai, and others. This makes the project especially useful for multilingual OCR, Document AI prototyping, layout analysis, and annotation pipeline testing.
+
+This is valuable in settings where collecting and labeling real multilingual documents is expensive, slow, or difficult. The current release is still alpha: the included samples demonstrate generation, labeling, packaging, and QC infrastructure, not final benchmark performance.
+
 ## Use Cases
 
 DocSynthFab is intended for experiments in:
