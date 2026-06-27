@@ -1,0 +1,820 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000073",
+  "size": {
+    "w": 2481,
+    "h": 3507,
+    "dpi": 300,
+    "page_size_name": "a4_portrait",
+    "page_width_in": 8.27,
+    "page_height_in": 11.69,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "single_col",
+    "density_level": "sparse",
+    "scale_profile": "dpi300",
+    "noise_level": "medium",
+    "page_family": "notes",
+    "_fallback": false,
+    "_augment_disabled_by_retry": null,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": false,
+    "has_equation": false,
+    "has_equation_layout": false,
+    "has_figure": false,
+    "mask_text_nonzero": 362283,
+    "mask_math_nonzero": 0,
+    "math_line_count": 0,
+    "equation_block_count": 0,
+    "table_block_count": 0,
+    "figure_block_count": 0,
+    "rotation_deg": -1.7444347016348387,
+    "perspective": false,
+    "book_mode": false,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": [
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 362283.0,
+        "after_text_nz": 362283.0,
+        "before_math_nz": 0.0,
+        "after_math_nz": 0.0,
+        "accepted": true
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "title",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        198,
+        1564,
+        2085,
+        153
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 0,
+      "bbox": [
+        247,
+        1964,
+        1743,
+        1334
+      ]
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 1,
+      "bbox": [
+        430,
+        355,
+        1895,
+        969
+      ]
+    },
+    {
+      "block_id": 3,
+      "block_type": "paragraph",
+      "block_order": 3,
+      "column_id": 0,
+      "bbox": [
+        136,
+        1357,
+        1895,
+        22
+      ]
+    },
+    {
+      "block_id": 4,
+      "block_type": "list",
+      "block_order": 4,
+      "column_id": 0,
+      "bbox": [
+        136,
+        1860,
+        1895,
+        22
+      ]
+    },
+    {
+      "block_id": 5,
+      "block_type": "paragraph",
+      "block_order": 5,
+      "column_id": 0,
+      "bbox": [
+        136,
+        1451,
+        1895,
+        22
+      ]
+    },
+    {
+      "block_id": 6,
+      "block_type": "paragraph",
+      "block_order": 6,
+      "column_id": 0,
+      "bbox": [
+        136,
+        1900,
+        1895,
+        22
+      ]
+    },
+    {
+      "block_id": 7,
+      "block_type": "paragraph",
+      "block_order": 7,
+      "column_id": 0,
+      "bbox": [
+        217,
+        1503,
+        1895,
+        22
+      ]
+    },
+    {
+      "block_id": 8,
+      "block_type": "paragraph",
+      "block_order": 8,
+      "column_id": 1,
+      "bbox": [
+        450,
+        1398,
+        1895,
+        22
+      ]
+    },
+    {
+      "block_id": 9,
+      "block_type": "list",
+      "block_order": 9,
+      "column_id": 1,
+      "bbox": [
+        424,
+        3327,
+        1895,
+        22
+      ]
+    },
+    {
+      "block_id": 10,
+      "block_type": "paragraph",
+      "block_order": 10,
+      "column_id": 1,
+      "bbox": [
+        350,
+        281,
+        1895,
+        22
+      ]
+    },
+    {
+      "block_id": 11,
+      "block_type": "paragraph",
+      "block_order": 11,
+      "column_id": 0,
+      "bbox": [
+        187,
+        1750,
+        1895,
+        22
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "text",
+      "global_line_order": 0,
+      "bbox": [
+        237,
+        1591,
+        283,
+        35
+      ],
+      "text": "Example Data Line",
+      "script": "latin"
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 1,
+      "bbox": [
+        384,
+        2108,
+        343,
+        23
+      ],
+      "text": "document reference number",
+      "script": "latin"
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 2,
+      "bbox": [
+        297,
+        2151,
+        1682,
+        22
+      ],
+      "text": "отдел копия товар подпись температура лицензия счет_учета счет задача ответ пакет папка транспорт статус товар запас страница заказ",
+      "script": "ru"
+    },
+    {
+      "line_id": 3,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 3,
+      "bbox": [
+        297,
+        2178,
+        1632,
+        35
+      ],
+      "text": "ใบรับรอง หัวกระดาษ ประโยค ยอดคงเหลือ ไฟล์ ระยะห่าง อุปกรณ์ ส่วนลด ความยาว ศุลกากร รายงาน สัญลักษณ์ ชุดข้อมูล บันทึก สัญลักษณ์ โฟลเดอร์ รูปภาพ สรุป วันที่",
+      "script": "th"
+    },
+    {
+      "line_id": 4,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 4,
+      "bbox": [
+        297,
+        2260,
+        1434,
+        27
+      ],
+      "text": "line section answer signature tax cell export warning team section message delivery height stamp note insurance random",
+      "script": "latin"
+    },
+    {
+      "line_id": 5,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 5,
+      "bbox": [
+        297,
+        2342,
+        859,
+        31
+      ],
+      "text": "مسار صيغة توقيع موعد صيغة مهمة تخزين شحنة رمز رمز موافقة نجاح رخصة نظام_كتابة",
+      "script": "ar"
+    },
+    {
+      "line_id": 6,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 6,
+      "bbox": [
+        297,
+        2299,
+        1656,
+        26
+      ],
+      "text": "Container Gleichung Problem Gewicht Maske Feld Zahlung Nummer Tabelle Titel Schiff Rechnung Mitarbeiter Fußzeile Vorlage Zusammenfassung Maske",
+      "script": "latin"
+    },
+    {
+      "line_id": 7,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 7,
+      "bbox": [
+        297,
+        2419,
+        1481,
+        28
+      ],
+      "text": "quantity contract quality country page material stock line toll contact toll pallet issue vehicle folder inspection schema product",
+      "script": "latin"
+    },
+    {
+      "line_id": 8,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 8,
+      "bbox": [
+        297,
+        2493,
+        1562,
+        28
+      ],
+      "text": "licence facture stockage poids analyse erreur téléphone rangée navire expédition facture devise total contact demande commentaire",
+      "script": "latin"
+    },
+    {
+      "line_id": 9,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 9,
+      "bbox": [
+        297,
+        2576,
+        1330,
+        32
+      ],
+      "text": "مدينة دفعة موعد مورد عميل تفتيش صفحة مراجعة تعليق عقد إجمالي مهمة حقيقة_مرجعية شحنة مشكلة يونيكود يونيكود وثيقة عشوائي",
+      "script": "ar"
+    },
+    {
+      "line_id": 10,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 10,
+      "bbox": [
+        297,
+        2654,
+        1650,
+        28
+      ],
+      "text": "font schema volume city word signature tax symbol title description request certificate manager folder container warning temperature error",
+      "script": "latin"
+    },
+    {
+      "line_id": 11,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 11,
+      "bbox": [
+        297,
+        2728,
+        1588,
+        22
+      ],
+      "text": "검사 잔액 도장 상자 경고 고객 화물 인코딩 가격 인코딩 구역 기계 범주 질문 단어 라벨 테두리 계정 푸터 검사 형식 연락처 재고 운전자 도시 잔액 위험 항구 열 재료 컨테이너 필드 감사 라벨",
+      "script": "ko"
+    },
+    {
+      "line_id": 12,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 12,
+      "bbox": [
+        297,
+        2796,
+        1680,
+        28
+      ],
+      "text": "fournisseur échéance réplique bordure prix annotation paiement problème bordure importation étiquette encodage mise_en_page annotation",
+      "script": "latin"
+    },
+    {
+      "line_id": 13,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 13,
+      "bbox": [
+        297,
+        2870,
+        1549,
+        28
+      ],
+      "text": "volume message border section class contract department border header sentence file material supplier note currency box unicode",
+      "script": "latin"
+    },
+    {
+      "line_id": 14,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 14,
+      "bbox": [
+        297,
+        2944,
+        1570,
+        28
+      ],
+      "text": "employee department format unicode font customs file calendar font border folder barcode groundtruth revision customs line phone",
+      "script": "latin"
+    },
+    {
+      "line_id": 15,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 15,
+      "bbox": [
+        297,
+        3018,
+        1631,
+        28
+      ],
+      "text": "encabezado vehículo registro comentario empleado conductor permiso certificado unidad revisión línea ciudad distancia plazo contenedor",
+      "script": "latin"
+    },
+    {
+      "line_id": 16,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 16,
+      "bbox": [
+        297,
+        3092,
+        1532,
+        28
+      ],
+      "text": "unit customs fuel risk contact permit phone distance project spacing class response project warehouse discount inventory product",
+      "script": "latin"
+    },
+    {
+      "line_id": 17,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 17,
+      "bbox": [
+        297,
+        3166,
+        350,
+        23
+      ],
+      "text": "Dokument Referenz Nummer",
+      "script": "latin"
+    },
+    {
+      "line_id": 18,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 18,
+      "bbox": [
+        297,
+        3235,
+        1542,
+        28
+      ],
+      "text": "Layout Referenz Dokument Menge Menge Inspektion Rand Produkt Höhe Inspektion Titel Revision Produkt Adresse Sprache Schrift",
+      "script": "latin"
+    },
+    {
+      "line_id": 19,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 19,
+      "bbox": [
+        299,
+        2787,
+        1661,
+        27
+      ]
+    },
+    {
+      "line_id": 20,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 20,
+      "bbox": [
+        299,
+        2823,
+        1646,
+        27
+      ]
+    },
+    {
+      "line_id": 21,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 21,
+      "bbox": [
+        299,
+        2862,
+        1679,
+        27
+      ]
+    },
+    {
+      "line_id": 22,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 22,
+      "bbox": [
+        299,
+        2901,
+        1675,
+        27
+      ]
+    },
+    {
+      "line_id": 23,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 23,
+      "bbox": [
+        299,
+        2940,
+        1646,
+        27
+      ]
+    },
+    {
+      "line_id": 24,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 24,
+      "bbox": [
+        299,
+        2976,
+        1682,
+        27
+      ]
+    },
+    {
+      "line_id": 25,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 25,
+      "bbox": [
+        299,
+        3015,
+        1577,
+        27
+      ]
+    },
+    {
+      "line_id": 26,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 26,
+      "bbox": [
+        297,
+        3058,
+        165,
+        27
+      ],
+      "text": "质量 检查 报告",
+      "script": "zh"
+    },
+    {
+      "line_id": 27,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 27,
+      "bbox": [
+        484,
+        462,
+        1679,
+        28
+      ],
+      "text": "riesgo columna equipo celda almacenamiento unicode contacto proveedor campo cantidad seguro almacén título puerto importación moneda",
+      "script": "latin"
+    },
+    {
+      "line_id": 28,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 28,
+      "bbox": [
+        484,
+        536,
+        1669,
+        28
+      ],
+      "text": "toplantı bölüm işçi şoför analiz görsel formül orijinal çalışan hesap özet ekip dosya filtre son_tarih koli fatura geçiş hesap lisans fiyat konteyner",
+      "script": "latin"
+    },
+    {
+      "line_id": 29,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 29,
+      "bbox": [
+        484,
+        610,
+        343,
+        23
+      ],
+      "text": "document reference number",
+      "script": "latin"
+    },
+    {
+      "line_id": 30,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 30,
+      "bbox": [
+        484,
+        575,
+        1266,
+        31
+      ],
+      "text": "เค้าโครง เมล็ด สินค้าเรือ รวม คุณภาพ ตัวกรอง โทรศัพท์ โทรศัพท์ ไฟล์ โครงการ โครงการ หมายเหตุ ใบรับรอง หน้า หน่วย อุณหภูมิ",
+      "script": "th"
+    },
+    {
+      "line_id": 31,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 31,
+      "bbox": [
+        484,
+        679,
+        1671,
+        25
+      ],
+      "text": "horaire vérité_terrain carburant message livraison équipement carburant rangée équipement paragraphe entrepôt poids volume gestionnaire figure espacement",
+      "script": "latin"
+    },
+    {
+      "line_id": 32,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 32,
+      "bbox": [
+        484,
+        654,
+        212,
+        27
+      ],
+      "text": "example data line",
+      "script": "latin"
+    },
+    {
+      "line_id": 33,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 33,
+      "bbox": [
+        484,
+        750,
+        343,
+        23
+      ],
+      "text": "document reference number",
+      "script": "latin"
+    },
+    {
+      "line_id": 34,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 34,
+      "bbox": [
+        484,
+        823,
+        1458,
+        23
+      ],
+      "text": "קובץ עמודה בעיה זרע עמוד סיכום_ביניים נפח פריסה חשבונית משוואה עיר תגובה ספינה הנחה בקשה מרחק מחיר ייצוא נהג זרע קידוד ברקוד",
+      "script": "he"
+    },
+    {
+      "line_id": 35,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 35,
+      "bbox": [
+        484,
+        892,
+        1697,
+        28
+      ],
+      "text": "yorum telefon yük para denetim müşteri belge paragraf veri_seti soru miktar sorun iletişim müşteri araç çerçeve cümle genişlik koli kaşe genişlik",
+      "script": "latin"
+    },
+    {
+      "line_id": 36,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 36,
+      "bbox": [
+        484,
+        967,
+        1586,
+        26
+      ],
+      "text": "מסנן כתובת מסוף תרשים מסמך חבילה ברקוד יחידה שוליים מסמך היתר מרחק עמוד סיכום ביטוח מסלול ייבוא שפה עמודה בעיה ספק משפט מכס בדיקה",
+      "script": "he"
+    },
+    {
+      "line_id": 37,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 37,
+      "bbox": [
+        484,
+        1039,
+        1779,
+        28
+      ],
+      "text": "sembol durum paket risk örnek makine fiyat talep boşluk uyarı durum işçi çalışan rastgele rapor paragraf sınıf paragraf grafik iskonto doğrulama klasör",
+      "script": "latin"
+    },
+    {
+      "line_id": 38,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 38,
+      "bbox": [
+        484,
+        1113,
+        1581,
+        27
+      ],
+      "text": "alphabet graphique péage équipe facture port devise paquet format fournisseur terminal jeu_données terminal commentaire largeur classe",
+      "script": "latin"
+    },
+    {
+      "line_id": 39,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 39,
+      "bbox": [
+        484,
+        1186,
+        1734,
+        28
+      ],
+      "text": "προμηθευτής εξαγωγή μηχανή διαδρομή εξίσωση τυχαίο σπόρος σημείωση τιμή στοκ απόθεμα περιθώριο αριθμός παλέτα πιστοποιητικό γράφημα",
+      "script": "el"
+    },
+    {
+      "line_id": 40,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 40,
+      "bbox": [
+        484,
+        1260,
+        1787,
+        28
+      ],
+      "text": "Entfernung Land Rand Besprechung Risiko Währung Kommentar Palette Palette Filter Maut Dokument Feld Team Bestand Unicode Währung Inspektion",
+      "script": "latin"
+    },
+    {
+      "line_id": 41,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 41,
+      "bbox": [
+        484,
+        1327,
+        1807,
+        32
+      ],
+      "text": "प्रश्न वर्णमाला मूल्य फ़िल्टर वर्णमाला पंक्ति इकाई स्थिति मार्ग उत्तर फ़िल्टर अनुरोध मुद्रा इकाई शेष पंक्ति_तालिका शब्द स्वीकृति भुगतान निर्यात प्रबंधक डिब्बा छूट अनुमति पृष्ठ माल संशोधन भंडारण संपर्क टोल",
+      "script": "hi"
+    },
+    {
+      "line_id": 42,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 42,
+      "bbox": [
+        484,
+        1405,
+        1696,
+        28
+      ],
+      "text": "travailleur code_barres annotation erreur langue client date terminal graphique téléphone port échantillon référence contact classe équipement",
+      "script": "latin"
+    },
+    {
+      "line_id": 43,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 43,
+      "bbox": [
+        484,
+        1479,
+        971,
+        28
+      ],
+      "text": "Warnung Rabatt Ausrüstung Schiff Datensatzsammlung Lieferant Maschine Etikett",
+      "script": "latin"
+    }
+  ],
+  "page_text": "Example Data Line\ndocument reference number\nотдел копия товар подпись температура лицензия счет_учета счет задача ответ пакет папка транспорт статус товар запас страница заказ\nใบรับรอง หัวกระดาษ ประโยค ยอดคงเหลือ ไฟล์ ระยะห่าง อุปกรณ์ ส่วนลด ความยาว ศุลกากร รายงาน สัญลักษณ์ ชุดข้อมูล บันทึก สัญลักษณ์ โฟลเดอร์ รูปภาพ สรุป วันที่\nline section answer signature tax cell export warning team section message delivery height stamp note insurance random\nمسار صيغة توقيع موعد صيغة مهمة تخزين شحنة رمز رمز موافقة نجاح رخصة نظام_كتابة\nContainer Gleichung Problem Gewicht Maske Feld Zahlung Nummer Tabelle Titel Schiff Rechnung Mitarbeiter Fußzeile Vorlage Zusammenfassung Maske\nquantity contract quality country page material stock line toll contact toll pallet issue vehicle folder inspection schema product\nlicence facture stockage poids analyse erreur téléphone rangée navire expédition facture devise total contact demande commentaire\nمدينة دفعة موعد مورد عميل تفتيش صفحة مراجعة تعليق عقد إجمالي مهمة حقيقة_مرجعية شحنة مشكلة يونيكود يونيكود وثيقة عشوائي\nfont schema volume city word signature tax symbol title description request certificate manager folder container warning temperature error\n검사 잔액 도장 상자 경고 고객 화물 인코딩 가격 인코딩 구역 기계 범주 질문 단어 라벨 테두리 계정 푸터 검사 형식 연락처 재고 운전자 도시 잔액 위험 항구 열 재료 컨테이너 필드 감사 라벨\nfournisseur échéance réplique bordure prix annotation paiement problème bordure importation étiquette encodage mise_en_page annotation\nvolume message border section class contract department border header sentence file material supplier note currency box unicode\nemployee department format unicode font customs file calendar font border folder barcode groundtruth revision customs line phone\nencabezado vehículo registro comentario empleado conductor permiso certificado unidad revisión línea ciudad distancia plazo contenedor\nunit customs fuel risk contact permit phone distance project spacing class response project warehouse discount inventory product\nDokument Referenz Nummer\nLayout Referenz Dokument Menge Menge Inspektion Rand Produkt Höhe Inspektion Titel Revision Produkt Adresse Sprache Schrift\n质量 检查 报告\nriesgo columna equipo celda almacenamiento unicode contacto proveedor campo cantidad seguro almacén título puerto importación moneda\ntoplantı bölüm işçi şoför analiz görsel formül orijinal çalışan hesap özet ekip dosya filtre son_tarih koli fatura geçiş hesap lisans fiyat konteyner\ndocument reference number\nเค้าโครง เมล็ด สินค้าเรือ รวม คุณภาพ ตัวกรอง โทรศัพท์ โทรศัพท์ ไฟล์ โครงการ โครงการ หมายเหตุ ใบรับรอง หน้า หน่วย อุณหภูมิ\nhoraire vérité_terrain carburant message livraison équipement carburant rangée équipement paragraphe entrepôt poids volume gestionnaire figure espacement\nexample data line\ndocument reference number\nקובץ עמודה בעיה זרע עמוד סיכום_ביניים נפח פריסה חשבונית משוואה עיר תגובה ספינה הנחה בקשה מרחק מחיר ייצוא נהג זרע קידוד ברקוד\nyorum telefon yük para denetim müşteri belge paragraf veri_seti soru miktar sorun iletişim müşteri araç çerçeve cümle genişlik koli kaşe genişlik\nמסנן כתובת מסוף תרשים מסמך חבילה ברקוד יחידה שוליים מסמך היתר מרחק עמוד סיכום ביטוח מסלול ייבוא שפה עמודה בעיה ספק משפט מכס בדיקה\nsembol durum paket risk örnek makine fiyat talep boşluk uyarı durum işçi çalışan rastgele rapor paragraf sınıf paragraf grafik iskonto doğrulama klasör\nalphabet graphique péage équipe facture port devise paquet format fournisseur terminal jeu_données terminal commentaire largeur classe\nπρομηθευτής εξαγωγή μηχανή διαδρομή εξίσωση τυχαίο σπόρος σημείωση τιμή στοκ απόθεμα περιθώριο αριθμός παλέτα πιστοποιητικό γράφημα\nEntfernung Land Rand Besprechung Risiko Währung Kommentar Palette Palette Filter Maut Dokument Feld Team Bestand Unicode Währung Inspektion\nप्रश्न वर्णमाला मूल्य फ़िल्टर वर्णमाला पंक्ति इकाई स्थिति मार्ग उत्तर फ़िल्टर अनुरोध मुद्रा इकाई शेष पंक्ति_तालिका शब्द स्वीकृति भुगतान निर्यात प्रबंधक डिब्बा छूट अनुमति पृष्ठ माल संशोधन भंडारण संपर्क टोल\ntravailleur code_barres annotation erreur langue client date terminal graphique téléphone port échantillon référence contact classe équipement\nWarnung Rabatt Ausrüstung Schiff Datensatzsammlung Lieferant Maschine Etikett",
+  "gt_stats": {
+    "scripts_hist": {
+      "latin": 26,
+      "ru": 1,
+      "th": 2,
+      "ar": 2,
+      "ko": 1,
+      "zh": 1,
+      "he": 2,
+      "el": 1,
+      "hi": 1
+    },
+    "has_gt_text_lines": 37,
+    "has_gt_math_lines": 0,
+    "book_mode_added_lines": 0
+  }
+}

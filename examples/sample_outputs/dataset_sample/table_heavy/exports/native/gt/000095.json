@@ -1,0 +1,1522 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000095",
+  "size": {
+    "w": 1700,
+    "h": 2200,
+    "dpi": 200,
+    "page_size_name": "letter_portrait",
+    "page_width_in": 8.5,
+    "page_height_in": 11.0,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "single_col",
+    "density_level": "normal",
+    "scale_profile": "dpi200",
+    "noise_level": "clean",
+    "page_family": "book",
+    "_fallback": false,
+    "_augment_disabled_by_retry": null,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": true,
+    "has_equation": false,
+    "has_equation_layout": false,
+    "has_figure": false,
+    "mask_text_nonzero": 80823,
+    "mask_math_nonzero": 0,
+    "math_line_count": 0,
+    "equation_block_count": 0,
+    "table_block_count": 2,
+    "figure_block_count": 0,
+    "rotation_deg": -0.45039514916023116,
+    "perspective": false,
+    "book_mode": true,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": [
+      {
+        "op": "blur",
+        "type": "motion",
+        "k": 9
+      },
+      {
+        "op": "lowfreq_illumination",
+        "drop": 0.19638124884417624
+      },
+      {
+        "op": "irregular_banding",
+        "count": 4
+      },
+      {
+        "op": "geometry",
+        "rotation_deg": 0.10030513034138933,
+        "perspective": false
+      },
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 80823.0,
+        "after_text_nz": 80823.0,
+        "before_math_nz": 0.0,
+        "after_math_nz": 0.0,
+        "accepted": true
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "table",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        137,
+        185,
+        1129,
+        258
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 1,
+      "bbox": [
+        385,
+        1685,
+        1010,
+        110
+      ]
+    },
+    {
+      "block_id": 2,
+      "block_type": "table",
+      "block_order": 2,
+      "column_id": 0,
+      "bbox": [
+        196,
+        1338,
+        1117,
+        268
+      ]
+    },
+    {
+      "block_id": 3,
+      "block_type": "list",
+      "block_order": 3,
+      "column_id": 1,
+      "bbox": [
+        478,
+        1847,
+        230,
+        103
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 0,
+      "bbox": [
+        137,
+        198,
+        59,
+        30
+      ],
+      "text": "مثال",
+      "script": "ar"
+    },
+    {
+      "line_id": 1,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 1,
+      "bbox": [
+        281,
+        187,
+        55,
+        25
+      ],
+      "text": "veri",
+      "script": "latin"
+    },
+    {
+      "line_id": 2,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 2,
+      "bbox": [
+        450,
+        188,
+        89,
+        27
+      ],
+      "text": "lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 3,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 3,
+      "bbox": [
+        586,
+        188,
+        47,
+        26
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 4,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 4,
+      "bbox": [
+        733,
+        189,
+        133,
+        36
+      ],
+      "text": "Lösung-",
+      "script": "latin"
+    },
+    {
+      "line_id": 5,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 5,
+      "bbox": [
+        881,
+        185,
+        132,
+        30
+      ],
+      "text": "Gleichung",
+      "script": "latin"
+    },
+    {
+      "line_id": 6,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 6,
+      "bbox": [
+        1044,
+        188,
+        70,
+        21
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 7,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 7,
+      "bbox": [
+        1186,
+        185,
+        76,
+        23
+      ],
+      "text": "lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 8,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 8,
+      "bbox": [
+        139,
+        244,
+        121,
+        35
+      ],
+      "text": "μοντέλο",
+      "script": "el"
+    },
+    {
+      "line_id": 9,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 9,
+      "bbox": [
+        284,
+        243,
+        111,
+        31
+      ],
+      "text": "ipsumQ",
+      "script": "latin"
+    },
+    {
+      "line_id": 10,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 10,
+      "bbox": [
+        452,
+        244,
+        91,
+        33
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 11,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 11,
+      "bbox": [
+        588,
+        244,
+        107,
+        28
+      ],
+      "text": "testelit",
+      "script": "latin"
+    },
+    {
+      "line_id": 12,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 12,
+      "bbox": [
+        735,
+        248,
+        84,
+        25
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 13,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 13,
+      "bbox": [
+        884,
+        244,
+        74,
+        23
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 14,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 14,
+      "bbox": [
+        1046,
+        244,
+        53,
+        29
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 15,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 15,
+      "bbox": [
+        1188,
+        241,
+        78,
+        26
+      ],
+      "text": "kalite",
+      "script": "latin"
+    },
+    {
+      "line_id": 16,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 16,
+      "bbox": [
+        139,
+        301,
+        108,
+        32
+      ],
+      "text": "Lösung",
+      "script": "latin"
+    },
+    {
+      "line_id": 17,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 17,
+      "bbox": [
+        284,
+        299,
+        108,
+        33
+      ],
+      "text": "ipsum+",
+      "script": "latin"
+    },
+    {
+      "line_id": 18,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 18,
+      "bbox": [
+        452,
+        301,
+        98,
+        27
+      ],
+      "text": "Daten",
+      "script": "latin"
+    },
+    {
+      "line_id": 19,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 19,
+      "bbox": [
+        588,
+        297,
+        125,
+        24
+      ],
+      "text": "lorem elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 20,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 20,
+      "bbox": [
+        735,
+        297,
+        123,
+        35
+      ],
+      "text": "δεδομέν",
+      "script": "el"
+    },
+    {
+      "line_id": 21,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 21,
+      "bbox": [
+        884,
+        296,
+        80,
+        29
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 22,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 22,
+      "bbox": [
+        1046,
+        299,
+        74,
+        23
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 23,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 23,
+      "bbox": [
+        1188,
+        298,
+        69,
+        26
+      ],
+      "text": "mod",
+      "script": "latin"
+    },
+    {
+      "line_id": 24,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 24,
+      "bbox": [
+        139,
+        362,
+        118,
+        21
+      ],
+      "text": "accurac",
+      "script": "latin"
+    },
+    {
+      "line_id": 25,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 25,
+      "bbox": [
+        284,
+        354,
+        91,
+        33
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 26,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 26,
+      "bbox": [
+        452,
+        354,
+        92,
+        28
+      ],
+      "text": "lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 27,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 27,
+      "bbox": [
+        588,
+        353,
+        119,
+        34
+      ],
+      "text": "δεδομέν",
+      "script": "el"
+    },
+    {
+      "line_id": 28,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 28,
+      "bbox": [
+        735,
+        357,
+        57,
+        23
+      ],
+      "text": "test",
+      "script": "latin"
+    },
+    {
+      "line_id": 29,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 29,
+      "bbox": [
+        884,
+        353,
+        98,
+        26
+      ],
+      "text": "elit elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 30,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 30,
+      "bbox": [
+        1046,
+        356,
+        77,
+        23
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 31,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 31,
+      "bbox": [
+        1188,
+        360,
+        70,
+        28
+      ],
+      "text": "реш",
+      "script": "ru"
+    },
+    {
+      "line_id": 32,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 32,
+      "bbox": [
+        139,
+        410,
+        64,
+        29
+      ],
+      "text": "elit/",
+      "script": "latin"
+    },
+    {
+      "line_id": 33,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 33,
+      "bbox": [
+        284,
+        412,
+        79,
+        24
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 34,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 34,
+      "bbox": [
+        452,
+        409,
+        123,
+        34
+      ],
+      "text": "yoğunlu",
+      "script": "latin"
+    },
+    {
+      "line_id": 35,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 35,
+      "bbox": [
+        588,
+        412,
+        79,
+        24
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 36,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 36,
+      "bbox": [
+        735,
+        412,
+        81,
+        25
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 37,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 37,
+      "bbox": [
+        884,
+        402,
+        122,
+        30
+      ],
+      "text": "LÖSUNG",
+      "script": "latin"
+    },
+    {
+      "line_id": 38,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 38,
+      "bbox": [
+        1046,
+        409,
+        53,
+        29
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 39,
+      "block_id": 0,
+      "line_type": "table_cell",
+      "global_line_order": 39,
+      "bbox": [
+        1188,
+        411,
+        36,
+        22
+      ],
+      "text": "aıç",
+      "script": "latin"
+    },
+    {
+      "line_id": 40,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 40,
+      "bbox": [
+        385,
+        1685,
+        1010,
+        32
+      ],
+      "text": "yerleşim envanter takvim şoför numara klasör tohum yazı_tipi tarih rota alan",
+      "script": "latin"
+    },
+    {
+      "line_id": 41,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 41,
+      "bbox": [
+        385,
+        1763,
+        655,
+        32
+      ],
+      "text": "encodage espacement entrepôt page cellule note",
+      "script": "latin"
+    },
+    {
+      "line_id": 42,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 42,
+      "bbox": [
+        196,
+        1343,
+        151,
+        24
+      ],
+      "text": "качествоуц",
+      "script": "ru"
+    },
+    {
+      "line_id": 43,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 43,
+      "bbox": [
+        392,
+        1339,
+        87,
+        26
+      ],
+      "text": "lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 44,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 44,
+      "bbox": [
+        506,
+        1342,
+        57,
+        23
+      ],
+      "text": "test",
+      "script": "latin"
+    },
+    {
+      "line_id": 45,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 45,
+      "bbox": [
+        612,
+        1342,
+        77,
+        23
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 46,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 46,
+      "bbox": [
+        734,
+        1338,
+        74,
+        34
+      ],
+      "text": "λύση",
+      "script": "el"
+    },
+    {
+      "line_id": 47,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 47,
+      "bbox": [
+        841,
+        1341,
+        57,
+        23
+      ],
+      "text": "test",
+      "script": "latin"
+    },
+    {
+      "line_id": 48,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 48,
+      "bbox": [
+        971,
+        1348,
+        61,
+        31
+      ],
+      "text": "مثال",
+      "script": "ar"
+    },
+    {
+      "line_id": 49,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 49,
+      "bbox": [
+        1084,
+        1338,
+        91,
+        33
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 50,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 50,
+      "bbox": [
+        1216,
+        1339,
+        72,
+        22
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 51,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 51,
+      "bbox": [
+        196,
+        1380,
+        82,
+        26
+      ],
+      "text": "Zufall",
+      "script": "latin"
+    },
+    {
+      "line_id": 52,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 52,
+      "bbox": [
+        395,
+        1378,
+        92,
+        26
+      ],
+      "text": "Prüfung",
+      "script": "latin"
+    },
+    {
+      "line_id": 53,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 53,
+      "bbox": [
+        509,
+        1379,
+        80,
+        29
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 54,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 54,
+      "bbox": [
+        615,
+        1380,
+        78,
+        22
+      ],
+      "text": "Daten",
+      "script": "latin"
+    },
+    {
+      "line_id": 55,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 55,
+      "bbox": [
+        737,
+        1379,
+        80,
+        29
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 56,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 56,
+      "bbox": [
+        844,
+        1380,
+        50,
+        21
+      ],
+      "text": "test",
+      "script": "latin"
+    },
+    {
+      "line_id": 57,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 57,
+      "bbox": [
+        974,
+        1378,
+        80,
+        29
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 58,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 58,
+      "bbox": [
+        1087,
+        1377,
+        65,
+        30
+      ],
+      "text": "λύση",
+      "script": "el"
+    },
+    {
+      "line_id": 59,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 59,
+      "bbox": [
+        1219,
+        1378,
+        75,
+        23
+      ],
+      "text": "metin",
+      "script": "latin"
+    },
+    {
+      "line_id": 60,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 60,
+      "bbox": [
+        196,
+        1419,
+        91,
+        33
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 61,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 61,
+      "bbox": [
+        395,
+        1421,
+        50,
+        21
+      ],
+      "text": "test",
+      "script": "latin"
+    },
+    {
+      "line_id": 62,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 62,
+      "bbox": [
+        509,
+        1421,
+        67,
+        21
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 63,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 63,
+      "bbox": [
+        615,
+        1421,
+        50,
+        21
+      ],
+      "text": "test",
+      "script": "latin"
+    },
+    {
+      "line_id": 64,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 64,
+      "bbox": [
+        737,
+        1424,
+        84,
+        18
+      ],
+      "text": "accura",
+      "script": "latin"
+    },
+    {
+      "line_id": 65,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 65,
+      "bbox": [
+        844,
+        1418,
+        101,
+        23
+      ],
+      "text": "incididu",
+      "script": "latin"
+    },
+    {
+      "line_id": 66,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 66,
+      "bbox": [
+        974,
+        1418,
+        72,
+        23
+      ],
+      "text": "Zufall",
+      "script": "latin"
+    },
+    {
+      "line_id": 67,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 67,
+      "bbox": [
+        1087,
+        1419,
+        78,
+        22
+      ],
+      "text": "Daten",
+      "script": "latin"
+    },
+    {
+      "line_id": 68,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 68,
+      "bbox": [
+        1219,
+        1420,
+        50,
+        21
+      ],
+      "text": "test",
+      "script": "latin"
+    },
+    {
+      "line_id": 69,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 69,
+      "bbox": [
+        196,
+        1457,
+        89,
+        32
+      ],
+      "text": "dünya",
+      "script": "latin"
+    },
+    {
+      "line_id": 70,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 70,
+      "bbox": [
+        395,
+        1461,
+        50,
+        21
+      ],
+      "text": "test",
+      "script": "latin"
+    },
+    {
+      "line_id": 71,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 71,
+      "bbox": [
+        509,
+        1461,
+        67,
+        21
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 72,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 72,
+      "bbox": [
+        615,
+        1460,
+        78,
+        22
+      ],
+      "text": "amet?",
+      "script": "latin"
+    },
+    {
+      "line_id": 73,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 73,
+      "bbox": [
+        737,
+        1459,
+        80,
+        29
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 74,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 74,
+      "bbox": [
+        844,
+        1460,
+        67,
+        21
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 75,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 75,
+      "bbox": [
+        974,
+        1459,
+        61,
+        22
+      ],
+      "text": "test?",
+      "script": "latin"
+    },
+    {
+      "line_id": 76,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 76,
+      "bbox": [
+        1087,
+        1458,
+        76,
+        23
+      ],
+      "text": "lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 77,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 77,
+      "bbox": [
+        1219,
+        1458,
+        76,
+        23
+      ],
+      "text": "lorem",
+      "script": "latin"
+    },
+    {
+      "line_id": 78,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 78,
+      "bbox": [
+        196,
+        1497,
+        138,
+        32
+      ],
+      "text": "ipsum elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 79,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 79,
+      "bbox": [
+        395,
+        1508,
+        53,
+        28
+      ],
+      "text": "مثال",
+      "script": "ar"
+    },
+    {
+      "line_id": 80,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 80,
+      "bbox": [
+        509,
+        1501,
+        50,
+        21
+      ],
+      "text": "test",
+      "script": "latin"
+    },
+    {
+      "line_id": 81,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 81,
+      "bbox": [
+        615,
+        1499,
+        41,
+        23
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 82,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 82,
+      "bbox": [
+        737,
+        1508,
+        53,
+        28
+      ],
+      "text": "مثال",
+      "script": "ar"
+    },
+    {
+      "line_id": 83,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 83,
+      "bbox": [
+        844,
+        1507,
+        53,
+        28
+      ],
+      "text": "مثال",
+      "script": "ar"
+    },
+    {
+      "line_id": 84,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 84,
+      "bbox": [
+        974,
+        1497,
+        47,
+        22
+      ],
+      "text": "PAd",
+      "script": "latin"
+    },
+    {
+      "line_id": 85,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 85,
+      "bbox": [
+        1087,
+        1498,
+        75,
+        23
+      ],
+      "text": "metin",
+      "script": "latin"
+    },
+    {
+      "line_id": 86,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 86,
+      "bbox": [
+        1219,
+        1500,
+        55,
+        20
+      ],
+      "text": "test:",
+      "script": "latin"
+    },
+    {
+      "line_id": 87,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 87,
+      "bbox": [
+        196,
+        1542,
+        138,
+        23
+      ],
+      "text": "amet test",
+      "script": "latin"
+    },
+    {
+      "line_id": 88,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 88,
+      "bbox": [
+        395,
+        1539,
+        220,
+        29
+      ],
+      "text": "example data line",
+      "script": "latin"
+    },
+    {
+      "line_id": 89,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 89,
+      "bbox": [
+        509,
+        1539,
+        80,
+        29
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 90,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 90,
+      "bbox": [
+        615,
+        1541,
+        67,
+        21
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 91,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 91,
+      "bbox": [
+        737,
+        1539,
+        80,
+        29
+      ],
+      "text": "ipsum",
+      "script": "latin"
+    },
+    {
+      "line_id": 92,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 92,
+      "bbox": [
+        844,
+        1538,
+        41,
+        23
+      ],
+      "text": "elit",
+      "script": "latin"
+    },
+    {
+      "line_id": 93,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 93,
+      "bbox": [
+        974,
+        1540,
+        50,
+        21
+      ],
+      "text": "test",
+      "script": "latin"
+    },
+    {
+      "line_id": 94,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 94,
+      "bbox": [
+        1087,
+        1538,
+        99,
+        29
+      ],
+      "text": "Beispiel",
+      "script": "latin"
+    },
+    {
+      "line_id": 95,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 95,
+      "bbox": [
+        1219,
+        1539,
+        94,
+        28
+      ],
+      "text": "Lösung",
+      "script": "latin"
+    },
+    {
+      "line_id": 96,
+      "block_id": 2,
+      "line_type": "table_cell",
+      "global_line_order": 96,
+      "bbox": [
+        196,
+        1583,
+        77,
+        23
+      ],
+      "text": "amet",
+      "script": "latin"
+    },
+    {
+      "line_id": 97,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 97,
+      "bbox": [
+        478,
+        1847,
+        226,
+        25
+      ],
+      "text": "מסמך מספר הפניה",
+      "script": "he"
+    },
+    {
+      "line_id": 98,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 98,
+      "bbox": [
+        478,
+        1919,
+        230,
+        31
+      ],
+      "text": "sample page text",
+      "script": "latin"
+    }
+  ],
+  "page_text": "مثال\nveri\nlorem\nelit\nLösung-\nGleichung\namet\nlorem\nμοντέλο\nipsumQ\nipsum\ntestelit\namet\namet\nelit\nkalite\nLösung\nipsum+\nDaten\nlorem elit\nδεδομέν\nipsum\namet\nmod\naccurac\nipsum\nlorem\nδεδομέν\ntest\nelit elit\namet\nреш\nelit/\namet\nyoğunlu\namet\namet\nLÖSUNG\nelit\naıç\nyerleşim envanter takvim şoför numara klasör tohum yazı_tipi tarih rota alan\nencodage espacement entrepôt page cellule note\nкачествоуц\nlorem\ntest\namet\nλύση\ntest\nمثال\nipsum\namet\nZufall\nPrüfung\nipsum\nDaten\nipsum\ntest\nipsum\nλύση\nmetin\nipsum\ntest\namet\ntest\naccura\nincididu\nZufall\nDaten\ntest\ndünya\ntest\namet\namet?\nipsum\namet\ntest?\nlorem\nlorem\nipsum elit\nمثال\ntest\nelit\nمثال\nمثال\nPAd\nmetin\ntest:\namet test\nexample data line\nipsum\namet\nipsum\nelit\ntest\nBeispiel\nLösung\namet\nמסמך מספר הפניה\nsample page text",
+  "gt_stats": {
+    "scripts_hist": {
+      "ar": 5,
+      "latin": 86,
+      "el": 5,
+      "ru": 2,
+      "he": 1
+    },
+    "has_gt_text_lines": 99,
+    "has_gt_math_lines": 0,
+    "book_mode_added_lines": 0
+  }
+}

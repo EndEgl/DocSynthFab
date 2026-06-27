@@ -1,0 +1,835 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000079",
+  "size": {
+    "w": 2550,
+    "h": 4200,
+    "dpi": 300,
+    "page_size_name": "legal_portrait",
+    "page_width_in": 8.5,
+    "page_height_in": 14.0,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "single_col",
+    "density_level": "normal",
+    "scale_profile": "dpi300",
+    "noise_level": "medium",
+    "page_family": "book",
+    "_fallback": false,
+    "_augment_disabled_by_retry": null,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": false,
+    "has_equation": false,
+    "has_equation_layout": false,
+    "has_figure": false,
+    "mask_text_nonzero": 469982,
+    "mask_math_nonzero": 0,
+    "math_line_count": 0,
+    "equation_block_count": 0,
+    "table_block_count": 0,
+    "figure_block_count": 0,
+    "rotation_deg": -1.7162793108528027,
+    "perspective": false,
+    "book_mode": true,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": [
+      {
+        "op": "photometric",
+        "gamma": 0.9321274011109032,
+        "alpha": 1.0361299625288138,
+        "beta": 3.2649915925782214
+      },
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 1.0,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 469982.0,
+        "after_text_nz": 469982.0,
+        "before_math_nz": 0.0,
+        "after_math_nz": 0.0,
+        "accepted": true
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "title",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        204,
+        1092,
+        2142,
+        110
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "list",
+      "block_order": 1,
+      "column_id": 1,
+      "bbox": [
+        460,
+        436,
+        1714,
+        445
+      ]
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 0,
+      "bbox": [
+        416,
+        1230,
+        1714,
+        982
+      ]
+    },
+    {
+      "block_id": 3,
+      "block_type": "paragraph",
+      "block_order": 3,
+      "column_id": 1,
+      "bbox": [
+        551,
+        3041,
+        1714,
+        890
+      ]
+    },
+    {
+      "block_id": 4,
+      "block_type": "paragraph",
+      "block_order": 4,
+      "column_id": 0,
+      "bbox": [
+        366,
+        2429,
+        1714,
+        249
+      ]
+    },
+    {
+      "block_id": 5,
+      "block_type": "paragraph",
+      "block_order": 5,
+      "column_id": 1,
+      "bbox": [
+        620,
+        2891,
+        1714,
+        19
+      ]
+    },
+    {
+      "block_id": 6,
+      "block_type": "paragraph",
+      "block_order": 6,
+      "column_id": 0,
+      "bbox": [
+        263,
+        337,
+        1714,
+        19
+      ]
+    },
+    {
+      "block_id": 7,
+      "block_type": "paragraph",
+      "block_order": 7,
+      "column_id": 1,
+      "bbox": [
+        606,
+        2261,
+        1714,
+        19
+      ]
+    },
+    {
+      "block_id": 8,
+      "block_type": "paragraph",
+      "block_order": 8,
+      "column_id": 0,
+      "bbox": [
+        238,
+        2932,
+        1714,
+        19
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "text",
+      "global_line_order": 0,
+      "bbox": [
+        244,
+        1114,
+        273,
+        33
+      ],
+      "text": "サンプル データ 行",
+      "script": "ja"
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 1,
+      "bbox": [
+        577,
+        494,
+        229,
+        26
+      ],
+      "text": "belge kayıt numarası",
+      "script": "latin"
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 2,
+      "bbox": [
+        577,
+        556,
+        346,
+        30
+      ],
+      "text": "รายงาน ตรวจสอบ คุณภาพ",
+      "script": "th"
+    },
+    {
+      "line_id": 3,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 3,
+      "bbox": [
+        577,
+        602,
+        296,
+        32
+      ],
+      "text": "quality control record",
+      "script": "latin"
+    },
+    {
+      "line_id": 4,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 4,
+      "bbox": [
+        577,
+        661,
+        207,
+        34
+      ],
+      "text": "예시 데이터 행",
+      "script": "ko"
+    },
+    {
+      "line_id": 5,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 5,
+      "bbox": [
+        577,
+        714,
+        425,
+        27
+      ],
+      "text": "document reference number",
+      "script": "latin"
+    },
+    {
+      "line_id": 6,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 6,
+      "bbox": [
+        577,
+        765,
+        230,
+        31
+      ],
+      "text": "sample page text",
+      "script": "latin"
+    },
+    {
+      "line_id": 7,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 7,
+      "bbox": [
+        577,
+        822,
+        306,
+        33
+      ],
+      "text": "quality control record",
+      "script": "latin"
+    },
+    {
+      "line_id": 8,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 8,
+      "bbox": [
+        577,
+        894,
+        200,
+        33
+      ],
+      "text": "उदाहरण डेटा पंक्ति",
+      "script": "hi"
+    },
+    {
+      "line_id": 9,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 9,
+      "bbox": [
+        550,
+        1344,
+        1374,
+        35
+      ],
+      "text": "gemi kategori dışa_aktarım açıklama şekil alfabe son_tarih aratoplam veri kodlama rastgele",
+      "script": "latin"
+    },
+    {
+      "line_id": 10,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 10,
+      "bbox": [
+        465,
+        1402,
+        1429,
+        46
+      ],
+      "text": "عينة عرض اجتماع سجل مجلد جملة ارتفاع خصم حقيقة_مرجعية تأمين صيغة جدول شكل كلمة ملخص سجل صيغة",
+      "script": "ar"
+    },
+    {
+      "line_id": 11,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 11,
+      "bbox": [
+        465,
+        1496,
+        1419,
+        34
+      ],
+      "text": "απάντηση τερματικός αποθήκη πλοίο μήκος μονάδα επισήμανση αρχείο παραγγελία ανάλυση εικόνα",
+      "script": "el"
+    },
+    {
+      "line_id": 12,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 12,
+      "bbox": [
+        465,
+        1579,
+        1614,
+        33
+      ],
+      "text": "sözleşme kategori yakıt başlık yerleşim telefon şablon eposta ekip kopya fatura sipariş proje tedarikçi açıklama koli",
+      "script": "latin"
+    },
+    {
+      "line_id": 13,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 13,
+      "bbox": [
+        465,
+        1659,
+        1588,
+        31
+      ],
+      "text": "palet ödeme tedarikçi sembol şablon hücre liman kenar konteyner yerleşim kelime unicode hücre kayıt rota takvim kalite",
+      "script": "latin"
+    },
+    {
+      "line_id": 14,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 14,
+      "bbox": [
+        465,
+        1739,
+        1437,
+        33
+      ],
+      "text": "Schriftart Gleichung Fracht Zufall Import Anfrage Formel Kategorie Spalte Inventar Kommentar Lizenz",
+      "script": "latin"
+    },
+    {
+      "line_id": 15,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 15,
+      "bbox": [
+        465,
+        1821,
+        1596,
+        34
+      ],
+      "text": "шаблон топливо ревизия подытог встреча заголовок комментарий дата уравнение подвал изображение",
+      "script": "ru"
+    },
+    {
+      "line_id": 16,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 16,
+      "bbox": [
+        465,
+        1907,
+        1465,
+        45
+      ],
+      "text": "مرشح صف جودة شهادة تحقق حقل مركبة مشكلة منصة خطأ سفينة صيغة معدات معدات طلب_رسمي ملف عملة صورة",
+      "script": "ar"
+    },
+    {
+      "line_id": 17,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 17,
+      "bbox": [
+        465,
+        2001,
+        2085,
+        34
+      ],
+      "text": "字母 标注 统一码 文件 段落 运输 参考 模板 句子 码头 段落 折扣 账户 重量 标注 修订 数据集 证书 截止期 批次 订单 电话 掩码 成功 样本 交付 参考 交付 行 数量 印章 评论 状态 体积 余额 宽度 文字 总计 图像",
+      "script": "zh"
+    },
+    {
+      "line_id": 18,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 18,
+      "bbox": [
+        465,
+        2084,
+        1608,
+        36
+      ],
+      "text": "vergi hesap toplantı görsel karar mesaj vergi belge paragraf sevkiyat görsel alan kaşe unicode son_tarih",
+      "script": "latin"
+    },
+    {
+      "line_id": 19,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 19,
+      "bbox": [
+        465,
+        2169,
+        1438,
+        36
+      ],
+      "text": "sembol parti boşluk ekipman karar tarih program liman altbilgi doğrulama sıcaklık liman risk",
+      "script": "latin"
+    },
+    {
+      "line_id": 20,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 20,
+      "bbox": [
+        465,
+        2253,
+        2085,
+        30
+      ],
+      "text": "体积 类别名 图表 公式 真实值 编号 过滤器 存储 设备 标签 成功 机器 警告 重量 包裹 验证 批次 记录 价格 真实值 符号 海关 文件夹 批次 邮件 备注 货币 问题项 文件 包裹 响应",
+      "script": "zh"
+    },
+    {
+      "line_id": 21,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 21,
+      "bbox": [
+        465,
+        2330,
+        1504,
+        32
+      ],
+      "text": "раздел итог метка заметка машина страхование строка диаграмма категория предложение макет фигура",
+      "script": "ru"
+    },
+    {
+      "line_id": 22,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 22,
+      "bbox": [
+        465,
+        2411,
+        1587,
+        33
+      ],
+      "text": "Format Höhe Ausrüstung Steuer Zeitplan Abbildung Lager Inspektion Kontakt Import Kraftstoff Rahmen Summe",
+      "script": "latin"
+    },
+    {
+      "line_id": 23,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 23,
+      "bbox": [
+        465,
+        2491,
+        1501,
+        32
+      ],
+      "text": "client prix colonne devise rapport qualité rapport message enregistrement réunion paragraphe avertissement",
+      "script": "latin"
+    },
+    {
+      "line_id": 24,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 24,
+      "bbox": [
+        465,
+        2573,
+        2085,
+        32
+      ],
+      "text": "허가 마감 헤더 스키마 보험 레이아웃 터미널 계정 문제 파일 설명 기록 프로젝트 증명서 제목 결제 알파벳 알파벳 무작위 문장 재료 결제 행 증명서 문단 파일 이미지 인코딩 통행료",
+      "script": "ko"
+    },
+    {
+      "line_id": 25,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 25,
+      "bbox": [
+        465,
+        2652,
+        1610,
+        32
+      ],
+      "text": "boîte réplique adresse approbation terminal cargaison en-tête importation original enregistrement largeur expédition",
+      "script": "latin"
+    },
+    {
+      "line_id": 26,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 26,
+      "bbox": [
+        465,
+        2733,
+        1032,
+        35
+      ],
+      "text": "מסוף תמונה דוח הערה_טקסט מסנן קידוד סמל שורה_טבלה שאלה נמל ציוד",
+      "script": "he"
+    },
+    {
+      "line_id": 27,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 27,
+      "bbox": [
+        685,
+        3148,
+        1494,
+        39
+      ],
+      "text": "word approval issue equation project script groundtruth original equipment field quality",
+      "script": "latin"
+    },
+    {
+      "line_id": 28,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 28,
+      "bbox": [
+        600,
+        3234,
+        1404,
+        31
+      ],
+      "text": "γραμμή διόδια έργο λογαριασμός email διόδια έργο παλέτα τυχαίο οδηγός πεδίο κωδικοποίηση υποσέλιδο",
+      "script": "el"
+    },
+    {
+      "line_id": 29,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 29,
+      "bbox": [
+        600,
+        3314,
+        1950,
+        30
+      ],
+      "text": "면허 프로젝트 직원 제품 높이 시드 패키지 라벨 개정 컨테이너 화물 제품 경고 연락처 가격 팔레트 댓글 유니코드 결제 결제 행 그림 팀 상태 창고 달력 기계 마감 공급자 질문 무작위 메시지",
+      "script": "ko"
+    },
+    {
+      "line_id": 30,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 30,
+      "bbox": [
+        600,
+        3393,
+        1492,
+        36
+      ],
+      "text": "terminal yönetici müşteri işçi yönetici rota sayfa rastgele rota denetim imza adres teslimat kenar",
+      "script": "latin"
+    },
+    {
+      "line_id": 31,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 31,
+      "bbox": [
+        600,
+        3478,
+        1562,
+        33
+      ],
+      "text": "annotation pied adresse boîte unicode étiquette total port échéance modèle inspection réplique copie véhicule",
+      "script": "latin"
+    },
+    {
+      "line_id": 32,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 32,
+      "bbox": [
+        600,
+        3560,
+        1477,
+        33
+      ],
+      "text": "onay sevkiyat etiketleme sipariş revizyon denetim rota dosya sigorta talep dil dışa_aktarım şema veri_seti",
+      "script": "latin"
+    },
+    {
+      "line_id": 33,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 33,
+      "bbox": [
+        600,
+        3642,
+        1635,
+        33
+      ],
+      "text": "risk field request import deadline inspection header total customer layout barcode equipment footer schedule word",
+      "script": "latin"
+    },
+    {
+      "line_id": 34,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 34,
+      "bbox": [
+        600,
+        3722,
+        1579,
+        32
+      ],
+      "text": "página entrega formato contenedor contacto envío referencia fórmula reunión teléfono anotación contrato registro",
+      "script": "latin"
+    },
+    {
+      "line_id": 35,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 35,
+      "bbox": [
+        600,
+        3803,
+        1655,
+        36
+      ],
+      "text": "αποθήκευση πληρωμή τιμή έργο email εξοπλισμός αναφορά_κωδικού τίτλος επικύρωση χώρα ημερομηνία",
+      "script": "el"
+    },
+    {
+      "line_id": 36,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 36,
+      "bbox": [
+        602,
+        3623,
+        1654,
+        38
+      ]
+    },
+    {
+      "line_id": 37,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 37,
+      "bbox": [
+        602,
+        3679,
+        1650,
+        38
+      ]
+    },
+    {
+      "line_id": 38,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 38,
+      "bbox": [
+        602,
+        3731,
+        1636,
+        38
+      ]
+    },
+    {
+      "line_id": 39,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 39,
+      "bbox": [
+        602,
+        3786,
+        1569,
+        38
+      ]
+    },
+    {
+      "line_id": 40,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 40,
+      "bbox": [
+        602,
+        3840,
+        1603,
+        38
+      ]
+    },
+    {
+      "line_id": 41,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 41,
+      "bbox": [
+        600,
+        3898,
+        1180,
+        36
+      ],
+      "text": "ปฏิทิน หน้า แบบอักษร ข้อผิดพลาด บรรทัด กำหนดส่ง สินค้าเรือ การจัดส่ง การส่งมอบ สุ่ม สัญลักษณ์",
+      "script": "th"
+    },
+    {
+      "line_id": 42,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 42,
+      "bbox": [
+        602,
+        3893,
+        1047,
+        38
+      ]
+    },
+    {
+      "line_id": 43,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 43,
+      "bbox": [
+        500,
+        2817,
+        1363,
+        35
+      ],
+      "text": "Wort Absatz Beschreibung Tabelle Karton Fußzeile Kommentar Original Fahrzeug Referenz",
+      "script": "latin"
+    },
+    {
+      "line_id": 44,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 44,
+      "bbox": [
+        415,
+        2899,
+        1627,
+        30
+      ],
+      "text": "ekip talep geçiş orijinal sembol iletişim lisans başarı filtre para unicode belge lisans lisans dışa_aktarım tohum boşluk kalite vergi",
+      "script": "latin"
+    },
+    {
+      "line_id": 45,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 45,
+      "bbox": [
+        415,
+        2979,
+        1532,
+        39
+      ],
+      "text": "απόθεμα ασφάλεια μήνυμα αντίγραφο επιθεώρηση επικύρωση απόφαση απόφαση ετικέτα",
+      "script": "el"
+    },
+    {
+      "line_id": 46,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 46,
+      "bbox": [
+        415,
+        3064,
+        625,
+        27
+      ],
+      "text": "gümrük sıcaklık sipariş fiyat denetim bölüm doğrulama",
+      "script": "latin"
+    }
+  ],
+  "page_text": "サンプル データ 行\nbelge kayıt numarası\nรายงาน ตรวจสอบ คุณภาพ\nquality control record\n예시 데이터 행\ndocument reference number\nsample page text\nquality control record\nउदाहरण डेटा पंक्ति\ngemi kategori dışa_aktarım açıklama şekil alfabe son_tarih aratoplam veri kodlama rastgele\nعينة عرض اجتماع سجل مجلد جملة ارتفاع خصم حقيقة_مرجعية تأمين صيغة جدول شكل كلمة ملخص سجل صيغة\nαπάντηση τερματικός αποθήκη πλοίο μήκος μονάδα επισήμανση αρχείο παραγγελία ανάλυση εικόνα\nsözleşme kategori yakıt başlık yerleşim telefon şablon eposta ekip kopya fatura sipariş proje tedarikçi açıklama koli\npalet ödeme tedarikçi sembol şablon hücre liman kenar konteyner yerleşim kelime unicode hücre kayıt rota takvim kalite\nSchriftart Gleichung Fracht Zufall Import Anfrage Formel Kategorie Spalte Inventar Kommentar Lizenz\nшаблон топливо ревизия подытог встреча заголовок комментарий дата уравнение подвал изображение\nمرشح صف جودة شهادة تحقق حقل مركبة مشكلة منصة خطأ سفينة صيغة معدات معدات طلب_رسمي ملف عملة صورة\n字母 标注 统一码 文件 段落 运输 参考 模板 句子 码头 段落 折扣 账户 重量 标注 修订 数据集 证书 截止期 批次 订单 电话 掩码 成功 样本 交付 参考 交付 行 数量 印章 评论 状态 体积 余额 宽度 文字 总计 图像\nvergi hesap toplantı görsel karar mesaj vergi belge paragraf sevkiyat görsel alan kaşe unicode son_tarih\nsembol parti boşluk ekipman karar tarih program liman altbilgi doğrulama sıcaklık liman risk\n体积 类别名 图表 公式 真实值 编号 过滤器 存储 设备 标签 成功 机器 警告 重量 包裹 验证 批次 记录 价格 真实值 符号 海关 文件夹 批次 邮件 备注 货币 问题项 文件 包裹 响应\nраздел итог метка заметка машина страхование строка диаграмма категория предложение макет фигура\nFormat Höhe Ausrüstung Steuer Zeitplan Abbildung Lager Inspektion Kontakt Import Kraftstoff Rahmen Summe\nclient prix colonne devise rapport qualité rapport message enregistrement réunion paragraphe avertissement\n허가 마감 헤더 스키마 보험 레이아웃 터미널 계정 문제 파일 설명 기록 프로젝트 증명서 제목 결제 알파벳 알파벳 무작위 문장 재료 결제 행 증명서 문단 파일 이미지 인코딩 통행료\nboîte réplique adresse approbation terminal cargaison en-tête importation original enregistrement largeur expédition\nמסוף תמונה דוח הערה_טקסט מסנן קידוד סמל שורה_טבלה שאלה נמל ציוד\nword approval issue equation project script groundtruth original equipment field quality\nγραμμή διόδια έργο λογαριασμός email διόδια έργο παλέτα τυχαίο οδηγός πεδίο κωδικοποίηση υποσέλιδο\n면허 프로젝트 직원 제품 높이 시드 패키지 라벨 개정 컨테이너 화물 제품 경고 연락처 가격 팔레트 댓글 유니코드 결제 결제 행 그림 팀 상태 창고 달력 기계 마감 공급자 질문 무작위 메시지\nterminal yönetici müşteri işçi yönetici rota sayfa rastgele rota denetim imza adres teslimat kenar\nannotation pied adresse boîte unicode étiquette total port échéance modèle inspection réplique copie véhicule\nonay sevkiyat etiketleme sipariş revizyon denetim rota dosya sigorta talep dil dışa_aktarım şema veri_seti\nrisk field request import deadline inspection header total customer layout barcode equipment footer schedule word\npágina entrega formato contenedor contacto envío referencia fórmula reunión teléfono anotación contrato registro\nαποθήκευση πληρωμή τιμή έργο email εξοπλισμός αναφορά_κωδικού τίτλος επικύρωση χώρα ημερομηνία\nปฏิทิน หน้า แบบอักษร ข้อผิดพลาด บรรทัด กำหนดส่ง สินค้าเรือ การจัดส่ง การส่งมอบ สุ่ม สัญลักษณ์\nWort Absatz Beschreibung Tabelle Karton Fußzeile Kommentar Original Fahrzeug Referenz\nekip talep geçiş orijinal sembol iletişim lisans başarı filtre para unicode belge lisans lisans dışa_aktarım tohum boşluk kalite vergi\nαπόθεμα ασφάλεια μήνυμα αντίγραφο επιθεώρηση επικύρωση απόφαση απόφαση ετικέτα\ngümrük sıcaklık sipariş fiyat denetim bölüm doğrulama",
+  "gt_stats": {
+    "scripts_hist": {
+      "ja": 1,
+      "latin": 23,
+      "th": 2,
+      "ko": 3,
+      "hi": 1,
+      "ar": 2,
+      "el": 4,
+      "ru": 2,
+      "zh": 2,
+      "he": 1
+    },
+    "has_gt_text_lines": 41,
+    "has_gt_math_lines": 0,
+    "book_mode_added_lines": 0
+  }
+}

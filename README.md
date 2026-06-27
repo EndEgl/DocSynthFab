@@ -20,6 +20,16 @@ Depending on configuration and font coverage, generated documents can include mu
 
 This is valuable in settings where collecting and labeling real multilingual documents is expensive, slow, or difficult. The current release is still alpha: the included samples demonstrate generation, labeling, packaging, and QC infrastructure, not final benchmark performance.
 
+## Visual Examples
+
+Below is a curated early-alpha preview of ten generated pages: five text-heavy examples and five table-heavy examples.
+
+![DocSynthFab curated multilingual sample preview](examples/sample_outputs/dataset_sample/selected_10_preview.jpg)
+
+The selected examples and their related generated artifacts are available here:
+
+[examples/sample_outputs/dataset_sample/](examples/sample_outputs/dataset_sample/)
+
 ## Use Cases
 
 DocSynthFab is intended for experiments in:

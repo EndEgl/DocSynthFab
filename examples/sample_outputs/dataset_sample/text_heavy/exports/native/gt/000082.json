@@ -1,0 +1,957 @@
+{
+  "version": "docsynthfab-ds-v0.1",
+  "page_id": "000082",
+  "size": {
+    "w": 2079,
+    "h": 2952,
+    "dpi": 300,
+    "page_size_name": "b5_portrait",
+    "page_width_in": 6.93,
+    "page_height_in": 9.84,
+    "orientation": "portrait"
+  },
+  "meta": {
+    "layout_type": "double_col",
+    "density_level": "normal",
+    "scale_profile": "dpi300",
+    "noise_level": "clean",
+    "page_family": "academic",
+    "_fallback": false,
+    "_augment_disabled_by_retry": null,
+    "_fallback_from_qc_code": null,
+    "_fallback_from_qc_extra": null,
+    "_fallback_from_exception": null,
+    "has_table": false,
+    "has_equation": false,
+    "has_equation_layout": false,
+    "has_figure": false,
+    "mask_text_nonzero": 252436,
+    "mask_math_nonzero": 0,
+    "math_line_count": 0,
+    "equation_block_count": 0,
+    "table_block_count": 0,
+    "figure_block_count": 0,
+    "rotation_deg": 1.688034771856707,
+    "perspective": false,
+    "book_mode": false,
+    "text_mode": "words",
+    "text_order": "random",
+    "content_bank_json": "C:\\Users\\AG Zaferi\\Desktop\\LLM_tabanlı_projeler\\DocSynthFab\\data\\content\\content_bank.json",
+    "aug_trace": [
+      {
+        "op": "geometry",
+        "rotation_deg": -2.5801048634547006,
+        "perspective": false
+      },
+      {
+        "op": "quick_quality_gate",
+        "text_area_ratio": 0.9999603875680344,
+        "math_area_ratio": 1.0,
+        "before_text_nz": 252446.0,
+        "after_text_nz": 252436.0,
+        "before_math_nz": 0.0,
+        "after_math_nz": 0.0,
+        "accepted": true
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "block_id": 0,
+      "block_type": "title",
+      "block_order": 0,
+      "column_id": 0,
+      "bbox": [
+        174,
+        1942,
+        266,
+        44
+      ]
+    },
+    {
+      "block_id": 1,
+      "block_type": "paragraph",
+      "block_order": 1,
+      "column_id": 0,
+      "bbox": [
+        247,
+        299,
+        672,
+        646
+      ]
+    },
+    {
+      "block_id": 2,
+      "block_type": "paragraph",
+      "block_order": 2,
+      "column_id": 1,
+      "bbox": [
+        1239,
+        1088,
+        839,
+        1211
+      ]
+    },
+    {
+      "block_id": 3,
+      "block_type": "paragraph",
+      "block_order": 3,
+      "column_id": 0,
+      "bbox": [
+        293,
+        2177,
+        859,
+        587
+      ]
+    },
+    {
+      "block_id": 4,
+      "block_type": "paragraph",
+      "block_order": 4,
+      "column_id": 1,
+      "bbox": [
+        1258,
+        384,
+        616,
+        560
+      ]
+    },
+    {
+      "block_id": 5,
+      "block_type": "paragraph",
+      "block_order": 5,
+      "column_id": 1,
+      "bbox": [
+        1135,
+        2332,
+        657,
+        401
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "line_id": 0,
+      "block_id": 0,
+      "line_type": "text",
+      "global_line_order": 0,
+      "bbox": [
+        174,
+        1942,
+        266,
+        44
+      ],
+      "text": "Example Data Line",
+      "script": "latin"
+    },
+    {
+      "line_id": 1,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 1,
+      "bbox": [
+        273,
+        299,
+        608,
+        60
+      ],
+      "text": "manager balance price field customs email",
+      "script": "latin"
+    },
+    {
+      "line_id": 2,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 2,
+      "bbox": [
+        271,
+        355,
+        648,
+        63
+      ],
+      "text": "sembol toplantı proje etiketleme departman",
+      "script": "latin"
+    },
+    {
+      "line_id": 3,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 3,
+      "bbox": [
+        268,
+        409,
+        604,
+        61
+      ],
+      "text": "analiz aratoplam toplam proje etiketleme",
+      "script": "latin"
+    },
+    {
+      "line_id": 4,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 4,
+      "bbox": [
+        266,
+        461,
+        561,
+        56
+      ],
+      "text": "total aduana paquete paquete descripción",
+      "script": "latin"
+    },
+    {
+      "line_id": 5,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 5,
+      "bbox": [
+        263,
+        515,
+        476,
+        56
+      ],
+      "text": "решениеданныефоъЮ строка'",
+      "script": "ru"
+    },
+    {
+      "line_id": 6,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 6,
+      "bbox": [
+        261,
+        570,
+        495,
+        56
+      ],
+      "text": "Unterschrift Maut Saldo Warnung",
+      "script": "latin"
+    },
+    {
+      "line_id": 7,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 7,
+      "bbox": [
+        259,
+        623,
+        509,
+        57
+      ],
+      "text": "Problem Alphabet Vorlage Layout",
+      "script": "latin"
+    },
+    {
+      "line_id": 8,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 8,
+      "bbox": [
+        256,
+        667,
+        583,
+        65
+      ],
+      "text": "पता वाहन अनुसूची कर निरीक्षण दस्तावेज लिपि श्रेणी",
+      "script": "hi"
+    },
+    {
+      "line_id": 9,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 9,
+      "bbox": [
+        254,
+        731,
+        560,
+        60
+      ],
+      "text": "malzeme kalite tarih denklem altbilgi",
+      "script": "latin"
+    },
+    {
+      "line_id": 10,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 10,
+      "bbox": [
+        251,
+        784,
+        573,
+        59
+      ],
+      "text": "tohum adres fatura durum yakıt bölüm",
+      "script": "latin"
+    },
+    {
+      "line_id": 11,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 11,
+      "bbox": [
+        249,
+        838,
+        649,
+        64
+      ],
+      "text": "margin stamp account font random permit",
+      "script": "latin"
+    },
+    {
+      "line_id": 12,
+      "block_id": 1,
+      "line_type": "text",
+      "global_line_order": 12,
+      "bbox": [
+        247,
+        892,
+        480,
+        53
+      ],
+      "text": "重量 日历 长度 表行 包裹 字段 路线",
+      "script": "zh"
+    },
+    {
+      "line_id": 13,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 13,
+      "bbox": [
+        1292,
+        1088,
+        562,
+        60
+      ],
+      "text": "σύμβολο τμήμα θερμοκρασία νόμισμα",
+      "script": "el"
+    },
+    {
+      "line_id": 14,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 14,
+      "bbox": [
+        1289,
+        1141,
+        472,
+        50
+      ],
+      "text": "employee word sample border section",
+      "script": "latin"
+    },
+    {
+      "line_id": 15,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 15,
+      "bbox": [
+        1286,
+        1208,
+        419,
+        56
+      ],
+      "text": "تباعد مرجع هامش تصدير مستودع",
+      "script": "ar"
+    },
+    {
+      "line_id": 16,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 16,
+      "bbox": [
+        1282,
+        1295,
+        492,
+        55
+      ],
+      "text": "calendar folder alphabet inventory",
+      "script": "latin"
+    },
+    {
+      "line_id": 17,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 17,
+      "bbox": [
+        1279,
+        1377,
+        523,
+        49
+      ],
+      "text": "Notiz Grundwahrheit Rand Maschine",
+      "script": "latin"
+    },
+    {
+      "line_id": 18,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 18,
+      "bbox": [
+        1275,
+        1453,
+        803,
+        70
+      ],
+      "text": "司机 掩码 货物 检查 页眉 折扣 参考 托盘 证书 部门 记录",
+      "script": "zh"
+    },
+    {
+      "line_id": 19,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 19,
+      "bbox": [
+        1272,
+        1534,
+        533,
+        53
+      ],
+      "text": "task weight address spacing price volume",
+      "script": "latin"
+    },
+    {
+      "line_id": 20,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 20,
+      "bbox": [
+        1268,
+        1614,
+        468,
+        58
+      ],
+      "text": "şoför mesaj sigorta referans",
+      "script": "latin"
+    },
+    {
+      "line_id": 21,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 21,
+      "bbox": [
+        1264,
+        1701,
+        475,
+        54
+      ],
+      "text": "Klasse Besprechung Stapel Breite",
+      "script": "latin"
+    },
+    {
+      "line_id": 22,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 22,
+      "bbox": [
+        1260,
+        1789,
+        460,
+        47
+      ],
+      "text": "груз импорт партия поставщик",
+      "script": "ru"
+    },
+    {
+      "line_id": 23,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 23,
+      "bbox": [
+        1257,
+        1863,
+        447,
+        51
+      ],
+      "text": "Temperatur Schiff Arbeiter Absatz",
+      "script": "latin"
+    },
+    {
+      "line_id": 24,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 24,
+      "bbox": [
+        1253,
+        1943,
+        510,
+        55
+      ],
+      "text": "ville paquet demande langue image",
+      "script": "latin"
+    },
+    {
+      "line_id": 25,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 25,
+      "bbox": [
+        1250,
+        2023,
+        477,
+        53
+      ],
+      "text": "şoför yerleşim yorum depo kontrol",
+      "script": "latin"
+    },
+    {
+      "line_id": 26,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 26,
+      "bbox": [
+        1246,
+        2102,
+        595,
+        56
+      ],
+      "text": "klasör içe_aktarım tarih sözleşme imza genişlik",
+      "script": "latin"
+    },
+    {
+      "line_id": 27,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 27,
+      "bbox": [
+        1243,
+        2178,
+        544,
+        56
+      ],
+      "text": "ülke ekipman bölüm dil araç hacim alan",
+      "script": "latin"
+    },
+    {
+      "line_id": 28,
+      "block_id": 2,
+      "line_type": "text",
+      "global_line_order": 28,
+      "bbox": [
+        1239,
+        2257,
+        246,
+        42
+      ],
+      "text": "example data line",
+      "script": "latin"
+    },
+    {
+      "line_id": 29,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 29,
+      "bbox": [
+        318,
+        2177,
+        485,
+        56
+      ],
+      "text": "τμήμα υπόλοιπο σύμβαση τμήμα",
+      "script": "el"
+    },
+    {
+      "line_id": 30,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 30,
+      "bbox": [
+        315,
+        2234,
+        514,
+        59
+      ],
+      "text": "tedarikçi görev gemi yazı_sistemi",
+      "script": "latin"
+    },
+    {
+      "line_id": 31,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 31,
+      "bbox": [
+        313,
+        2287,
+        451,
+        55
+      ],
+      "text": "σύνολο στοκ σελίδα υπογραφή",
+      "script": "el"
+    },
+    {
+      "line_id": 32,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 32,
+      "bbox": [
+        310,
+        2346,
+        511,
+        49
+      ],
+      "text": "город уравнение вес клиент схема",
+      "script": "ru"
+    },
+    {
+      "line_id": 33,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 33,
+      "bbox": [
+        308,
+        2396,
+        844,
+        67
+      ],
+      "text": "일정 공급자 가져오기 승인 통화 달력 보고서 세관 이메일 공급자 부피",
+      "script": "ko"
+    },
+    {
+      "line_id": 34,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 34,
+      "bbox": [
+        306,
+        2448,
+        563,
+        57
+      ],
+      "text": "yük gemi müşteri çerçeve referans cümle",
+      "script": "latin"
+    },
+    {
+      "line_id": 35,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 35,
+      "bbox": [
+        303,
+        2500,
+        449,
+        52
+      ],
+      "text": "başlık ekipman gemi dosya gemi",
+      "script": "latin"
+    },
+    {
+      "line_id": 36,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 36,
+      "bbox": [
+        301,
+        2553,
+        495,
+        54
+      ],
+      "text": "alphabet chart image driver country",
+      "script": "latin"
+    },
+    {
+      "line_id": 37,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 37,
+      "bbox": [
+        299,
+        2606,
+        275,
+        39
+      ],
+      "text": "เอกสาร หมายเลข อ้างอิง",
+      "script": "th"
+    },
+    {
+      "line_id": 38,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 38,
+      "bbox": [
+        296,
+        2665,
+        503,
+        59
+      ],
+      "text": "Nummer Layout Problem Datei",
+      "script": "latin"
+    },
+    {
+      "line_id": 39,
+      "block_id": 3,
+      "line_type": "text",
+      "global_line_order": 39,
+      "bbox": [
+        293,
+        2719,
+        162,
+        45
+      ],
+      "text": "138S1Mq",
+      "script": "latin"
+    },
+    {
+      "line_id": 40,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 40,
+      "bbox": [
+        1281,
+        384,
+        579,
+        63
+      ],
+      "text": "प्रबंधक उपकुल तापमान कर्मचारी वाहन अनुसूची खाता",
+      "script": "hi"
+    },
+    {
+      "line_id": 41,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 41,
+      "bbox": [
+        1278,
+        440,
+        549,
+        65
+      ],
+      "text": "सीमा_शुल्क रिपोर्ट फ़िल्टर भुगतान हस्ताक्षर पृष्ठ",
+      "script": "hi"
+    },
+    {
+      "line_id": 42,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 42,
+      "bbox": [
+        1276,
+        502,
+        550,
+        56
+      ],
+      "text": "section distance page warning manager",
+      "script": "latin"
+    },
+    {
+      "line_id": 43,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 43,
+      "bbox": [
+        1274,
+        555,
+        574,
+        55
+      ],
+      "text": "πίνακας αποθήκευση θερμοκρασία διαδρομή",
+      "script": "el"
+    },
+    {
+      "line_id": 44,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 44,
+      "bbox": [
+        1271,
+        612,
+        438,
+        50
+      ],
+      "text": "כתובת אישור פרויקט חבילה ספינה",
+      "script": "he"
+    },
+    {
+      "line_id": 45,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 45,
+      "bbox": [
+        1269,
+        656,
+        516,
+        57
+      ],
+      "text": "निर्णय सत्यापन लंबाई टिप्पणी उपकरण सेल चार्ट",
+      "script": "hi"
+    },
+    {
+      "line_id": 46,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 46,
+      "bbox": [
+        1267,
+        717,
+        192,
+        38
+      ],
+      "text": "质量 检查 报告",
+      "script": "zh"
+    },
+    {
+      "line_id": 47,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 47,
+      "bbox": [
+        1264,
+        772,
+        610,
+        56
+      ],
+      "text": "onay başarı cevap ekip not proje sembol kayıt yük",
+      "script": "latin"
+    },
+    {
+      "line_id": 48,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 48,
+      "bbox": [
+        1262,
+        824,
+        598,
+        58
+      ],
+      "text": "Volumen Revision Lagerung Barcode Klasse",
+      "script": "latin"
+    },
+    {
+      "line_id": 49,
+      "block_id": 4,
+      "line_type": "text",
+      "global_line_order": 49,
+      "bbox": [
+        1258,
+        903,
+        354,
+        41
+      ],
+      "text": "Maut Feld Konto Terminal",
+      "script": "latin"
+    },
+    {
+      "line_id": 50,
+      "block_id": 5,
+      "line_type": "text",
+      "global_line_order": 50,
+      "bbox": [
+        1151,
+        2332,
+        452,
+        52
+      ],
+      "text": "original unicode terminal en-tête",
+      "script": "latin"
+    },
+    {
+      "line_id": 51,
+      "block_id": 5,
+      "line_type": "text",
+      "global_line_order": 51,
+      "bbox": [
+        1142,
+        2512,
+        606,
+        63
+      ],
+      "text": "error columna informe semilla registro",
+      "script": "latin"
+    },
+    {
+      "line_id": 52,
+      "block_id": 5,
+      "line_type": "text",
+      "global_line_order": 52,
+      "bbox": [
+        1139,
+        2597,
+        579,
+        60
+      ],
+      "text": "toplantı saklama klasör konteyner gemi",
+      "script": "latin"
+    },
+    {
+      "line_id": 53,
+      "block_id": 5,
+      "line_type": "text",
+      "global_line_order": 53,
+      "bbox": [
+        1135,
+        2678,
+        545,
+        55
+      ],
+      "text": "klasör liman dil gerçek_veri alan paragraf",
+      "script": "latin"
+    },
+    {
+      "line_id": 54,
+      "block_id": 5,
+      "line_type": "text",
+      "global_line_order": 54,
+      "bbox": [
+        1151,
+        2363,
+        641,
+        66
+      ]
+    },
+    {
+      "line_id": 55,
+      "block_id": 5,
+      "line_type": "text",
+      "global_line_order": 55,
+      "bbox": [
+        1149,
+        2415,
+        606,
+        65
+      ]
+    },
+    {
+      "line_id": 56,
+      "block_id": 5,
+      "line_type": "text",
+      "global_line_order": 56,
+      "bbox": [
+        1143,
+        2488,
+        470,
+        58
+      ],
+      "text": "تعليق_توضيحي هاتف جملة سائق ملف",
+      "script": "ar"
+    },
+    {
+      "line_id": 57,
+      "block_id": 5,
+      "line_type": "text",
+      "global_line_order": 57,
+      "bbox": [
+        1144,
+        2524,
+        377,
+        54
+      ]
+    }
+  ],
+  "page_text": "Example Data Line\nmanager balance price field customs email\nsembol toplantı proje etiketleme departman\nanaliz aratoplam toplam proje etiketleme\ntotal aduana paquete paquete descripción\nрешениеданныефоъЮ строка'\nUnterschrift Maut Saldo Warnung\nProblem Alphabet Vorlage Layout\nपता वाहन अनुसूची कर निरीक्षण दस्तावेज लिपि श्रेणी\nmalzeme kalite tarih denklem altbilgi\ntohum adres fatura durum yakıt bölüm\nmargin stamp account font random permit\n重量 日历 长度 表行 包裹 字段 路线\nσύμβολο τμήμα θερμοκρασία νόμισμα\nemployee word sample border section\nتباعد مرجع هامش تصدير مستودع\ncalendar folder alphabet inventory\nNotiz Grundwahrheit Rand Maschine\n司机 掩码 货物 检查 页眉 折扣 参考 托盘 证书 部门 记录\ntask weight address spacing price volume\nşoför mesaj sigorta referans\nKlasse Besprechung Stapel Breite\nгруз импорт партия поставщик\nTemperatur Schiff Arbeiter Absatz\nville paquet demande langue image\nşoför yerleşim yorum depo kontrol\nklasör içe_aktarım tarih sözleşme imza genişlik\nülke ekipman bölüm dil araç hacim alan\nexample data line\nτμήμα υπόλοιπο σύμβαση τμήμα\ntedarikçi görev gemi yazı_sistemi\nσύνολο στοκ σελίδα υπογραφή\nгород уравнение вес клиент схема\n일정 공급자 가져오기 승인 통화 달력 보고서 세관 이메일 공급자 부피\nyük gemi müşteri çerçeve referans cümle\nbaşlık ekipman gemi dosya gemi\nalphabet chart image driver country\nเอกสาร หมายเลข อ้างอิง\nNummer Layout Problem Datei\n138S1Mq\nप्रबंधक उपकुल तापमान कर्मचारी वाहन अनुसूची खाता\nसीमा_शुल्क रिपोर्ट फ़िल्टर भुगतान हस्ताक्षर पृष्ठ\nsection distance page warning manager\nπίνακας αποθήκευση θερμοκρασία διαδρομή\nכתובת אישור פרויקט חבילה ספינה\nनिर्णय सत्यापन लंबाई टिप्पणी उपकरण सेल चार्ट\n质量 检查 报告\nonay başarı cevap ekip not proje sembol kayıt yük\nVolumen Revision Lagerung Barcode Klasse\nMaut Feld Konto Terminal\noriginal unicode terminal en-tête\nerror columna informe semilla registro\ntoplantı saklama klasör konteyner gemi\nklasör liman dil gerçek_veri alan paragraf\nتعليق_توضيحي هاتف جملة سائق ملف",
+  "gt_stats": {
+    "scripts_hist": {
+      "latin": 36,
+      "ru": 3,
+      "hi": 4,
+      "zh": 3,
+      "el": 4,
+      "ar": 2,
+      "ko": 1,
+      "th": 1,
+      "he": 1
+    },
+    "has_gt_text_lines": 55,
+    "has_gt_math_lines": 0,
+    "book_mode_added_lines": 0
+  }
+}
