@@ -1,4 +1,4 @@
-﻿[build-system]
+[build-system]
 requires = ["setuptools>=68,<76", "wheel>=0.41,<1.0"]
 build-backend = "setuptools.build_meta"
 
@@ -9,7 +9,7 @@ description = "Experimental synthetic document dataset generator for OCR and Doc
 readme = "README.md"
 requires-python = ">=3.10,<3.14"
 license = { text = "Apache-2.0" }
-authors = [{ name = "Ender Emre Hayırlıoğlu" }]
+authors = [{ name = "Ender Emre Hayirlioglu" }]
 dependencies = [
   "numpy>=1.24,<3.0",
   "Pillow>=10,<12",
