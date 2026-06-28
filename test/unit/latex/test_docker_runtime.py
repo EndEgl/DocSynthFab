@@ -11,7 +11,8 @@ from docsynthfab.latex import docker_runtime as dr
 def test_project_root_from_this_file_points_to_project_root():
     root = dr._project_root_from_this_file()
 
-    assert root.name.lower() == "docsynthfab"
+    assert (root / "pyproject.toml").is_file()
+    assert (root / "src" / "docsynthfab").is_dir()
     assert (root / "src").exists()
     assert (root / "src" / "docsynthfab").exists()
 
