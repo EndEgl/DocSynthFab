@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/exporters/__init__.py
+# src/docsynthfab/exporters/__init__.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

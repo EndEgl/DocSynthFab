@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/layout/table_cell_bboxes.py
+# src/docsynthfab/layout/table_cell_bboxes.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

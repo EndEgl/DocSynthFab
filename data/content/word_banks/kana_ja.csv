@@ -1,4 +1,4 @@
-﻿word,lang,script,alphabet_profile,weight,category,enabled,notes
+word,lang,script,alphabet_profile,weight,category,enabled,notes
 請求書,ja,kana_han,kana_ja,1.0,business_document_ocr,1,starter_150_review_recommended
 報告,ja,kana_han,kana_ja,1.0,business_document_ocr,1,starter_150_review_recommended
 納品,ja,kana_han,kana_ja,1.0,business_document_ocr,1,starter_150_review_recommended

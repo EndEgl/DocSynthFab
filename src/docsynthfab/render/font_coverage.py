@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/render/font_coverage.py
+# src/docsynthfab/render/font_coverage.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 # - Pillow>=10,<12

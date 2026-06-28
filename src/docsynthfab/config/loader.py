@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/config/loader.py
+# src/docsynthfab/config/loader.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 # - PyYAML>=6.0,<7.0

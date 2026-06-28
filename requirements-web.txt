@@ -1,2 +1,2 @@
-﻿-r requirements.txt
+-r requirements.txt
 nicegui>=1.4,<3.0

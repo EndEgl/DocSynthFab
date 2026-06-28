@@ -1,4 +1,4 @@
-﻿# DocSynthFab LaTeX Renderer
+# DocSynthFab LaTeX Renderer
 
 Small HTTP service that renders LaTeX math expressions into transparent PNG images for DocSynthFab synthetic document generation.
 

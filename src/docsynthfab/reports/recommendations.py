@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/reports/recommendations.py
+# src/docsynthfab/reports/recommendations.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 #

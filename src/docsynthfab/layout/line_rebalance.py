@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/layout/line_rebalance.py
+# src/docsynthfab/layout/line_rebalance.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/reports/dataset_reports.py
+# src/docsynthfab/reports/dataset_reports.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 #

@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/__init__.py
+# src/docsynthfab/__init__.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 

@@ -1,4 +1,4 @@
-﻿word,lang,script,alphabet_profile,weight,category,enabled,notes
+word,lang,script,alphabet_profile,weight,category,enabled,notes
 发票,zh,han,han_zh,1.0,business_document_ocr,1,starter_150_review_recommended
 报告,zh,han,han_zh,1.0,business_document_ocr,1,starter_150_review_recommended
 交付,zh,han,han_zh,1.0,business_document_ocr,1,starter_150_review_recommended

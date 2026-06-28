@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/orchestrator/param_schema.py
+# src/docsynthfab/orchestrator/param_schema.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 

@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/gui/shared/upload_utils.py
+# src/docsynthfab/gui/shared/upload_utils.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 #

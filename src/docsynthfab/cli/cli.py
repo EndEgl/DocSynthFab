@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/cli/cli.py
+# src/docsynthfab/cli/cli.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 #

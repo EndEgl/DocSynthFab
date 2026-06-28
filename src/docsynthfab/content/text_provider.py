@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/content/text_provider.py
+# src/docsynthfab/content/text_provider.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 #

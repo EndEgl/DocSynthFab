@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/qc/layout_rules.py
+# src/docsynthfab/qc/layout_rules.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

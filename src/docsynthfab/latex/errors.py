@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/latex/errors.py
+# src/docsynthfab/latex/errors.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

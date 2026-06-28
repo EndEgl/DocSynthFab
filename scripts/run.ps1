@@ -1,4 +1,4 @@
-﻿# scripts/run.ps1
+# scripts/run.ps1
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 

@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/qc/validators.py
+# src/docsynthfab/qc/validators.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 # - numpy>=1.24,<3.0

@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/orchestrator/result_store.py
+# src/docsynthfab/orchestrator/result_store.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 

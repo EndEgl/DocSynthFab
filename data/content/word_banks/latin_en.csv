@@ -1,4 +1,4 @@
-﻿word,lang,script,alphabet_profile,weight,category,enabled,notes
+word,lang,script,alphabet_profile,weight,category,enabled,notes
 invoice,en,latin,latin_en,1.0,business_document_ocr,1,starter_150_review_recommended
 report,en,latin,latin_en,1.0,business_document_ocr,1,starter_150_review_recommended
 delivery,en,latin,latin_en,1.0,business_document_ocr,1,starter_150_review_recommended

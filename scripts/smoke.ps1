@@ -1,4 +1,4 @@
-﻿# scripts/smoke.ps1
+# scripts/smoke.ps1
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 

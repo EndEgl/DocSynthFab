@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/content/bootstrap.py
+# src/docsynthfab/content/bootstrap.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 #

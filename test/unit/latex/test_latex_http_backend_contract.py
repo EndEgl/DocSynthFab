@@ -1,4 +1,4 @@
-﻿# test/unit/latex/test_latex_http_backend_contract.py
+# test/unit/latex/test_latex_http_backend_contract.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 # - pytest>=7,<9

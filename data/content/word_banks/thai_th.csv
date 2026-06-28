@@ -1,4 +1,4 @@
-﻿word,lang,script,alphabet_profile,weight,category,enabled,notes
+word,lang,script,alphabet_profile,weight,category,enabled,notes
 ใบแจ้งหนี้,th,thai,thai_th,1.0,business_document_ocr,1,starter_150_review_recommended
 รายงาน,th,thai,thai_th,1.0,business_document_ocr,1,starter_150_review_recommended
 การส่งมอบ,th,thai,thai_th,1.0,business_document_ocr,1,starter_150_review_recommended

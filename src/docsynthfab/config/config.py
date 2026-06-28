@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/config/config.py
+# src/docsynthfab/config/config.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

@@ -1,4 +1,4 @@
-﻿section,key,value
+section,key,value
 run,config_path,configs/default.yaml
 run,out_root,out/web_gui
 run,pages,100

@@ -1,4 +1,4 @@
-﻿# Font License Notice
+# Font License Notice
 
 This project may include or use third-party fonts, including Google Fonts.
 

@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/config/helpers.py
+# src/docsynthfab/config/helpers.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

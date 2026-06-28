@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/orchestrator/preset_manager.py
+# src/docsynthfab/orchestrator/preset_manager.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 # - PyYAML>=6.0,<7.0

@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/gui/web/state.py
+# src/docsynthfab/gui/web/state.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

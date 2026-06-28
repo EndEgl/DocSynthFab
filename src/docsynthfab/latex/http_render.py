@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/latex/http_render.py
+# src/docsynthfab/latex/http_render.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 # - Pillow>=10,<12

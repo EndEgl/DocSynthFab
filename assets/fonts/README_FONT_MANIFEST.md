@@ -1,4 +1,4 @@
-﻿# DocSynthFab Font Manifest
+# DocSynthFab Font Manifest
 
 DocSynthFab includes a minimal Noto-based font pack for multilingual synthetic document rendering.
 

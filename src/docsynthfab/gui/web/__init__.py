@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/gui/web/__init__.py
+# src/docsynthfab/gui/web/__init__.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 # - nicegui>=2.0,<3.0

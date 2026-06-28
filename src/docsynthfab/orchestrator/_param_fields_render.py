@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/orchestrator/_param_fields_render.py
+# src/docsynthfab/orchestrator/_param_fields_render.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 

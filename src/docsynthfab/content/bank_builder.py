@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/content/bank_builder.py
+# src/docsynthfab/content/bank_builder.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 #

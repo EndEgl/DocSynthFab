@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/exporters/common.py
+# src/docsynthfab/exporters/common.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

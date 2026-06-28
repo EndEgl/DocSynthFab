@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/layout/common.py
+# src/docsynthfab/layout/common.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

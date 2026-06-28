@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from docsynthfab.render.page_renderer import _content_pure_mode_from_cfg
 

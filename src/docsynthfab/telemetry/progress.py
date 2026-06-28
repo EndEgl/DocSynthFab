@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/telemetry/progress.py
+# src/docsynthfab/telemetry/progress.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 

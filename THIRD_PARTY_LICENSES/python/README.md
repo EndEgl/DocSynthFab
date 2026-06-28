@@ -1,4 +1,4 @@
-﻿# Python Dependencies License Notice
+# Python Dependencies License Notice
 
 This project uses third-party Python libraries listed in:
 

@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/augment/quality.py
+# src/docsynthfab/augment/quality.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 # - numpy>=1.24,<3.0

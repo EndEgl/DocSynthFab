@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/cli/splits.py
+# src/docsynthfab/cli/splits.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

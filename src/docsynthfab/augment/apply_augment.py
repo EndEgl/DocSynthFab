@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/augment/apply_augment.py
+# src/docsynthfab/augment/apply_augment.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 # - numpy>=1.24,<3.0

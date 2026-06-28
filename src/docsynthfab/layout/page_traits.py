@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/layout/page_traits.py
+# src/docsynthfab/layout/page_traits.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

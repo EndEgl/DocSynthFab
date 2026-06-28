@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/reports/run_manifest.py
+# src/docsynthfab/reports/run_manifest.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 #

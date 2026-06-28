@@ -1,4 +1,4 @@
-﻿# test/unit/gui/test_web_run_lifecycle_contract.py
+# test/unit/gui/test_web_run_lifecycle_contract.py
 from __future__ import annotations
 
 from types import SimpleNamespace

@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/reports/diversity_summary.py
+# src/docsynthfab/reports/diversity_summary.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 #

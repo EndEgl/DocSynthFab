@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/latex/docker_runtime.py
+# src/docsynthfab/latex/docker_runtime.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 # - requests>=2.31,<3.0

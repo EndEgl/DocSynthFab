@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/orchestrator/models.py
+# src/docsynthfab/orchestrator/models.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 

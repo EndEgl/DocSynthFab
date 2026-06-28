@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/config/errors.py
+# src/docsynthfab/config/errors.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

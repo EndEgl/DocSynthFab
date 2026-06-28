@@ -1,4 +1,4 @@
-﻿# Docker Components License Notice
+# Docker Components License Notice
 
 DocSynthFab may include or reference Docker-based workflows, including optional LaTeX rendering environments.
 

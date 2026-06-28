@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/orchestrator/job_runner.py
+# src/docsynthfab/orchestrator/job_runner.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 

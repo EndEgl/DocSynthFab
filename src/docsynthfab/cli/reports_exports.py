@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/cli/reports_exports.py
+# src/docsynthfab/cli/reports_exports.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

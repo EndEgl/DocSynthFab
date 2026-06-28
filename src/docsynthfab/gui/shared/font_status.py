@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/gui/shared/font_status.py
+# src/docsynthfab/gui/shared/font_status.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

@@ -1,4 +1,4 @@
-﻿# LaTeX / TeX Package License Notice
+# LaTeX / TeX Package License Notice
 
 DocSynthFab may use optional LaTeX rendering workflows for math-heavy synthetic document generation.
 

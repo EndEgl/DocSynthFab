@@ -1,4 +1,4 @@
-﻿word,lang,script,alphabet_profile,weight,category,enabled,notes
+word,lang,script,alphabet_profile,weight,category,enabled,notes
 Rechnung,de,latin,latin_de,1.0,business_document_ocr,1,starter_150_review_recommended
 Bericht,de,latin,latin_de,1.0,business_document_ocr,1,starter_150_review_recommended
 Lieferung,de,latin,latin_de,1.0,business_document_ocr,1,starter_150_review_recommended

@@ -1,4 +1,4 @@
-﻿# Önerilen sürüm aralıkları:
+# Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 # - fastapi>=0.110,<1.0
 # - uvicorn[standard]>=0.27,<1.0

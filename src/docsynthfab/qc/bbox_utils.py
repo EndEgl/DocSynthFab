@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/qc/bbox_utils.py
+# src/docsynthfab/qc/bbox_utils.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

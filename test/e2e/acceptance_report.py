@@ -1,4 +1,4 @@
-﻿# test/e2e/acceptance_report.py
+# test/e2e/acceptance_report.py
 # Recommended version ranges:
 # - Python>=3.10,<3.14
 

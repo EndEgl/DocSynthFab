@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/augment/policy.py
+# src/docsynthfab/augment/policy.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 

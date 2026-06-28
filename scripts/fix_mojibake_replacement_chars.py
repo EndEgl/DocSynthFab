@@ -1,4 +1,4 @@
-﻿from pathlib import Path
+from pathlib import Path
 
 paths = [
     Path("src/docsynthfab/render/page_renderer.py"),

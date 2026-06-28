@@ -1,4 +1,4 @@
-﻿# src/docsynthfab/orchestrator/__init__.py
+# src/docsynthfab/orchestrator/__init__.py
 # Önerilen sürüm aralıkları:
 # - Python>=3.10,<3.14
 # - PyYAML>=6.0,<7.0

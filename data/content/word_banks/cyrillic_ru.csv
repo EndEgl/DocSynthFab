@@ -1,4 +1,4 @@
-﻿word,lang,script,alphabet_profile,weight,category,enabled,notes
+word,lang,script,alphabet_profile,weight,category,enabled,notes
 счет,ru,cyrillic,cyrillic_ru,1.0,business_document_ocr,1,starter_150_review_recommended
 отчет,ru,cyrillic,cyrillic_ru,1.0,business_document_ocr,1,starter_150_review_recommended
 доставка,ru,cyrillic,cyrillic_ru,1.0,business_document_ocr,1,starter_150_review_recommended
